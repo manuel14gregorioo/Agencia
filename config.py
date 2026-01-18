@@ -9,20 +9,22 @@ from dotenv import load_dotenv
 load_dotenv()
 
 
+def get_database_url():
+    """Obtiene la URL de la base de datos, convirtiendo postgres:// a postgresql://"""
+    db_url = os.environ.get('DATABASE_URL') or 'sqlite:///agencia.db'
+    if db_url.startswith('postgres://'):
+        db_url = db_url.replace('postgres://', 'postgresql://', 1)
+    return db_url
+
+
 class Config:
     """Configuración base"""
 
     # Flask
     SECRET_KEY = os.environ.get('SECRET_KEY') or 'dev-secret-key-cambiar-en-produccion'
 
-    # Database - Railway usa postgres:// pero SQLAlchemy necesita postgresql://
-    @property
-    def SQLALCHEMY_DATABASE_URI(self):
-        db_url = os.environ.get('DATABASE_URL') or 'sqlite:///agencia.db'
-        if db_url.startswith('postgres://'):
-            db_url = db_url.replace('postgres://', 'postgresql://', 1)
-        return db_url
-
+    # Database
+    SQLALCHEMY_DATABASE_URI = get_database_url()
     SQLALCHEMY_TRACK_MODIFICATIONS = False
     SQLALCHEMY_ENGINE_OPTIONS = {
         'pool_recycle': 300,

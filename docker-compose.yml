@@ -1,0 +1,66 @@
+version: '3.8'
+
+services:
+  # ============================================
+  # FRONTEND - React + Vite
+  # ============================================
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    ports:
+      - "5173:5173"
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+    environment:
+      - NODE_ENV=development
+    depends_on:
+      - backend
+    networks:
+      - agencia-network
+
+  # ============================================
+  # BACKEND - Flask API
+  # ============================================
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./backend:/app
+    environment:
+      - FLASK_ENV=development
+      - DATABASE_URL=postgresql://agencia:agencia@db:5432/agencia
+      - SECRET_KEY=${SECRET_KEY:-dev-secret-key}
+      - ADMIN_EMAIL=${ADMIN_EMAIL:-admin@agenciadev.es}
+      - ADMIN_PASSWORD=${ADMIN_PASSWORD:-admin123}
+    depends_on:
+      - db
+    networks:
+      - agencia-network
+
+  # ============================================
+  # DATABASE - PostgreSQL
+  # ============================================
+  db:
+    image: postgres:15-alpine
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_USER=agencia
+      - POSTGRES_PASSWORD=agencia
+      - POSTGRES_DB=agencia
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - agencia-network
+
+networks:
+  agencia-network:
+    driver: bridge
+
+volumes:
+  postgres_data:

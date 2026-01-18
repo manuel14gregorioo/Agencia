@@ -1,0 +1,11 @@
+# Robots.txt for AgenciaDev
+# https://agenciadev.es
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://agenciadev.es/sitemap.xml
+
+# Crawl-delay (optional, for politeness)
+Crawl-delay: 1

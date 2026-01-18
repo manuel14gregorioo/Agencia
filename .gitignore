@@ -1,0 +1,47 @@
+# ============================================
+# GITIGNORE - Agencia Dev
+# ============================================
+
+# Dependencias
+node_modules/
+venv/
+__pycache__/
+*.pyc
+
+# Entorno
+.env
+.env.local
+.env.*.local
+
+# Build
+dist/
+build/
+*.egg-info/
+backend/static/
+
+# Base de datos local
+*.db
+*.sqlite3
+
+# Logs
+*.log
+logs/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+
+# Testing
+.coverage
+htmlcov/
+.pytest_cache/
+
+# Docker
+.docker/
+
+# Misc
+*.bak
+*.tmp

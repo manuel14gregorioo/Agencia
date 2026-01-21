@@ -1,14 +1,48 @@
 """
 Email Service - Envío de emails transaccionales
+Soporta Flask-Mail (SMTP) y Resend (API)
 """
 
+import os
+import requests
 from flask import current_app, render_template_string
 from flask_mail import Message
 from app import mail
 
+# Resend API
+RESEND_API_KEY = os.environ.get('RESEND_API_KEY')
+RESEND_FROM_EMAIL = os.environ.get('RESEND_FROM_EMAIL', 'AgenciaDev <noreply@agenciadev.es>')
 
-def send_email(to, subject, html_body, text_body=None):
-    """Envía un email"""
+
+def send_email_resend(to, subject, html_body):
+    """Envía email usando Resend API"""
+    if not RESEND_API_KEY:
+        return False
+
+    try:
+        response = requests.post(
+            'https://api.resend.com/emails',
+            headers={
+                'Authorization': f'Bearer {RESEND_API_KEY}',
+                'Content-Type': 'application/json'
+            },
+            json={
+                'from': RESEND_FROM_EMAIL,
+                'to': [to] if isinstance(to, str) else to,
+                'subject': subject,
+                'html': html_body
+            }
+        )
+        response.raise_for_status()
+        current_app.logger.info(f"Email sent via Resend to {to}")
+        return True
+    except Exception as e:
+        current_app.logger.error(f"Resend error: {e}")
+        return False
+
+
+def send_email_smtp(to, subject, html_body, text_body=None):
+    """Envía email usando Flask-Mail (SMTP)"""
     try:
         msg = Message(
             subject=subject,
@@ -17,10 +51,22 @@ def send_email(to, subject, html_body, text_body=None):
             body=text_body or html_body
         )
         mail.send(msg)
+        current_app.logger.info(f"Email sent via SMTP to {to}")
         return True
     except Exception as e:
-        current_app.logger.error(f"Error sending email: {e}")
+        current_app.logger.error(f"SMTP error: {e}")
         return False
+
+
+def send_email(to, subject, html_body, text_body=None):
+    """Envía un email (intenta Resend primero, luego SMTP)"""
+    # Intentar Resend primero si está configurado
+    if RESEND_API_KEY:
+        if send_email_resend(to, subject, html_body):
+            return True
+
+    # Fallback a SMTP
+    return send_email_smtp(to, subject, html_body, text_body)
 
 
 def send_lead_notification(lead):
@@ -78,7 +124,8 @@ def send_lead_notification(lead):
     </html>
     """
 
-    admin_email = current_app.config.get('ADMIN_EMAIL', 'admin@agenciadev.es')
+    # Enviar a hola@vocap.io como destino principal
+    admin_email = current_app.config.get('ADMIN_EMAIL', 'hola@vocap.io')
     return send_email(admin_email, subject, html_body)
 
 

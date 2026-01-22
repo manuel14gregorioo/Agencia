@@ -42,7 +42,8 @@ class Config:
 
     # Admin
     ADMIN_EMAIL = os.environ.get('ADMIN_EMAIL', 'admin@agenciadev.es')
-    ADMIN_PASSWORD = os.environ.get('ADMIN_PASSWORD', 'admin123')
+    # ADMIN_PASSWORD debe configurarse via variable de entorno (sin fallback inseguro)
+    ADMIN_PASSWORD = os.environ.get('ADMIN_PASSWORD')
 
     # Rate Limiting
     RATELIMIT_DEFAULT = "200 per day"
@@ -63,12 +64,26 @@ class ProductionConfig(Config):
     """Configuración de producción"""
     DEBUG = False
 
-    # En producción, asegurarse de que SECRET_KEY está definida
+    # En producción, asegurarse de que variables críticas están definidas
     @property
     def SECRET_KEY(self):
         key = os.environ.get('SECRET_KEY')
-        if not key:
-            raise ValueError("SECRET_KEY must be set in production")
+        if not key or len(key) < 32:
+            raise ValueError("SECRET_KEY must be set and have at least 32 characters in production")
+        return key
+
+    @property
+    def ADMIN_PASSWORD(self):
+        password = os.environ.get('ADMIN_PASSWORD')
+        if not password or len(password) < 12:
+            raise ValueError("ADMIN_PASSWORD must be set and have at least 12 characters in production")
+        return password
+
+    @property
+    def JWT_SECRET_KEY(self):
+        key = os.environ.get('JWT_SECRET_KEY') or os.environ.get('SECRET_KEY')
+        if not key or len(key) < 32:
+            raise ValueError("JWT_SECRET_KEY must be set and have at least 32 characters in production")
         return key
 
 
@@ -77,6 +92,7 @@ class TestingConfig(Config):
     TESTING = True
     SQLALCHEMY_DATABASE_URI = 'sqlite:///:memory:'
     WTF_CSRF_ENABLED = False
+    RATELIMIT_ENABLED = False  # Deshabilitar rate limiting en tests
 
 
 config = {

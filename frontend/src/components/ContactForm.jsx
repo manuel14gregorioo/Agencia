@@ -35,7 +35,7 @@ const validators = {
   },
 };
 
-// Componente Input
+// Componente Input con accesibilidad mejorada
 const FormInput = ({
   label,
   name,
@@ -50,12 +50,13 @@ const FormInput = ({
 }) => {
   const hasError = touched && error;
   const isValid = touched && !error && value;
+  const errorId = `${name}-error`;
 
   return (
     <div className="space-y-1">
       <label htmlFor={name} className="block text-sm font-medium text-gray-700">
         {label}
-        {required && <span className="text-red-500 ml-1">*</span>}
+        {required && <span className="text-red-500 ml-1" aria-hidden="true">*</span>}
       </label>
       <div className="relative">
         <input
@@ -66,19 +67,23 @@ const FormInput = ({
           value={value}
           onChange={onChange}
           onBlur={onBlur}
+          required={required}
+          aria-required={required}
+          aria-invalid={hasError ? 'true' : 'false'}
+          aria-describedby={hasError ? errorId : undefined}
           className={`
             w-full px-4 py-3 rounded-lg border-2 transition-all duration-200
-            focus:outline-none focus:ring-0
+            focus:outline-none focus:ring-2 focus:ring-offset-1
             ${hasError
-              ? 'border-red-400 focus:border-red-500 bg-red-50'
+              ? 'border-red-400 focus:border-red-500 focus:ring-red-200 bg-red-50'
               : isValid
-                ? 'border-green-400 focus:border-green-500 bg-green-50'
-                : 'border-gray-200 focus:border-primary-500 bg-white'
+                ? 'border-green-400 focus:border-green-500 focus:ring-green-200 bg-green-50'
+                : 'border-gray-200 focus:border-primary-500 focus:ring-primary-200 bg-white'
             }
           `}
         />
         {touched && (
-          <div className="absolute right-3 top-1/2 -translate-y-1/2">
+          <div className="absolute right-3 top-1/2 -translate-y-1/2" aria-hidden="true">
             {hasError ? (
               <AlertCircle className="w-5 h-5 text-red-500" />
             ) : isValid ? (
@@ -88,8 +93,13 @@ const FormInput = ({
         )}
       </div>
       {hasError && (
-        <p className="text-sm text-red-500 flex items-center gap-1 mt-1">
-          <AlertCircle className="w-4 h-4" />
+        <p
+          id={errorId}
+          className="text-sm text-red-500 flex items-center gap-1 mt-1"
+          role="alert"
+          aria-live="polite"
+        >
+          <AlertCircle className="w-4 h-4" aria-hidden="true" />
           {error}
         </p>
       )}
@@ -97,7 +107,7 @@ const FormInput = ({
   );
 };
 
-// Componente Textarea
+// Componente Textarea con accesibilidad mejorada
 const FormTextarea = ({
   label,
   name,
@@ -112,12 +122,14 @@ const FormTextarea = ({
 }) => {
   const hasError = touched && error;
   const isValid = touched && !error && value;
+  const errorId = `${name}-error`;
+  const hintId = `${name}-hint`;
 
   return (
     <div className="space-y-1">
       <label htmlFor={name} className="block text-sm font-medium text-gray-700">
         {label}
-        {required && <span className="text-red-500 ml-1">*</span>}
+        {required && <span className="text-red-500 ml-1" aria-hidden="true">*</span>}
       </label>
       <div className="relative">
         <textarea
@@ -128,24 +140,37 @@ const FormTextarea = ({
           onChange={onChange}
           onBlur={onBlur}
           rows={rows}
+          required={required}
+          aria-required={required}
+          aria-invalid={hasError ? 'true' : 'false'}
+          aria-describedby={`${hintId}${hasError ? ` ${errorId}` : ''}`}
           className={`
             w-full px-4 py-3 rounded-lg border-2 transition-all duration-200 resize-none
-            focus:outline-none focus:ring-0
+            focus:outline-none focus:ring-2 focus:ring-offset-1
             ${hasError
-              ? 'border-red-400 focus:border-red-500 bg-red-50'
+              ? 'border-red-400 focus:border-red-500 focus:ring-red-200 bg-red-50'
               : isValid
-                ? 'border-green-400 focus:border-green-500 bg-green-50'
-                : 'border-gray-200 focus:border-primary-500 bg-white'
+                ? 'border-green-400 focus:border-green-500 focus:ring-green-200 bg-green-50'
+                : 'border-gray-200 focus:border-primary-500 focus:ring-primary-200 bg-white'
             }
           `}
         />
-        <div className="absolute right-3 bottom-3 text-xs text-gray-400">
+        <div
+          id={hintId}
+          className="absolute right-3 bottom-3 text-xs text-gray-400"
+          aria-live="polite"
+        >
           {value.length} caracteres
         </div>
       </div>
       {hasError && (
-        <p className="text-sm text-red-500 flex items-center gap-1 mt-1">
-          <AlertCircle className="w-4 h-4" />
+        <p
+          id={errorId}
+          className="text-sm text-red-500 flex items-center gap-1 mt-1"
+          role="alert"
+          aria-live="polite"
+        >
+          <AlertCircle className="w-4 h-4" aria-hidden="true" />
           {error}
         </p>
       )}
@@ -237,9 +262,13 @@ const ContactForm = ({ className = '' }) => {
 
   if (submitStatus === 'success') {
     return (
-      <div className={`bg-green-50 border-2 border-green-200 rounded-2xl p-8 text-center ${className}`}>
+      <div
+        className={`bg-green-50 border-2 border-green-200 rounded-2xl p-8 text-center ${className}`}
+        role="status"
+        aria-live="polite"
+      >
         <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-          <CheckCircle className="w-8 h-8 text-green-600" />
+          <CheckCircle className="w-8 h-8 text-green-600" aria-hidden="true" />
         </div>
         <h3 className="text-xl font-semibold text-green-800 mb-2">
           ¡Mensaje enviado!
@@ -256,6 +285,7 @@ const ContactForm = ({ className = '' }) => {
       onSubmit={handleSubmit}
       className={`bg-white rounded-2xl p-6 md:p-8 shadow-lg border border-gray-100 ${className}`}
       noValidate
+      aria-label="Formulario de contacto"
     >
       <div className="space-y-5">
         <FormInput
@@ -311,38 +341,41 @@ const ContactForm = ({ className = '' }) => {
         <button
           type="submit"
           disabled={submitStatus === 'loading'}
+          aria-busy={submitStatus === 'loading'}
+          aria-describedby="submit-hint"
           className={`
             w-full py-4 px-6 rounded-xl font-semibold text-white
             flex items-center justify-center gap-2
             transition-all duration-300 transform
+            focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500
             ${submitStatus === 'loading'
               ? 'bg-primary-400 cursor-not-allowed'
               : submitStatus === 'error'
-                ? 'bg-red-500'
+                ? 'bg-red-500 focus:ring-red-500'
                 : 'bg-primary-600 hover:bg-primary-700 hover:scale-[1.02] active:scale-[0.98]'
             }
           `}
         >
           {submitStatus === 'loading' ? (
             <>
-              <Loader2 className="w-5 h-5 animate-spin" />
-              Enviando...
+              <Loader2 className="w-5 h-5 animate-spin" aria-hidden="true" />
+              <span>Enviando...</span>
             </>
           ) : submitStatus === 'error' ? (
             <>
-              <AlertCircle className="w-5 h-5" />
-              Error al enviar. Reintentar.
+              <AlertCircle className="w-5 h-5" aria-hidden="true" />
+              <span>Error al enviar. Reintentar.</span>
             </>
           ) : (
             <>
-              <Send className="w-5 h-5" />
-              Solicitar Consultoría Gratuita
+              <Send className="w-5 h-5" aria-hidden="true" />
+              <span>Solicitar Consultoría Gratuita</span>
             </>
           )}
         </button>
 
-        <p className="text-center text-sm text-gray-500 flex items-center justify-center gap-2">
-          <CheckCircle className="w-4 h-4 text-green-500" />
+        <p id="submit-hint" className="text-center text-sm text-gray-500 flex items-center justify-center gap-2">
+          <CheckCircle className="w-4 h-4 text-green-500" aria-hidden="true" />
           Respuesta garantizada en menos de 24h
         </p>
       </div>

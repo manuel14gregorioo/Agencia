@@ -25,14 +25,22 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-      scrolled
-        ? 'bg-white/80 dark:bg-gray-900/80 backdrop-blur-xl shadow-sm border-b border-gray-200/50 dark:border-gray-700/50'
-        : 'bg-transparent'
-    }`}>
+    <nav
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+        scrolled
+          ? 'bg-white/80 dark:bg-gray-900/80 backdrop-blur-xl shadow-sm border-b border-gray-200/50 dark:border-gray-700/50'
+          : 'bg-transparent'
+      }`}
+      role="navigation"
+      aria-label="Navegación principal"
+    >
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="flex items-center justify-between h-16 md:h-20">
-          <a href="#" className="flex items-center gap-2.5 group">
+          <a
+            href="#"
+            className="flex items-center gap-2.5 group focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 rounded-lg"
+            aria-label="AgenciaDev - Ir al inicio"
+          >
             <div className={`w-9 h-9 rounded-xl flex items-center justify-center transition-all duration-300 ${
               scrolled ? 'bg-primary-600' : 'bg-white/10 backdrop-blur-sm'
             }`}>
@@ -43,13 +51,13 @@ const Navbar = () => {
             </span>
           </a>
 
-          <div className="hidden md:flex items-center gap-1">
+          <div className="hidden md:flex items-center gap-1" role="menubar">
             {navLinks.map((link) => (
               <a
                 key={link.href}
                 href={link.href}
                 onClick={(e) => scrollToSection(e, link.href)}
-                className={`relative px-4 py-2 rounded-full text-sm font-medium transition-all ${
+                className={`relative px-4 py-2 rounded-full text-sm font-medium transition-all focus:outline-none focus:ring-2 focus:ring-primary-500 ${
                   scrolled
                     ? activeSection === link.id
                       ? 'text-primary-600 dark:text-primary-400'
@@ -58,10 +66,12 @@ const Navbar = () => {
                       ? 'text-white'
                       : 'text-white/80 hover:text-white hover:bg-white/10'
                 }`}
+                role="menuitem"
+                aria-current={activeSection === link.id ? 'page' : undefined}
               >
                 {link.label}
                 {activeSection === link.id && (
-                  <span className="absolute bottom-0 left-1/2 -translate-x-1/2 w-1 h-1 bg-primary-500 rounded-full" />
+                  <span className="absolute bottom-0 left-1/2 -translate-x-1/2 w-1 h-1 bg-primary-500 rounded-full" aria-hidden="true" />
                 )}
               </a>
             ))}
@@ -94,35 +104,46 @@ const Navbar = () => {
           <div className="md:hidden flex items-center gap-2">
             <button
               onClick={toggleDarkMode}
-              className={`p-2 rounded-lg transition-colors ${scrolled ? 'hover:bg-gray-100 dark:hover:bg-gray-800' : 'hover:bg-white/10'}`}
+              className={`p-2 rounded-lg transition-colors focus:outline-none focus:ring-2 focus:ring-primary-500 ${scrolled ? 'hover:bg-gray-100 dark:hover:bg-gray-800' : 'hover:bg-white/10'}`}
+              aria-label={darkMode ? 'Activar modo claro' : 'Activar modo oscuro'}
             >
               {darkMode ? <Sun className={`w-5 h-5 ${scrolled ? 'text-gray-600 dark:text-gray-300' : 'text-white'}`} /> : <Moon className={`w-5 h-5 ${scrolled ? 'text-gray-600' : 'text-white'}`} />}
             </button>
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className={`p-2 rounded-lg transition-colors ${scrolled ? 'hover:bg-gray-100 dark:hover:bg-gray-800' : 'hover:bg-white/10'}`}
+              className={`p-2 rounded-lg transition-colors focus:outline-none focus:ring-2 focus:ring-primary-500 ${scrolled ? 'hover:bg-gray-100 dark:hover:bg-gray-800' : 'hover:bg-white/10'}`}
+              aria-expanded={isOpen}
+              aria-controls="mobile-menu"
+              aria-label={isOpen ? 'Cerrar menú de navegación' : 'Abrir menú de navegación'}
             >
               {isOpen ? (
-                <X className={`w-6 h-6 ${scrolled ? 'text-gray-900 dark:text-white' : 'text-white'}`} />
+                <X className={`w-6 h-6 ${scrolled ? 'text-gray-900 dark:text-white' : 'text-white'}`} aria-hidden="true" />
               ) : (
-                <Menu className={`w-6 h-6 ${scrolled ? 'text-gray-900 dark:text-white' : 'text-white'}`} />
+                <Menu className={`w-6 h-6 ${scrolled ? 'text-gray-900 dark:text-white' : 'text-white'}`} aria-hidden="true" />
               )}
             </button>
           </div>
         </div>
 
         {isOpen && (
-          <div className="md:hidden py-4 border-t border-gray-200/50 dark:border-gray-700/50 bg-white/95 dark:bg-gray-900/95 backdrop-blur-xl -mx-4 px-4">
+          <div
+            id="mobile-menu"
+            className="md:hidden py-4 border-t border-gray-200/50 dark:border-gray-700/50 bg-white/95 dark:bg-gray-900/95 backdrop-blur-xl -mx-4 px-4"
+            role="menu"
+            aria-label="Menú de navegación móvil"
+          >
             {navLinks.map((link) => (
               <a
                 key={link.href}
                 href={link.href}
                 onClick={(e) => { scrollToSection(e, link.href); setIsOpen(false); }}
-                className={`block py-3 font-medium ${
+                className={`block py-3 font-medium focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-inset rounded ${
                   activeSection === link.id
                     ? 'text-primary-600 dark:text-primary-400'
                     : 'text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white'
                 }`}
+                role="menuitem"
+                aria-current={activeSection === link.id ? 'page' : undefined}
               >
                 {link.label}
               </a>
@@ -130,7 +151,8 @@ const Navbar = () => {
             <a
               href="#contacto"
               onClick={(e) => { scrollToSection(e, '#contacto'); setIsOpen(false); }}
-              className="block mt-4 bg-gray-900 dark:bg-white text-white dark:text-gray-900 px-5 py-3 rounded-xl font-semibold text-center"
+              className="block mt-4 bg-gray-900 dark:bg-white text-white dark:text-gray-900 px-5 py-3 rounded-xl font-semibold text-center focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2"
+              role="menuitem"
             >
               Contactar
             </a>

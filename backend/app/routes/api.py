@@ -2,7 +2,8 @@
 API Routes - Endpoints públicos para el frontend
 """
 
-from flask import Blueprint, request, jsonify, current_app
+from flask import Blueprint, request, jsonify, current_app, Response
+from datetime import datetime
 from email_validator import validate_email, EmailNotValidError
 import bleach
 
@@ -263,3 +264,71 @@ def calculate_roi():
         'payback_meses': round(payback_meses, 1),
         'rentable': roi > 0
     })
+
+
+# ============================================
+# SEO - ROBOTS.TXT Y SITEMAP
+# ============================================
+
+@api_bp.route('/robots.txt', methods=['GET'])
+def robots_txt():
+    """Genera robots.txt para SEO"""
+    # Obtener dominio base
+    base_url = request.host_url.rstrip('/')
+
+    robots_content = f"""# AgenciaDev - robots.txt
+# https://agenciadev.es
+
+User-agent: *
+Allow: /
+
+# Rutas de administración (no indexar)
+Disallow: /admin
+Disallow: /auth
+Disallow: /api/
+
+# Sitemap
+Sitemap: {base_url}/api/sitemap.xml
+
+# Crawl-delay para ser amables con los bots
+Crawl-delay: 1
+"""
+    return Response(robots_content, mimetype='text/plain')
+
+
+@api_bp.route('/sitemap.xml', methods=['GET'])
+def sitemap_xml():
+    """Genera sitemap.xml dinámico para SEO"""
+    base_url = request.host_url.rstrip('/')
+    today = datetime.utcnow().strftime('%Y-%m-%d')
+
+    # Páginas principales del sitio
+    pages = [
+        {'loc': '/', 'priority': '1.0', 'changefreq': 'weekly'},
+        {'loc': '/#portfolio', 'priority': '0.8', 'changefreq': 'monthly'},
+        {'loc': '/#servicios', 'priority': '0.9', 'changefreq': 'monthly'},
+        {'loc': '/#proceso', 'priority': '0.7', 'changefreq': 'monthly'},
+        {'loc': '/#pricing', 'priority': '0.9', 'changefreq': 'monthly'},
+        {'loc': '/#faq', 'priority': '0.6', 'changefreq': 'monthly'},
+        {'loc': '/#contacto', 'priority': '0.8', 'changefreq': 'monthly'},
+    ]
+
+    sitemap_content = f"""<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+"""
+
+    for page in pages:
+        sitemap_content += f"""  <url>
+    <loc>{base_url}{page['loc']}</loc>
+    <lastmod>{today}</lastmod>
+    <changefreq>{page['changefreq']}</changefreq>
+    <priority>{page['priority']}</priority>
+  </url>
+"""
+
+    sitemap_content += "</urlset>"
+
+    return Response(sitemap_content, mimetype='application/xml')

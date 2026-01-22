@@ -7,7 +7,7 @@ from flask_login import login_required, current_user
 from datetime import datetime, timedelta
 from sqlalchemy import func
 
-from app import db
+from app import db, limiter
 from app.models.lead import Lead
 from app.models.newsletter import NewsletterSubscriber
 from app.models.analytics import AnalyticsEvent, PageView
@@ -34,6 +34,7 @@ def admin_required(f):
 # ============================================
 
 @admin_bp.route('/stats', methods=['GET'])
+@limiter.limit("30 per minute")
 @admin_required
 def get_stats():
     """Estadísticas del dashboard"""
@@ -97,27 +98,45 @@ def get_stats():
 # LEADS
 # ============================================
 
+# Columnas permitidas para ordenación (prevenir SQL injection)
+ALLOWED_ORDER_COLUMNS = {'created_at', 'nombre', 'email', 'estado', 'prioridad', 'servicio_interes'}
+
+
 @admin_bp.route('/leads', methods=['GET'])
+@limiter.limit("60 per minute")
 @admin_required
 def list_leads():
     """Listar todos los leads con filtros y paginación"""
 
     # Parámetros
     page = request.args.get('page', 1, type=int)
-    per_page = request.args.get('per_page', 20, type=int)
+    per_page = min(request.args.get('per_page', 20, type=int), 100)  # Máximo 100
     estado = request.args.get('estado')
     search = request.args.get('search', '').strip()
     order_by = request.args.get('order_by', 'created_at')
     order_dir = request.args.get('order_dir', 'desc')
+
+    # SEGURIDAD: Validar order_by contra whitelist
+    if order_by not in ALLOWED_ORDER_COLUMNS:
+        order_by = 'created_at'
+
+    # SEGURIDAD: Validar order_dir
+    if order_dir not in {'asc', 'desc'}:
+        order_dir = 'desc'
 
     # Query base
     query = Lead.query
 
     # Filtros
     if estado:
-        query = query.filter(Lead.estado == estado)
+        # Validar estado
+        valid_estados = {'nuevo', 'contactado', 'en_proceso', 'propuesta', 'ganado', 'perdido', 'descartado'}
+        if estado in valid_estados:
+            query = query.filter(Lead.estado == estado)
 
     if search:
+        # Limitar longitud de búsqueda
+        search = search[:100]
         search_term = f"%{search}%"
         query = query.filter(
             db.or_(
@@ -127,8 +146,8 @@ def list_leads():
             )
         )
 
-    # Ordenación
-    order_column = getattr(Lead, order_by, Lead.created_at)
+    # Ordenación (ya validado)
+    order_column = getattr(Lead, order_by)
     if order_dir == 'desc':
         query = query.order_by(order_column.desc())
     else:
@@ -149,6 +168,7 @@ def list_leads():
 
 
 @admin_bp.route('/leads/<int:lead_id>', methods=['GET'])
+@limiter.limit("60 per minute")
 @admin_required
 def get_lead(lead_id):
     """Obtener detalle de un lead"""
@@ -157,11 +177,15 @@ def get_lead(lead_id):
 
 
 @admin_bp.route('/leads/<int:lead_id>', methods=['PATCH'])
+@limiter.limit("30 per minute")
 @admin_required
 def update_lead(lead_id):
     """Actualizar un lead"""
     lead = Lead.query.get_or_404(lead_id)
     data = request.get_json()
+
+    # Guardar estado anterior para verificar transiciones
+    estado_anterior = lead.estado
 
     # Campos actualizables
     allowed_fields = ['estado', 'prioridad', 'notas', 'servicio_interes']
@@ -170,8 +194,8 @@ def update_lead(lead_id):
         if field in data:
             setattr(lead, field, data[field])
 
-    # Si se marca como contactado, actualizar fecha
-    if data.get('estado') == 'contactado' and lead.estado == 'nuevo':
+    # Si se marca como contactado desde 'nuevo', actualizar fecha
+    if data.get('estado') == 'contactado' and estado_anterior == 'nuevo':
         lead.contacted_at = datetime.utcnow()
 
     # Asignar a usuario
@@ -187,6 +211,7 @@ def update_lead(lead_id):
 
 
 @admin_bp.route('/leads/<int:lead_id>', methods=['DELETE'])
+@limiter.limit("10 per minute")
 @admin_required
 def delete_lead(lead_id):
     """Eliminar un lead"""
@@ -198,6 +223,7 @@ def delete_lead(lead_id):
 
 
 @admin_bp.route('/leads/bulk-update', methods=['POST'])
+@limiter.limit("10 per minute")
 @admin_required
 def bulk_update_leads():
     """Actualización masiva de leads"""
@@ -209,12 +235,26 @@ def bulk_update_leads():
     if not lead_ids:
         return jsonify({'error': 'No se especificaron leads'}), 400
 
+    # SEGURIDAD: Solo permitir actualizar campos seguros
+    ALLOWED_BULK_UPDATE_FIELDS = {'estado', 'prioridad', 'notas', 'servicio_interes'}
+
+    # Filtrar solo campos permitidos
+    safe_updates = {k: v for k, v in updates.items() if k in ALLOWED_BULK_UPDATE_FIELDS}
+
+    if not safe_updates:
+        return jsonify({'error': 'No se especificaron campos válidos para actualizar'}), 400
+
+    # Validar valores de estado si se incluye
+    if 'estado' in safe_updates:
+        valid_estados = {'nuevo', 'contactado', 'en_proceso', 'propuesta', 'ganado', 'perdido', 'descartado'}
+        if safe_updates['estado'] not in valid_estados:
+            return jsonify({'error': f'Estado inválido. Valores permitidos: {", ".join(valid_estados)}'}), 400
+
     leads = Lead.query.filter(Lead.id.in_(lead_ids)).all()
 
     for lead in leads:
-        for field, value in updates.items():
-            if hasattr(lead, field):
-                setattr(lead, field, value)
+        for field, value in safe_updates.items():
+            setattr(lead, field, value)
 
     db.session.commit()
 
@@ -229,6 +269,7 @@ def bulk_update_leads():
 # ============================================
 
 @admin_bp.route('/subscribers', methods=['GET'])
+@limiter.limit("30 per minute")
 @admin_required
 def list_subscribers():
     """Listar suscriptores del newsletter"""
@@ -254,6 +295,7 @@ def list_subscribers():
 
 
 @admin_bp.route('/subscribers/export', methods=['GET'])
+@limiter.limit("5 per minute")
 @admin_required
 def export_subscribers():
     """Exportar emails de suscriptores activos"""
@@ -271,6 +313,7 @@ def export_subscribers():
 # ============================================
 
 @admin_bp.route('/analytics/events', methods=['GET'])
+@limiter.limit("30 per minute")
 @admin_required
 def list_events():
     """Listar eventos de analytics"""

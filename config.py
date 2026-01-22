@@ -31,8 +31,8 @@ class Config:
         'pool_pre_ping': True,
     }
 
-    # CORS
-    CORS_ORIGINS = os.environ.get('CORS_ORIGINS', '*').split(',')
+    # CORS - No permitir * por defecto
+    CORS_ORIGINS = os.environ.get('CORS_ORIGINS', 'http://localhost:5173,http://localhost:5000').split(',')
 
     # Mail
     MAIL_SERVER = os.environ.get('MAIL_SERVER', 'smtp.gmail.com')
@@ -44,7 +44,8 @@ class Config:
 
     # Admin
     ADMIN_EMAIL = os.environ.get('ADMIN_EMAIL', 'admin@agenciadev.es')
-    ADMIN_PASSWORD = os.environ.get('ADMIN_PASSWORD', 'admin123')
+    # ADMIN_PASSWORD debe configurarse via variable de entorno (sin fallback inseguro)
+    ADMIN_PASSWORD = os.environ.get('ADMIN_PASSWORD')
 
     # Rate Limiting
     RATELIMIT_DEFAULT = "200 per day"

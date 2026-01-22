@@ -1,16 +1,60 @@
-import React from 'react';
+import React, { useState, useCallback } from 'react';
 import { CALENDLY_URL } from '../../data/constants';
 
-const CalendlyButton = ({ children, className = '', variant = 'primary' }) => {
-  const openCalendly = () => {
+// Lazy load del script de Calendly solo cuando se necesita
+const loadCalendlyScript = () => {
+  return new Promise((resolve) => {
+    // Si ya está cargado, resolver inmediatamente
     if (window.Calendly) {
-      window.Calendly.initPopupWidget({ url: CALENDLY_URL });
-    } else {
-      window.open(CALENDLY_URL, '_blank');
+      resolve(window.Calendly);
+      return;
     }
-  };
 
-  const baseStyles = "inline-flex items-center justify-center gap-2 font-semibold transition-all hover:scale-105 active:scale-[0.98]";
+    // Verificar si el script ya está en el DOM
+    const existingScript = document.querySelector('script[src*="calendly.com"]');
+    if (existingScript) {
+      existingScript.addEventListener('load', () => resolve(window.Calendly));
+      return;
+    }
+
+    // Cargar script dinámicamente
+    const script = document.createElement('script');
+    script.src = 'https://assets.calendly.com/assets/external/widget.js';
+    script.async = true;
+    script.onload = () => resolve(window.Calendly);
+    document.head.appendChild(script);
+
+    // También cargar estilos
+    const link = document.createElement('link');
+    link.href = 'https://assets.calendly.com/assets/external/widget.css';
+    link.rel = 'stylesheet';
+    document.head.appendChild(link);
+  });
+};
+
+const CalendlyButton = ({ children, className = '', variant = 'primary' }) => {
+  const [isLoading, setIsLoading] = useState(false);
+
+  const openCalendly = useCallback(async () => {
+    setIsLoading(true);
+
+    try {
+      const Calendly = await loadCalendlyScript();
+      if (Calendly) {
+        Calendly.initPopupWidget({ url: CALENDLY_URL });
+      } else {
+        // Fallback: abrir en nueva pestaña
+        window.open(CALENDLY_URL, '_blank', 'noopener,noreferrer');
+      }
+    } catch (error) {
+      // Fallback si falla la carga
+      window.open(CALENDLY_URL, '_blank', 'noopener,noreferrer');
+    } finally {
+      setIsLoading(false);
+    }
+  }, []);
+
+  const baseStyles = "inline-flex items-center justify-center gap-2 font-semibold transition-all hover:scale-105 active:scale-[0.98] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500";
   const variants = {
     primary: "bg-white text-gray-900 hover:bg-gray-100 shadow-lg shadow-white/10",
     secondary: "bg-white/10 backdrop-blur-sm text-white border border-white/20 hover:bg-white/20",
@@ -18,8 +62,21 @@ const CalendlyButton = ({ children, className = '', variant = 'primary' }) => {
   };
 
   return (
-    <button onClick={openCalendly} className={`${baseStyles} ${variants[variant]} ${className}`}>
-      {children}
+    <button
+      onClick={openCalendly}
+      className={`${baseStyles} ${variants[variant]} ${className}`}
+      disabled={isLoading}
+      aria-label="Agendar llamada de consulta gratuita"
+      aria-busy={isLoading}
+    >
+      {isLoading ? (
+        <>
+          <span className="animate-spin h-4 w-4 border-2 border-current border-t-transparent rounded-full" />
+          Cargando...
+        </>
+      ) : (
+        children
+      )}
     </button>
   );
 };

@@ -1,27 +1,12 @@
 """
-Tests para la API
+Tests para la API pública
 """
 
 import pytest
-from app import create_app, db
+from app import db
 from app.models import Lead, NewsletterSubscriber
 
-
-@pytest.fixture
-def app():
-    """Crea instancia de la app para testing"""
-    app = create_app('testing')
-
-    with app.app_context():
-        db.create_all()
-        yield app
-        db.drop_all()
-
-
-@pytest.fixture
-def client(app):
-    """Cliente de testing"""
-    return app.test_client()
+# Las fixtures app y client ahora vienen de conftest.py
 
 
 class TestHealthCheck:
@@ -41,7 +26,7 @@ class TestContactAPI:
         """Test envío de formulario exitoso"""
         response = client.post('/api/contact', json={
             'nombre': 'Test User',
-            'email': 'test@example.com',
+            'email': 'test@gmail.com',
             'telefono': '+34 600 000 000',
             'proyecto': 'Este es un proyecto de prueba con suficiente descripción para pasar la validación.'
         })
@@ -74,7 +59,7 @@ class TestContactAPI:
         """Test validación de longitud de proyecto"""
         response = client.post('/api/contact', json={
             'nombre': 'Test',
-            'email': 'test@example.com',
+            'email': 'test@gmail.com',
             'proyecto': 'Muy corto'
         })
 
@@ -87,7 +72,7 @@ class TestNewsletterAPI:
     def test_subscribe_success(self, client):
         """Test suscripción exitosa"""
         response = client.post('/api/newsletter', json={
-            'email': 'newsletter@example.com'
+            'email': 'newsletter@gmail.com'
         })
 
         assert response.status_code == 201
@@ -97,10 +82,10 @@ class TestNewsletterAPI:
     def test_subscribe_duplicate(self, client):
         """Test suscripción duplicada"""
         # Primera suscripción
-        client.post('/api/newsletter', json={'email': 'duplicate@example.com'})
+        client.post('/api/newsletter', json={'email': 'duplicate@gmail.com'})
 
         # Segunda suscripción (mismo email)
-        response = client.post('/api/newsletter', json={'email': 'duplicate@example.com'})
+        response = client.post('/api/newsletter', json={'email': 'duplicate@gmail.com'})
 
         assert response.status_code == 200
         data = response.get_json()

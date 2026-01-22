@@ -3,7 +3,8 @@ AgenciaDev Backend - Application Factory
 """
 
 import os
-from flask import Flask, send_from_directory
+from datetime import datetime
+from flask import Flask, send_from_directory, request, g
 from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
 from flask_cors import CORS
@@ -20,6 +21,14 @@ migrate = Migrate()
 mail = Mail()
 login_manager = LoginManager()
 limiter = Limiter(key_func=get_remote_address)
+
+# Intentar importar flask-compress (opcional)
+try:
+    from flask_compress import Compress
+    compress = Compress()
+    HAS_COMPRESS = True
+except ImportError:
+    HAS_COMPRESS = False
 
 
 def create_app(config_name='default'):
@@ -45,6 +54,61 @@ def create_app(config_name='default'):
     # CORS
     CORS(app, origins=app.config['CORS_ORIGINS'], supports_credentials=True)
 
+    # Compression (gzip/brotli)
+    if HAS_COMPRESS:
+        app.config['COMPRESS_MIMETYPES'] = [
+            'text/html', 'text/css', 'text/xml', 'text/javascript',
+            'application/json', 'application/javascript', 'application/xml'
+        ]
+        app.config['COMPRESS_LEVEL'] = 6
+        app.config['COMPRESS_MIN_SIZE'] = 500
+        compress.init_app(app)
+
+    # Security Headers Middleware
+    @app.after_request
+    def add_security_headers(response):
+        # Prevenir clickjacking
+        response.headers['X-Frame-Options'] = 'SAMEORIGIN'
+        # Prevenir MIME sniffing
+        response.headers['X-Content-Type-Options'] = 'nosniff'
+        # XSS Protection (legacy browsers)
+        response.headers['X-XSS-Protection'] = '1; mode=block'
+        # Referrer Policy
+        response.headers['Referrer-Policy'] = 'strict-origin-when-cross-origin'
+        # Permissions Policy
+        response.headers['Permissions-Policy'] = 'geolocation=(), microphone=(), camera=()'
+
+        # Content Security Policy (ajustar según necesidades)
+        if not app.debug:
+            csp = (
+                "default-src 'self'; "
+                "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://assets.calendly.com https://www.googletagmanager.com; "
+                "style-src 'self' 'unsafe-inline' https://assets.calendly.com https://fonts.googleapis.com; "
+                "font-src 'self' https://fonts.gstatic.com; "
+                "img-src 'self' data: https:; "
+                "connect-src 'self' https://calendly.com https://www.google-analytics.com; "
+                "frame-src https://calendly.com; "
+            )
+            response.headers['Content-Security-Policy'] = csp
+
+        return response
+
+    # Cache Headers para assets estáticos
+    @app.after_request
+    def add_cache_headers(response):
+        # Cache para assets estáticos (CSS, JS, imágenes)
+        if request.path.startswith('/assets/') or request.path.endswith(('.js', '.css', '.png', '.jpg', '.jpeg', '.gif', '.ico', '.woff', '.woff2')):
+            # Cache por 1 año (inmutable con hash en filename)
+            response.headers['Cache-Control'] = 'public, max-age=31536000, immutable'
+        elif request.path == '/' or request.path.endswith('.html'):
+            # HTML: no cachear (siempre verificar versión)
+            response.headers['Cache-Control'] = 'no-cache, no-store, must-revalidate'
+        elif request.path.startswith('/api/'):
+            # API: no cachear
+            response.headers['Cache-Control'] = 'no-store'
+
+        return response
+
     # Configurar login manager
     login_manager.login_view = 'auth.login'
 
@@ -69,10 +133,37 @@ def create_app(config_name='default'):
         db.create_all()
         _create_default_admin(app)
 
-    # Health check endpoint
+    # Health check endpoint (verifica DB)
     @app.route('/health')
     def health():
-        return {'status': 'healthy', 'service': 'agencia-backend'}
+        try:
+            # Verificar conexión a base de datos
+            db.session.execute(db.text('SELECT 1'))
+            db_status = 'ok'
+        except Exception as e:
+            db_status = f'error: {str(e)}'
+            return {
+                'status': 'unhealthy',
+                'service': 'agencia-backend',
+                'database': db_status,
+                'timestamp': datetime.utcnow().isoformat()
+            }, 503
+
+        return {
+            'status': 'healthy',
+            'service': 'agencia-backend',
+            'database': db_status,
+            'timestamp': datetime.utcnow().isoformat()
+        }
+
+    # Readiness probe (para Kubernetes/Railway)
+    @app.route('/ready')
+    def ready():
+        try:
+            db.session.execute(db.text('SELECT 1'))
+            return {'ready': True}
+        except Exception:
+            return {'ready': False}, 503
 
     # Servir React frontend (solo si existe el build)
     if os.path.exists(static_folder):

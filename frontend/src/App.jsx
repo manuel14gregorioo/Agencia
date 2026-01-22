@@ -5,11 +5,10 @@
  */
 
 import React from 'react';
-// import Landing from './components/Landing'; // V2.3 - Modular
-import LandingThoughtbot from './components/LandingThoughtbot'; // V3.0 - Thoughtbot inspired
+import Landing from './components/Landing';
 
 function App() {
-  return <LandingThoughtbot />;
+  return <Landing />;
 }
 
 export default App;

@@ -93,7 +93,17 @@ def _create_default_admin(app):
     """Crea el usuario admin por defecto si no existe"""
     from app.models.user import User
 
-    admin_email = app.config['ADMIN_EMAIL']
+    admin_password = app.config.get('ADMIN_PASSWORD')
+    admin_email = app.config.get('ADMIN_EMAIL', 'admin@agenciadev.es')
+
+    # Si no hay password configurada, no crear admin automáticamente
+    if not admin_password:
+        app.logger.warning(
+            "ADMIN_PASSWORD not set. Skipping automatic admin creation. "
+            "Set ADMIN_PASSWORD environment variable to create admin user."
+        )
+        return
+
     admin = User.query.filter_by(email=admin_email).first()
 
     if not admin:
@@ -102,7 +112,7 @@ def _create_default_admin(app):
             nombre='Administrador',
             is_admin=True
         )
-        admin.set_password(app.config['ADMIN_PASSWORD'])
+        admin.set_password(admin_password)
         db.session.add(admin)
         db.session.commit()
-        print(f"Admin user created: {admin_email}")
+        app.logger.info(f"Admin user created: {admin_email}")

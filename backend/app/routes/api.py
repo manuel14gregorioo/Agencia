@@ -4,6 +4,7 @@ API Routes - Endpoints públicos para el frontend
 
 from flask import Blueprint, request, jsonify, current_app
 from email_validator import validate_email, EmailNotValidError
+import bleach
 
 from app import db, limiter
 from app.models.lead import Lead
@@ -12,6 +13,28 @@ from app.models.analytics import AnalyticsEvent
 from app.services.email_service import send_lead_notification, send_lead_confirmation
 
 api_bp = Blueprint('api', __name__)
+
+
+# ============================================
+# SANITIZACIÓN HTML (prevención XSS)
+# ============================================
+
+def sanitize_html(text, max_length=None):
+    """
+    Elimina todo HTML/scripts del texto para prevenir XSS.
+    Solo permite texto plano.
+    """
+    if not text:
+        return text
+
+    # Eliminar todas las etiquetas HTML
+    cleaned = bleach.clean(text, tags=[], attributes={}, strip=True)
+
+    # Limitar longitud si se especifica
+    if max_length and len(cleaned) > max_length:
+        cleaned = cleaned[:max_length]
+
+    return cleaned.strip()
 
 
 # ============================================
@@ -49,20 +72,20 @@ def submit_contact():
     user_agent = request.headers.get('User-Agent', '')[:500]
     referrer = request.headers.get('Referer', '')[:500]
 
-    # Crear lead
+    # Crear lead (con sanitización HTML para prevenir XSS)
     lead = Lead(
-        nombre=data['nombre'].strip(),
+        nombre=sanitize_html(data['nombre'], max_length=100),
         email=email,
-        telefono=data.get('telefono', '').strip() or None,
-        proyecto=data['proyecto'].strip(),
-        servicio_interes=data.get('servicio'),
+        telefono=sanitize_html(data.get('telefono', ''), max_length=20) or None,
+        proyecto=sanitize_html(data['proyecto'], max_length=2000),
+        servicio_interes=sanitize_html(data.get('servicio'), max_length=50),
         fuente='landing',
         ip_address=ip_address,
         user_agent=user_agent,
         referrer=referrer,
-        utm_source=data.get('utm_source'),
-        utm_medium=data.get('utm_medium'),
-        utm_campaign=data.get('utm_campaign'),
+        utm_source=sanitize_html(data.get('utm_source'), max_length=100),
+        utm_medium=sanitize_html(data.get('utm_medium'), max_length=100),
+        utm_campaign=sanitize_html(data.get('utm_campaign'), max_length=100),
     )
 
     db.session.add(lead)
@@ -115,10 +138,10 @@ def subscribe_newsletter():
             db.session.commit()
             return jsonify({'success': True, 'message': 'Suscripción reactivada'}), 200
 
-    # Crear nueva suscripción
+    # Crear nueva suscripción (con sanitización HTML)
     subscriber = NewsletterSubscriber(
         email=email,
-        nombre=data.get('nombre'),
+        nombre=sanitize_html(data.get('nombre'), max_length=100),
         source='landing',
         ip_address=request.headers.get('X-Forwarded-For', request.remote_addr)
     )
@@ -160,17 +183,25 @@ def track_event():
     if not event_name:
         return jsonify({'error': 'Event name required'}), 400
 
+    # Sanitizar event_data si es un dict (solo valores string)
+    event_data = data.get('data')
+    if isinstance(event_data, dict):
+        event_data = {
+            sanitize_html(str(k), max_length=50): sanitize_html(str(v), max_length=500)
+            for k, v in event_data.items()
+        }
+
     event = AnalyticsEvent(
-        event_name=event_name,
-        event_data=data.get('data'),
-        url=data.get('url', '')[:500],
-        referrer=data.get('referrer', '')[:500],
-        session_id=data.get('session_id'),
+        event_name=sanitize_html(event_name, max_length=100),
+        event_data=event_data,
+        url=sanitize_html(data.get('url', ''), max_length=500),
+        referrer=sanitize_html(data.get('referrer', ''), max_length=500),
+        session_id=sanitize_html(data.get('session_id'), max_length=100),
         ip_address=request.headers.get('X-Forwarded-For', request.remote_addr),
         user_agent=request.headers.get('User-Agent', '')[:500],
-        utm_source=data.get('utm_source'),
-        utm_medium=data.get('utm_medium'),
-        utm_campaign=data.get('utm_campaign'),
+        utm_source=sanitize_html(data.get('utm_source'), max_length=100),
+        utm_medium=sanitize_html(data.get('utm_medium'), max_length=100),
+        utm_campaign=sanitize_html(data.get('utm_campaign'), max_length=100),
     )
 
     db.session.add(event)

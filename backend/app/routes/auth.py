@@ -7,13 +7,14 @@ from flask_login import login_user, logout_user, login_required, current_user
 import jwt
 from datetime import datetime, timedelta
 
-from app import db
+from app import db, limiter
 from app.models.user import User
 
 auth_bp = Blueprint('auth', __name__)
 
 
 @auth_bp.route('/login', methods=['POST'])
+@limiter.limit("5 per minute")
 def login():
     """Login de administradores"""
     data = request.get_json()
@@ -72,6 +73,7 @@ def get_current_user():
 
 
 @auth_bp.route('/change-password', methods=['POST'])
+@limiter.limit("3 per minute")
 @login_required
 def change_password():
     """Cambiar contraseña"""

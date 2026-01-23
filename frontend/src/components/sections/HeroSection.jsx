@@ -9,9 +9,10 @@ import {
   ArrowRight,
   Timer,
   Calendar,
+  Play,
 } from 'lucide-react';
 import { useParallax, useCountUp } from '../hooks';
-import { LazyImage, CalendlyButton } from '../ui';
+import { LazyImage, CalendlyButton, VideoModal } from '../ui';
 import { scrollToSection } from '../../utils/scroll';
 
 const AnimatedCounter = ({ value, suffix = '', isVisible }) => {
@@ -21,6 +22,7 @@ const AnimatedCounter = ({ value, suffix = '', isVisible }) => {
 
 const HeroSection = () => {
   const [isLoaded, setIsLoaded] = useState(false);
+  const [isVideoOpen, setIsVideoOpen] = useState(false);
   const parallaxOffset = useParallax(0.3);
 
   useEffect(() => {
@@ -63,6 +65,16 @@ const HeroSection = () => {
           <CalendlyButton variant="secondary" className="px-8 py-4 rounded-xl text-base">
             <Calendar className="w-5 h-5" /> Agendar Llamada
           </CalendlyButton>
+          <button
+            onClick={() => setIsVideoOpen(true)}
+            className="inline-flex items-center justify-center gap-2 bg-white/10 backdrop-blur-sm text-white px-6 py-4 rounded-xl font-semibold text-base border border-white/20 hover:bg-white/20 transition-all hover:scale-105 active:scale-[0.98] group"
+            aria-label="Ver video promocional"
+          >
+            <span className="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center group-hover:bg-white/30 transition-colors">
+              <Play className="w-4 h-4 fill-current" />
+            </span>
+            Ver Video
+          </button>
         </div>
 
         <div className={`flex flex-wrap gap-6 justify-center text-sm text-white/60 mb-16 transition-all duration-700 delay-400 ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
@@ -117,6 +129,13 @@ const HeroSection = () => {
       </div>
 
       <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white dark:from-gray-900 to-transparent" />
+
+      {/* Video Modal */}
+      <VideoModal
+        isOpen={isVideoOpen}
+        onClose={() => setIsVideoOpen(false)}
+        videoSrc="/videos/agencia-intro.mp4"
+      />
     </section>
   );
 };

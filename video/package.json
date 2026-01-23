@@ -9,7 +9,9 @@
     "render:gif": "remotion render IntroVideo out/intro.gif --every-nth-frame=2",
     "render:square": "remotion render IntroVideoSquare out/intro-square.mp4",
     "render:vocap": "remotion render VocapVideo out/vocap-promo.mp4",
-    "render:vocap-square": "remotion render VocapVideoSquare out/vocap-promo-square.mp4"
+    "render:vocap-square": "remotion render VocapVideoSquare out/vocap-promo-square.mp4",
+    "render:apple": "remotion render AppleStyleVideo out/apple-style.mp4",
+    "render:apple-square": "remotion render AppleStyleVideoSquare out/apple-style-square.mp4"
   },
   "dependencies": {
     "@remotion/cli": "^4.0.409",

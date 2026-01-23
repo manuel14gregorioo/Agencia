@@ -134,7 +134,7 @@ const HeroSection = () => {
       <VideoModal
         isOpen={isVideoOpen}
         onClose={() => setIsVideoOpen(false)}
-        videoSrc="/videos/agencia-intro.mp4"
+        videoSrc="/videos/agencia-apple.mp4"
       />
     </section>
   );

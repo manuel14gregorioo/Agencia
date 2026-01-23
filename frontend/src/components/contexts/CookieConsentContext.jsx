@@ -1,5 +1,6 @@
 import React, { useState, useEffect, createContext, useContext } from 'react';
 import { Cookie, Settings, X } from 'lucide-react';
+import { initGA4, initMetaPixel, saveUTMParams } from '../../utils/analytics';
 
 const CookieConsentContext = createContext();
 
@@ -151,10 +152,26 @@ export const CookieConsentProvider = ({ children }) => {
   const [showBanner, setShowBanner] = useState(false);
   const [showSettings, setShowSettings] = useState(false);
 
+  // Guardar UTM params al cargar
+  useEffect(() => {
+    saveUTMParams();
+  }, []);
+
+  // Mostrar banner si no hay consentimiento
   useEffect(() => {
     if (consent === null) {
       const timer = setTimeout(() => setShowBanner(true), 1500);
       return () => clearTimeout(timer);
+    }
+  }, [consent]);
+
+  // Inicializar analytics según consentimiento
+  useEffect(() => {
+    if (consent?.analytics) {
+      initGA4();
+    }
+    if (consent?.marketing) {
+      initMetaPixel();
     }
   }, [consent]);
 

@@ -16,8 +16,11 @@ import React from 'react';
 // Contexts
 import { ThemeProvider, ToastProvider, CookieConsentProvider } from './contexts';
 
+// Hooks
+import { useScrollTracking } from './hooks';
+
 // UI Components
-import { Navbar, Footer, WhatsAppButton, ScrollToTopButton } from './ui';
+import { Navbar, Footer, WhatsAppButton, ScrollToTopButton, ExitIntentPopup } from './ui';
 
 // Sections
 import {
@@ -33,31 +36,41 @@ import {
   CTASection,
 } from './sections';
 
+// Componente interno para usar hooks dentro de providers
+const LandingContent = () => {
+  useScrollTracking();
+
+  return (
+    <div className="min-h-screen bg-white dark:bg-gray-900 font-sans antialiased transition-colors duration-300">
+      <a href="#main-content" className="skip-link">Saltar al contenido principal</a>
+      <header role="banner">
+        <Navbar />
+      </header>
+      <main id="main-content" role="main">
+        <HeroSection />
+        <ValueProposition />
+        <TestimonialSection />
+        <PortfolioSection />
+        <ComparisonSection />
+        <ServiciosSection />
+        <ProcesoSection />
+        <PricingSection />
+        <FAQSection />
+        <CTASection />
+      </main>
+      <Footer />
+      <WhatsAppButton />
+      <ScrollToTopButton />
+      <ExitIntentPopup />
+    </div>
+  );
+};
+
 const Landing = () => (
   <ThemeProvider>
     <ToastProvider>
       <CookieConsentProvider>
-        <div className="min-h-screen bg-white dark:bg-gray-900 font-sans antialiased transition-colors duration-300">
-          <a href="#main-content" className="skip-link">Saltar al contenido principal</a>
-          <header role="banner">
-            <Navbar />
-          </header>
-          <main id="main-content" role="main">
-            <HeroSection />
-            <ValueProposition />
-            <TestimonialSection />
-            <PortfolioSection />
-            <ComparisonSection />
-            <ServiciosSection />
-            <ProcesoSection />
-            <PricingSection />
-            <FAQSection />
-            <CTASection />
-          </main>
-          <Footer />
-          <WhatsAppButton />
-          <ScrollToTopButton />
-        </div>
+        <LandingContent />
       </CookieConsentProvider>
     </ToastProvider>
   </ThemeProvider>

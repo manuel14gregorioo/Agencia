@@ -1,5 +1,6 @@
-import React, { useState, useCallback } from 'react';
+import React, { useState, useCallback, useEffect } from 'react';
 import { CALENDLY_URL } from '../../data/constants';
+import { ConversionEvents } from '../../utils/analytics';
 
 // Lazy load del script de Calendly solo cuando se necesita
 const loadCalendlyScript = () => {
@@ -37,6 +38,7 @@ const CalendlyButton = ({ children, className = '', variant = 'primary' }) => {
 
   const openCalendly = useCallback(async () => {
     setIsLoading(true);
+    ConversionEvents.calendlyOpen();
 
     try {
       const Calendly = await loadCalendlyScript();
@@ -52,6 +54,18 @@ const CalendlyButton = ({ children, className = '', variant = 'primary' }) => {
     } finally {
       setIsLoading(false);
     }
+  }, []);
+
+  // Escuchar evento de Calendly cuando se completa la reserva
+  useEffect(() => {
+    const handleCalendlyEvent = (e) => {
+      if (e.data.event === 'calendly.event_scheduled') {
+        ConversionEvents.calendlyComplete();
+      }
+    };
+
+    window.addEventListener('message', handleCalendlyEvent);
+    return () => window.removeEventListener('message', handleCalendlyEvent);
   }, []);
 
   const baseStyles = "inline-flex items-center justify-center gap-2 font-semibold transition-all hover:scale-105 active:scale-[0.98] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500";

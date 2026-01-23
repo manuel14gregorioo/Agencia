@@ -74,6 +74,89 @@
     <script type="module" src="/src/main.jsx"></script>
 
     <!-- Schema.org JSON-LD Structured Data -->
+
+    <!-- Organization Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "AgenciaDev",
+      "url": "https://agenciadev.es",
+      "logo": "https://agenciadev.es/favicon.svg",
+      "description": "Agencia de desarrollo web y automatizaciones. Entregamos proyectos en 1-3 semanas.",
+      "email": "hola@agenciadev.es",
+      "foundingDate": "2024",
+      "founder": {
+        "@type": "Person",
+        "name": "AgenciaDev Team"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Madrid",
+        "addressCountry": "ES"
+      },
+      "sameAs": [
+        "https://vocap.io"
+      ]
+    }
+    </script>
+
+    <!-- WebSite Schema for Sitelinks Search Box -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "AgenciaDev",
+      "url": "https://agenciadev.es",
+      "description": "Desarrollo web y automatizaciones para negocios en 1-3 semanas",
+      "publisher": {
+        "@type": "Organization",
+        "name": "AgenciaDev"
+      }
+    }
+    </script>
+
+    <!-- BreadcrumbList Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Inicio",
+          "item": "https://agenciadev.es/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Portfolio",
+          "item": "https://agenciadev.es/#portfolio"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Servicios",
+          "item": "https://agenciadev.es/#servicios"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Precios",
+          "item": "https://agenciadev.es/#pricing"
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "name": "Contacto",
+          "item": "https://agenciadev.es/#contacto"
+        }
+      ]
+    }
+    </script>
+
+    <!-- ProfessionalService Schema -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -170,26 +253,42 @@
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "¿Cuánto tiempo tarda un proyecto de desarrollo web?",
+          "name": "¿Tenéis ejemplos reales de vuestro trabajo?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Entregamos proyectos en 1-3 semanas. Automatizaciones en 1-2 semanas, plataformas SaaS en 2-3 semanas."
+            "text": "Sí, VOCAP.io es un proyecto propio que puedes probar gratis ahora mismo. Es una plataforma SaaS completa de transcripción con IA que demuestra nuestra capacidad end-to-end."
           }
         },
         {
           "@type": "Question",
-          "name": "¿Cuánto cuesta desarrollar una web?",
+          "name": "¿Cuánto tiempo tarda un proyecto?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Automatizaciones desde 3.000€, plataformas web desde 4.500€, SaaS completos desde 8.000€. Precio fijo cerrado."
+            "text": "Automatizaciones simples en 1-2 semanas. Plataformas web en 2-3 semanas. SaaS completos como VOCAP.io en 3-4 semanas."
           }
         },
         {
           "@type": "Question",
-          "name": "¿Tenéis ejemplos reales?",
+          "name": "¿Cuánto cuesta?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Sí, VOCAP.io es nuestro proyecto propio. Plataforma SaaS de transcripción con IA que puedes probar gratis."
+            "text": "Automatizaciones desde 3.000€, plataformas web desde 4.500€, SaaS completos desde 8.000€. Precio fijo cerrado antes de empezar."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Qué pasa si necesito cambios después?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Una ronda de revisiones está incluida sin coste. Para cambios posteriores: soporte a 80€/hora o packs mensuales."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Trabajáis solo en Madrid?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "100% remoto. Trabajamos con clientes de toda España. Reuniones por videollamada, respuesta en menos de 24h."
           }
         }
       ]

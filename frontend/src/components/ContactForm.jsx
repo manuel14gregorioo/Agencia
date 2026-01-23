@@ -5,9 +5,10 @@
  * Formulario con validación en tiempo real
  */
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Send, CheckCircle, AlertCircle, Loader2 } from 'lucide-react';
 import { submitContact } from '../utils/api';
+import { ConversionEvents, getSavedUTMParams } from '../utils/analytics';
 
 // Validadores
 const validators = {
@@ -196,6 +197,7 @@ const ContactForm = ({ className = '' }) => {
 
   const [errors, setErrors] = useState({});
   const [submitStatus, setSubmitStatus] = useState('idle');
+  const [formStarted, setFormStarted] = useState(false);
 
   const validateField = (name, value) => {
     const validator = validators[name];
@@ -215,6 +217,12 @@ const ContactForm = ({ className = '' }) => {
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
+
+    // Trackear inicio de formulario
+    if (!formStarted && value.length > 0) {
+      setFormStarted(true);
+      ConversionEvents.contactFormStart();
+    }
 
     if (touched[name]) {
       const error = validateField(name, value);
@@ -244,14 +252,23 @@ const ContactForm = ({ className = '' }) => {
     setSubmitStatus('loading');
 
     try {
-      await submitContact(formData);
+      // Añadir UTM params al envío
+      const utmParams = getSavedUTMParams();
+      await submitContact({ ...formData, ...utmParams });
       setSubmitStatus('success');
+
+      // Trackear conversión
+      ConversionEvents.contactFormSubmit({
+        servicio: formData.servicio_interes,
+        ...utmParams,
+      });
 
       setTimeout(() => {
         setFormData({ nombre: '', email: '', telefono: '', proyecto: '' });
         setTouched({ nombre: false, email: false, telefono: false, proyecto: false });
         setErrors({});
         setSubmitStatus('idle');
+        setFormStarted(false);
       }, 5000);
     } catch (error) {
       console.error('Error submitting form:', error);

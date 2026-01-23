@@ -1,0 +1,28 @@
+{
+  "name": "agencia-video",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "studio": "remotion studio",
+    "render": "remotion render IntroVideo out/intro.mp4",
+    "render:webm": "remotion render IntroVideo out/intro.webm --codec=vp9",
+    "render:gif": "remotion render IntroVideo out/intro.gif --every-nth-frame=2",
+    "render:square": "remotion render IntroVideoSquare out/intro-square.mp4",
+    "render:vocap": "remotion render VocapVideo out/vocap-promo.mp4",
+    "render:vocap-square": "remotion render VocapVideoSquare out/vocap-promo-square.mp4"
+  },
+  "dependencies": {
+    "@remotion/cli": "^4.0.409",
+    "@remotion/transitions": "^4.0.409",
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3",
+    "remotion": "^4.0.409"
+  },
+  "devDependencies": {
+    "@remotion/tailwind": "^4.0.409",
+    "@types/react": "^19.2.9",
+    "@types/react-dom": "^19.2.3",
+    "tailwindcss": "^4.1.18",
+    "typescript": "^5.9.3"
+  }
+}

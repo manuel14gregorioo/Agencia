@@ -187,6 +187,12 @@ def update_lead(lead_id):
     # Guardar estado anterior para verificar transiciones
     estado_anterior = lead.estado
 
+    # Validar estado si se incluye
+    if 'estado' in data:
+        valid_estados = {'nuevo', 'contactado', 'en_proceso', 'propuesta', 'ganado', 'perdido', 'descartado'}
+        if data['estado'] not in valid_estados:
+            return jsonify({'error': f'Estado inválido. Valores permitidos: {", ".join(valid_estados)}'}), 400
+
     # Campos actualizables
     allowed_fields = ['estado', 'prioridad', 'notas', 'servicio_interes']
 
@@ -234,6 +240,11 @@ def bulk_update_leads():
 
     if not lead_ids:
         return jsonify({'error': 'No se especificaron leads'}), 400
+
+    # SEGURIDAD: Limitar cantidad de IDs para evitar sobrecarga
+    MAX_BULK_IDS = 100
+    if len(lead_ids) > MAX_BULK_IDS:
+        return jsonify({'error': f'Máximo {MAX_BULK_IDS} leads por operación'}), 400
 
     # SEGURIDAD: Solo permitir actualizar campos seguros
     ALLOWED_BULK_UPDATE_FIELDS = {'estado', 'prioridad', 'notas', 'servicio_interes'}

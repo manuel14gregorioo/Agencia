@@ -4,6 +4,15 @@
 User-agent: *
 Allow: /
 
+# Bloquear rutas de administración y API
+Disallow: /admin
+Disallow: /auth
+Disallow: /api/
+
+# Bloquear archivos internos
+Disallow: /*.json$
+Disallow: /assets/*.map$
+
 # Sitemap
 Sitemap: https://agenciadev.es/sitemap.xml
 

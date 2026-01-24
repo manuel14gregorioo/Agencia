@@ -7,6 +7,8 @@
  * - Tipografía grande y limpia
  * - Animaciones suaves de fade y scale
  * - Ritmo pausado e impactante
+ *
+ * NOTA: Usa estilos inline (no Tailwind) para garantizar renderizado
  */
 
 import {
@@ -18,14 +20,39 @@ import {
   Sequence,
 } from "remotion";
 
+// Estilos base
+const styles = {
+  container: {
+    backgroundColor: "#000",
+    fontFamily: "'SF Pro Display', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif",
+  },
+  centerFlex: {
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    width: "100%",
+    height: "100%",
+  },
+  text: {
+    color: "#fff",
+    margin: 0,
+    padding: 0,
+  },
+  textMuted: {
+    color: "rgba(255, 255, 255, 0.6)",
+  },
+  textCenter: {
+    textAlign: "center" as const,
+  },
+};
+
 // Componente para texto con fade-in elegante
 const FadeInText: React.FC<{
   children: React.ReactNode;
   delay?: number;
   duration?: number;
-  className?: string;
   style?: React.CSSProperties;
-}> = ({ children, delay = 0, duration = 30, className = "", style = {} }) => {
+}> = ({ children, delay = 0, duration = 30, style = {} }) => {
   const frame = useCurrentFrame();
 
   const opacity = interpolate(
@@ -52,7 +79,6 @@ const FadeInText: React.FC<{
 
   return (
     <div
-      className={className}
       style={{
         opacity,
         transform: `translateY(${translateY}px)`,
@@ -69,13 +95,19 @@ const WordByWord: React.FC<{
   text: string;
   startFrame: number;
   delayPerWord?: number;
-  className?: string;
-}> = ({ text, startFrame, delayPerWord = 8, className = "" }) => {
+  style?: React.CSSProperties;
+}> = ({ text, startFrame, delayPerWord = 8, style = {} }) => {
   const frame = useCurrentFrame();
   const words = text.split(" ");
 
   return (
-    <div className={`flex flex-wrap justify-center gap-x-4 ${className}`}>
+    <div style={{
+      display: "flex",
+      flexWrap: "wrap",
+      justifyContent: "center",
+      gap: "0 16px",
+      ...style
+    }}>
       {words.map((word, index) => {
         const wordDelay = startFrame + index * delayPerWord;
         const opacity = interpolate(
@@ -141,10 +173,15 @@ const OpeningSequence: React.FC = () => {
   );
 
   return (
-    <AbsoluteFill className="flex items-center justify-center">
+    <AbsoluteFill style={styles.centerFlex}>
       <div style={{ opacity, transform: `scale(${scale})` }}>
         <FadeInText delay={10} duration={40}>
-          <h1 className="text-8xl font-semibold text-white tracking-tight">
+          <h1 style={{
+            ...styles.text,
+            fontSize: 120,
+            fontWeight: 600,
+            letterSpacing: "-0.02em"
+          }}>
             Imagina.
           </h1>
         </FadeInText>
@@ -168,16 +205,26 @@ const ProblemSequence: React.FC = () => {
   );
 
   return (
-    <AbsoluteFill className="flex items-center justify-center" style={{ opacity }}>
-      <div className="text-center max-w-4xl px-8">
+    <AbsoluteFill style={{ ...styles.centerFlex, opacity }}>
+      <div style={{ ...styles.textCenter, maxWidth: 900, padding: "0 32px" }}>
         <WordByWord
           text="Tu idea hecha realidad"
           startFrame={10}
           delayPerWord={10}
-          className="text-6xl font-semibold text-white tracking-tight mb-8"
+          style={{
+            ...styles.text,
+            fontSize: 80,
+            fontWeight: 600,
+            letterSpacing: "-0.02em",
+            marginBottom: 32,
+          }}
         />
         <FadeInText delay={50} duration={30}>
-          <p className="text-3xl text-white/60 font-light">
+          <p style={{
+            ...styles.textMuted,
+            fontSize: 40,
+            fontWeight: 300,
+          }}>
             En semanas, no meses.
           </p>
         </FadeInText>
@@ -188,41 +235,60 @@ const ProblemSequence: React.FC = () => {
 
 // Secuencia 3: Stats impactantes
 const StatsSequence: React.FC = () => {
-  const frame = useCurrentFrame();
-
   return (
-    <AbsoluteFill className="flex items-center justify-center">
-      <div className="flex gap-32">
+    <AbsoluteFill style={styles.centerFlex}>
+      <div style={{ display: "flex", gap: 120, alignItems: "center" }}>
         {/* Stat 1 */}
-        <FadeInText delay={10} duration={30} className="text-center">
-          <p className="text-9xl font-bold text-white mb-4">2</p>
-          <p className="text-2xl text-white/50 font-light tracking-widest uppercase">
+        <FadeInText delay={10} duration={30} style={styles.textCenter}>
+          <p style={{ ...styles.text, fontSize: 140, fontWeight: 700, marginBottom: 16 }}>2</p>
+          <p style={{
+            ...styles.textMuted,
+            fontSize: 24,
+            fontWeight: 300,
+            letterSpacing: "0.2em",
+            textTransform: "uppercase" as const,
+            opacity: 0.5,
+          }}>
             Semanas
           </p>
         </FadeInText>
 
         {/* Divider */}
         <FadeInText delay={30} duration={20}>
-          <div className="w-px h-40 bg-white/20 self-center" />
+          <div style={{ width: 1, height: 120, backgroundColor: "rgba(255,255,255,0.2)" }} />
         </FadeInText>
 
         {/* Stat 2 */}
-        <FadeInText delay={40} duration={30} className="text-center">
-          <p className="text-9xl font-bold text-white mb-4">3K</p>
-          <p className="text-2xl text-white/50 font-light tracking-widest uppercase">
+        <FadeInText delay={40} duration={30} style={styles.textCenter}>
+          <p style={{ ...styles.text, fontSize: 140, fontWeight: 700, marginBottom: 16 }}>3K</p>
+          <p style={{
+            ...styles.textMuted,
+            fontSize: 24,
+            fontWeight: 300,
+            letterSpacing: "0.2em",
+            textTransform: "uppercase" as const,
+            opacity: 0.5,
+          }}>
             Euros
           </p>
         </FadeInText>
 
         {/* Divider */}
         <FadeInText delay={50} duration={20}>
-          <div className="w-px h-40 bg-white/20 self-center" />
+          <div style={{ width: 1, height: 120, backgroundColor: "rgba(255,255,255,0.2)" }} />
         </FadeInText>
 
         {/* Stat 3 */}
-        <FadeInText delay={60} duration={30} className="text-center">
-          <p className="text-9xl font-bold text-white mb-4">100%</p>
-          <p className="text-2xl text-white/50 font-light tracking-widest uppercase">
+        <FadeInText delay={60} duration={30} style={styles.textCenter}>
+          <p style={{ ...styles.text, fontSize: 140, fontWeight: 700, marginBottom: 16 }}>100%</p>
+          <p style={{
+            ...styles.textMuted,
+            fontSize: 24,
+            fontWeight: 300,
+            letterSpacing: "0.2em",
+            textTransform: "uppercase" as const,
+            opacity: 0.5,
+          }}>
             Tuyo
           </p>
         </FadeInText>
@@ -233,8 +299,6 @@ const StatsSequence: React.FC = () => {
 
 // Secuencia 4: Diferenciadores
 const DifferentiatorsSequence: React.FC = () => {
-  const frame = useCurrentFrame();
-
   const items = [
     "Precio fijo. Sin sorpresas.",
     "Código tuyo. Para siempre.",
@@ -242,16 +306,21 @@ const DifferentiatorsSequence: React.FC = () => {
   ];
 
   return (
-    <AbsoluteFill className="flex items-center justify-center">
-      <div className="space-y-12">
+    <AbsoluteFill style={styles.centerFlex}>
+      <div style={{ display: "flex", flexDirection: "column", gap: 48 }}>
         {items.map((item, index) => (
           <FadeInText
             key={index}
             delay={10 + index * 25}
             duration={25}
-            className="text-center"
+            style={styles.textCenter}
           >
-            <p className="text-5xl font-light text-white tracking-tight">
+            <p style={{
+              ...styles.text,
+              fontSize: 56,
+              fontWeight: 300,
+              letterSpacing: "-0.01em"
+            }}>
               {item}
             </p>
           </FadeInText>
@@ -271,36 +340,51 @@ const CTASequence: React.FC = () => {
     [0.8, 1],
     {
       extrapolateRight: "clamp",
-      easing: Easing.out(Easing.back(1.5)),
+      easing: Easing.out(Easing.cubic),
     }
   );
 
   return (
-    <AbsoluteFill className="flex items-center justify-center">
-      <div className="text-center">
+    <AbsoluteFill style={styles.centerFlex}>
+      <div style={styles.textCenter}>
         {/* Logo */}
         <FadeInText delay={0} duration={30}>
-          <div
-            className="mb-12"
-            style={{ transform: `scale(${logoScale})` }}
-          >
-            <h1 className="text-7xl font-bold text-white tracking-tight">
-              Agencia<span className="text-purple-500">Dev</span>
+          <div style={{ marginBottom: 48, transform: `scale(${logoScale})` }}>
+            <h1 style={{
+              ...styles.text,
+              fontSize: 90,
+              fontWeight: 700,
+              letterSpacing: "-0.02em"
+            }}>
+              Agencia<span style={{ color: "#a855f7" }}>Dev</span>
             </h1>
           </div>
         </FadeInText>
 
         {/* Tagline */}
         <FadeInText delay={30} duration={25}>
-          <p className="text-3xl text-white/70 font-light mb-16">
+          <p style={{
+            ...styles.textMuted,
+            fontSize: 36,
+            fontWeight: 300,
+            marginBottom: 64
+          }}>
             De idea a realidad.
           </p>
         </FadeInText>
 
         {/* CTA */}
         <FadeInText delay={50} duration={25}>
-          <div className="inline-flex items-center gap-3 bg-white text-black px-10 py-5 rounded-full">
-            <span className="text-2xl font-semibold">agenciadev.es</span>
+          <div style={{
+            display: "inline-flex",
+            alignItems: "center",
+            gap: 12,
+            backgroundColor: "#fff",
+            color: "#000",
+            padding: "20px 40px",
+            borderRadius: 50,
+          }}>
+            <span style={{ fontSize: 28, fontWeight: 600 }}>agenciadev.es</span>
           </div>
         </FadeInText>
       </div>
@@ -325,13 +409,7 @@ export const AppleStyleVideo: React.FC = () => {
   );
 
   return (
-    <AbsoluteFill
-      style={{
-        backgroundColor: "#000",
-        fontFamily: "'SF Pro Display', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif",
-        opacity: globalOpacity,
-      }}
-    >
+    <AbsoluteFill style={{ ...styles.container, opacity: globalOpacity }}>
       {/* Secuencia 1: Opening (0-90 frames, 0-3s) */}
       <Sequence from={0} durationInFrames={100}>
         <OpeningSequence />

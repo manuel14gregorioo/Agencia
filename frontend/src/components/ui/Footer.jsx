@@ -103,8 +103,8 @@ const Footer = () => {
             <h4 className="font-semibold text-white mb-4">Contacto</h4>
             <ul className="space-y-3 text-sm">
               <li>
-                <a href="mailto:contacto@mgmautomations.es" className="hover:text-white transition-colors flex items-center gap-2">
-                  <Mail className="w-4 h-4" /> contacto@mgmautomations.es
+                <a href="mailto:hola@mgmautomations.es" className="hover:text-white transition-colors flex items-center gap-2">
+                  <Mail className="w-4 h-4" /> hola@mgmautomations.es
                 </a>
               </li>
               <li>

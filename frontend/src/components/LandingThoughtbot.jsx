@@ -749,7 +749,7 @@ const Contact = () => (
             <div className="flex flex-wrap gap-6 text-sm text-gray-500">
               <div className="flex items-center gap-2">
                 <Mail className="w-4 h-4" />
-                contacto@mgmautomations.es
+                hola@mgmautomations.es
               </div>
               <div className="flex items-center gap-2">
                 <MapPin className="w-4 h-4" />
@@ -811,8 +811,8 @@ const Footer = () => {
             <div>
               <p className="font-medium text-gray-900 mb-3 text-sm">Contacto</p>
               <div className="space-y-2 text-sm text-gray-500">
-                <a href="mailto:contacto@mgmautomations.es" className="block hover:text-gray-900 transition-colors">
-                  contacto@mgmautomations.es
+                <a href="mailto:hola@mgmautomations.es" className="block hover:text-gray-900 transition-colors">
+                  hola@mgmautomations.es
                 </a>
                 <p>Madrid, Espana</p>
               </div>

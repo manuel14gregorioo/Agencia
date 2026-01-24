@@ -8,7 +8,7 @@ import {
   CheckCircle,
 } from 'lucide-react';
 
-export const CALENDLY_URL = 'https://calendly.com/agenciadev/consulta';
+export const CALENDLY_URL = 'https://calendly.com/mgmautomations/consulta';
 
 export const SECTION_IDS = ['portfolio', 'servicios', 'proceso', 'pricing', 'faq', 'contacto'];
 

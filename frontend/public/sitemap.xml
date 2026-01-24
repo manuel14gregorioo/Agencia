@@ -4,43 +4,43 @@
         xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
   <url>
-    <loc>https://agenciadev.es/</loc>
+    <loc>https://mgmautomations.es/</loc>
     <lastmod>2025-01-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://agenciadev.es/#portfolio</loc>
+    <loc>https://mgmautomations.es/#portfolio</loc>
     <lastmod>2025-01-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://agenciadev.es/#servicios</loc>
+    <loc>https://mgmautomations.es/#servicios</loc>
     <lastmod>2025-01-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://agenciadev.es/#pricing</loc>
+    <loc>https://mgmautomations.es/#pricing</loc>
     <lastmod>2025-01-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://agenciadev.es/#proceso</loc>
+    <loc>https://mgmautomations.es/#proceso</loc>
     <lastmod>2025-01-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://agenciadev.es/#faq</loc>
+    <loc>https://mgmautomations.es/#faq</loc>
     <lastmod>2025-01-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://agenciadev.es/#contacto</loc>
+    <loc>https://mgmautomations.es/#contacto</loc>
     <lastmod>2025-01-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>

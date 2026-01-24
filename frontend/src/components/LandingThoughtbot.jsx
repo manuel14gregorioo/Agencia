@@ -255,7 +255,7 @@ const Navbar = () => {
             <div className="w-8 h-8 bg-gray-900 rounded-lg flex items-center justify-center">
               <Zap className="w-4 h-4 text-white" />
             </div>
-            <span className="font-semibold text-gray-900">AgenciaDev</span>
+            <span className="font-semibold text-gray-900">M.G.M</span>
           </a>
 
           {/* Desktop Nav */}
@@ -749,7 +749,7 @@ const Contact = () => (
             <div className="flex flex-wrap gap-6 text-sm text-gray-500">
               <div className="flex items-center gap-2">
                 <Mail className="w-4 h-4" />
-                hola@agenciadev.es
+                contacto@mgmautomations.es
               </div>
               <div className="flex items-center gap-2">
                 <MapPin className="w-4 h-4" />
@@ -785,7 +785,7 @@ const Footer = () => {
               <div className="w-8 h-8 bg-gray-900 rounded-lg flex items-center justify-center">
                 <Zap className="w-4 h-4 text-white" />
               </div>
-              <span className="font-semibold text-gray-900">AgenciaDev</span>
+              <span className="font-semibold text-gray-900">M.G.M</span>
             </div>
             <p className="text-sm text-gray-500 max-w-xs">
               Desarrollo web y automatizaciones para negocios que quieren resultados.
@@ -811,8 +811,8 @@ const Footer = () => {
             <div>
               <p className="font-medium text-gray-900 mb-3 text-sm">Contacto</p>
               <div className="space-y-2 text-sm text-gray-500">
-                <a href="mailto:hola@agenciadev.es" className="block hover:text-gray-900 transition-colors">
-                  hola@agenciadev.es
+                <a href="mailto:contacto@mgmautomations.es" className="block hover:text-gray-900 transition-colors">
+                  contacto@mgmautomations.es
                 </a>
                 <p>Madrid, Espana</p>
               </div>
@@ -833,7 +833,7 @@ const Footer = () => {
 
         <div className="border-t border-gray-200 mt-12 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4">
           <p className="text-sm text-gray-500">
-            © {year} AgenciaDev. Todos los derechos reservados.
+            © {year} M.G.M. Todos los derechos reservados.
           </p>
           <div className="flex items-center gap-2 text-sm text-emerald-600">
             <div className="w-2 h-2 bg-emerald-500 rounded-full animate-pulse" />

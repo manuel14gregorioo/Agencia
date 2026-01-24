@@ -1,5 +1,5 @@
 import React from 'react';
-import { Zap, MapPin, Mail, Linkedin, Github, ExternalLink, Shield } from 'lucide-react';
+import { MapPin, Mail, Linkedin, Github, ExternalLink, Shield } from 'lucide-react';
 import { scrollToSection } from '../../utils/scroll';
 
 const Footer = () => {
@@ -33,14 +33,12 @@ const Footer = () => {
       <div className="max-w-6xl mx-auto">
         <div className="grid grid-cols-2 md:grid-cols-5 gap-8 mb-12">
           <div className="col-span-2 md:col-span-1">
-            <div className="flex items-center gap-2.5 mb-4">
-              <div className="w-9 h-9 bg-primary-600 rounded-xl flex items-center justify-center">
-                <Zap className="w-5 h-5 text-white" />
-              </div>
-              <span className="font-bold text-lg text-white">AgenciaDev</span>
+            <div className="flex items-center gap-2 mb-4">
+              <span className="font-serif text-2xl font-semibold text-white tracking-tight">M.G.M</span>
+              <span className="text-xs font-medium tracking-wide uppercase text-gray-400">Automations</span>
             </div>
             <p className="text-sm text-gray-500 mb-4">
-              Desarrollo web y automatizacion para negocios que quieren resultados, no promesas.
+              Desarrollo web y automatizaciones para negocios que quieren resultados, no promesas.
             </p>
             <div className="flex items-center gap-2 text-sm">
               <MapPin className="w-4 h-4" />
@@ -105,8 +103,8 @@ const Footer = () => {
             <h4 className="font-semibold text-white mb-4">Contacto</h4>
             <ul className="space-y-3 text-sm">
               <li>
-                <a href="mailto:hola@agenciadev.es" className="hover:text-white transition-colors flex items-center gap-2">
-                  <Mail className="w-4 h-4" /> hola@agenciadev.es
+                <a href="mailto:contacto@mgmautomations.es" className="hover:text-white transition-colors flex items-center gap-2">
+                  <Mail className="w-4 h-4" /> contacto@mgmautomations.es
                 </a>
               </li>
               <li>
@@ -124,7 +122,7 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-gray-800 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p className="text-sm text-gray-500">© {currentYear} AgenciaDev. Todos los derechos reservados.</p>
+          <p className="text-sm text-gray-500">© {currentYear} M.G.M Automations. Todos los derechos reservados.</p>
           <div className="flex items-center gap-6 text-sm">
             {footerLinks.legal.map((link) => (
               <a key={link.label} href={link.href} className="hover:text-white transition-colors">

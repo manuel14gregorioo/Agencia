@@ -16,7 +16,7 @@ const TestimonialSection = () => {
           <div className="w-12 h-12 bg-gradient-to-br from-primary-500 to-purple-600 rounded-full flex items-center justify-center text-white font-bold text-lg">M</div>
           <div className="text-left">
             <p className="font-semibold text-gray-900 dark:text-white">Manuel Gregorio</p>
-            <p className="text-sm text-gray-500 dark:text-gray-400">Founder @ AgenciaDev</p>
+            <p className="text-sm text-gray-500 dark:text-gray-400">Founder @ M.G.M Automations</p>
           </div>
         </div>
       </div>

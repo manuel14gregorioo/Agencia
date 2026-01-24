@@ -1,5 +1,5 @@
-# Robots.txt for AgenciaDev
-# https://agenciadev.es
+# Robots.txt for M.G.M Automations
+# https://mgmautomations.es
 
 User-agent: *
 Allow: /
@@ -14,7 +14,7 @@ Disallow: /*.json$
 Disallow: /assets/*.map$
 
 # Sitemap
-Sitemap: https://agenciadev.es/sitemap.xml
+Sitemap: https://mgmautomations.es/sitemap.xml
 
 # Crawl-delay (optional, for politeness)
 Crawl-delay: 1

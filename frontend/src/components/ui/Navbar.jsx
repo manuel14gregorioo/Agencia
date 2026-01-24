@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, Zap, Moon, Sun } from 'lucide-react';
+import { Menu, X, Moon, Sun } from 'lucide-react';
 import { useTheme } from '../contexts/ThemeContext';
 import { useActiveSection } from '../hooks';
 import { SECTION_IDS } from '../../data/constants';
@@ -38,16 +38,14 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16 md:h-20">
           <a
             href="#"
-            className="flex items-center gap-2.5 group focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 rounded-lg"
-            aria-label="AgenciaDev - Ir al inicio"
+            className="flex items-center gap-2 group focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 rounded-lg"
+            aria-label="M.G.M Automations - Ir al inicio"
           >
-            <div className={`w-9 h-9 rounded-xl flex items-center justify-center transition-all duration-300 ${
-              scrolled ? 'bg-primary-600' : 'bg-white/10 backdrop-blur-sm'
-            }`}>
-              <Zap className="w-5 h-5 text-white" />
-            </div>
-            <span className={`font-bold text-lg transition-colors ${scrolled ? 'text-gray-900 dark:text-white' : 'text-white'}`}>
-              AgenciaDev
+            <span className={`font-serif text-2xl font-semibold tracking-tight transition-colors ${scrolled ? 'text-gray-900 dark:text-white' : 'text-white'}`}>
+              M.G.M
+            </span>
+            <span className={`hidden sm:inline text-sm font-medium tracking-wide uppercase transition-colors ${scrolled ? 'text-gray-500 dark:text-gray-400' : 'text-white/70'}`}>
+              Automations
             </span>
           </a>
 

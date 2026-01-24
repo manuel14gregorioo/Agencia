@@ -11,7 +11,7 @@ from app import mail
 
 # Resend API
 RESEND_API_KEY = os.environ.get('RESEND_API_KEY')
-RESEND_FROM_EMAIL = os.environ.get('RESEND_FROM_EMAIL', 'AgenciaDev <noreply@agenciadev.es>')
+RESEND_FROM_EMAIL = os.environ.get('RESEND_FROM_EMAIL', 'M.G.M Automations <hola@mgmautomations.es>')
 
 
 def send_email_resend(to, subject, html_body):
@@ -107,7 +107,7 @@ def send_lead_notification(lead):
             </div>
 
             <div style="margin-top: 30px; text-align: center;">
-                <a href="mailto:{lead.email}?subject=Re: Tu consulta en AgenciaDev"
+                <a href="mailto:{lead.email}?subject=Re: Tu consulta en M.G.M Automations"
                    style="display: inline-block; background: #6366F1; color: white; padding: 12px 30px;
                           text-decoration: none; border-radius: 8px; font-weight: bold;">
                     Responder al Lead
@@ -117,7 +117,7 @@ def send_lead_notification(lead):
 
         <div style="background: #111827; padding: 20px; border-radius: 0 0 10px 10px; text-align: center;">
             <p style="color: #9ca3af; margin: 0; font-size: 14px;">
-                AgenciaDev - Panel de Administración
+                M.G.M Automations - Panel de Administración
             </p>
         </div>
     </body>
@@ -132,7 +132,7 @@ def send_lead_notification(lead):
 def send_lead_confirmation(lead):
     """Envía confirmación al lead"""
 
-    subject = "Hemos recibido tu mensaje - AgenciaDev"
+    subject = "Hemos recibido tu mensaje - M.G.M Automations"
 
     html_body = f"""
     <html>
@@ -164,7 +164,7 @@ def send_lead_confirmation(lead):
 
             <p style="color: #374151;">
                 Un saludo,<br>
-                <strong>El equipo de AgenciaDev</strong>
+                <strong>El equipo de M.G.M Automations</strong>
             </p>
         </div>
 
@@ -172,9 +172,9 @@ def send_lead_confirmation(lead):
             <p style="color: #9ca3af; margin: 0 0 10px; font-size: 14px;">
                 ¿Tienes alguna pregunta urgente?
             </p>
-            <a href="mailto:hola@agenciadev.es"
+            <a href="mailto:hola@mgmautomations.es"
                style="color: #6366F1; text-decoration: none; font-size: 14px;">
-                hola@agenciadev.es
+                hola@mgmautomations.es
             </a>
         </div>
     </body>

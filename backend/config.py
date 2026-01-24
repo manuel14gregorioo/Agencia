@@ -38,10 +38,10 @@ class Config:
     MAIL_USE_TLS = os.environ.get('MAIL_USE_TLS', 'true').lower() == 'true'
     MAIL_USERNAME = os.environ.get('MAIL_USERNAME')
     MAIL_PASSWORD = os.environ.get('MAIL_PASSWORD')
-    MAIL_DEFAULT_SENDER = os.environ.get('MAIL_DEFAULT_SENDER', 'noreply@agenciadev.es')
+    MAIL_DEFAULT_SENDER = os.environ.get('MAIL_DEFAULT_SENDER', 'hola@mgmautomations.es')
 
     # Admin
-    ADMIN_EMAIL = os.environ.get('ADMIN_EMAIL', 'admin@agenciadev.es')
+    ADMIN_EMAIL = os.environ.get('ADMIN_EMAIL', 'hola@mgmautomations.es')
     # ADMIN_PASSWORD debe configurarse via variable de entorno (sin fallback inseguro)
     ADMIN_PASSWORD = os.environ.get('ADMIN_PASSWORD')
 

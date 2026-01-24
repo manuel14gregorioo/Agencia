@@ -219,11 +219,11 @@ def track_event():
 def get_public_config():
     """Configuración pública para el frontend"""
     return jsonify({
-        'contact_email': 'hola@agenciadev.es',
+        'contact_email': 'hola@mgmautomations.es',
         'phone': '+34 600 000 000',
         'social': {
-            'linkedin': 'https://linkedin.com/company/agenciadev',
-            'github': 'https://github.com/agenciadev',
+            'linkedin': 'https://linkedin.com/company/mgmautomations',
+            'github': 'https://github.com/mgmautomations',
         },
         'features': {
             'newsletter': True,
@@ -276,8 +276,8 @@ def robots_txt():
     # Obtener dominio base
     base_url = request.host_url.rstrip('/')
 
-    robots_content = f"""# AgenciaDev - robots.txt
-# https://agenciadev.es
+    robots_content = f"""# M.G.M Automations - robots.txt
+# https://mgmautomations.es
 
 User-agent: *
 Allow: /

@@ -11,7 +11,8 @@ from app import mail
 
 # Resend API
 RESEND_API_KEY = os.environ.get('RESEND_API_KEY')
-RESEND_FROM_EMAIL = os.environ.get('RESEND_FROM_EMAIL', 'M.G.M Automations <hola@mgmautomations.es>')
+_from_email = os.environ.get('RESEND_FROM_EMAIL', 'hola@mgmautomations.es')
+RESEND_FROM_EMAIL = f'M.G.M Automations <{_from_email}>' if '@' in _from_email and '<' not in _from_email else _from_email
 
 
 def send_email_resend(to, subject, html_body):

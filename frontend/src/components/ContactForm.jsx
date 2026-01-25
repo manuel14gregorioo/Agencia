@@ -7,8 +7,8 @@
 
 import React, { useState } from 'react';
 import { Send, CheckCircle, AlertCircle, Loader2, ArrowRight } from 'lucide-react';
-import { submitContact } from '../utils/api';
-import { ConversionEvents, getSavedUTMParams } from '../utils/analytics';
+
+const FORMSPREE_ENDPOINT = 'https://formspree.io/f/mkojdwll';
 
 // Validadores
 const validators = {
@@ -222,10 +222,8 @@ const ContactForm = ({ className = '' }) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
 
-    // Trackear inicio de formulario
     if (!formStarted && value.length > 0) {
       setFormStarted(true);
-      ConversionEvents.contactFormStart();
     }
 
     if (touched[name]) {
@@ -256,16 +254,26 @@ const ContactForm = ({ className = '' }) => {
     setSubmitStatus('loading');
 
     try {
-      // Anadir UTM params al envio
-      const utmParams = getSavedUTMParams();
-      await submitContact({ ...formData, ...utmParams });
-      setSubmitStatus('success');
-
-      // Trackear conversion
-      ConversionEvents.contactFormSubmit({
-        servicio: formData.servicio_interes,
-        ...utmParams,
+      const response = await fetch(FORMSPREE_ENDPOINT, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json',
+        },
+        body: JSON.stringify({
+          nombre: formData.nombre,
+          email: formData.email,
+          telefono: formData.telefono || 'No proporcionado',
+          proyecto: formData.proyecto,
+          _subject: `Nuevo contacto de ${formData.nombre}`,
+        }),
       });
+
+      if (!response.ok) {
+        throw new Error('Error al enviar el formulario');
+      }
+
+      setSubmitStatus('success');
 
       setTimeout(() => {
         setFormData({ nombre: '', email: '', telefono: '', proyecto: '' });

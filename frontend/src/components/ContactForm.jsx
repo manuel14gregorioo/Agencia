@@ -20,18 +20,18 @@ const validators = {
   email: (value) => {
     if (!value.trim()) return 'El email es obligatorio';
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(value)) return 'Introduce un email valido';
+    if (!emailRegex.test(value)) return 'Introduce un email válido';
     return null;
   },
   telefono: (value) => {
     if (!value.trim()) return null;
     const phoneRegex = /^[0-9+\s()-]{9,}$/;
-    if (!phoneRegex.test(value)) return 'Introduce un telefono valido';
+    if (!phoneRegex.test(value)) return 'Introduce un teléfono válido';
     return null;
   },
   proyecto: (value) => {
-    if (!value.trim()) return 'Cuentanos algo sobre tu proyecto';
-    if (value.trim().length < 20) return 'Por favor, describe tu proyecto con mas detalle (minimo 20 caracteres)';
+    if (!value.trim()) return 'Cuéntanos algo sobre tu proyecto';
+    if (value.trim().length < 20) return 'Por favor, describe tu proyecto con más detalle (mínimo 20 caracteres)';
     return null;
   },
 };
@@ -319,7 +319,7 @@ const ContactForm = ({ className = '' }) => {
       {/* Form header */}
       <div className="mb-8">
         <h3 className="text-xl font-display font-bold text-noir-900 dark:text-cream-50 mb-2">
-          Solicitar Consultoria
+          Solicitar Consultoría
         </h3>
         <p className="text-sm text-noir-500 dark:text-noir-400">
           Gratuita y sin compromiso
@@ -353,7 +353,7 @@ const ContactForm = ({ className = '' }) => {
         />
 
         <FormInput
-          label="Telefono"
+          label="Teléfono"
           name="telefono"
           type="tel"
           placeholder="+34 600 000 000 (opcional)"
@@ -365,9 +365,9 @@ const ContactForm = ({ className = '' }) => {
         />
 
         <FormTextarea
-          label="Cuentanos tu proyecto"
+          label="Cuéntanos tu proyecto"
           name="proyecto"
-          placeholder="¿Que proceso quieres automatizar? ¿Que problemas tienes actualmente?"
+          placeholder="¿Qué proceso quieres automatizar? ¿Qué problemas tienes actualmente?"
           value={formData.proyecto}
           onChange={handleChange}
           onBlur={handleBlur}

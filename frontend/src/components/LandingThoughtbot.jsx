@@ -47,8 +47,8 @@ const PROJECTS = [
   {
     id: 'vocap',
     name: 'VOCAP.io',
-    tagline: 'Plataforma SaaS de transcripcion con IA',
-    description: 'Transcripcion de audio, resumenes automaticos, extraccion de tareas. Competidor de Otter.ai a 1/10 del precio.',
+    tagline: 'Plataforma SaaS de transcripción con IA',
+    description: 'Transcripción de audio, resúmenes automáticos, extracción de tareas. Competidor de Otter.ai a 1/10 del precio.',
     image: '/images/vocap-hero.jpg',
     url: 'https://vocap.io',
     metrics: [
@@ -65,18 +65,18 @@ const SERVICES = [
   {
     id: 'automation',
     icon: Bot,
-    title: 'Automatizacion de Procesos',
+    title: 'Automatización de Procesos',
     price: '3.000 - 4.000€',
     timeline: '1-2 semanas',
-    description: 'Elimina tareas repetitivas con chatbots, sistemas de reservas y workflows automaticos.',
+    description: 'Elimina tareas repetitivas con chatbots, sistemas de reservas y workflows automáticos.',
     includes: [
       'Chatbot WhatsApp Business',
       'Sistema de reservas online 24/7',
-      'Recordatorios automaticos',
-      'Integracion con tu calendario',
-      'Dashboard basico de metricas',
+      'Recordatorios automáticos',
+      'Integración con tu calendario',
+      'Dashboard básico de métricas',
     ],
-    ideal: 'Negocios con muchas consultas repetitivas o gestion manual de citas.',
+    ideal: 'Negocios con muchas consultas repetitivas o gestión manual de citas.',
   },
   {
     id: 'web',
@@ -84,16 +84,16 @@ const SERVICES = [
     title: 'Plataformas Web',
     price: '4.500 - 6.000€',
     timeline: '2-3 semanas',
-    description: 'Webs que convierten visitantes en clientes, con backend de gestion incluido.',
+    description: 'Webs que convierten visitantes en clientes, con backend de gestión incluido.',
     includes: [
-      'Landing page de alta conversion',
-      'Panel de administracion',
+      'Landing page de alta conversión',
+      'Panel de administración',
       'Portal de clientes',
       'Pagos con Stripe integrados',
       'Analytics y seguimiento',
       'SEO optimizado',
     ],
-    ideal: 'Empresas que necesitan presencia web profesional con gestion de leads.',
+    ideal: 'Empresas que necesitan presencia web profesional con gestión de leads.',
     popular: true,
   },
   {
@@ -105,7 +105,7 @@ const SERVICES = [
     description: 'Productos digitales completos listos para escalar y monetizar.',
     includes: [
       'Todo lo de Plataformas Web',
-      'Autenticacion completa',
+      'Autenticación completa',
       'Sistema de suscripciones',
       'Procesamiento con IA',
       'Dashboard avanzado',
@@ -122,30 +122,30 @@ const PROCESS = [
     title: 'Discovery',
     duration: '30 min · Gratis',
     description: 'Llamada para entender tu negocio, problemas actuales y objetivos. Sin compromiso.',
-    outcome: 'Sabras si encajamos y tendras una idea clara de viabilidad.',
+    outcome: 'Sabrás si encajamos y tendrás una idea clara de viabilidad.',
     icon: Phone,
   },
   {
     step: 2,
     title: 'Propuesta',
     duration: '48 horas',
-    description: 'Documento detallado con scope exacto, tecnologias, timeline y precio fijo cerrado.',
-    outcome: 'Presupuesto sin sorpresas. Sabes exactamente que vas a recibir.',
+    description: 'Documento detallado con scope exacto, tecnologías, timeline y precio fijo cerrado.',
+    outcome: 'Presupuesto sin sorpresas. Sabes exactamente qué vas a recibir.',
     icon: FileText,
   },
   {
     step: 3,
     title: 'Desarrollo',
     duration: '1-4 semanas',
-    description: 'Sprints cortos con demos cada 2-3 dias. Ves el progreso real, no promesas.',
+    description: 'Sprints cortos con demos cada 2-3 días. Ves el progreso real, no promesas.',
     outcome: 'Feedback continuo. Puedes ajustar prioridades sobre la marcha.',
     icon: Rocket,
   },
   {
     step: 4,
     title: 'Entrega',
-    duration: 'Dia final + 1 mes',
-    description: 'Sistema funcionando en produccion, documentacion completa y sesion de formacion.',
+    duration: 'Día final + 1 mes',
+    description: 'Sistema funcionando en producción, documentación completa y sesión de formación.',
     outcome: 'Empiezas a usarlo inmediatamente. Soporte incluido 1 mes.',
     icon: CheckCircle,
   },
@@ -153,23 +153,23 @@ const PROCESS = [
 
 const FAQS = [
   {
-    q: '¿Por que sois mas rapidos que una agencia tradicional?',
-    a: 'Sin capas de gestion. Hablas directamente con quien desarrolla. Usamos tecnologias modernas (React, Flask, Tailwind) que permiten iterar rapido. Y nos especializamos en un tipo de proyecto, no intentamos hacer de todo.',
+    q: '¿Por qué sois más rápidos que una agencia tradicional?',
+    a: 'Sin capas de gestión. Hablas directamente con quien desarrolla. Usamos tecnologías modernas (React, Flask, Tailwind) que permiten iterar rápido. Y nos especializamos en un tipo de proyecto, no intentamos hacer de todo.',
   },
   {
-    q: '¿Como se que vais a entregar lo prometido?',
-    a: 'VOCAP.io esta en produccion ahora mismo. Puedes probarlo gratis, ver como funciona, verificar la calidad. Es nuestra mejor carta de presentacion.',
+    q: '¿Cómo sé que vais a entregar lo prometido?',
+    a: 'VOCAP.io está en producción ahora mismo. Puedes probarlo gratis, ver cómo funciona, verificar la calidad. Es nuestra mejor carta de presentación.',
   },
   {
-    q: '¿Que pasa si necesito cambios despues de la entrega?',
-    a: 'Una ronda de ajustes menores esta incluida. Para cambios mayores: soporte a 80€/hora o packs mensuales de mantenimiento.',
+    q: '¿Qué pasa si necesito cambios después de la entrega?',
+    a: 'Una ronda de ajustes menores está incluida. Para cambios mayores: soporte a 80€/hora o packs mensuales de mantenimiento.',
   },
   {
-    q: '¿Trabajais solo en Madrid?',
-    a: '100% remoto. Trabajamos con clientes de toda Espana. Comunicacion por videollamada y Slack/WhatsApp. Respuesta en menos de 24h.',
+    q: '¿Trabajáis solo en Madrid?',
+    a: '100% remoto. Trabajamos con clientes de toda España. Comunicación por videollamada y Slack/WhatsApp. Respuesta en menos de 24h.',
   },
   {
-    q: '¿Como son los pagos?',
+    q: '¿Cómo son los pagos?',
     a: '50% al confirmar el proyecto, 50% a la entrega satisfactoria. Factura con IVA (o sin IVA para empresas intracomunitarias).',
   },
 ];
@@ -339,7 +339,7 @@ const Hero = () => (
 
       {/* Subtitle */}
       <p className="text-xl text-gray-600 max-w-2xl mb-10 leading-relaxed">
-        Entregamos lo que agencias tardan meses. Con codigo limpio, precio fijo cerrado y comunicacion directa con quien desarrolla.
+        Entregamos lo que agencias tardan meses. Con código limpio, precio fijo cerrado y comunicación directa con quien desarrolla.
       </p>
 
       {/* CTAs */}
@@ -386,7 +386,7 @@ const Portfolio = () => (
       <div className="mb-16">
         <h2 className="text-3xl font-bold text-gray-900 mb-4">Proyectos recientes</h2>
         <p className="text-lg text-gray-600 max-w-2xl">
-          No hablamos de lo que podemos hacer. Aqui esta lo que hemos hecho.
+          No hablamos de lo que podemos hacer. Aquí está lo que hemos hecho.
         </p>
       </div>
 
@@ -456,9 +456,9 @@ const Portfolio = () => (
         <div className="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center mx-auto mb-4">
           <Code className="w-8 h-8 text-gray-400" />
         </div>
-        <h3 className="text-xl font-semibold text-gray-900 mb-2">Tu proyecto aqui</h3>
+        <h3 className="text-xl font-semibold text-gray-900 mb-2">Tu proyecto aquí</h3>
         <p className="text-gray-500 mb-6 max-w-md mx-auto">
-          El proximo caso de exito verificable podria ser el tuyo.
+          El próximo caso de éxito verificable podría ser el tuyo.
         </p>
         <Button variant="primary" onClick={() => scrollTo('contacto')}>
           Empezar proyecto <ArrowRight className="w-4 h-4" />
@@ -479,7 +479,7 @@ const Services = () => (
       <div className="mb-16">
         <h2 className="text-3xl font-bold text-gray-900 mb-4">Servicios</h2>
         <p className="text-lg text-gray-600 max-w-2xl">
-          Tres niveles segun lo que necesites. Precio fijo, scope claro, sin sorpresas.
+          Tres niveles según lo que necesites. Precio fijo, scope claro, sin sorpresas.
         </p>
       </div>
 
@@ -495,7 +495,7 @@ const Services = () => (
             {service.popular && (
               <div className="absolute -top-3 left-6">
                 <Badge variant="default" className="bg-gray-900 text-white">
-                  Mas popular
+                  Más popular
                 </Badge>
               </div>
             )}
@@ -540,7 +540,7 @@ const Services = () => (
 
       {/* Bottom CTA */}
       <div className="text-center mt-12">
-        <p className="text-gray-500 mb-4">¿No encaja en ningun paquete?</p>
+        <p className="text-gray-500 mb-4">¿No encaja en ningún paquete?</p>
         <Button variant="secondary" onClick={() => scrollTo('contacto')}>
           Discutir proyecto personalizado
         </Button>
@@ -558,9 +558,9 @@ const Process = () => (
     <div className="max-w-6xl mx-auto">
       {/* Header */}
       <div className="mb-16">
-        <h2 className="text-3xl font-bold text-gray-900 mb-4">Como trabajamos</h2>
+        <h2 className="text-3xl font-bold text-gray-900 mb-4">Cómo trabajamos</h2>
         <p className="text-lg text-gray-600 max-w-2xl">
-          Proceso transparente. Sabes que esperar en cada fase.
+          Proceso transparente. Sabes qué esperar en cada fase.
         </p>
       </div>
 
@@ -598,7 +598,7 @@ const Process = () => (
 
       {/* Terms */}
       <div className="bg-white rounded-2xl border border-gray-200 p-8">
-        <h3 className="text-xl font-bold text-gray-900 mb-6">Terminos claros</h3>
+        <h3 className="text-xl font-bold text-gray-900 mb-6">Términos claros</h3>
         <div className="grid md:grid-cols-3 gap-8">
           <div>
             <h4 className="font-medium text-gray-900 mb-2">Pagos</h4>
@@ -632,7 +632,7 @@ const Comparison = () => (
   <section className="py-24 px-6">
     <div className="max-w-4xl mx-auto">
       <div className="text-center mb-16">
-        <h2 className="text-3xl font-bold text-gray-900 mb-4">¿Por que nosotros?</h2>
+        <h2 className="text-3xl font-bold text-gray-900 mb-4">¿Por qué nosotros?</h2>
         <p className="text-lg text-gray-600">
           El punto medio entre agencia cara y freelancer impredecible.
         </p>
@@ -652,7 +652,7 @@ const Comparison = () => (
             {[
               ['Precio', '10-25k€', '500-2k€', '3-8k€'],
               ['Tiempo', '2-4 meses', 'Impredecible', '2-3 semanas'],
-              ['Comunicacion', 'Account manager', 'Variable', 'Tecnico directo'],
+              ['Comunicación', 'Account manager', 'Variable', 'Técnico directo'],
               ['Proyecto verificable', 'NDAs', 'Raramente', 'VOCAP.io'],
             ].map(([aspect, agencies, freelancers, us], i) => (
               <tr key={i} className="border-b border-gray-100 last:border-0">
@@ -682,7 +682,7 @@ const FAQ = () => {
         <div className="text-center mb-16">
           <h2 className="text-3xl font-bold text-gray-900 mb-4">Preguntas frecuentes</h2>
           <p className="text-lg text-gray-600">
-            Si tu pregunta no esta aqui, escribenos.
+            Si tu pregunta no está aquí, escríbenos.
           </p>
         </div>
 
@@ -795,7 +795,7 @@ const Footer = () => {
           {/* Links */}
           <div className="flex flex-wrap gap-8">
             <div>
-              <p className="font-medium text-gray-900 mb-3 text-sm">Navegacion</p>
+              <p className="font-medium text-gray-900 mb-3 text-sm">Navegación</p>
               <div className="space-y-2">
                 {['Proyectos', 'Servicios', 'Proceso', 'FAQ'].map((label) => (
                   <button
@@ -814,7 +814,7 @@ const Footer = () => {
                 <a href="mailto:hola@mgmautomations.es" className="block hover:text-gray-900 transition-colors">
                   hola@mgmautomations.es
                 </a>
-                <p>Madrid, Espana</p>
+                <p>Madrid, España</p>
               </div>
             </div>
             <div>

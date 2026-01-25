@@ -1,34 +1,114 @@
 import React from 'react';
-import { Zap, Euro, Headphones } from 'lucide-react';
+import { Target, Rocket, Shield, TrendingUp } from 'lucide-react';
 import { useScrollAnimation } from '../hooks';
 
 const ValueProposition = () => {
   const [ref, isVisible] = useScrollAnimation();
-  const pilares = [
-    { icon: Zap, titulo: '2 semanas', subtitulo: 'No 3 meses', descripcion: 'Metodologia agil con sprints cortos. Ves avances cada 2-3 dias.', color: 'from-purple-500 to-indigo-600', stat: 'vs 2-4 meses' },
-    { icon: Euro, titulo: '3-8k€', subtitulo: 'No 10-25k€', descripcion: 'Precio fijo cerrado antes de empezar. Sin sorpresas ni extras.', color: 'from-emerald-500 to-teal-600', stat: 'vs 10-25k€' },
-    { icon: Headphones, titulo: 'Tecnico directo', subtitulo: 'No account manager', descripcion: 'Hablas con quien desarrolla tu proyecto. Sin intermediarios.', color: 'from-orange-500 to-red-600', stat: 'Comunicacion' },
+
+  const values = [
+    {
+      icon: Target,
+      title: 'Enfoque claro',
+      description: 'Sin reuniones innecesarias. Entendemos tu problema y lo solucionamos.',
+      accent: 'lime',
+    },
+    {
+      icon: Rocket,
+      title: 'Velocidad real',
+      description: '2-3 semanas de desarrollo. No 3 meses esperando por una agencia.',
+      accent: 'coral',
+    },
+    {
+      icon: Shield,
+      title: 'Sin riesgos',
+      description: 'Precio fijo cerrado antes de empezar. Sin sorpresas ni costes ocultos.',
+      accent: 'lime',
+    },
+    {
+      icon: TrendingUp,
+      title: 'Resultados medibles',
+      description: 'Codigo que puedes ver y tocar. Proyectos reales como VOCAP.io.',
+      accent: 'coral',
+    },
   ];
 
   return (
-    <section className="section bg-white dark:bg-gray-900">
-      <div ref={ref} className={`container-lg transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-        <div className="text-center mb-16">
-          <h2 className="heading-2 text-gray-900 dark:text-white mb-4">El punto medio que tu negocio necesita</h2>
-          <p className="lead dark:text-gray-400 max-w-2xl mx-auto">Calidad de agencia, velocidad de startup, precio justo.</p>
+    <section className="section bg-noir-900 dark:bg-noir-950 relative overflow-hidden">
+      {/* Background pattern */}
+      <div className="absolute inset-0 bg-dots opacity-30" />
+
+      <div ref={ref} className="container-xl mx-auto relative z-10">
+        {/* Section header */}
+        <div className={`text-center mb-16 md:mb-24 transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+          <span className="inline-block px-4 py-2 bg-lime-400 text-noir-900 text-xs font-bold uppercase tracking-wider mb-6">
+            Por que nosotros
+          </span>
+          <h2 className="heading-xl text-cream-50 mb-6">
+            Menos promesas,<br />
+            <span className="text-lime-400">mas resultados</span>
+          </h2>
+          <p className="text-lead text-noir-400 max-w-2xl mx-auto">
+            No somos una agencia tradicional que te cobra por horas y alarga los proyectos.
+            Somos desarrolladores que entregan.
+          </p>
         </div>
-        <div className="grid md:grid-cols-3 gap-6">
-          {pilares.map((pilar, index) => (
-            <div key={index} className="group relative bg-white dark:bg-gray-800 rounded-2xl p-8 border border-gray-200 dark:border-gray-700 hover:border-gray-300 dark:hover:border-gray-600 transition-all duration-300 hover:-translate-y-1 hover:shadow-medium cursor-pointer" style={{ transitionDelay: `${index * 100}ms` }}>
-              <div className={`w-14 h-14 rounded-2xl bg-gradient-to-br ${pilar.color} flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300`}>
-                <pilar.icon className="w-7 h-7 text-white" />
+
+        {/* Values grid */}
+        <div className={`grid md:grid-cols-2 gap-6 stagger-children ${isVisible ? 'visible' : ''}`}>
+          {values.map((value, index) => (
+            <div
+              key={index}
+              className={`group relative p-8 md:p-10 border-3 transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] cursor-default ${
+                value.accent === 'lime'
+                  ? 'border-lime-400 hover:shadow-brutal-lime bg-noir-800/50'
+                  : 'border-coral-500 hover:shadow-brutal-coral bg-noir-800/50'
+              }`}
+            >
+              {/* Icon */}
+              <div className={`w-16 h-16 mb-6 border-3 border-noir-700 flex items-center justify-center transition-all duration-300 group-hover:border-current ${
+                value.accent === 'lime' ? 'group-hover:bg-lime-400' : 'group-hover:bg-coral-500'
+              }`}>
+                <value.icon className={`w-8 h-8 transition-colors duration-300 ${
+                  value.accent === 'lime'
+                    ? 'text-lime-400 group-hover:text-noir-900'
+                    : 'text-coral-500 group-hover:text-white'
+                }`} />
               </div>
-              <div className="inline-flex items-center gap-1.5 bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 px-3 py-1 rounded-full text-xs font-medium mb-4">{pilar.stat}</div>
-              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-1">{pilar.titulo}</h3>
-              <p className="text-primary-600 dark:text-primary-400 font-medium text-sm mb-3">{pilar.subtitulo}</p>
-              <p className="text-gray-600 dark:text-gray-400 leading-relaxed">{pilar.descripcion}</p>
+
+              {/* Content */}
+              <h3 className="text-2xl font-display font-bold text-cream-50 mb-3">
+                {value.title}
+              </h3>
+              <p className="text-noir-400 leading-relaxed">
+                {value.description}
+              </p>
+
+              {/* Corner accent */}
+              <div className={`absolute top-0 right-0 w-6 h-6 transition-all duration-300 group-hover:w-8 group-hover:h-8 ${
+                value.accent === 'lime' ? 'bg-lime-400' : 'bg-coral-500'
+              }`} />
             </div>
           ))}
+        </div>
+
+        {/* Bottom stat */}
+        <div className={`mt-16 md:mt-24 text-center transition-all duration-700 delay-300 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+          <div className="inline-flex items-center gap-8 md:gap-12 px-8 py-6 border-3 border-noir-700 bg-noir-800/50">
+            <div className="text-center">
+              <p className="text-4xl md:text-5xl font-display font-bold text-lime-400">2-3</p>
+              <p className="text-xs font-bold uppercase tracking-wider text-noir-500 mt-1">Semanas</p>
+            </div>
+            <div className="w-px h-12 bg-noir-700" />
+            <div className="text-center">
+              <p className="text-4xl md:text-5xl font-display font-bold text-cream-50">100%</p>
+              <p className="text-xs font-bold uppercase tracking-wider text-noir-500 mt-1">Remoto</p>
+            </div>
+            <div className="w-px h-12 bg-noir-700" />
+            <div className="text-center">
+              <p className="text-4xl md:text-5xl font-display font-bold text-coral-500">0</p>
+              <p className="text-xs font-bold uppercase tracking-wider text-noir-500 mt-1">Sorpresas</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>

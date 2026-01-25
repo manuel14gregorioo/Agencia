@@ -1,52 +1,140 @@
 import React from 'react';
-import { Star, Check } from 'lucide-react';
+import { Star, Check, ArrowRight } from 'lucide-react';
 import { useScrollAnimation } from '../hooks';
 import { SERVICIOS, TECNOLOGIAS } from '../../data/constants';
+import { scrollToSection } from '../../utils/scroll';
 
 const ServiciosSection = () => {
   const [ref, isVisible] = useScrollAnimation();
 
   return (
-    <section id="servicios" className="section bg-gray-50 dark:bg-gray-900">
-      <div ref={ref} className={`container-lg transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-        <div className="text-center mb-16">
-          <h2 className="heading-2 text-gray-900 dark:text-white mb-4">Servicios</h2>
-          <p className="lead dark:text-gray-400 max-w-2xl mx-auto">Tres niveles segun lo que necesites. Precio fijo, sin sorpresas.</p>
+    <section id="servicios" className="section bg-noir-900 dark:bg-noir-950 relative overflow-hidden">
+      {/* Background pattern */}
+      <div className="absolute inset-0 bg-grid opacity-20" />
+
+      <div ref={ref} className="container-xl mx-auto relative z-10">
+        {/* Section header */}
+        <div className={`text-center mb-16 md:mb-20 transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+          <span className="inline-block px-4 py-2 bg-lime-400 text-noir-900 text-xs font-bold uppercase tracking-wider mb-6">
+            Servicios
+          </span>
+          <h2 className="heading-xl text-cream-50 mb-4">
+            Tres niveles.<br />
+            <span className="text-lime-400">Precio fijo.</span>
+          </h2>
+          <p className="text-lead text-noir-400 max-w-xl mx-auto">
+            Sin sorpresas. Eliges lo que necesitas.
+          </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-6">
+        {/* Services grid */}
+        <div className={`grid md:grid-cols-3 gap-6 stagger-children ${isVisible ? 'visible' : ''}`}>
           {SERVICIOS.map((servicio, index) => (
-            <div key={servicio.id} className={`relative bg-white dark:bg-gray-800 rounded-2xl p-8 border transition-all duration-300 hover:-translate-y-1 hover:shadow-medium cursor-pointer ${servicio.popular ? 'border-primary-200 dark:border-primary-700 ring-2 ring-primary-100 dark:ring-primary-900' : 'border-gray-200 dark:border-gray-700 hover:border-gray-300 dark:hover:border-gray-600'}`} style={{ transitionDelay: `${index * 100}ms` }}>
+            <div
+              key={servicio.id}
+              className={`group relative p-8 border-3 transition-all duration-300 ${
+                servicio.popular
+                  ? 'border-lime-400 bg-lime-400'
+                  : 'border-noir-700 bg-noir-800/50 hover:border-lime-400'
+              } hover:translate-x-[-4px] hover:translate-y-[-4px] ${
+                servicio.popular ? 'hover:shadow-brutal-lime' : 'hover:shadow-brutal-lime'
+              }`}
+            >
+              {/* Popular badge */}
               {servicio.popular && (
-                <div className="absolute -top-3 left-1/2 -translate-x-1/2">
-                  <span className="inline-flex items-center gap-1.5 bg-primary-600 text-white px-4 py-1.5 rounded-full text-xs font-semibold"><Star className="w-3.5 h-3.5" /> MAS POPULAR</span>
+                <div className="absolute -top-4 left-1/2 -translate-x-1/2">
+                  <span className="inline-flex items-center gap-2 bg-noir-900 text-lime-400 px-4 py-2 text-xs font-bold uppercase tracking-wider border-3 border-noir-900">
+                    <Star className="w-4 h-4" />
+                    Popular
+                  </span>
                 </div>
               )}
-              <div className={`w-14 h-14 rounded-2xl flex items-center justify-center mb-6 ${servicio.popular ? 'bg-primary-100 dark:bg-primary-900/30' : 'bg-gray-100 dark:bg-gray-700'}`}>
-                <servicio.icon className={`w-7 h-7 ${servicio.popular ? 'text-primary-600 dark:text-primary-400' : 'text-gray-600 dark:text-gray-400'}`} />
+
+              {/* Icon */}
+              <div className={`w-16 h-16 mb-6 border-3 flex items-center justify-center transition-all duration-300 ${
+                servicio.popular
+                  ? 'border-noir-900 bg-noir-900'
+                  : 'border-noir-700 group-hover:border-lime-400 group-hover:bg-lime-400'
+              }`}>
+                <servicio.icon className={`w-8 h-8 ${
+                  servicio.popular
+                    ? 'text-lime-400'
+                    : 'text-lime-400 group-hover:text-noir-900'
+                }`} />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">{servicio.titulo}</h3>
-              <p className="text-gray-600 dark:text-gray-400 mb-6 min-h-[48px]">{servicio.descripcion}</p>
+
+              {/* Content */}
+              <h3 className={`text-2xl font-display font-bold mb-2 ${
+                servicio.popular ? 'text-noir-900' : 'text-cream-50'
+              }`}>
+                {servicio.titulo}
+              </h3>
+              <p className={`mb-6 ${
+                servicio.popular ? 'text-noir-700' : 'text-noir-400'
+              }`}>
+                {servicio.descripcion}
+              </p>
+
+              {/* Features */}
               <ul className="space-y-3 mb-8">
                 {servicio.features.map((feature, idx) => (
-                  <li key={idx} className="flex items-start gap-3 text-sm text-gray-600 dark:text-gray-400">
-                    <Check className={`w-5 h-5 mt-0.5 flex-shrink-0 ${servicio.popular ? 'text-primary-500' : 'text-emerald-500'}`} />{feature}
+                  <li key={idx} className={`flex items-start gap-3 text-sm ${
+                    servicio.popular ? 'text-noir-700' : 'text-noir-400'
+                  }`}>
+                    <Check className={`w-5 h-5 mt-0.5 flex-shrink-0 ${
+                      servicio.popular ? 'text-noir-900' : 'text-lime-400'
+                    }`} />
+                    {feature}
                   </li>
                 ))}
               </ul>
-              <div className="pt-6 border-t border-gray-100 dark:border-gray-700">
-                <p className={`text-2xl font-bold ${servicio.popular ? 'text-primary-600 dark:text-primary-400' : 'text-gray-900 dark:text-white'}`}>{servicio.precio}</p>
-                <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">Precio fijo cerrado</p>
+
+              {/* Price */}
+              <div className={`pt-6 border-t ${
+                servicio.popular ? 'border-noir-300' : 'border-noir-700'
+              }`}>
+                <p className={`text-3xl font-display font-bold ${
+                  servicio.popular ? 'text-noir-900' : 'text-lime-400'
+                }`}>
+                  {servicio.precio}
+                </p>
+                <p className={`text-sm mt-1 ${
+                  servicio.popular ? 'text-noir-600' : 'text-noir-500'
+                }`}>
+                  Precio fijo cerrado
+                </p>
               </div>
+
+              {/* CTA */}
+              <a
+                href="#contacto"
+                onClick={(e) => scrollToSection(e, '#contacto')}
+                className={`mt-6 w-full inline-flex items-center justify-center gap-2 px-6 py-4 font-bold uppercase tracking-wide border-3 transition-all duration-300 ${
+                  servicio.popular
+                    ? 'bg-noir-900 text-lime-400 border-noir-900 hover:bg-noir-800'
+                    : 'bg-transparent text-cream-50 border-noir-700 hover:border-lime-400 hover:text-lime-400'
+                }`}
+              >
+                Consultar
+                <ArrowRight className="w-4 h-4" />
+              </a>
             </div>
           ))}
         </div>
 
-        <div className="mt-16 text-center">
-          <p className="text-sm text-gray-500 dark:text-gray-400 uppercase tracking-wider mb-6">Stack tecnologico</p>
+        {/* Tech stack */}
+        <div className={`mt-20 text-center transition-all duration-700 delay-300 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+          <p className="text-xs font-bold uppercase tracking-[0.2em] text-noir-500 mb-8">
+            Stack Tecnologico
+          </p>
           <div className="flex flex-wrap justify-center gap-3">
             {TECNOLOGIAS.map((tech, index) => (
-              <span key={index} className={`${tech.color} px-4 py-2 rounded-full text-sm font-medium transition-transform hover:scale-105`}>{tech.nombre}</span>
+              <span
+                key={index}
+                className="px-5 py-3 bg-noir-800 text-noir-300 text-sm font-semibold border-2 border-noir-700 hover:border-lime-400 hover:text-lime-400 transition-all duration-300 cursor-default"
+              >
+                {tech.nombre}
+              </span>
             ))}
           </div>
         </div>

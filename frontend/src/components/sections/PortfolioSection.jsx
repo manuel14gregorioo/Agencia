@@ -3,11 +3,10 @@ import {
   BadgeCheck,
   Mic,
   Code,
-  CheckCircle,
   Check,
   ExternalLink,
   ArrowRight,
-  Sparkles,
+  Plus,
 } from 'lucide-react';
 import { useScrollAnimation } from '../hooks';
 import { AnimatedCounter } from './HeroSection';
@@ -16,107 +15,192 @@ import { scrollToSection } from '../../utils/scroll';
 const PortfolioSection = () => {
   const [ref, isVisible] = useScrollAnimation();
 
+  const techStack = [
+    'Flask', 'React', 'PostgreSQL', 'Stripe', 'OpenAI Whisper', 'Claude API', 'Tailwind CSS', 'Railway'
+  ];
+
+  const features = [
+    'Autenticacion completa (registro, login, recuperar contrasena)',
+    'Sistema de creditos con 4 planes de suscripcion',
+    'Transcripcion con OpenAI Whisper (50+ idiomas)',
+    'Resumenes automaticos con Claude AI',
+    'Dashboard de usuario con historial',
+    'Landing page bilingue (ES/EN)',
+    'Integracion completa con Stripe',
+    'Sistema de referidos'
+  ];
+
   return (
-    <section id="portfolio" className="section bg-gray-50 dark:bg-gray-900">
-      <div ref={ref} className={`container-lg transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-        <div className="text-center mb-16">
-          <div className="inline-flex items-center gap-2 bg-emerald-100 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-400 px-4 py-2 rounded-full text-sm font-medium mb-6">
-            <BadgeCheck className="w-4 h-4" /> Proyectos verificables, no promesas
-          </div>
-          <h2 className="heading-2 text-gray-900 dark:text-white mb-4">Portfolio</h2>
-          <p className="lead dark:text-gray-400 max-w-2xl mx-auto">No hablamos de lo que podemos hacer. Aqui esta lo que hemos hecho.</p>
+    <section id="portfolio" className="section bg-cream-50 dark:bg-noir-950 relative">
+      {/* Background accent */}
+      <div className="absolute top-0 left-0 w-1/3 h-full bg-lime-400/5 dark:bg-lime-400/3 -skew-x-12 origin-top-left" />
+
+      <div ref={ref} className="container-xl mx-auto relative z-10">
+        {/* Section header */}
+        <div className={`text-center mb-16 md:mb-20 transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+          <span className="inline-flex items-center gap-2 px-4 py-2 bg-noir-900 dark:bg-lime-400 text-cream-50 dark:text-noir-900 text-xs font-bold uppercase tracking-wider mb-6">
+            <BadgeCheck className="w-4 h-4" />
+            Proyecto verificable
+          </span>
+          <h2 className="heading-xl text-noir-900 dark:text-cream-50 mb-4">
+            No hablamos de lo que podemos hacer.
+          </h2>
+          <p className="text-lead max-w-2xl mx-auto">
+            Aqui esta lo que <strong className="text-noir-900 dark:text-cream-50">hemos hecho</strong>.
+          </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-8">
-          <div className="lg:col-span-2 bg-white dark:bg-gray-800 rounded-3xl border border-gray-200 dark:border-gray-700 overflow-hidden hover:shadow-strong transition-all duration-300">
+        {/* Main project card */}
+        <div className={`transition-all duration-700 delay-200 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+          <div className="border-3 border-noir-900 dark:border-noir-700 bg-cream-50 dark:bg-noir-900 overflow-hidden">
             <div className="grid lg:grid-cols-2">
-              <div className="relative bg-gradient-to-br from-primary-900 via-purple-900 to-primary-800 p-8 lg:p-12">
-                <div className="absolute inset-0 bg-[radial-gradient(ellipse_50%_50%_at_30%_30%,rgba(139,92,246,0.3),transparent)]" />
+              {/* Left - Project showcase */}
+              <div className="relative bg-noir-900 p-8 lg:p-12">
+                {/* Decorative grid */}
+                <div className="absolute inset-0 bg-grid opacity-20" />
+
                 <div className="relative">
-                  <div className="flex flex-wrap gap-2 mb-6">
-                    <span className="inline-flex items-center gap-1.5 bg-white/10 backdrop-blur-sm text-white px-3 py-1.5 rounded-full text-xs font-medium border border-white/10">
-                      <BadgeCheck className="w-3.5 h-3.5 text-emerald-400" /> PROYECTO VERIFICABLE
+                  {/* Badges */}
+                  <div className="flex flex-wrap gap-2 mb-8">
+                    <span className="inline-flex items-center gap-2 px-3 py-1.5 bg-lime-400 text-noir-900 text-xs font-bold uppercase tracking-wider">
+                      <BadgeCheck className="w-4 h-4" />
+                      Verificable
                     </span>
-                    <span className="inline-flex items-center gap-1.5 bg-emerald-500/20 text-emerald-300 px-3 py-1.5 rounded-full text-xs font-medium">EN PRODUCCION</span>
+                    <span className="inline-flex items-center gap-2 px-3 py-1.5 bg-coral-500 text-white text-xs font-bold uppercase tracking-wider">
+                      En Produccion
+                    </span>
                   </div>
 
-                  <div className="flex items-center gap-4 mb-4">
-                    <div className="w-14 h-14 bg-white/10 backdrop-blur-sm rounded-2xl flex items-center justify-center border border-white/10">
-                      <Mic className="w-8 h-8 text-white" />
+                  {/* Project header */}
+                  <div className="flex items-center gap-4 mb-6">
+                    <div className="w-16 h-16 bg-lime-400 border-3 border-lime-400 flex items-center justify-center">
+                      <Mic className="w-8 h-8 text-noir-900" />
                     </div>
                     <div>
-                      <h3 className="text-3xl font-bold text-white">VOCAP.io</h3>
-                      <p className="text-white/60">Plataforma SaaS de Transcripcion</p>
+                      <h3 className="text-4xl font-display font-bold text-cream-50">VOCAP.io</h3>
+                      <p className="text-noir-400">Plataforma SaaS de Transcripcion</p>
                     </div>
                   </div>
 
-                  <p className="text-white/70 mb-8 leading-relaxed">
-                    Transcripcion de audio con IA, resumenes automaticos, extraccion de tareas. Competidor directo de Otter.ai a 1€/hora vs 8-12€.
+                  {/* Description */}
+                  <p className="text-noir-300 mb-8 leading-relaxed text-lg">
+                    Transcripcion de audio con IA, resumenes automaticos, extraccion de tareas.
+                    Competidor directo de Otter.ai a <strong className="text-lime-400">1€/hora</strong> vs 8-12€.
                   </p>
 
-                  <div className="grid grid-cols-3 gap-4 mb-8">
-                    <div className="bg-white/5 backdrop-blur-sm rounded-xl p-4 border border-white/10 text-center">
-                      <p className="text-3xl font-bold text-white"><AnimatedCounter value={3} isVisible={isVisible} /></p>
-                      <p className="text-xs text-white/60 mt-1">Semanas dev</p>
+                  {/* Stats */}
+                  <div className="grid grid-cols-3 gap-4 mb-10">
+                    <div className="border-3 border-noir-700 p-4 text-center bg-noir-800/50 hover:border-lime-400 transition-colors">
+                      <p className="text-3xl font-display font-bold text-lime-400">
+                        <AnimatedCounter value={3} isVisible={isVisible} />
+                      </p>
+                      <p className="text-xs font-bold uppercase tracking-wider text-noir-500 mt-1">Semanas</p>
                     </div>
-                    <div className="bg-white/5 backdrop-blur-sm rounded-xl p-4 border border-white/10 text-center">
-                      <p className="text-3xl font-bold text-white"><AnimatedCounter value={15} suffix="+" isVisible={isVisible} /></p>
-                      <p className="text-xs text-white/60 mt-1">Features</p>
+                    <div className="border-3 border-noir-700 p-4 text-center bg-noir-800/50 hover:border-lime-400 transition-colors">
+                      <p className="text-3xl font-display font-bold text-cream-50">
+                        <AnimatedCounter value={15} suffix="+" isVisible={isVisible} />
+                      </p>
+                      <p className="text-xs font-bold uppercase tracking-wider text-noir-500 mt-1">Features</p>
                     </div>
-                    <div className="bg-white/5 backdrop-blur-sm rounded-xl p-4 border border-white/10 text-center">
-                      <p className="text-3xl font-bold text-white"><AnimatedCounter value={4} isVisible={isVisible} /></p>
-                      <p className="text-xs text-white/60 mt-1">Planes Stripe</p>
+                    <div className="border-3 border-noir-700 p-4 text-center bg-noir-800/50 hover:border-lime-400 transition-colors">
+                      <p className="text-3xl font-display font-bold text-coral-500">
+                        <AnimatedCounter value={4} isVisible={isVisible} />
+                      </p>
+                      <p className="text-xs font-bold uppercase tracking-wider text-noir-500 mt-1">Planes</p>
                     </div>
                   </div>
 
-                  <div className="flex flex-wrap gap-3">
-                    <a href="https://vocap.io" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-white text-gray-900 px-6 py-3 rounded-xl font-semibold hover:bg-gray-100 transition-all hover:scale-105 active:scale-[0.98]">
-                      Probar VOCAP.io <ExternalLink className="w-4 h-4" />
+                  {/* CTAs */}
+                  <div className="flex flex-wrap gap-4">
+                    <a
+                      href="https://vocap.io"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 bg-lime-400 text-noir-900 px-6 py-4 font-bold uppercase tracking-wide border-3 border-lime-400 transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:shadow-brutal-lime"
+                    >
+                      Probar VOCAP.io
+                      <ExternalLink className="w-4 h-4" />
                     </a>
-                    <a href="#contacto" onClick={(e) => scrollToSection(e, '#contacto')} className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm text-white px-6 py-3 rounded-xl font-semibold border border-white/20 hover:bg-white/20 transition-all hover:scale-105 active:scale-[0.98]">
-                      Crear Similar <ArrowRight className="w-4 h-4" />
+                    <a
+                      href="#contacto"
+                      onClick={(e) => scrollToSection(e, '#contacto')}
+                      className="inline-flex items-center gap-2 bg-transparent text-cream-50 px-6 py-4 font-bold uppercase tracking-wide border-3 border-noir-700 hover:border-cream-50 transition-all duration-300"
+                    >
+                      Crear Similar
+                      <ArrowRight className="w-4 h-4" />
                     </a>
                   </div>
                 </div>
               </div>
 
+              {/* Right - Tech & Features */}
               <div className="p-8 lg:p-12">
-                <h4 className="font-bold text-gray-900 dark:text-white mb-6 flex items-center gap-2">
-                  <Code className="w-5 h-5 text-primary-600 dark:text-primary-400" /> Stack Tecnologico
-                </h4>
-                <div className="flex flex-wrap gap-2 mb-8">
-                  {['Flask', 'React', 'PostgreSQL', 'Stripe', 'OpenAI Whisper', 'Claude API', 'Tailwind CSS', 'Railway'].map((tech) => (
-                    <span key={tech} className="bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-3 py-1.5 rounded-lg text-sm font-medium">{tech}</span>
-                  ))}
+                {/* Tech stack */}
+                <div className="mb-10">
+                  <h4 className="flex items-center gap-2 text-lg font-display font-bold text-noir-900 dark:text-cream-50 mb-4">
+                    <Code className="w-5 h-5 text-lime-500" />
+                    Stack Tecnologico
+                  </h4>
+                  <div className="flex flex-wrap gap-2">
+                    {techStack.map((tech) => (
+                      <span
+                        key={tech}
+                        className="px-4 py-2 bg-noir-100 dark:bg-noir-800 text-noir-700 dark:text-noir-300 text-sm font-semibold border-2 border-noir-200 dark:border-noir-700 hover:border-lime-400 dark:hover:border-lime-400 transition-colors cursor-default"
+                      >
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
                 </div>
 
-                <h4 className="font-bold text-gray-900 dark:text-white mb-4 flex items-center gap-2">
-                  <CheckCircle className="w-5 h-5 text-emerald-600 dark:text-emerald-400" /> Funcionalidades Incluidas
-                </h4>
-                <ul className="space-y-3 mb-8">
-                  {['Autenticacion completa (registro, login, recuperar contrasena)', 'Sistema de creditos con 4 planes de suscripcion', 'Transcripcion con OpenAI Whisper (50+ idiomas)', 'Resumenes automaticos con Claude AI', 'Dashboard de usuario con historial', 'Landing page bilingue (ES/EN)', 'Integracion completa con Stripe', 'Sistema de referidos'].map((feature, idx) => (
-                    <li key={idx} className="flex items-start gap-3 text-gray-600 dark:text-gray-400">
-                      <Check className="w-5 h-5 text-emerald-500 mt-0.5 flex-shrink-0" /><span>{feature}</span>
-                    </li>
-                  ))}
-                </ul>
-                <div className="bg-gray-50 dark:bg-gray-700/50 rounded-xl p-4 border border-gray-200 dark:border-gray-600">
-                  <p className="text-sm text-gray-600 dark:text-gray-400 italic">"Este es nuestro proyecto propio. Puedes probarlo gratis, ver el codigo, verificar que funciona."</p>
+                {/* Features */}
+                <div>
+                  <h4 className="flex items-center gap-2 text-lg font-display font-bold text-noir-900 dark:text-cream-50 mb-4">
+                    <Check className="w-5 h-5 text-lime-500" />
+                    Funcionalidades Incluidas
+                  </h4>
+                  <ul className="space-y-3">
+                    {features.map((feature, idx) => (
+                      <li key={idx} className="flex items-start gap-3 text-noir-600 dark:text-noir-400">
+                        <Check className="w-5 h-5 text-lime-500 mt-0.5 flex-shrink-0" />
+                        <span>{feature}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
+                {/* Quote */}
+                <div className="mt-8 p-4 border-l-4 border-lime-400 bg-noir-50 dark:bg-noir-800/50">
+                  <p className="text-sm text-noir-600 dark:text-noir-400 italic">
+                    "Este es nuestro proyecto propio. Puedes probarlo gratis, ver el codigo, verificar que funciona."
+                  </p>
                 </div>
               </div>
             </div>
           </div>
+        </div>
 
-          <div className="lg:col-span-2 bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-700 rounded-3xl border-2 border-dashed border-gray-300 dark:border-gray-600 p-12 flex flex-col items-center justify-center text-center">
-            <div className="w-16 h-16 bg-primary-100 dark:bg-primary-900/30 rounded-2xl flex items-center justify-center mb-4">
-              <Sparkles className="w-8 h-8 text-primary-600 dark:text-primary-400" />
+        {/* Next project placeholder */}
+        <div className={`mt-8 transition-all duration-700 delay-300 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+          <a
+            href="#contacto"
+            onClick={(e) => scrollToSection(e, '#contacto')}
+            className="group block border-3 border-dashed border-noir-300 dark:border-noir-700 hover:border-lime-400 dark:hover:border-lime-400 p-12 text-center transition-all duration-300"
+          >
+            <div className="w-16 h-16 mx-auto mb-4 border-3 border-noir-300 dark:border-noir-700 group-hover:border-lime-400 group-hover:bg-lime-400 flex items-center justify-center transition-all duration-300">
+              <Plus className="w-8 h-8 text-noir-400 group-hover:text-noir-900 transition-colors" />
             </div>
-            <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">Tu Proyecto Aqui</h3>
-            <p className="text-gray-600 dark:text-gray-400 mb-6 max-w-md">El proximo caso de exito verificable podria ser el tuyo.</p>
-            <a href="#contacto" onClick={(e) => scrollToSection(e, '#contacto')} className="inline-flex items-center gap-2 bg-primary-600 text-white px-6 py-3 rounded-xl font-semibold hover:bg-primary-700 transition-all hover:scale-105 active:scale-[0.98]">
-              Empecemos <ArrowRight className="w-4 h-4" />
-            </a>
-          </div>
+            <h3 className="text-xl font-display font-bold text-noir-900 dark:text-cream-50 mb-2">
+              Tu Proyecto Aqui
+            </h3>
+            <p className="text-noir-500 dark:text-noir-400 mb-6">
+              El proximo caso de exito verificable podria ser el tuyo.
+            </p>
+            <span className="inline-flex items-center gap-2 text-lime-600 dark:text-lime-400 font-bold uppercase tracking-wide group-hover:gap-4 transition-all">
+              Empecemos
+              <ArrowRight className="w-4 h-4" />
+            </span>
+          </a>
         </div>
       </div>
     </section>

@@ -1,18 +1,37 @@
 import React, { useState } from 'react';
-import { ChevronDown } from 'lucide-react';
+import { ChevronDown, Plus, Minus } from 'lucide-react';
 import { useScrollAnimation } from '../hooks';
 import { FAQS } from '../../data/constants';
 
-const FAQItem = ({ pregunta, respuesta, isOpen, onClick }) => (
-  <div className="border-b border-gray-200 dark:border-gray-700 last:border-0">
-    <button onClick={onClick} className="w-full py-6 flex items-center justify-between text-left hover:text-primary-600 dark:hover:text-primary-400 transition-colors group">
-      <span className="font-semibold text-gray-900 dark:text-white pr-4 group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors">{pregunta}</span>
-      <div className={`w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 transition-all ${isOpen ? 'bg-primary-100 dark:bg-primary-900/30 rotate-180' : 'bg-gray-100 dark:bg-gray-700'}`}>
-        <ChevronDown className={`w-5 h-5 ${isOpen ? 'text-primary-600 dark:text-primary-400' : 'text-gray-400'}`} />
+const FAQItem = ({ pregunta, respuesta, isOpen, onClick, index }) => (
+  <div className={`border-3 transition-all duration-300 ${isOpen ? 'border-lime-400 bg-lime-50 dark:bg-lime-900/20' : 'border-noir-200 dark:border-noir-700 bg-cream-50 dark:bg-noir-900 hover:border-lime-400'}`}>
+    <button
+      onClick={onClick}
+      className="w-full p-6 flex items-center justify-between text-left group"
+      aria-expanded={isOpen}
+    >
+      <span className="flex items-center gap-4">
+        <span className={`w-10 h-10 flex items-center justify-center border-3 font-display font-bold text-sm transition-all duration-300 ${isOpen ? 'bg-lime-400 border-lime-400 text-noir-900' : 'bg-cream-50 dark:bg-noir-900 border-noir-200 dark:border-noir-700 text-noir-600 dark:text-noir-400 group-hover:border-lime-400'}`}>
+          {String(index + 1).padStart(2, '0')}
+        </span>
+        <span className={`font-display font-bold transition-colors ${isOpen ? 'text-noir-900 dark:text-noir-900' : 'text-noir-900 dark:text-cream-50'}`}>
+          {pregunta}
+        </span>
+      </span>
+      <div className={`w-10 h-10 flex items-center justify-center border-3 transition-all duration-300 flex-shrink-0 ml-4 ${isOpen ? 'bg-noir-900 border-noir-900 rotate-0' : 'bg-cream-50 dark:bg-noir-900 border-noir-200 dark:border-noir-700 group-hover:border-lime-400'}`}>
+        {isOpen ? (
+          <Minus className="w-5 h-5 text-lime-400" />
+        ) : (
+          <Plus className={`w-5 h-5 text-noir-600 dark:text-noir-400 group-hover:text-lime-500`} />
+        )}
       </div>
     </button>
-    <div className={`overflow-hidden transition-all duration-300 ${isOpen ? 'max-h-96 pb-6' : 'max-h-0'}`}>
-      <p className="text-gray-600 dark:text-gray-400 leading-relaxed">{respuesta}</p>
+    <div className={`overflow-hidden transition-all duration-300 ${isOpen ? 'max-h-96' : 'max-h-0'}`}>
+      <div className="px-6 pb-6 pl-20">
+        <p className={`leading-relaxed ${isOpen ? 'text-noir-700 dark:text-noir-700' : 'text-noir-600 dark:text-noir-400'}`}>
+          {respuesta}
+        </p>
+      </div>
     </div>
   </div>
 );
@@ -22,15 +41,32 @@ const FAQSection = () => {
   const [ref, isVisible] = useScrollAnimation();
 
   return (
-    <section id="faq" className="section bg-white dark:bg-gray-800">
-      <div ref={ref} className={`max-w-3xl mx-auto px-4 transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-        <div className="text-center mb-12">
-          <h2 className="heading-2 text-gray-900 dark:text-white mb-4">Preguntas frecuentes</h2>
-          <p className="lead dark:text-gray-400">Si tu pregunta no esta aqui, escribenos.</p>
+    <section id="faq" className="section bg-cream-50 dark:bg-noir-950">
+      <div ref={ref} className={`max-w-4xl mx-auto px-4 md:px-8 transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+        {/* Section header */}
+        <div className="text-center mb-16">
+          <span className="inline-block px-4 py-2 bg-noir-900 dark:bg-lime-400 text-cream-50 dark:text-noir-900 text-xs font-bold uppercase tracking-wider mb-6">
+            FAQ
+          </span>
+          <h2 className="heading-xl text-noir-900 dark:text-cream-50 mb-4">
+            Preguntas <span className="text-lime-500">frecuentes</span>
+          </h2>
+          <p className="text-lead max-w-xl mx-auto">
+            Si tu pregunta no esta aqui, escribenos.
+          </p>
         </div>
-        <div className="bg-white dark:bg-gray-800 rounded-2xl border border-gray-200 dark:border-gray-700 px-6">
+
+        {/* FAQ list */}
+        <div className={`space-y-4 stagger-children ${isVisible ? 'visible' : ''}`}>
           {FAQS.map((faq, index) => (
-            <FAQItem key={index} pregunta={faq.pregunta} respuesta={faq.respuesta} isOpen={openIndex === index} onClick={() => setOpenIndex(openIndex === index ? -1 : index)} />
+            <FAQItem
+              key={index}
+              pregunta={faq.pregunta}
+              respuesta={faq.respuesta}
+              isOpen={openIndex === index}
+              onClick={() => setOpenIndex(openIndex === index ? -1 : index)}
+              index={index}
+            />
           ))}
         </div>
       </div>

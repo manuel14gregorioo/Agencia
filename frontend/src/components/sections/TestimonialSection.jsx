@@ -6,17 +6,43 @@ const TestimonialSection = () => {
   const [ref, isVisible] = useScrollAnimation();
 
   return (
-    <section className="py-16 bg-gradient-to-r from-primary-50 to-purple-50 dark:from-gray-800 dark:to-gray-800">
-      <div ref={ref} className={`max-w-4xl mx-auto px-4 text-center transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-        <Quote className="w-12 h-12 text-primary-300 dark:text-primary-600 mx-auto mb-6" />
-        <blockquote className="text-xl md:text-2xl text-gray-700 dark:text-gray-300 leading-relaxed mb-6 italic">
-          "Desarrollamos VOCAP.io en 3 semanas desde cero hasta produccion. Autenticacion, pagos con Stripe, procesamiento con OpenAI, dashboard completo. Ahora mismo tiene usuarios reales pagando suscripciones. Eso es lo que podemos hacer por tu negocio."
+    <section className="py-20 md:py-28 bg-lime-400 relative overflow-hidden">
+      {/* Background decorations */}
+      <div className="absolute top-0 left-0 w-32 h-32 bg-noir-900/10 -translate-x-1/2 -translate-y-1/2" />
+      <div className="absolute bottom-0 right-0 w-48 h-48 bg-noir-900/10 translate-x-1/2 translate-y-1/2" />
+
+      <div
+        ref={ref}
+        className={`container-lg mx-auto px-4 md:px-8 text-center transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
+      >
+        {/* Quote icon */}
+        <div className="w-16 h-16 mx-auto mb-8 bg-noir-900 flex items-center justify-center">
+          <Quote className="w-8 h-8 text-lime-400" />
+        </div>
+
+        {/* Quote text */}
+        <blockquote className="max-w-4xl mx-auto mb-10">
+          <p className="text-2xl md:text-3xl lg:text-4xl font-display font-semibold text-noir-900 leading-tight">
+            "Desarrollamos VOCAP.io en 3 semanas desde cero hasta produccion.
+            Autenticacion, pagos con Stripe, procesamiento con OpenAI, dashboard completo.
+            <span className="relative inline-block mx-2">
+              Ahora mismo tiene usuarios reales pagando suscripciones.
+              <svg className="absolute -bottom-1 left-0 w-full" viewBox="0 0 300 8" fill="none">
+                <path d="M2 6C80 2 220 2 298 6" stroke="#0A0A0B" strokeWidth="3" strokeLinecap="round"/>
+              </svg>
+            </span>
+            Eso es lo que podemos hacer por tu negocio."
+          </p>
         </blockquote>
+
+        {/* Author */}
         <div className="flex items-center justify-center gap-4">
-          <div className="w-12 h-12 bg-gradient-to-br from-primary-500 to-purple-600 rounded-full flex items-center justify-center text-white font-bold text-lg">M</div>
+          <div className="w-14 h-14 bg-noir-900 border-3 border-noir-900 flex items-center justify-center">
+            <span className="text-xl font-display font-bold text-lime-400">M</span>
+          </div>
           <div className="text-left">
-            <p className="font-semibold text-gray-900 dark:text-white">Manuel Gregorio</p>
-            <p className="text-sm text-gray-500 dark:text-gray-400">Founder @ M.G.M Automations</p>
+            <p className="font-display font-bold text-noir-900">Manuel Gregorio</p>
+            <p className="text-sm text-noir-700">Founder @ M.G.M Automations</p>
           </div>
         </div>
       </div>

@@ -29,8 +29,8 @@ const Navbar = () => {
   const navLinks = [
     { href: '#portfolio', label: 'Trabajo', id: 'portfolio' },
     { href: '#servicios', label: 'Servicios', id: 'servicios' },
-    { href: '#proceso', label: 'Proceso', id: 'proceso' },
     { href: '#pricing', label: 'Precios', id: 'pricing' },
+    { href: '#/blog', label: 'Blog', id: 'blog', external: true },
   ];
 
   return (
@@ -70,7 +70,7 @@ const Navbar = () => {
               <a
                 key={link.href}
                 href={link.href}
-                onClick={(e) => scrollToSection(e, link.href)}
+                onClick={link.external ? undefined : (e) => scrollToSection(e, link.href)}
                 className={`relative px-5 py-3 text-sm font-semibold uppercase tracking-wide transition-all duration-300 ${
                   activeSection === link.id
                     ? 'text-noir-900 dark:text-lime-400'
@@ -154,7 +154,7 @@ const Navbar = () => {
               <a
                 key={link.href}
                 href={link.href}
-                onClick={(e) => { scrollToSection(e, link.href); setIsOpen(false); }}
+                onClick={link.external ? () => setIsOpen(false) : (e) => { scrollToSection(e, link.href); setIsOpen(false); }}
                 className={`block py-4 text-lg font-bold uppercase tracking-wide transition-all duration-300 ${
                   activeSection === link.id
                     ? 'text-noir-900 dark:text-lime-400 pl-4 border-l-4 border-lime-400'

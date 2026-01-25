@@ -2,6 +2,10 @@ import React, { useState, useEffect } from 'react';
 import { MessageCircle } from 'lucide-react';
 import { ConversionEvents } from '../../utils/analytics';
 
+// TODO: Cambiar por el número real de WhatsApp
+const WHATSAPP_NUMBER = '34600000000';
+const WHATSAPP_MESSAGE = 'Hola, me interesa un proyecto de desarrollo web';
+
 const WhatsAppButton = () => {
   const [isVisible, setIsVisible] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
@@ -18,23 +22,41 @@ const WhatsAppButton = () => {
     ConversionEvents.whatsappClick();
   };
 
+  const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(WHATSAPP_MESSAGE)}`;
+
   return (
     <a
-      href="https://wa.me/34XXXXXXXXX?text=Hola,%20me%20interesa%20un%20proyecto%20de%20desarrollo%20web"
+      href={whatsappUrl}
       target="_blank"
       rel="noopener noreferrer"
       className="fixed bottom-6 left-6 z-50 group"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
       onClick={handleClick}
+      aria-label="Contactar por WhatsApp"
     >
-      <div className={`flex items-center gap-3 bg-[#25D366] text-white pl-4 pr-5 py-3 rounded-full shadow-lg transition-all duration-300 hover:shadow-xl hover:scale-105 ${isHovered ? 'pr-6' : ''}`}>
+      {/* Brutalist WhatsApp Button */}
+      <div className={`
+        flex items-center gap-3
+        bg-[#25D366] text-white
+        border-3 border-noir-900
+        transition-all duration-300
+        hover:translate-x-[-4px] hover:translate-y-[-4px]
+        hover:shadow-brutal
+        ${isHovered ? 'pl-5 pr-6 py-4' : 'p-4'}
+      `}>
         <MessageCircle className="w-6 h-6" />
-        <span className={`text-sm font-semibold whitespace-nowrap overflow-hidden transition-all duration-300 ${isHovered ? 'max-w-[200px] opacity-100' : 'max-w-0 opacity-0'}`}>
+        <span className={`
+          text-sm font-bold uppercase tracking-wide whitespace-nowrap
+          overflow-hidden transition-all duration-300
+          ${isHovered ? 'max-w-[200px] opacity-100' : 'max-w-0 opacity-0'}
+        `}>
           ¿Hablamos?
         </span>
       </div>
-      <span className="absolute -top-1 -right-1 w-3 h-3 bg-red-500 rounded-full animate-pulse" />
+
+      {/* Notification dot */}
+      <span className="absolute -top-1 -right-1 w-4 h-4 bg-coral-500 border-2 border-noir-900 animate-pulse" />
     </a>
   );
 };

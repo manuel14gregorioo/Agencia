@@ -19,13 +19,14 @@ const Footer = () => {
     empresa: [
       { label: 'Proceso', href: '#proceso' },
       { label: 'Precios', href: '#pricing' },
+      { label: 'Blog', href: '#/blog' },
       { label: 'FAQ', href: '#faq' },
       { label: 'Contacto', href: '#contacto' }
     ],
     legal: [
-      { label: 'Privacidad', href: '#' },
-      { label: 'Términos', href: '#' },
-      { label: 'Cookies', href: '#' }
+      { label: 'Privacidad', href: '#/privacidad' },
+      { label: 'Términos', href: '#/terminos' },
+      { label: 'Cookies', href: '#/cookies' }
     ],
   };
 

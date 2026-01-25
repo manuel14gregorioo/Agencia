@@ -39,16 +39,14 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="manifest" href="/manifest.json" />
 
-    <!-- Theme Color -->
-    <meta name="theme-color" content="#4F46E5" media="(prefers-color-scheme: light)" />
-    <meta name="theme-color" content="#1E1B4B" media="(prefers-color-scheme: dark)" />
-    <meta name="msapplication-TileColor" content="#4F46E5" />
+    <!-- Theme Color - Noir Brutalist -->
+    <meta name="theme-color" content="#BFFF00" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#0A0A0B" media="(prefers-color-scheme: dark)" />
+    <meta name="msapplication-TileColor" content="#BFFF00" />
 
-    <!-- Fonts - Preload for performance -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" as="style" />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <!-- Fonts - Clash Display + Outfit from Fontshare -->
+    <link rel="preconnect" href="https://api.fontshare.com" />
+    <link href="https://api.fontshare.com/v2/css?f[]=clash-display@400,500,600,700&f[]=outfit@300,400,500,600,700&display=swap" rel="stylesheet" />
 
     <!-- Preload critical image -->
     <link rel="preload" href="/images/vocap-hero.jpg" as="image" />
@@ -71,6 +69,69 @@
   </head>
   <body>
     <div id="root"></div>
+
+    <!-- Static content for SEO crawlers that don't execute JavaScript -->
+    <noscript>
+      <div style="max-width: 1200px; margin: 0 auto; padding: 2rem; font-family: system-ui, sans-serif;">
+        <header style="margin-bottom: 3rem;">
+          <h1 style="font-size: 2.5rem; font-weight: 700; margin-bottom: 1rem;">M.G.M Automations - Desarrollo Web y Automatizaciones en Madrid</h1>
+          <p style="font-size: 1.25rem; color: #666;">De idea a sistema funcionando en 2 semanas. Precio fijo desde 3.000€.</p>
+        </header>
+
+        <main>
+          <section style="margin-bottom: 3rem;">
+            <h2 style="font-size: 1.75rem; font-weight: 600; margin-bottom: 1rem;">Nuestros Servicios</h2>
+            <ul style="list-style: disc; padding-left: 1.5rem; line-height: 1.8;">
+              <li><strong>Automatización de Procesos</strong> (desde 3.000€): Chatbots WhatsApp, sistemas de reservas automáticas, integración con CRMs</li>
+              <li><strong>Plataformas Web</strong> (desde 4.500€): Landing pages, dashboards, portales de clientes con autenticación</li>
+              <li><strong>SaaS Completo</strong> (desde 8.000€): Autenticación, pagos con Stripe, procesamiento con IA, APIs</li>
+            </ul>
+          </section>
+
+          <section style="margin-bottom: 3rem;">
+            <h2 style="font-size: 1.75rem; font-weight: 600; margin-bottom: 1rem;">Portfolio: VOCAP.io</h2>
+            <p>Nuestro proyecto estrella es <a href="https://vocap.io" style="color: #BFFF00; text-decoration: underline;">VOCAP.io</a>, un SaaS de transcripción con inteligencia artificial que puedes probar gratis. Demuestra nuestra capacidad de desarrollo end-to-end.</p>
+          </section>
+
+          <section style="margin-bottom: 3rem;">
+            <h2 style="font-size: 1.75rem; font-weight: 600; margin-bottom: 1rem;">Proceso de Trabajo</h2>
+            <ol style="list-style: decimal; padding-left: 1.5rem; line-height: 1.8;">
+              <li><strong>Análisis</strong> (1-2 días): Entendemos tu problema y definimos la solución</li>
+              <li><strong>Propuesta</strong> (24-48h): Presupuesto cerrado con alcance detallado</li>
+              <li><strong>Desarrollo</strong> (1-3 semanas): Construimos con updates cada 2-3 días</li>
+              <li><strong>Entrega</strong> (1 día): Deploy y formación incluidos</li>
+            </ol>
+          </section>
+
+          <section style="margin-bottom: 3rem;">
+            <h2 style="font-size: 1.75rem; font-weight: 600; margin-bottom: 1rem;">Preguntas Frecuentes</h2>
+            <dl style="line-height: 1.8;">
+              <dt style="font-weight: 600;">¿Tenéis ejemplos reales de vuestro trabajo?</dt>
+              <dd style="margin-bottom: 1rem;">Sí, VOCAP.io es un proyecto propio que puedes probar gratis ahora mismo.</dd>
+
+              <dt style="font-weight: 600;">¿Cuánto tiempo tarda un proyecto?</dt>
+              <dd style="margin-bottom: 1rem;">Automatizaciones en 1-2 semanas. Plataformas web en 2-3 semanas. SaaS completos en 3-4 semanas.</dd>
+
+              <dt style="font-weight: 600;">¿Trabajáis solo en Madrid?</dt>
+              <dd style="margin-bottom: 1rem;">100% remoto. Trabajamos con clientes de toda España.</dd>
+            </dl>
+          </section>
+
+          <section style="margin-bottom: 3rem;">
+            <h2 style="font-size: 1.75rem; font-weight: 600; margin-bottom: 1rem;">Contacto</h2>
+            <p>Email: <a href="mailto:hola@mgmautomations.es" style="color: #BFFF00;">hola@mgmautomations.es</a></p>
+            <p>Ubicación: Madrid, España (100% remoto)</p>
+            <p>Respuesta garantizada en menos de 24 horas.</p>
+          </section>
+        </main>
+
+        <footer style="border-top: 1px solid #ccc; padding-top: 2rem; margin-top: 3rem; color: #666;">
+          <p>© 2025 M.G.M Automations. Todos los derechos reservados.</p>
+          <p>Desarrollo web y automatizaciones para negocios en España.</p>
+        </footer>
+      </div>
+    </noscript>
+
     <script type="module" src="/src/main.jsx"></script>
 
     <!-- Schema.org JSON-LD Structured Data -->

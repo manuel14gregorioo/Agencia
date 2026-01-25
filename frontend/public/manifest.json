@@ -4,8 +4,8 @@
   "description": "Desarrollo web y automatizaciones para negocios en 2 semanas. Creadores de VOCAP.io.",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#ffffff",
-  "theme_color": "#4F46E5",
+  "background_color": "#F7F7F5",
+  "theme_color": "#BFFF00",
   "orientation": "portrait-primary",
   "icons": [
     {

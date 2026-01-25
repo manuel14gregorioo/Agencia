@@ -49,6 +49,7 @@ def submit_contact():
     Endpoint para el formulario de contacto
     Crea un nuevo lead y envía notificaciones
     """
+    current_app.logger.info("Contact form submission received")
     data = request.get_json()
 
     # Validar campos requeridos
@@ -91,11 +92,15 @@ def submit_contact():
 
     db.session.add(lead)
     db.session.commit()
+    current_app.logger.info(f"Lead saved: {lead.id}")
 
-    # Enviar notificaciones por email (async en producción)
+    # Enviar notificaciones por email
     try:
+        current_app.logger.info("Sending lead notification...")
         send_lead_notification(lead)
+        current_app.logger.info("Sending lead confirmation...")
         send_lead_confirmation(lead)
+        current_app.logger.info("Emails sent successfully")
     except Exception as e:
         current_app.logger.error(f"Error sending emails: {e}")
 

@@ -21,6 +21,7 @@ def send_email_resend(to, subject, html_body):
         return False
 
     try:
+        current_app.logger.info(f"Sending email via Resend to {to}")
         response = requests.post(
             'https://api.resend.com/emails',
             headers={
@@ -32,7 +33,8 @@ def send_email_resend(to, subject, html_body):
                 'to': [to] if isinstance(to, str) else to,
                 'subject': subject,
                 'html': html_body
-            }
+            },
+            timeout=10
         )
         response.raise_for_status()
         current_app.logger.info(f"Email sent via Resend to {to}")

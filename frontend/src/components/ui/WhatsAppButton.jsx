@@ -2,8 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { MessageCircle } from 'lucide-react';
 import { ConversionEvents } from '../../utils/analytics';
 
-// TODO: Cambiar por el número real de WhatsApp
-const WHATSAPP_NUMBER = '34600000000';
+const WHATSAPP_NUMBER = '34654858367';
 const WHATSAPP_MESSAGE = 'Hola, me interesa un proyecto de desarrollo web';
 
 const WhatsAppButton = () => {

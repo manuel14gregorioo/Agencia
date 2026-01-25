@@ -130,8 +130,11 @@ def create_app(config_name='default'):
 
     # Crear tablas y admin por defecto
     with app.app_context():
-        db.create_all()
-        _create_default_admin(app)
+        try:
+            db.create_all()
+            _create_default_admin(app)
+        except Exception as e:
+            app.logger.error(f"Database initialization error: {e}")
 
     # Health check endpoint (verifica DB)
     @app.route('/health')

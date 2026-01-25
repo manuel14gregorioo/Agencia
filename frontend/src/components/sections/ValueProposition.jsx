@@ -27,7 +27,7 @@ const ValueProposition = () => {
     {
       icon: TrendingUp,
       title: 'Resultados medibles',
-      description: 'Codigo que puedes ver y tocar. Proyectos reales como VOCAP.io.',
+      description: 'Código que puedes ver y tocar. Proyectos reales como VOCAP.io.',
       accent: 'coral',
     },
   ];
@@ -41,11 +41,11 @@ const ValueProposition = () => {
         {/* Section header */}
         <div className={`text-center mb-16 md:mb-24 transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
           <span className="inline-block px-4 py-2 bg-lime-400 text-noir-900 text-xs font-bold uppercase tracking-wider mb-6">
-            Por que nosotros
+            Por qué nosotros
           </span>
           <h2 className="heading-xl text-cream-50 mb-6">
             Menos promesas,<br />
-            <span className="text-lime-400">mas resultados</span>
+            <span className="text-lime-400">más resultados</span>
           </h2>
           <p className="text-lead text-noir-400 max-w-2xl mx-auto">
             No somos una agencia tradicional que te cobra por horas y alarga los proyectos.

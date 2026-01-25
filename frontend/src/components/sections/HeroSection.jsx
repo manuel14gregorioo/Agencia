@@ -151,7 +151,7 @@ const HeroSection = () => {
                 <div className="relative overflow-hidden">
                   <LazyImage
                     src="/images/vocap-hero.jpg"
-                    alt="VOCAP.io - Plataforma SaaS de transcripcion con IA"
+                    alt="VOCAP.io - Plataforma SaaS de transcripción con IA"
                     className="w-full transition-transform duration-700 group-hover:scale-105"
                     priority={true}
                   />
@@ -217,7 +217,7 @@ const HeroSection = () => {
           <div className="marquee-content">
             {[...Array(10)].map((_, i) => (
               <span key={i} className="inline-flex items-center gap-8 mx-8 text-cream-50 dark:text-noir-900 font-bold uppercase tracking-wider text-sm">
-                <span>Automatizacion</span>
+                <span>Automatización</span>
                 <span className="w-2 h-2 bg-lime-400 dark:bg-noir-900" />
                 <span>Desarrollo Web</span>
                 <span className="w-2 h-2 bg-lime-400 dark:bg-noir-900" />

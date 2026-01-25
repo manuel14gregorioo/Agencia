@@ -19,7 +19,7 @@ const ServiciosSection = () => {
             Servicios
           </span>
           <h2 className="heading-xl text-cream-50 mb-4">
-            Tres niveles.<br />
+            Cuatro niveles.<br />
             <span className="text-lime-400">Precio fijo.</span>
           </h2>
           <p className="text-lead text-noir-400 max-w-xl mx-auto">
@@ -28,7 +28,7 @@ const ServiciosSection = () => {
         </div>
 
         {/* Services grid */}
-        <div className={`grid md:grid-cols-3 gap-6 stagger-children ${isVisible ? 'visible' : ''}`}>
+        <div className={`grid md:grid-cols-2 lg:grid-cols-4 gap-6 stagger-children ${isVisible ? 'visible' : ''}`}>
           {SERVICIOS.map((servicio, index) => (
             <div
               key={servicio.id}
@@ -125,7 +125,7 @@ const ServiciosSection = () => {
         {/* Tech stack */}
         <div className={`mt-20 text-center transition-all duration-700 delay-300 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
           <p className="text-xs font-bold uppercase tracking-[0.2em] text-noir-500 mb-8">
-            Stack Tecnologico
+            Stack Tecnológico
           </p>
           <div className="flex flex-wrap justify-center gap-3">
             {TECNOLOGIAS.map((tech, index) => (

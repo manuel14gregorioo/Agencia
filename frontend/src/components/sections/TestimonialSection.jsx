@@ -23,8 +23,8 @@ const TestimonialSection = () => {
         {/* Quote text */}
         <blockquote className="max-w-4xl mx-auto mb-10">
           <p className="text-2xl md:text-3xl lg:text-4xl font-display font-semibold text-noir-900 leading-tight">
-            "Desarrollamos VOCAP.io en 3 semanas desde cero hasta produccion.
-            Autenticacion, pagos con Stripe, procesamiento con OpenAI, dashboard completo.
+            "Desarrollamos VOCAP.io en 3 semanas desde cero hasta producción.
+            Autenticación, pagos con Stripe, procesamiento con OpenAI, dashboard completo.
             <span className="relative inline-block mx-2">
               Ahora mismo tiene usuarios reales pagando suscripciones.
               <svg className="absolute -bottom-1 left-0 w-full" viewBox="0 0 300 8" fill="none">

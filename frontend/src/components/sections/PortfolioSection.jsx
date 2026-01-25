@@ -20,13 +20,13 @@ const PortfolioSection = () => {
   ];
 
   const features = [
-    'Autenticacion completa (registro, login, recuperar contrasena)',
-    'Sistema de creditos con 4 planes de suscripcion',
-    'Transcripcion con OpenAI Whisper (50+ idiomas)',
-    'Resumenes automaticos con Claude AI',
+    'Autenticación completa (registro, login, recuperar contraseña)',
+    'Sistema de créditos con 4 planes de suscripción',
+    'Transcripción con OpenAI Whisper (50+ idiomas)',
+    'Resúmenes automáticos con Claude AI',
     'Dashboard de usuario con historial',
-    'Landing page bilingue (ES/EN)',
-    'Integracion completa con Stripe',
+    'Landing page bilingüe (ES/EN)',
+    'Integración completa con Stripe',
     'Sistema de referidos'
   ];
 
@@ -46,7 +46,7 @@ const PortfolioSection = () => {
             No hablamos de lo que podemos hacer.
           </h2>
           <p className="text-lead max-w-2xl mx-auto">
-            Aqui esta lo que <strong className="text-noir-900 dark:text-cream-50">hemos hecho</strong>.
+            Aquí está lo que <strong className="text-noir-900 dark:text-cream-50">hemos hecho</strong>.
           </p>
         </div>
 
@@ -67,7 +67,7 @@ const PortfolioSection = () => {
                       Verificable
                     </span>
                     <span className="inline-flex items-center gap-2 px-3 py-1.5 bg-coral-500 text-white text-xs font-bold uppercase tracking-wider">
-                      En Produccion
+                      En Producción
                     </span>
                   </div>
 
@@ -78,13 +78,13 @@ const PortfolioSection = () => {
                     </div>
                     <div>
                       <h3 className="text-4xl font-display font-bold text-cream-50">VOCAP.io</h3>
-                      <p className="text-noir-400">Plataforma SaaS de Transcripcion</p>
+                      <p className="text-noir-400">Plataforma SaaS de Transcripción</p>
                     </div>
                   </div>
 
                   {/* Description */}
                   <p className="text-noir-300 mb-8 leading-relaxed text-lg">
-                    Transcripcion de audio con IA, resumenes automaticos, extraccion de tareas.
+                    Transcripción de audio con IA, resúmenes automáticos, extracción de tareas.
                     Competidor directo de Otter.ai a <strong className="text-lime-400">1€/hora</strong> vs 8-12€.
                   </p>
 
@@ -139,7 +139,7 @@ const PortfolioSection = () => {
                 <div className="mb-10">
                   <h4 className="flex items-center gap-2 text-lg font-display font-bold text-noir-900 dark:text-cream-50 mb-4">
                     <Code className="w-5 h-5 text-lime-500" />
-                    Stack Tecnologico
+                    Stack Tecnológico
                   </h4>
                   <div className="flex flex-wrap gap-2">
                     {techStack.map((tech) => (
@@ -172,7 +172,7 @@ const PortfolioSection = () => {
                 {/* Quote */}
                 <div className="mt-8 p-4 border-l-4 border-lime-400 bg-noir-50 dark:bg-noir-800/50">
                   <p className="text-sm text-noir-600 dark:text-noir-400 italic">
-                    "Este es nuestro proyecto propio. Puedes probarlo gratis, ver el codigo, verificar que funciona."
+                    "Este es nuestro proyecto propio. Puedes probarlo gratis, ver el código, verificar que funciona."
                   </p>
                 </div>
               </div>
@@ -191,10 +191,10 @@ const PortfolioSection = () => {
               <Plus className="w-8 h-8 text-noir-400 group-hover:text-noir-900 transition-colors" />
             </div>
             <h3 className="text-xl font-display font-bold text-noir-900 dark:text-cream-50 mb-2">
-              Tu Proyecto Aqui
+              Tu Proyecto Aquí
             </h3>
             <p className="text-noir-500 dark:text-noir-400 mb-6">
-              El proximo caso de exito verificable podria ser el tuyo.
+              El próximo caso de éxito verificable podría ser el tuyo.
             </p>
             <span className="inline-flex items-center gap-2 text-lime-600 dark:text-lime-400 font-bold uppercase tracking-wide group-hover:gap-4 transition-all">
               Empecemos

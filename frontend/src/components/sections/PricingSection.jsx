@@ -20,7 +20,7 @@ const PricingSection = () => {
           </span>
           <h2 className="heading-xl text-cream-50 mb-4">
             Transparentes.<br />
-            <span className="text-lime-400">Sin letra pequena.</span>
+            <span className="text-lime-400">Sin letra pequeña.</span>
           </h2>
           <p className="text-lead text-noir-400 max-w-xl mx-auto">
             Precio fijo cerrado antes de empezar. Sin sorpresas ni extras.
@@ -28,7 +28,7 @@ const PricingSection = () => {
         </div>
 
         {/* Pricing cards */}
-        <div className={`grid md:grid-cols-3 gap-6 lg:gap-8 stagger-children ${isVisible ? 'visible' : ''}`}>
+        <div className={`grid md:grid-cols-2 lg:grid-cols-4 gap-6 stagger-children ${isVisible ? 'visible' : ''}`}>
           {PLANES_PRICING.map((plan, index) => (
             <div
               key={plan.nombre}

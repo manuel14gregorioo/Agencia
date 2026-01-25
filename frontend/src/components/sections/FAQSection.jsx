@@ -52,7 +52,7 @@ const FAQSection = () => {
             Preguntas <span className="text-lime-500">frecuentes</span>
           </h2>
           <p className="text-lead max-w-xl mx-auto">
-            Si tu pregunta no esta aqui, escribenos.
+            Si tu pregunta no está aquí, escríbenos.
           </p>
         </div>
 

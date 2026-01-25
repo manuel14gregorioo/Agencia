@@ -7,14 +7,14 @@ const Footer = () => {
 
   const footerLinks = {
     servicios: [
-      { label: 'Automatizacion', href: '#servicios' },
+      { label: 'Rediseño Web', href: '#servicios' },
+      { label: 'Automatización', href: '#servicios' },
       { label: 'Plataformas Web', href: '#servicios' },
-      { label: 'SaaS Completo', href: '#servicios' },
-      { label: 'Consultoria', href: '#contacto' }
+      { label: 'SaaS Completo', href: '#servicios' }
     ],
     portfolio: [
       { label: 'VOCAP.io', href: 'https://vocap.io', external: true },
-      { label: 'Casos de Exito', href: '#portfolio' }
+      { label: 'Casos de Éxito', href: '#portfolio' }
     ],
     empresa: [
       { label: 'Proceso', href: '#proceso' },
@@ -24,7 +24,7 @@ const Footer = () => {
     ],
     legal: [
       { label: 'Privacidad', href: '#' },
-      { label: 'Terminos', href: '#' },
+      { label: 'Términos', href: '#' },
       { label: 'Cookies', href: '#' }
     ],
   };

@@ -1,7 +1,4 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
-  <rect width="100" height="100" fill="#0A0A0B"/>
-  <rect x="3" y="3" width="94" height="94" fill="none" stroke="#BFFF00" stroke-width="3"/>
-  <text x="50" y="42" font-family="system-ui, sans-serif" font-size="22" font-weight="700" fill="#BFFF00" text-anchor="middle">M.G.M</text>
-  <rect x="20" y="52" width="60" height="3" fill="#BFFF00"/>
-  <text x="50" y="75" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#FFFFFF" text-anchor="middle" letter-spacing="0.1em">AUTOMATIONS</text>
+  <rect width="100" height="100" fill="#FFFFFF"/>
+  <text x="50" y="58" font-family="Times New Roman, Times, serif" font-size="28" font-weight="400" fill="#000000" text-anchor="middle">M.G.M</text>
 </svg>

@@ -17,7 +17,6 @@ const Footer = () => {
     ],
     empresa: [
       { label: 'Proceso', href: '#proceso' },
-      { label: 'Precios', href: '#pricing' },
       { label: 'Blog', href: '#/blog' },
       { label: 'FAQ', href: '#faq' },
       { label: 'Contacto', href: '#contacto' }

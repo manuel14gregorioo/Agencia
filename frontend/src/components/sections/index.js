@@ -3,7 +3,6 @@ export { default as ValueProposition } from './ValueProposition';
 export { default as TestimonialSection } from './TestimonialSection';
 export { default as PortfolioSection } from './PortfolioSection';
 export { default as ComparisonSection } from './ComparisonSection';
-export { default as ServiciosSection } from './ServiciosSection';
 export { default as ProcesoSection } from './ProcesoSection';
 export { default as PricingSection } from './PricingSection';
 export { default as FAQSection } from './FAQSection';

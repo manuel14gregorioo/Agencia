@@ -8,7 +8,7 @@ const PricingSection = () => {
   const [ref, isVisible] = useScrollAnimation();
 
   return (
-    <section id="pricing" className="section-lg bg-noir-900 dark:bg-noir-950 relative overflow-hidden">
+    <section id="servicios" className="section-lg bg-noir-900 dark:bg-noir-950 relative overflow-hidden">
       {/* Background pattern */}
       <div className="absolute inset-0 bg-dots opacity-20" />
 
@@ -16,11 +16,11 @@ const PricingSection = () => {
         {/* Section header */}
         <div className={`text-center mb-16 md:mb-20 transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
           <span className="inline-block px-4 py-2 bg-lime-400 text-noir-900 text-xs font-bold uppercase tracking-wider mb-6">
-            Precios
+            Servicios
           </span>
           <h2 className="heading-xl text-cream-50 mb-4">
-            Transparentes.<br />
-            <span className="text-lime-400">Sin letra pequeña.</span>
+            Tres niveles.<br />
+            <span className="text-lime-400">Precio fijo.</span>
           </h2>
           <p className="text-lead text-noir-400 max-w-xl mx-auto">
             Precio fijo cerrado antes de empezar. Sin sorpresas ni extras.

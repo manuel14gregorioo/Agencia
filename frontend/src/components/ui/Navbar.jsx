@@ -29,7 +29,6 @@ const Navbar = () => {
   const navLinks = [
     { href: '#portfolio', label: 'Trabajo', id: 'portfolio' },
     { href: '#servicios', label: 'Servicios', id: 'servicios' },
-    { href: '#pricing', label: 'Precios', id: 'pricing' },
     { href: '#/blog', label: 'Blog', id: 'blog', external: true },
   ];
 

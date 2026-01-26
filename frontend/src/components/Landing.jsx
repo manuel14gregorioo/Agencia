@@ -29,7 +29,6 @@ import {
   TestimonialSection,
   PortfolioSection,
   ComparisonSection,
-  ServiciosSection,
   ProcesoSection,
   PricingSection,
   FAQSection,
@@ -52,7 +51,6 @@ const LandingContent = () => {
         <TestimonialSection />
         <PortfolioSection />
         <ComparisonSection />
-        <ServiciosSection />
         <ProcesoSection />
         <PricingSection />
         <FAQSection />

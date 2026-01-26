@@ -29,8 +29,8 @@ import {
   TestimonialSection,
   PortfolioSection,
   ComparisonSection,
+  ServiciosSection,
   ProcesoSection,
-  PricingSection,
   FAQSection,
   CTASection,
 } from './sections';
@@ -51,8 +51,8 @@ const LandingContent = () => {
         <TestimonialSection />
         <PortfolioSection />
         <ComparisonSection />
+        <ServiciosSection />
         <ProcesoSection />
-        <PricingSection />
         <FAQSection />
         <CTASection />
       </main>

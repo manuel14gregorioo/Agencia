@@ -28,7 +28,7 @@ const PricingSection = () => {
         </div>
 
         {/* Pricing cards */}
-        <div className={`grid md:grid-cols-2 lg:grid-cols-4 gap-6 stagger-children ${isVisible ? 'visible' : ''}`}>
+        <div className={`grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto stagger-children ${isVisible ? 'visible' : ''}`}>
           {PLANES_PRICING.map((plan, index) => (
             <div
               key={plan.nombre}

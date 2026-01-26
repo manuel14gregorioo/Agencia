@@ -19,7 +19,7 @@ const ServiciosSection = () => {
             Servicios
           </span>
           <h2 className="heading-xl text-cream-50 mb-4">
-            Cuatro niveles.<br />
+            Tres niveles.<br />
             <span className="text-lime-400">Precio fijo.</span>
           </h2>
           <p className="text-lead text-noir-400 max-w-xl mx-auto">
@@ -28,7 +28,7 @@ const ServiciosSection = () => {
         </div>
 
         {/* Services grid */}
-        <div className={`grid md:grid-cols-2 lg:grid-cols-4 gap-6 stagger-children ${isVisible ? 'visible' : ''}`}>
+        <div className={`grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto stagger-children ${isVisible ? 'visible' : ''}`}>
           {SERVICIOS.map((servicio, index) => (
             <div
               key={servicio.id}

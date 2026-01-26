@@ -55,7 +55,6 @@ const TermsOfService = () => {
               Ofrecemos los siguientes servicios de desarrollo:
             </p>
             <ul className="list-disc pl-6 space-y-2 text-noir-600 dark:text-noir-400">
-              <li><strong className="text-noir-900 dark:text-cream-50">Rediseño Web:</strong> Renovación visual de páginas web existentes</li>
               <li><strong className="text-noir-900 dark:text-cream-50">Automatización:</strong> Chatbots, sistemas de reservas, integraciones</li>
               <li><strong className="text-noir-900 dark:text-cream-50">Plataformas Web:</strong> Landing pages, dashboards, portales de cliente</li>
               <li><strong className="text-noir-900 dark:text-cream-50">SaaS Completo:</strong> Desarrollo de productos digitales completos</li>

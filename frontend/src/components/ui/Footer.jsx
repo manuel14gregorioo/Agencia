@@ -7,7 +7,6 @@ const Footer = () => {
 
   const footerLinks = {
     servicios: [
-      { label: 'Rediseño Web', href: '#servicios' },
       { label: 'Automatización', href: '#servicios' },
       { label: 'Plataformas Web', href: '#servicios' },
       { label: 'SaaS Completo', href: '#servicios' }

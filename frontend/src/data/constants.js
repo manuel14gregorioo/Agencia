@@ -6,7 +6,6 @@ import {
   FileText,
   Rocket,
   CheckCircle,
-  Palette,
 } from 'lucide-react';
 
 export const CALENDLY_URL = 'https://calendly.com/mgmautomations/consulta';
@@ -14,15 +13,6 @@ export const CALENDLY_URL = 'https://calendly.com/mgmautomations/consulta';
 export const SECTION_IDS = ['portfolio', 'servicios', 'proceso', 'pricing', 'faq', 'contacto'];
 
 export const SERVICIOS = [
-  {
-    id: 'rediseno',
-    icon: Palette,
-    titulo: 'Rediseño Web',
-    descripcion: 'Renovación visual completa de tu web actual con diseño moderno',
-    features: ['Diseño UI/UX moderno', 'Responsive perfecto', 'Animaciones sutiles', 'Optimización SEO'],
-    precio: '200 - 500€',
-    popular: false,
-  },
   {
     id: 'automatizacion',
     icon: Bot,
@@ -53,7 +43,7 @@ export const SERVICIOS = [
 ];
 
 export const COMPARATIVA = [
-  { aspecto: 'Precio típico', agencias: '10.000 - 25.000€', freelancers: '500 - 2.000€', nosotros: '200 - 4.000€', destacado: false },
+  { aspecto: 'Precio típico', agencias: '10.000 - 25.000€', freelancers: '500 - 2.000€', nosotros: '1.500 - 4.000€', destacado: false },
   { aspecto: 'Tiempo de entrega', agencias: '2-4 meses', freelancers: 'Impredecible', nosotros: '1-3 semanas', destacado: true },
   { aspecto: 'Comunicación', agencias: 'Account manager', freelancers: 'Variable', nosotros: 'Técnico directo', destacado: false },
   { aspecto: 'Soporte post-entrega', agencias: '3-6 meses', freelancers: 'Ninguno', nosotros: '1 mes incluido', destacado: false },
@@ -70,8 +60,8 @@ export const PROCESO = [
 
 export const FAQS = [
   { pregunta: '¿Tenéis ejemplos reales de vuestro trabajo?', respuesta: 'Sí, VOCAP.io es un proyecto propio que puedes probar gratis ahora mismo. Es una plataforma SaaS completa de transcripción con IA que demuestra nuestra capacidad end-to-end.' },
-  { pregunta: '¿Cuánto tiempo tarda un proyecto?', respuesta: 'Rediseños web en 3-5 días. Automatizaciones en 1-2 semanas. Plataformas web en 2-3 semanas. SaaS completos en 3-4 semanas.' },
-  { pregunta: '¿Cuánto cuesta?', respuesta: 'Rediseños desde 200€, automatizaciones desde 1.500€, plataformas web desde 2.500€, SaaS completos a consultar. Precio fijo cerrado antes de empezar.' },
+  { pregunta: '¿Cuánto tiempo tarda un proyecto?', respuesta: 'Automatizaciones en 1-2 semanas. Plataformas web en 2-3 semanas. SaaS completos en 3-4 semanas.' },
+  { pregunta: '¿Cuánto cuesta?', respuesta: 'Automatizaciones desde 1.500€, plataformas web desde 2.500€, SaaS completos a consultar. Precio fijo cerrado antes de empezar.' },
   { pregunta: '¿Qué pasa si necesito cambios después?', respuesta: 'Una ronda de revisiones está incluida sin coste. Para cambios posteriores: soporte a 80€/hora o packs mensuales.' },
   { pregunta: '¿Trabajáis solo en Madrid?', respuesta: '100% remoto. Trabajamos con clientes de toda España. Reuniones por videollamada, respuesta en menos de 24h.' },
 ];
@@ -88,15 +78,6 @@ export const TECNOLOGIAS = [
 ];
 
 export const PLANES_PRICING = [
-  {
-    nombre: 'Rediseño Web',
-    precio: '200 - 500€',
-    descripcion: 'Dale vida nueva a tu web',
-    features: ['Rediseño visual completo', 'Diseño UI/UX moderno', 'Responsive mobile-first', 'Animaciones y microinteracciones', 'Optimización SEO básica'],
-    noIncluye: ['Funcionalidades nuevas', 'Backend'],
-    cta: 'Consultar',
-    popular: false
-  },
   {
     nombre: 'Automatización',
     precio: '1.500 - 2.500€',

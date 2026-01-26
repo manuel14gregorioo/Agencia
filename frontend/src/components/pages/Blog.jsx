@@ -174,7 +174,6 @@ Pero, ¿qué obtienes en cada rango?
 
 En M.G.M Automations ofrecemos:
 
-- **Rediseño Web:** 200-500€ (renovación visual)
 - **Automatización:** 1.500-2.500€ (chatbots, reservas)
 - **Plataforma Web:** 2.500-4.000€ (dashboard, portal)
 - **SaaS Completo:** A consultar

@@ -4,6 +4,7 @@ import { useTheme } from '../contexts/ThemeContext';
 import { useActiveSection } from '../hooks';
 import { SECTION_IDS } from '../../data/constants';
 import { scrollToSection } from '../../utils/scroll';
+import { Link } from '../../App';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -29,7 +30,7 @@ const Navbar = () => {
   const navLinks = [
     { href: '#portfolio', label: 'Trabajo', id: 'portfolio' },
     { href: '#servicios', label: 'Servicios', id: 'servicios' },
-    { href: '#/blog', label: 'Blog', id: 'blog', external: true },
+    { href: '/blog', label: 'Blog', id: 'blog', isPage: true },
   ];
 
   return (
@@ -66,23 +67,42 @@ const Navbar = () => {
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-1" role="menubar">
             {navLinks.map((link) => (
-              <a
-                key={link.href}
-                href={link.href}
-                onClick={link.external ? undefined : (e) => scrollToSection(e, link.href)}
-                className={`relative px-5 py-3 text-sm font-semibold uppercase tracking-wide transition-all duration-300 ${
-                  activeSection === link.id
-                    ? 'text-noir-900 dark:text-lime-400'
-                    : 'text-noir-500 dark:text-noir-400 hover:text-noir-900 dark:hover:text-cream-50'
-                }`}
-                role="menuitem"
-                aria-current={activeSection === link.id ? 'page' : undefined}
-              >
-                {link.label}
-                {activeSection === link.id && (
-                  <span className="absolute bottom-1 left-5 right-5 h-0.5 bg-lime-400" aria-hidden="true" />
-                )}
-              </a>
+              link.isPage ? (
+                <Link
+                  key={link.href}
+                  to={link.href}
+                  className={`relative px-5 py-3 text-sm font-semibold uppercase tracking-wide transition-all duration-300 ${
+                    activeSection === link.id
+                      ? 'text-noir-900 dark:text-lime-400'
+                      : 'text-noir-500 dark:text-noir-400 hover:text-noir-900 dark:hover:text-cream-50'
+                  }`}
+                  role="menuitem"
+                  aria-current={activeSection === link.id ? 'page' : undefined}
+                >
+                  {link.label}
+                  {activeSection === link.id && (
+                    <span className="absolute bottom-1 left-5 right-5 h-0.5 bg-lime-400" aria-hidden="true" />
+                  )}
+                </Link>
+              ) : (
+                <a
+                  key={link.href}
+                  href={link.href}
+                  onClick={(e) => scrollToSection(e, link.href)}
+                  className={`relative px-5 py-3 text-sm font-semibold uppercase tracking-wide transition-all duration-300 ${
+                    activeSection === link.id
+                      ? 'text-noir-900 dark:text-lime-400'
+                      : 'text-noir-500 dark:text-noir-400 hover:text-noir-900 dark:hover:text-cream-50'
+                  }`}
+                  role="menuitem"
+                  aria-current={activeSection === link.id ? 'page' : undefined}
+                >
+                  {link.label}
+                  {activeSection === link.id && (
+                    <span className="absolute bottom-1 left-5 right-5 h-0.5 bg-lime-400" aria-hidden="true" />
+                  )}
+                </a>
+              )
             ))}
 
             {/* Theme Toggle */}
@@ -150,20 +170,37 @@ const Navbar = () => {
         >
           <div className="py-6 border-t-3 border-noir-900 dark:border-noir-800 bg-cream-50 dark:bg-noir-950">
             {navLinks.map((link, index) => (
-              <a
-                key={link.href}
-                href={link.href}
-                onClick={link.external ? () => setIsOpen(false) : (e) => { scrollToSection(e, link.href); setIsOpen(false); }}
-                className={`block py-4 text-lg font-bold uppercase tracking-wide transition-all duration-300 ${
-                  activeSection === link.id
-                    ? 'text-noir-900 dark:text-lime-400 pl-4 border-l-4 border-lime-400'
-                    : 'text-noir-500 dark:text-noir-400 hover:text-noir-900 dark:hover:text-cream-50 hover:pl-4'
-                }`}
-                style={{ transitionDelay: `${index * 50}ms` }}
-                role="menuitem"
-              >
-                {link.label}
-              </a>
+              link.isPage ? (
+                <Link
+                  key={link.href}
+                  to={link.href}
+                  onClick={() => setIsOpen(false)}
+                  className={`block py-4 text-lg font-bold uppercase tracking-wide transition-all duration-300 ${
+                    activeSection === link.id
+                      ? 'text-noir-900 dark:text-lime-400 pl-4 border-l-4 border-lime-400'
+                      : 'text-noir-500 dark:text-noir-400 hover:text-noir-900 dark:hover:text-cream-50 hover:pl-4'
+                  }`}
+                  style={{ transitionDelay: `${index * 50}ms` }}
+                  role="menuitem"
+                >
+                  {link.label}
+                </Link>
+              ) : (
+                <a
+                  key={link.href}
+                  href={link.href}
+                  onClick={(e) => { scrollToSection(e, link.href); setIsOpen(false); }}
+                  className={`block py-4 text-lg font-bold uppercase tracking-wide transition-all duration-300 ${
+                    activeSection === link.id
+                      ? 'text-noir-900 dark:text-lime-400 pl-4 border-l-4 border-lime-400'
+                      : 'text-noir-500 dark:text-noir-400 hover:text-noir-900 dark:hover:text-cream-50 hover:pl-4'
+                  }`}
+                  style={{ transitionDelay: `${index * 50}ms` }}
+                  role="menuitem"
+                >
+                  {link.label}
+                </a>
+              )
             ))}
 
             <a

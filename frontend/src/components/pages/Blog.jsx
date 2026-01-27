@@ -1,5 +1,6 @@
 import React from 'react';
 import { ArrowLeft, ArrowRight, Clock, Calendar, Tag } from 'lucide-react';
+import { Link } from '../../App';
 
 // Datos de los posts del blog
 const BLOG_POSTS = [
@@ -370,13 +371,13 @@ const BlogList = () => {
       {/* Header */}
       <header className="bg-noir-900 dark:bg-noir-900 py-12 px-4">
         <div className="max-w-6xl mx-auto">
-          <a
-            href="#/"
+          <Link
+            to="/"
             className="inline-flex items-center gap-2 text-lime-400 hover:text-lime-300 transition-colors mb-8"
           >
             <ArrowLeft className="w-4 h-4" />
             Volver al inicio
-          </a>
+          </Link>
           <h1 className="text-4xl md:text-5xl font-display font-bold text-cream-50 mb-4">
             Blog
           </h1>
@@ -390,8 +391,8 @@ const BlogList = () => {
         {/* Featured Post */}
         {featuredPost && (
           <section className="mb-16">
-            <a
-              href={`#/blog/${featuredPost.id}`}
+            <Link
+              to={`/blog/${featuredPost.id}`}
               className="group block border-3 border-noir-900 dark:border-noir-700 bg-white dark:bg-noir-900 overflow-hidden hover:translate-x-[-4px] hover:translate-y-[-4px] hover:shadow-brutal dark:hover:shadow-brutal-lime transition-all"
             >
               <div className="grid md:grid-cols-2">
@@ -431,7 +432,7 @@ const BlogList = () => {
                   </div>
                 </div>
               </div>
-            </a>
+            </Link>
           </section>
         )}
 
@@ -442,9 +443,9 @@ const BlogList = () => {
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {BLOG_POSTS.map((post) => (
-              <a
+              <Link
                 key={post.id}
-                href={`#/blog/${post.id}`}
+                to={`/blog/${post.id}`}
                 className="group border-3 border-noir-200 dark:border-noir-700 bg-white dark:bg-noir-900 p-6 hover:border-lime-400 transition-all"
               >
                 <div className="flex items-center gap-2 mb-4">
@@ -463,7 +464,7 @@ const BlogList = () => {
                   <span>{new Date(post.date).toLocaleDateString('es-ES', { day: 'numeric', month: 'short' })}</span>
                   <span>{post.readTime}</span>
                 </div>
-              </a>
+              </Link>
             ))}
           </div>
         </section>
@@ -490,9 +491,9 @@ const BlogPost = ({ postId }) => {
           <h1 className="text-4xl font-display font-bold text-noir-900 dark:text-cream-50 mb-4">
             Artículo no encontrado
           </h1>
-          <a href="#/blog" className="text-lime-600 dark:text-lime-400 hover:underline">
+          <Link to="/blog" className="text-lime-600 dark:text-lime-400 hover:underline">
             Volver al blog
-          </a>
+          </Link>
         </div>
       </div>
     );
@@ -503,13 +504,13 @@ const BlogPost = ({ postId }) => {
       {/* Header */}
       <header className="bg-noir-900 dark:bg-noir-900 py-12 px-4">
         <div className="max-w-4xl mx-auto">
-          <a
-            href="#/blog"
+          <Link
+            to="/blog"
             className="inline-flex items-center gap-2 text-lime-400 hover:text-lime-300 transition-colors mb-8"
           >
             <ArrowLeft className="w-4 h-4" />
             Volver al blog
-          </a>
+          </Link>
           <div className="flex items-center gap-4 mb-6">
             <span className="px-3 py-1 bg-lime-400 text-noir-900 text-xs font-bold uppercase">
               {post.category}
@@ -568,13 +569,13 @@ const BlogPost = ({ postId }) => {
           <p className="text-noir-600 dark:text-noir-400 mb-6">
             Si estás pensando en un proyecto similar, estaremos encantados de ayudarte.
           </p>
-          <a
-            href="#/contacto"
+          <Link
+            to="/#contacto"
             className="inline-flex items-center gap-2 bg-noir-900 text-lime-400 px-6 py-4 font-bold border-3 border-noir-900 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:shadow-brutal transition-all"
           >
             Contactar
             <ArrowRight className="w-5 h-5" />
-          </a>
+          </Link>
         </div>
       </main>
 

@@ -6,10 +6,10 @@
  * Performance optimizado con:
  * - Code splitting (React.lazy)
  * - Suspense con loading states
- * - Hash-based routing
+ * - Clean URL routing (History API) - SEO friendly
  */
 
-import React, { useState, useEffect, Suspense, lazy } from 'react';
+import React, { useState, useEffect, Suspense, lazy, createContext, useContext } from 'react';
 
 // Lazy loading de componentes para code splitting
 const Landing = lazy(() => import('./components/Landing'));
@@ -18,6 +18,40 @@ const PrivacyPolicy = lazy(() => import('./components/pages/PrivacyPolicy'));
 const TermsOfService = lazy(() => import('./components/pages/TermsOfService'));
 const CookiePolicy = lazy(() => import('./components/pages/CookiePolicy'));
 const Blog = lazy(() => import('./components/pages/Blog'));
+
+// Router Context for navigation
+const RouterContext = createContext(null);
+
+export const useRouter = () => {
+  const context = useContext(RouterContext);
+  if (!context) {
+    throw new Error('useRouter must be used within App');
+  }
+  return context;
+};
+
+// Navigation helper - use this instead of <a href> for internal links
+export const navigate = (path) => {
+  window.history.pushState({}, '', path);
+  window.dispatchEvent(new PopStateEvent('popstate'));
+};
+
+// Link component for internal navigation
+export const Link = ({ to, children, className, ...props }) => {
+  const handleClick = (e) => {
+    // Allow cmd/ctrl+click to open in new tab
+    if (e.metaKey || e.ctrlKey) return;
+
+    e.preventDefault();
+    navigate(to);
+  };
+
+  return (
+    <a href={to} onClick={handleClick} className={className} {...props}>
+      {children}
+    </a>
+  );
+};
 
 // Loading fallback component
 const LoadingFallback = () => (
@@ -33,45 +67,54 @@ const LoadingFallback = () => (
   </div>
 );
 
+// Parse pathname to route
+const parseRoute = (pathname) => {
+  // Normalize pathname
+  const path = pathname === '' ? '/' : pathname;
+
+  // Route matching
+  if (path === '/') {
+    return { page: 'landing', params: {} };
+  } else if (path === '/demo') {
+    return { page: 'demo', params: {} };
+  } else if (path === '/privacidad') {
+    return { page: 'privacy', params: {} };
+  } else if (path === '/terminos') {
+    return { page: 'terms', params: {} };
+  } else if (path === '/cookies') {
+    return { page: 'cookies', params: {} };
+  } else if (path === '/blog') {
+    return { page: 'blog', params: {} };
+  } else if (path.startsWith('/blog/')) {
+    const postId = path.replace('/blog/', '');
+    return { page: 'blog-post', params: { postId } };
+  } else {
+    // Default to landing for unknown routes
+    return { page: 'landing', params: {} };
+  }
+};
+
 function App() {
-  const [route, setRoute] = useState({ page: 'landing', params: {} });
+  const [route, setRoute] = useState(() => parseRoute(window.location.pathname));
 
   useEffect(() => {
-    // Parse hash-based routes
-    const handleHashChange = () => {
-      const hash = window.location.hash.slice(1) || '/'; // Remove # and default to /
-
-      // Route matching
-      if (hash === '/' || hash === '') {
-        setRoute({ page: 'landing', params: {} });
-      } else if (hash === '/demo') {
-        setRoute({ page: 'demo', params: {} });
-      } else if (hash === '/privacidad') {
-        setRoute({ page: 'privacy', params: {} });
-      } else if (hash === '/terminos') {
-        setRoute({ page: 'terms', params: {} });
-      } else if (hash === '/cookies') {
-        setRoute({ page: 'cookies', params: {} });
-      } else if (hash === '/blog') {
-        setRoute({ page: 'blog', params: {} });
-      } else if (hash.startsWith('/blog/')) {
-        const postId = hash.replace('/blog/', '');
-        setRoute({ page: 'blog-post', params: { postId } });
-      } else {
-        // Default to landing for unknown routes
-        setRoute({ page: 'landing', params: {} });
-      }
-
-      // Scroll to top on route change
+    // Handle browser back/forward and programmatic navigation
+    const handlePopState = () => {
+      setRoute(parseRoute(window.location.pathname));
       window.scrollTo(0, 0);
     };
 
-    // Check on mount
-    handleHashChange();
+    window.addEventListener('popstate', handlePopState);
+    return () => window.removeEventListener('popstate', handlePopState);
+  }, []);
 
-    // Listen for hash changes
-    window.addEventListener('hashchange', handleHashChange);
-    return () => window.removeEventListener('hashchange', handleHashChange);
+  // Redirect hash URLs to clean URLs (for backwards compatibility)
+  useEffect(() => {
+    if (window.location.hash && window.location.hash.startsWith('#/')) {
+      const cleanPath = window.location.hash.slice(1); // Remove #
+      window.history.replaceState({}, '', cleanPath);
+      setRoute(parseRoute(cleanPath));
+    }
   }, []);
 
   // Render current route
@@ -95,10 +138,14 @@ function App() {
     }
   };
 
+  const routerValue = { route, navigate };
+
   return (
-    <Suspense fallback={<LoadingFallback />}>
-      {renderRoute()}
-    </Suspense>
+    <RouterContext.Provider value={routerValue}>
+      <Suspense fallback={<LoadingFallback />}>
+        {renderRoute()}
+      </Suspense>
+    </RouterContext.Provider>
   );
 }
 

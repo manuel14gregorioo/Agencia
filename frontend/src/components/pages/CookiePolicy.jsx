@@ -1,5 +1,6 @@
 import React from 'react';
 import { ArrowLeft, Cookie, Mail } from 'lucide-react';
+import { Link } from '../../App';
 
 const CookiePolicy = () => {
   return (
@@ -7,13 +8,13 @@ const CookiePolicy = () => {
       {/* Header */}
       <header className="bg-noir-900 dark:bg-noir-900 py-8 px-4">
         <div className="max-w-4xl mx-auto">
-          <a
-            href="#/"
+          <Link
+            to="/"
             className="inline-flex items-center gap-2 text-lime-400 hover:text-lime-300 transition-colors mb-6"
           >
             <ArrowLeft className="w-4 h-4" />
             Volver al inicio
-          </a>
+          </Link>
           <div className="flex items-center gap-4">
             <div className="w-14 h-14 bg-lime-400 border-3 border-lime-400 flex items-center justify-center">
               <Cookie className="w-7 h-7 text-noir-900" />

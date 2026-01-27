@@ -1,6 +1,7 @@
 import React from 'react';
 import { MapPin, Mail, Linkedin, Github, ExternalLink, ArrowUpRight } from 'lucide-react';
 import { scrollToSection } from '../../utils/scroll';
+import { Link } from '../../App';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -17,14 +18,14 @@ const Footer = () => {
     ],
     empresa: [
       { label: 'Proceso', href: '#proceso' },
-      { label: 'Blog', href: '#/blog' },
+      { label: 'Blog', href: '/blog', isPage: true },
       { label: 'FAQ', href: '#faq' },
       { label: 'Contacto', href: '#contacto' }
     ],
     legal: [
-      { label: 'Privacidad', href: '#/privacidad' },
-      { label: 'Términos', href: '#/terminos' },
-      { label: 'Cookies', href: '#/cookies' }
+      { label: 'Privacidad', href: '/privacidad', isPage: true },
+      { label: 'Términos', href: '/terminos', isPage: true },
+      { label: 'Cookies', href: '/cookies', isPage: true }
     ],
   };
 
@@ -92,13 +93,22 @@ const Footer = () => {
             <ul className="space-y-3">
               {footerLinks.empresa.map((link) => (
                 <li key={link.label}>
-                  <a
-                    href={link.href}
-                    onClick={(e) => scrollToSection(e, link.href)}
-                    className="text-sm text-noir-400 hover:text-lime-400 transition-colors"
-                  >
-                    {link.label}
-                  </a>
+                  {link.isPage ? (
+                    <Link
+                      to={link.href}
+                      className="text-sm text-noir-400 hover:text-lime-400 transition-colors"
+                    >
+                      {link.label}
+                    </Link>
+                  ) : (
+                    <a
+                      href={link.href}
+                      onClick={(e) => scrollToSection(e, link.href)}
+                      className="text-sm text-noir-400 hover:text-lime-400 transition-colors"
+                    >
+                      {link.label}
+                    </a>
+                  )}
                 </li>
               ))}
             </ul>
@@ -147,13 +157,13 @@ const Footer = () => {
 
           <div className="flex items-center gap-6 text-sm">
             {footerLinks.legal.map((link) => (
-              <a
+              <Link
                 key={link.label}
-                href={link.href}
+                to={link.href}
                 className="text-noir-500 hover:text-lime-400 transition-colors"
               >
                 {link.label}
-              </a>
+              </Link>
             ))}
           </div>
 

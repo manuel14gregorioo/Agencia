@@ -53,8 +53,14 @@
   <!-- Blog -->
   <url>
     <loc>https://mgmautomations.es/#/blog</loc>
-    <lastmod>2025-01-25</lastmod>
+    <lastmod>2025-01-27</lastmod>
     <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://mgmautomations.es/#/blog/ia-para-pymes-guia-2025</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>

@@ -81,6 +81,18 @@ def create_app(config_name='default'):
         def serve_index():
             return send_from_directory(app.static_folder, 'index.html')
 
+        # Servir demos estáticos (carpetas con index.html propio)
+        @app.route('/demos/<path:subpath>')
+        def serve_demos(subpath):
+            # Si es un directorio, servir su index.html
+            demo_path = os.path.join(app.static_folder, 'demos', subpath)
+            if os.path.isdir(demo_path):
+                index_path = os.path.join(demo_path, 'index.html')
+                if os.path.exists(index_path):
+                    return send_from_directory(demo_path, 'index.html')
+            # Si es un archivo, servirlo directamente
+            return send_from_directory(os.path.join(app.static_folder, 'demos'), subpath)
+
         @app.errorhandler(404)
         def not_found(e):
             # Para SPA: devolver index.html para rutas no encontradas

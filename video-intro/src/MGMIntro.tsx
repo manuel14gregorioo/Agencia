@@ -8,156 +8,138 @@ import {
   AbsoluteFill,
   Sequence,
 } from "remotion";
-import { loadFont as loadClashDisplay } from "@remotion/google-fonts/Syne";
+import { loadFont as loadSyne } from "@remotion/google-fonts/Syne";
 import { loadFont as loadOutfit } from "@remotion/google-fonts/Outfit";
 
 // Load fonts
-const { fontFamily: clashFamily } = loadClashDisplay();
+const { fontFamily: syneFamily } = loadSyne();
 const { fontFamily: outfitFamily } = loadOutfit();
 
-// Brand colors
+// Brand colors - inverted for white background
 const COLORS = {
   noir: "#0A0A0B",
-  lime: "#BFFF00",
+  lime: "#9ACD00", // Slightly darker lime for contrast on white
   coral: "#FF6B4A",
   cream: "#F7F7F5",
+  white: "#FFFFFF",
 };
 
 export const MGMIntro: React.FC = () => {
   const frame = useCurrentFrame();
   const { fps, durationInFrames } = useVideoConfig();
 
-  // === PHASE 1: Background flash and lines (0-30 frames) ===
-  const flashOpacity = interpolate(frame, [0, 8, 15], [0, 1, 0], {
+  // === SMOOTH SPRING CONFIG ===
+  const smoothConfig = { damping: 200 };
+  const gentleConfig = { damping: 25, stiffness: 120 };
+
+  // === PHASE 1: Subtle entrance (0-20 frames) ===
+  const bgFade = interpolate(frame, [0, 30], [0, 1], {
+    extrapolateRight: "clamp",
+    easing: Easing.out(Easing.quad),
+  });
+
+  // === PHASE 2: M.G.M Logo reveal (15-60 frames) ===
+  const logoProgress = spring({
+    frame: frame - 15,
+    fps,
+    config: gentleConfig,
+  });
+
+  const logoScale = interpolate(logoProgress, [0, 1], [0.8, 1]);
+  const logoOpacity = interpolate(logoProgress, [0, 0.3], [0, 1], {
     extrapolateRight: "clamp",
   });
 
-  // === PHASE 2: M.G.M Logo reveal (15-75 frames) ===
-  const logoScale = spring({
-    frame: frame - 15,
+  // === PHASE 3: "AUTOMATIONS" text (40-70 frames) ===
+  const automationsProgress = spring({
+    frame: frame - 40,
     fps,
-    config: { damping: 12, stiffness: 200 },
+    config: smoothConfig,
   });
 
-  const logoRotation = interpolate(
-    spring({
-      frame: frame - 15,
-      fps,
-      config: { damping: 15 },
-    }),
-    [0, 1],
-    [-15, 0]
-  );
-
-  // === PHASE 3: Text reveals (45-120 frames) ===
-  const text1Progress = spring({
-    frame: frame - 45,
+  // === PHASE 4: Separator line (55-85 frames) ===
+  const lineProgress = spring({
+    frame: frame - 55,
     fps,
-    config: { damping: 200 },
+    config: smoothConfig,
   });
 
-  const text2Progress = spring({
-    frame: frame - 60,
+  // === PHASE 5: "De idea a" text (65-95 frames) ===
+  const deIdeaProgress = spring({
+    frame: frame - 65,
     fps,
-    config: { damping: 200 },
+    config: smoothConfig,
   });
 
-  const text3Progress = spring({
-    frame: frame - 75,
+  // === PHASE 6: "sistema funcionando" text (80-110 frames) ===
+  const sistemaProgress = spring({
+    frame: frame - 80,
     fps,
-    config: { damping: 200 },
+    config: gentleConfig,
   });
 
-  // === PHASE 4: "YA EXISTIMOS" big reveal (90-130 frames) ===
-  const existimosScale = spring({
-    frame: frame - 90,
+  // === PHASE 7: URL fade in (100-130 frames) ===
+  const urlProgress = spring({
+    frame: frame - 100,
     fps,
-    config: { damping: 10, stiffness: 150 },
+    config: smoothConfig,
   });
 
-  const existimosY = interpolate(existimosScale, [0, 1], [100, 0]);
-
-  // === PHASE 5: Final pulse and fade (130-150 frames) ===
+  // === PHASE 8: Final subtle pulse (130-150 frames) ===
   const finalPulse = interpolate(
     frame,
-    [130, 135, 140, 145, 150],
-    [1, 1.05, 1, 1.02, 1],
+    [130, 140, 150],
+    [1, 1.02, 1],
     { extrapolateLeft: "clamp", extrapolateRight: "clamp" }
   );
 
-  // Glitch effect for logo
-  const glitchX = frame > 20 && frame < 40 && frame % 5 === 0 ? Math.random() * 10 - 5 : 0;
-  const glitchY = frame > 20 && frame < 40 && frame % 7 === 0 ? Math.random() * 6 - 3 : 0;
-
-  // Scanline effect
-  const scanlineY = (frame * 8) % 1920;
-
-  // Decorative lines animation
-  const line1Width = interpolate(frame, [10, 40], [0, 400], {
+  // Subtle decorative line animations
+  const topLineWidth = interpolate(frame, [20, 60], [0, 300], {
     extrapolateRight: "clamp",
-    easing: Easing.out(Easing.exp),
+    easing: Easing.out(Easing.cubic),
   });
 
-  const line2Width = interpolate(frame, [20, 50], [0, 300], {
+  const bottomLineWidth = interpolate(frame, [30, 70], [0, 250], {
     extrapolateRight: "clamp",
-    easing: Easing.out(Easing.exp),
+    easing: Easing.out(Easing.cubic),
   });
 
   return (
-    <AbsoluteFill style={{ backgroundColor: COLORS.noir }}>
-      {/* Initial flash */}
-      <AbsoluteFill
-        style={{
-          backgroundColor: COLORS.lime,
-          opacity: flashOpacity,
-        }}
-      />
-
-      {/* Scanline effect */}
-      <div
-        style={{
-          position: "absolute",
-          top: scanlineY,
-          left: 0,
-          right: 0,
-          height: 4,
-          backgroundColor: COLORS.lime,
-          opacity: 0.1,
-        }}
-      />
-
-      {/* Grid pattern background */}
+    <AbsoluteFill style={{ backgroundColor: COLORS.white }}>
+      {/* Subtle grid pattern */}
       <div
         style={{
           position: "absolute",
           inset: 0,
           backgroundImage: `
-            linear-gradient(${COLORS.cream}08 1px, transparent 1px),
-            linear-gradient(90deg, ${COLORS.cream}08 1px, transparent 1px)
+            linear-gradient(${COLORS.noir}06 1px, transparent 1px),
+            linear-gradient(90deg, ${COLORS.noir}06 1px, transparent 1px)
           `,
-          backgroundSize: "60px 60px",
-          opacity: interpolate(frame, [30, 60], [0, 1], { extrapolateRight: "clamp" }),
+          backgroundSize: "50px 50px",
+          opacity: bgFade,
         }}
       />
 
-      {/* Decorative lines */}
+      {/* Top decorative line */}
       <div
         style={{
           position: "absolute",
-          top: 400,
+          top: 350,
           left: 0,
-          width: line1Width,
-          height: 8,
+          width: topLineWidth,
+          height: 4,
           backgroundColor: COLORS.lime,
         }}
       />
+
+      {/* Bottom decorative line */}
       <div
         style={{
           position: "absolute",
-          top: 1500,
+          bottom: 400,
           right: 0,
-          width: line2Width,
-          height: 8,
+          width: bottomLineWidth,
+          height: 4,
           backgroundColor: COLORS.coral,
         }}
       />
@@ -166,75 +148,34 @@ export const MGMIntro: React.FC = () => {
       <div
         style={{
           position: "absolute",
-          top: "35%",
+          top: "32%",
           left: "50%",
           transform: `
             translate(-50%, -50%)
             scale(${logoScale * finalPulse})
-            rotate(${logoRotation}deg)
-            translate(${glitchX}px, ${glitchY}px)
           `,
+          opacity: logoOpacity,
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
         }}
       >
-        {/* Border frame */}
+        {/* Clean border frame */}
         <div
           style={{
-            padding: "40px 60px",
-            border: `8px solid ${COLORS.cream}`,
-            backgroundColor: COLORS.noir,
+            padding: "45px 70px",
+            border: `5px solid ${COLORS.noir}`,
+            backgroundColor: COLORS.white,
             position: "relative",
           }}
         >
-          {/* Glitch shadow layers */}
-          {frame > 20 && frame < 40 && (
-            <>
-              <div
-                style={{
-                  position: "absolute",
-                  inset: 0,
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  color: COLORS.coral,
-                  fontFamily: "Times New Roman, Times, serif",
-                  fontSize: 120,
-                  fontWeight: 400,
-                  opacity: 0.5,
-                  transform: "translate(-4px, -2px)",
-                }}
-              >
-                M.G.M
-              </div>
-              <div
-                style={{
-                  position: "absolute",
-                  inset: 0,
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  color: COLORS.lime,
-                  fontFamily: "Times New Roman, Times, serif",
-                  fontSize: 120,
-                  fontWeight: 400,
-                  opacity: 0.5,
-                  transform: "translate(4px, 2px)",
-                }}
-              >
-                M.G.M
-              </div>
-            </>
-          )}
           <span
             style={{
               fontFamily: "Times New Roman, Times, serif",
-              fontSize: 120,
+              fontSize: 130,
               fontWeight: 400,
-              color: COLORS.cream,
+              color: COLORS.noir,
               letterSpacing: "0.05em",
-              position: "relative",
             }}
           >
             M.G.M
@@ -242,132 +183,99 @@ export const MGMIntro: React.FC = () => {
         </div>
       </div>
 
-      {/* Tagline texts */}
+      {/* AUTOMATIONS text */}
       <div
         style={{
           position: "absolute",
-          top: "55%",
+          top: "52%",
+          left: "50%",
+          transform: "translate(-50%, 0)",
+          opacity: automationsProgress,
+        }}
+      >
+        <span
+          style={{
+            fontFamily: outfitFamily,
+            fontSize: 44,
+            fontWeight: 300,
+            color: COLORS.noir,
+            letterSpacing: "0.5em",
+            textTransform: "uppercase",
+          }}
+        >
+          AUTOMATIONS
+        </span>
+      </div>
+
+      {/* Separator line */}
+      <div
+        style={{
+          position: "absolute",
+          top: "60%",
+          left: "50%",
+          transform: "translateX(-50%)",
+          width: interpolate(lineProgress, [0, 1], [0, 180]),
+          height: 3,
+          backgroundColor: COLORS.lime,
+        }}
+      />
+
+      {/* Main tagline - "De idea a sistema funcionando" */}
+      <div
+        style={{
+          position: "absolute",
+          top: "67%",
           left: "50%",
           transform: "translate(-50%, 0)",
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
-          gap: 20,
+          gap: 15,
         }}
       >
-        {/* "AUTOMATIONS" */}
+        {/* "De idea a" */}
         <div
           style={{
-            fontFamily: outfitFamily,
-            fontSize: 48,
-            fontWeight: 300,
-            color: COLORS.cream,
-            letterSpacing: "0.4em",
-            textTransform: "uppercase",
-            opacity: text1Progress,
-            transform: `translateY(${interpolate(text1Progress, [0, 1], [30, 0])}px)`,
+            opacity: deIdeaProgress,
+            transform: `translateY(${interpolate(deIdeaProgress, [0, 1], [20, 0])}px)`,
           }}
         >
-          AUTOMATIONS
+          <span
+            style={{
+              fontFamily: outfitFamily,
+              fontSize: 36,
+              fontWeight: 400,
+              color: COLORS.noir,
+              opacity: 0.7,
+              letterSpacing: "0.15em",
+            }}
+          >
+            De idea a
+          </span>
         </div>
 
-        {/* Separator line */}
+        {/* "sistema funcionando" */}
         <div
           style={{
-            width: interpolate(text2Progress, [0, 1], [0, 200]),
-            height: 3,
-            backgroundColor: COLORS.lime,
-          }}
-        />
-
-        {/* Services */}
-        <div
-          style={{
-            fontFamily: outfitFamily,
-            fontSize: 28,
-            fontWeight: 400,
-            color: COLORS.cream,
-            opacity: text3Progress * 0.7,
-            letterSpacing: "0.2em",
-            transform: `translateY(${interpolate(text3Progress, [0, 1], [20, 0])}px)`,
+            opacity: sistemaProgress,
+            transform: `translateY(${interpolate(sistemaProgress, [0, 1], [25, 0])}px) scale(${interpolate(sistemaProgress, [0, 1], [0.95, 1])})`,
           }}
         >
-          WEB & SAAS
+          <span
+            style={{
+              fontFamily: syneFamily,
+              fontSize: 64,
+              fontWeight: 700,
+              color: COLORS.noir,
+              textTransform: "uppercase",
+              letterSpacing: "0.05em",
+            }}
+          >
+            sistema{" "}
+            <span style={{ color: COLORS.lime }}>funcionando</span>
+          </span>
         </div>
       </div>
-
-      {/* "YA EXISTIMOS" reveal */}
-      <Sequence from={90}>
-        <div
-          style={{
-            position: "absolute",
-            bottom: 280,
-            left: "50%",
-            transform: `translate(-50%, ${existimosY}px) scale(${existimosScale})`,
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            gap: 15,
-          }}
-        >
-          {/* Accent bar */}
-          <div
-            style={{
-              width: interpolate(existimosScale, [0, 1], [0, 500]),
-              height: 6,
-              backgroundColor: COLORS.lime,
-            }}
-          />
-
-          <div
-            style={{
-              fontFamily: clashFamily,
-              fontSize: 72,
-              fontWeight: 800,
-              color: COLORS.lime,
-              textTransform: "uppercase",
-              letterSpacing: "0.1em",
-            }}
-          >
-            YA EXISTIMOS
-          </div>
-
-          {/* Bottom accent */}
-          <div
-            style={{
-              display: "flex",
-              gap: 20,
-              alignItems: "center",
-            }}
-          >
-            <div
-              style={{
-                width: 80,
-                height: 4,
-                backgroundColor: COLORS.coral,
-              }}
-            />
-            <span
-              style={{
-                fontFamily: outfitFamily,
-                fontSize: 24,
-                color: COLORS.cream,
-                opacity: 0.8,
-                letterSpacing: "0.15em",
-              }}
-            >
-              MADRID
-            </span>
-            <div
-              style={{
-                width: 80,
-                height: 4,
-                backgroundColor: COLORS.coral,
-              }}
-            />
-          </div>
-        </div>
-      </Sequence>
 
       {/* Corner accents */}
       <div
@@ -375,11 +283,11 @@ export const MGMIntro: React.FC = () => {
           position: "absolute",
           top: 60,
           left: 60,
-          width: 80,
-          height: 80,
-          borderTop: `4px solid ${COLORS.lime}`,
-          borderLeft: `4px solid ${COLORS.lime}`,
-          opacity: interpolate(frame, [30, 50], [0, 1], { extrapolateRight: "clamp" }),
+          width: 60,
+          height: 60,
+          borderTop: `3px solid ${COLORS.noir}`,
+          borderLeft: `3px solid ${COLORS.noir}`,
+          opacity: interpolate(frame, [40, 70], [0, 0.3], { extrapolateRight: "clamp" }),
         }}
       />
       <div
@@ -387,11 +295,11 @@ export const MGMIntro: React.FC = () => {
           position: "absolute",
           bottom: 60,
           right: 60,
-          width: 80,
-          height: 80,
-          borderBottom: `4px solid ${COLORS.lime}`,
-          borderRight: `4px solid ${COLORS.lime}`,
-          opacity: interpolate(frame, [30, 50], [0, 1], { extrapolateRight: "clamp" }),
+          width: 60,
+          height: 60,
+          borderBottom: `3px solid ${COLORS.noir}`,
+          borderRight: `3px solid ${COLORS.noir}`,
+          opacity: interpolate(frame, [40, 70], [0, 0.3], { extrapolateRight: "clamp" }),
         }}
       />
 
@@ -399,18 +307,39 @@ export const MGMIntro: React.FC = () => {
       <div
         style={{
           position: "absolute",
-          bottom: 100,
+          bottom: 120,
           left: "50%",
           transform: "translateX(-50%)",
-          fontFamily: outfitFamily,
-          fontSize: 26,
-          color: COLORS.cream,
-          opacity: interpolate(frame, [100, 120], [0, 0.6], { extrapolateRight: "clamp" }),
-          letterSpacing: "0.2em",
+          opacity: urlProgress * 0.6,
         }}
       >
-        MGMAUTOMATIONS.ES
+        <span
+          style={{
+            fontFamily: outfitFamily,
+            fontSize: 24,
+            color: COLORS.noir,
+            letterSpacing: "0.25em",
+          }}
+        >
+          MGMAUTOMATIONS.ES
+        </span>
       </div>
+
+      {/* Bottom accent bar */}
+      <div
+        style={{
+          position: "absolute",
+          bottom: 0,
+          left: "50%",
+          transform: "translateX(-50%)",
+          width: interpolate(frame, [90, 120], [0, 200], {
+            extrapolateRight: "clamp",
+            easing: Easing.out(Easing.cubic),
+          }),
+          height: 6,
+          backgroundColor: COLORS.lime,
+        }}
+      />
     </AbsoluteFill>
   );
 };

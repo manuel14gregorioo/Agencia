@@ -1,26 +1,21 @@
 /**
- * Clínica Dental Sonrisas - Demo JavaScript
- * MGM Automations - Professional Portfolio Demo
+ * Clínica Dental Sonrisas - Premium Demo
+ * MGM Automations
  */
 
 (function() {
   'use strict';
 
-  // Carousel speed (synced for both carousels)
-  const CAROUSEL_SPEED = 5000;
-
-  // DOM Ready
   document.addEventListener('DOMContentLoaded', init);
 
   function init() {
     initHeader();
     initMobileMenu();
     initDropdowns();
-    initHeroStatsCarousel();
-    initHeroCardCarousel();
-    initCounters();
     initSmoothScroll();
     initFormValidation();
+    initScrollAnimations();
+    initCounters();
   }
 
   // --------------------------------------------------------------------------
@@ -33,7 +28,7 @@
     let ticking = false;
 
     function updateHeader() {
-      if (window.scrollY > 50) {
+      if (window.scrollY > 20) {
         header.classList.add('scrolled');
       } else {
         header.classList.remove('scrolled');
@@ -68,7 +63,6 @@
       document.body.style.overflow = isExpanded ? '' : 'hidden';
     });
 
-    // Close on escape
     document.addEventListener('keydown', function(e) {
       if (e.key === 'Escape' && menu.classList.contains('active')) {
         toggle.setAttribute('aria-expanded', 'false');
@@ -88,15 +82,13 @@
 
     dropdowns.forEach(function(dropdown) {
       const button = dropdown.querySelector('button[aria-haspopup]');
-      const submenu = dropdown.querySelector('.nav__submenu');
 
-      if (!button || !submenu) return;
+      if (!button) return;
 
       button.addEventListener('click', function(e) {
         e.preventDefault();
         const isExpanded = button.getAttribute('aria-expanded') === 'true';
 
-        // Close other dropdowns
         dropdowns.forEach(function(d) {
           const btn = d.querySelector('button[aria-haspopup]');
           if (btn && btn !== button) {
@@ -108,7 +100,6 @@
       });
     });
 
-    // Close on outside click
     document.addEventListener('click', function(e) {
       dropdowns.forEach(function(dropdown) {
         if (!dropdown.contains(e.target)) {
@@ -119,148 +110,6 @@
         }
       });
     });
-  }
-
-  // --------------------------------------------------------------------------
-  // Hero Stats Carousel
-  // --------------------------------------------------------------------------
-  function initHeroStatsCarousel() {
-    const container = document.getElementById('hero-stats');
-    if (!container) return;
-
-    const slides = container.querySelectorAll('.hero__stats-slide');
-    const dots = container.querySelectorAll('.hero__stats-dot');
-
-    if (slides.length === 0) return;
-
-    let currentSlide = 0;
-    let interval;
-
-    function showSlide(index) {
-      slides.forEach(s => s.classList.remove('active'));
-      dots.forEach(d => d.classList.remove('active'));
-      slides[index].classList.add('active');
-      dots[index].classList.add('active');
-      currentSlide = index;
-    }
-
-    function nextSlide() {
-      showSlide((currentSlide + 1) % slides.length);
-    }
-
-    function startAutoRotate() {
-      interval = setInterval(nextSlide, CAROUSEL_SPEED);
-    }
-
-    function stopAutoRotate() {
-      clearInterval(interval);
-    }
-
-    dots.forEach(function(dot, index) {
-      dot.addEventListener('click', function() {
-        stopAutoRotate();
-        showSlide(index);
-        startAutoRotate();
-      });
-    });
-
-    container.addEventListener('mouseenter', stopAutoRotate);
-    container.addEventListener('mouseleave', startAutoRotate);
-
-    startAutoRotate();
-  }
-
-  // --------------------------------------------------------------------------
-  // Hero Card Carousel
-  // --------------------------------------------------------------------------
-  function initHeroCardCarousel() {
-    const container = document.getElementById('hero-card');
-    if (!container) return;
-
-    const slides = container.querySelectorAll('.hero__card-slide');
-    const dots = container.querySelectorAll('.hero__card-dot');
-
-    if (slides.length === 0) return;
-
-    let currentSlide = 0;
-    let interval;
-
-    function showSlide(index) {
-      slides.forEach(s => s.classList.remove('active'));
-      dots.forEach(d => d.classList.remove('active'));
-      slides[index].classList.add('active');
-      dots[index].classList.add('active');
-      currentSlide = index;
-    }
-
-    function nextSlide() {
-      showSlide((currentSlide + 1) % slides.length);
-    }
-
-    function startAutoRotate() {
-      interval = setInterval(nextSlide, CAROUSEL_SPEED);
-    }
-
-    function stopAutoRotate() {
-      clearInterval(interval);
-    }
-
-    dots.forEach(function(dot, index) {
-      dot.addEventListener('click', function() {
-        stopAutoRotate();
-        showSlide(index);
-        startAutoRotate();
-      });
-    });
-
-    container.addEventListener('mouseenter', stopAutoRotate);
-    container.addEventListener('mouseleave', startAutoRotate);
-
-    // Start with offset so carousels don't change at the same time
-    setTimeout(startAutoRotate, CAROUSEL_SPEED / 2);
-  }
-
-  // --------------------------------------------------------------------------
-  // Animated Counters
-  // --------------------------------------------------------------------------
-  function initCounters() {
-    const counters = document.querySelectorAll('[data-count]');
-    if (!counters.length) return;
-
-    const observer = new IntersectionObserver(function(entries) {
-      entries.forEach(function(entry) {
-        if (entry.isIntersecting) {
-          animateCounter(entry.target);
-          observer.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.5 });
-
-    counters.forEach(counter => observer.observe(counter));
-  }
-
-  function animateCounter(element) {
-    const target = parseInt(element.dataset.count, 10);
-    const duration = 2000;
-    const steps = 60;
-    const increment = target / steps;
-    let current = 0;
-    let step = 0;
-
-    const timer = setInterval(function() {
-      step++;
-      current = Math.min(Math.round(increment * step), target);
-      element.textContent = formatNumber(current);
-
-      if (step >= steps) {
-        clearInterval(timer);
-        element.textContent = formatNumber(target);
-      }
-    }, duration / steps);
-  }
-
-  function formatNumber(num) {
-    return num >= 1000 ? num.toLocaleString('es-ES') : num.toString();
   }
 
   // --------------------------------------------------------------------------
@@ -284,6 +133,16 @@
             top: targetPosition,
             behavior: 'smooth'
           });
+
+          // Close mobile menu if open
+          const menu = document.getElementById('nav-menu');
+          const toggle = document.getElementById('nav-toggle');
+          if (menu?.classList.contains('active')) {
+            toggle?.setAttribute('aria-expanded', 'false');
+            toggle?.classList.remove('active');
+            menu.classList.remove('active');
+            document.body.style.overflow = '';
+          }
         }
       });
     });
@@ -299,41 +158,34 @@
     form.addEventListener('submit', function(e) {
       e.preventDefault();
 
-      // Simple validation
       const nombre = form.querySelector('#nombre');
       const email = form.querySelector('#email');
-      const telefono = form.querySelector('#telefono');
+      const mensaje = form.querySelector('#mensaje');
       const privacidad = form.querySelector('#privacidad');
 
       let isValid = true;
 
-      [nombre, email, telefono].forEach(function(input) {
-        if (!input.value.trim()) {
+      [nombre, email, mensaje].forEach(function(input) {
+        if (input && !input.value.trim()) {
           input.style.borderColor = '#dc2626';
           isValid = false;
-        } else {
+        } else if (input) {
           input.style.borderColor = '';
         }
       });
 
-      if (email.value && !isValidEmail(email.value)) {
+      if (email && email.value && !isValidEmail(email.value)) {
         email.style.borderColor = '#dc2626';
         isValid = false;
       }
 
-      if (telefono.value && !isValidPhone(telefono.value)) {
-        telefono.style.borderColor = '#dc2626';
-        isValid = false;
-      }
-
-      if (!privacidad.checked) {
+      if (privacidad && !privacidad.checked) {
         isValid = false;
         alert('Debes aceptar la política de privacidad');
       }
 
       if (isValid) {
-        // Demo mode - show success message
-        alert('¡Gracias por solicitar tu cita! En una web real, esto enviaría el formulario al servidor y recibirías una confirmación por email.');
+        alert('¡Gracias por tu mensaje! En una web real, esto enviaría el formulario al servidor.');
         form.reset();
       }
     });
@@ -343,8 +195,80 @@
     return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
   }
 
-  function isValidPhone(phone) {
-    return /^[0-9+\s()-]{9,}$/.test(phone);
+  // --------------------------------------------------------------------------
+  // Scroll Animations (Intersection Observer)
+  // --------------------------------------------------------------------------
+  function initScrollAnimations() {
+    const animatedElements = document.querySelectorAll(
+      '.treatment-card, .team-card, .testimonial-card, .why-us__feature, .stat-item, .faq__item'
+    );
+
+    if (!animatedElements.length || !('IntersectionObserver' in window)) return;
+
+    const observer = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          entry.target.style.opacity = '1';
+          entry.target.style.transform = 'translateY(0)';
+          observer.unobserve(entry.target);
+        }
+      });
+    }, {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    });
+
+    animatedElements.forEach(function(el, index) {
+      el.style.opacity = '0';
+      el.style.transform = 'translateY(20px)';
+      el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+      el.style.transitionDelay = (index % 4) * 0.1 + 's';
+      observer.observe(el);
+    });
+  }
+
+  // --------------------------------------------------------------------------
+  // Animated Counters
+  // --------------------------------------------------------------------------
+  function initCounters() {
+    const counters = document.querySelectorAll('[data-count]');
+    if (!counters.length || !('IntersectionObserver' in window)) return;
+
+    const observer = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          animateCounter(entry.target);
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.5 });
+
+    counters.forEach(counter => observer.observe(counter));
+  }
+
+  function animateCounter(element) {
+    const target = parseInt(element.dataset.count, 10);
+    const suffix = element.dataset.suffix || '';
+    const duration = 2000;
+    const steps = 60;
+    const increment = target / steps;
+    let current = 0;
+    let step = 0;
+
+    const timer = setInterval(function() {
+      step++;
+      current = Math.min(Math.round(increment * step), target);
+      element.textContent = formatNumber(current) + suffix;
+
+      if (step >= steps) {
+        clearInterval(timer);
+        element.textContent = formatNumber(target) + suffix;
+      }
+    }, duration / steps);
+  }
+
+  function formatNumber(num) {
+    return num >= 1000 ? num.toLocaleString('es-ES') : num.toString();
   }
 
 })();

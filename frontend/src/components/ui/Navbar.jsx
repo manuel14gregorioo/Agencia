@@ -46,8 +46,8 @@ const Navbar = () => {
       <div className="container-xl mx-auto px-4 md:px-8">
         <div className="flex items-center justify-between h-20 md:h-24">
           {/* Logo */}
-          <a
-            href="#"
+          <Link
+            to="/"
             className="group flex items-center gap-3 focus:outline-none"
             aria-label="M.G.M Automations - Inicio"
           >
@@ -62,7 +62,7 @@ const Navbar = () => {
             }`}>
               Automations
             </span>
-          </a>
+          </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-1" role="menubar">

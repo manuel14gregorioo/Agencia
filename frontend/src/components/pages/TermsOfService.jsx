@@ -1,10 +1,17 @@
 import React from 'react';
 import { ArrowLeft, FileText, Mail } from 'lucide-react';
 import { Link } from '../../App';
+import { SEOHead, getLegalPageSchema } from '../seo';
 
 const TermsOfService = () => {
   return (
     <div className="min-h-screen bg-cream-50 dark:bg-noir-950">
+      <SEOHead
+        title="Términos y Condiciones | M.G.M Automations"
+        description="Términos y condiciones de contratación de servicios de desarrollo web y automatización de M.G.M Automations."
+        canonical="/terminos"
+        schemas={getLegalPageSchema('Términos y Condiciones', 'terminos')}
+      />
       {/* Header */}
       <header className="bg-noir-900 dark:bg-noir-900 py-8 px-4">
         <div className="max-w-4xl mx-auto">

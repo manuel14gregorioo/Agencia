@@ -13,6 +13,9 @@
 
 import React from 'react';
 
+// SEO
+import { SEOHead, getLandingSchemas } from './seo';
+
 // Contexts
 import { ThemeProvider, ToastProvider, CookieConsentProvider } from './contexts';
 
@@ -41,6 +44,15 @@ const LandingContent = () => {
 
   return (
     <div className="min-h-screen bg-white dark:bg-gray-900 font-sans antialiased transition-colors duration-300">
+      <SEOHead
+        title="Desarrollo Web y Automatizaciones en 2 Semanas | M.G.M Automations Madrid"
+        description="M.G.M Automations es una agencia de desarrollo web y automatización de procesos en Madrid. Entregamos sistemas completos en 1-3 semanas con precio fijo. Creadores de VOCAP.io."
+        canonical="/"
+        ogTitle="De idea a sistema funcionando en 2 semanas | M.G.M Automations"
+        ogDescription="Desarrollo web y automatizaciones para negocios. Desde 1.500€. Creadores de VOCAP.io - SaaS real en producción que puedes probar."
+        ogImage="https://mgmautomations.es/og-image.jpg"
+        schemas={getLandingSchemas()}
+      />
       <a href="#main-content" className="skip-link">Saltar al contenido principal</a>
       <header role="banner">
         <Navbar />

@@ -82,6 +82,7 @@ const HeroSection = () => {
                 <span className="text-lime-500 dark:text-lime-400">funcionando</span>
               </h1>
               <p className="text-lead max-w-xl">
+                <strong className="text-noir-900 dark:text-cream-50">M.G.M Automations es una agencia de desarrollo web y automatización de procesos</strong> con sede en Madrid.
                 Mientras tu competencia espera 3 meses por una agencia tradicional,
                 nosotros entregamos <strong className="text-noir-900 dark:text-cream-50">sistemas completos en 2 semanas</strong> con precio fijo.
               </p>

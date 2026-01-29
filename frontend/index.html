@@ -143,21 +143,48 @@
       "name": "M.G.M Automations",
       "url": "https://mgmautomations.es",
       "logo": "https://mgmautomations.es/favicon.svg",
-      "description": "Agencia de desarrollo web y automatizaciones. Entregamos proyectos en 1-3 semanas.",
+      "description": "M.G.M Automations es una agencia de desarrollo web y automatización de procesos con sede en Madrid. Entregamos proyectos en 1-3 semanas con precio fijo. Creadores de VOCAP.io.",
       "email": "hola@mgmautomations.es",
       "foundingDate": "2024",
       "founder": {
         "@type": "Person",
-        "name": "M.G.M Automations Team"
+        "name": "Manuel Gregorio",
+        "jobTitle": "Founder"
       },
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Madrid",
+        "addressRegion": "Madrid",
         "addressCountry": "ES"
       },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "email": "hola@mgmautomations.es",
+        "contactType": "customer service",
+        "availableLanguage": ["Spanish", "English"]
+      },
+      "knowsLanguage": ["es", "en"],
       "sameAs": [
         "https://vocap.io"
       ]
+    }
+    </script>
+
+    <!-- Person Schema (Founder) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Manuel Gregorio",
+      "jobTitle": "Founder",
+      "url": "https://mgmautomations.es",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "M.G.M Automations",
+        "url": "https://mgmautomations.es"
+      },
+      "knowsAbout": ["Desarrollo Web", "Automatización de Procesos", "SaaS", "Inteligencia Artificial", "Python", "React", "Flask"],
+      "knowsLanguage": ["es", "en"]
     }
     </script>
 
@@ -336,7 +363,31 @@
           "name": "¿Trabajáis solo en Madrid?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "100% remoto. Trabajamos con clientes de toda España. Reuniones por videollamada, respuesta en menos de 24h."
+            "text": "100% remoto. Trabajamos con clientes de toda España. Reuniones por videollamada, respuesta garantizada en menos de 24 horas."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Qué tecnologías utilizáis?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Nuestro stack principal es Python con Flask en backend, React en frontend, PostgreSQL como base de datos, Stripe para pagos, y APIs de OpenAI y Claude AI para funcionalidades de inteligencia artificial. Desplegamos en Vercel y Railway."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Qué es VOCAP.io?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "VOCAP.io es nuestro producto propio: una plataforma SaaS de transcripción de audio con inteligencia artificial. Ofrece transcripciones de calidad profesional a 1€/hora, frente a los 8-12€ de la competencia. Está desarrollado con Python/Flask, React, PostgreSQL, Stripe y OpenAI Whisper."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Ofrecéis mantenimiento después de la entrega?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sí. Todos los proyectos incluyen 1 mes de soporte gratuito para bugs y ajustes menores. Después, ofrecemos mantenimiento continuo a 80€/hora o packs mensuales adaptados a cada cliente."
           }
         }
       ]

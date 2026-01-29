@@ -1,10 +1,17 @@
 import React from 'react';
 import { ArrowLeft, Cookie, Mail } from 'lucide-react';
 import { Link } from '../../App';
+import { SEOHead, getLegalPageSchema } from '../seo';
 
 const CookiePolicy = () => {
   return (
     <div className="min-h-screen bg-cream-50 dark:bg-noir-950">
+      <SEOHead
+        title="Política de Cookies | M.G.M Automations"
+        description="Política de cookies de M.G.M Automations. Información sobre las cookies técnicas y analíticas que utilizamos."
+        canonical="/cookies"
+        schemas={getLegalPageSchema('Política de Cookies', 'cookies')}
+      />
       {/* Header */}
       <header className="bg-noir-900 dark:bg-noir-900 py-8 px-4">
         <div className="max-w-4xl mx-auto">

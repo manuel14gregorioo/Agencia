@@ -23,7 +23,7 @@ const ServiciosSection = () => {
             <span className="text-lime-400">Precio fijo.</span>
           </h2>
           <p className="text-lead text-noir-400 max-w-xl mx-auto">
-            Sin sorpresas. Eliges lo que necesitas.
+            Automatizamos procesos de negocio, desarrollamos plataformas web a medida y creamos productos SaaS completos. Sin sorpresas. Eliges lo que necesitas.
           </p>
         </div>
 

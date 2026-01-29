@@ -1,6 +1,7 @@
 import React from 'react';
-import { ArrowLeft, ArrowRight, Clock, Calendar, Tag } from 'lucide-react';
+import { ArrowLeft, ArrowRight, Clock, Calendar, Tag, User } from 'lucide-react';
 import { Link } from '../../App';
+import { SEOHead, getBlogListSchemas, getArticleSchema } from '../seo';
 
 // Datos de los posts del blog
 const BLOG_POSTS = [
@@ -13,6 +14,7 @@ const BLOG_POSTS = [
     category: 'Análisis Sectorial',
     image: null,
     featured: true,
+    author: { name: 'Manuel Gregorio', role: 'Founder de M.G.M Automations' },
     content: `
 ## El Problema que Nadie te Cuenta
 
@@ -168,6 +170,7 @@ Te hacemos una auditoría gratuita de tu web actual en 15 minutos: te decimos ex
     category: 'Inteligencia Artificial',
     image: null,
     featured: false,
+    author: { name: 'Manuel Gregorio', role: 'Founder de M.G.M Automations' },
     content: `
 ## La IA Ya No Es Solo para Grandes Empresas
 
@@ -339,6 +342,7 @@ Sin compromisos: te hacemos una consulta gratuita donde analizamos tu caso y te 
     category: 'Caso de Estudio',
     image: '/images/vocap-hero.jpg',
     featured: false,
+    author: { name: 'Manuel Gregorio', role: 'Founder de M.G.M Automations' },
     content: `
 ## El Reto
 
@@ -397,6 +401,7 @@ VOCAP.io ahora tiene usuarios reales pagando suscripciones. Puedes probarlo grat
     category: 'Automatización',
     image: null,
     featured: false,
+    author: { name: 'Manuel Gregorio', role: 'Founder de M.G.M Automations' },
     content: `
 ## Por Qué Automatizar
 
@@ -456,6 +461,7 @@ Desarrollamos sistemas de automatización personalizados desde 1.500€. [Contac
     category: 'Guía',
     image: null,
     featured: false,
+    author: { name: 'Manuel Gregorio', role: 'Founder de M.G.M Automations' },
     content: `
 ## El Rango de Precios
 
@@ -523,6 +529,15 @@ const BlogList = () => {
 
   return (
     <div className="min-h-screen bg-cream-50 dark:bg-noir-950">
+      <SEOHead
+        title="Blog - Desarrollo Web, Automatización e IA | M.G.M Automations"
+        description="Recursos, guías y casos de estudio sobre desarrollo web, automatización de negocios e inteligencia artificial para PYMEs. Por M.G.M Automations."
+        canonical="/blog"
+        ogTitle="Blog - M.G.M Automations"
+        ogDescription="Artículos sobre desarrollo web, automatización e IA para negocios. Guías prácticas con ejemplos reales."
+        ogImage="https://mgmautomations.es/og-image.jpg"
+        schemas={getBlogListSchemas()}
+      />
       {/* Header */}
       <header className="bg-noir-900 dark:bg-noir-900 py-12 px-4">
         <div className="max-w-6xl mx-auto">
@@ -656,6 +671,16 @@ const BlogPost = ({ postId }) => {
 
   return (
     <div className="min-h-screen bg-cream-50 dark:bg-noir-950">
+      <SEOHead
+        title={`${post.title} | Blog M.G.M Automations`}
+        description={post.excerpt}
+        canonical={`/blog/${post.id}`}
+        ogTitle={post.title}
+        ogDescription={post.excerpt}
+        ogImage={post.image ? `https://mgmautomations.es${post.image}` : 'https://mgmautomations.es/og-image.jpg'}
+        ogType="article"
+        schemas={getArticleSchema(post)}
+      />
       {/* Header */}
       <header className="bg-noir-900 dark:bg-noir-900 py-12 px-4">
         <div className="max-w-4xl mx-auto">
@@ -678,9 +703,16 @@ const BlogPost = ({ postId }) => {
           <h1 className="text-3xl md:text-4xl font-display font-bold text-cream-50 mb-4">
             {post.title}
           </h1>
-          <p className="text-noir-400">
-            {new Date(post.date).toLocaleDateString('es-ES', { day: 'numeric', month: 'long', year: 'numeric' })}
-          </p>
+          {/* Author byline */}
+          <div className="flex items-center gap-4 mt-6">
+            <div className="w-10 h-10 rounded-full bg-lime-400 flex items-center justify-center border-2 border-lime-400">
+              <User className="w-5 h-5 text-noir-900" />
+            </div>
+            <div>
+              <p className="text-cream-50 font-semibold text-sm">{post.author?.name || 'Manuel Gregorio'}</p>
+              <p className="text-noir-400 text-xs">{post.author?.role || 'Founder de M.G.M Automations'} · {new Date(post.date).toLocaleDateString('es-ES', { day: 'numeric', month: 'long', year: 'numeric' })}</p>
+            </div>
+          </div>
         </div>
       </header>
 

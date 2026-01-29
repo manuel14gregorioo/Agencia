@@ -1,10 +1,17 @@
 import React from 'react';
 import { ArrowLeft, Shield, Mail, MapPin } from 'lucide-react';
 import { Link } from '../../App';
+import { SEOHead, getLegalPageSchema } from '../seo';
 
 const PrivacyPolicy = () => {
   return (
     <div className="min-h-screen bg-cream-50 dark:bg-noir-950">
+      <SEOHead
+        title="Política de Privacidad | M.G.M Automations"
+        description="Política de privacidad de M.G.M Automations. Información sobre el tratamiento de datos personales conforme al RGPD."
+        canonical="/privacidad"
+        schemas={getLegalPageSchema('Política de Privacidad', 'privacidad')}
+      />
       {/* Header */}
       <header className="bg-noir-900 dark:bg-noir-900 py-8 px-4">
         <div className="max-w-4xl mx-auto">

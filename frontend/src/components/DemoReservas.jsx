@@ -6,6 +6,7 @@
  */
 
 import React, { useState } from 'react';
+import { SEOHead, getDemoSchemas } from './seo';
 
 // Configuraciones por sector
 const SECTORES = {
@@ -149,6 +150,15 @@ const DemoReservas = () => {
       backgroundColor: '#f8fafc',
       fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif'
     }}>
+      <SEOHead
+        title="Demo Sistema de Reservas Online | M.G.M Automations"
+        description="Prueba nuestra demo interactiva de sistema de reservas online. Disponible para clínicas, peluquerías, talleres, veterinarias y centros de estética. Desde 1.500€."
+        canonical="/demo"
+        ogTitle="Demo Sistema de Reservas Online | M.G.M Automations"
+        ogDescription="Sistema de reservas online con WhatsApp, recordatorios SMS y panel de administración. Prueba la demo interactiva."
+        ogImage="https://mgmautomations.es/og-image.jpg"
+        schemas={getDemoSchemas()}
+      />
       {/* Header con selector de sector */}
       <div style={{
         backgroundColor: '#1e293b',

@@ -59,11 +59,14 @@ export const PROCESO = [
 ];
 
 export const FAQS = [
-  { pregunta: '¿Tenéis ejemplos reales de vuestro trabajo?', respuesta: 'Sí, VOCAP.io es un proyecto propio que puedes probar gratis ahora mismo. Es una plataforma SaaS completa de transcripción con IA que demuestra nuestra capacidad end-to-end.' },
-  { pregunta: '¿Cuánto tiempo tarda un proyecto?', respuesta: 'Automatizaciones en 1-2 semanas. Plataformas web en 2-3 semanas. SaaS completos en 3-4 semanas.' },
-  { pregunta: '¿Cuánto cuesta?', respuesta: 'Automatizaciones desde 1.500€, plataformas web desde 2.500€, SaaS completos a consultar. Precio fijo cerrado antes de empezar.' },
-  { pregunta: '¿Qué pasa si necesito cambios después?', respuesta: 'Una ronda de revisiones está incluida sin coste. Para cambios posteriores: soporte a 80€/hora o packs mensuales.' },
-  { pregunta: '¿Trabajáis solo en Madrid?', respuesta: '100% remoto. Trabajamos con clientes de toda España. Reuniones por videollamada, respuesta en menos de 24h.' },
+  { pregunta: '¿Tenéis ejemplos reales de vuestro trabajo?', respuesta: 'Sí, VOCAP.io es un proyecto propio que puedes probar gratis ahora mismo. Es una plataforma SaaS completa de transcripción con IA que demuestra nuestra capacidad end-to-end: backend con Python/Flask, frontend React, pagos Stripe y procesamiento con OpenAI Whisper.' },
+  { pregunta: '¿Cuánto tiempo tarda un proyecto?', respuesta: 'Automatizaciones en 1-2 semanas. Plataformas web en 2-3 semanas. SaaS completos en 3-4 semanas. Trabajamos en sprints con demos cada 2-3 días para que veas avances reales.' },
+  { pregunta: '¿Cuánto cuesta?', respuesta: 'Automatizaciones desde 1.500€, plataformas web desde 2.500€, SaaS completos a consultar. Precio fijo cerrado antes de empezar, sin sorpresas. El presupuesto incluye desarrollo, deploy y formación.' },
+  { pregunta: '¿Qué pasa si necesito cambios después?', respuesta: 'Una ronda de revisiones está incluida sin coste adicional. Para cambios posteriores ofrecemos soporte a 80€/hora o packs mensuales de mantenimiento.' },
+  { pregunta: '¿Trabajáis solo en Madrid?', respuesta: '100% remoto. Trabajamos con clientes de toda España. Reuniones por videollamada, respuesta garantizada en menos de 24 horas.' },
+  { pregunta: '¿Qué tecnologías utilizáis?', respuesta: 'Nuestro stack principal es Python con Flask en backend, React en frontend, PostgreSQL como base de datos, Stripe para pagos, y APIs de OpenAI y Claude AI para funcionalidades de inteligencia artificial. Desplegamos en Vercel y Railway.' },
+  { pregunta: '¿Qué es VOCAP.io?', respuesta: 'VOCAP.io es nuestro producto propio: una plataforma SaaS de transcripción de audio con inteligencia artificial. Ofrece transcripciones de calidad profesional a 1€/hora, frente a los 8-12€ de la competencia. Está desarrollado con Python/Flask, React, PostgreSQL, Stripe y OpenAI Whisper.' },
+  { pregunta: '¿Ofrecéis mantenimiento después de la entrega?', respuesta: 'Sí. Todos los proyectos incluyen 1 mes de soporte gratuito para bugs y ajustes menores. Después, ofrecemos mantenimiento continuo a 80€/hora o packs mensuales adaptados a cada cliente.' },
 ];
 
 export const TECNOLOGIAS = [

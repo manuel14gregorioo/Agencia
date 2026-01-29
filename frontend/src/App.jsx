@@ -18,6 +18,7 @@ const PrivacyPolicy = lazy(() => import('./components/pages/PrivacyPolicy'));
 const TermsOfService = lazy(() => import('./components/pages/TermsOfService'));
 const CookiePolicy = lazy(() => import('./components/pages/CookiePolicy'));
 const Blog = lazy(() => import('./components/pages/Blog'));
+const DomainGuide = lazy(() => import('./components/pages/DomainGuide'));
 
 // Router Context for navigation
 const RouterContext = createContext(null);
@@ -83,6 +84,8 @@ const parseRoute = (pathname) => {
     return { page: 'terms', params: {} };
   } else if (path === '/cookies') {
     return { page: 'cookies', params: {} };
+  } else if (path === '/guia-dominio') {
+    return { page: 'domain-guide', params: {} };
   } else if (path === '/blog') {
     return { page: 'blog', params: {} };
   } else if (path.startsWith('/blog/')) {
@@ -128,6 +131,8 @@ function App() {
         return <TermsOfService />;
       case 'cookies':
         return <CookiePolicy />;
+      case 'domain-guide':
+        return <DomainGuide />;
       case 'blog':
         return <Blog />;
       case 'blog-post':

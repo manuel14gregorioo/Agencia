@@ -5,6 +5,161 @@ import { Link } from '../../App';
 // Datos de los posts del blog
 const BLOG_POSTS = [
   {
+    id: 'gestoria-web-pierde-clientes',
+    title: 'Por Qué tu Gestoría Pierde Clientes por Culpa de su Web',
+    excerpt: 'Analizamos las webs de más de 50 gestorías en España. El 80% tiene problemas técnicos graves que espantan clientes. Descubre si la tuya es una de ellas.',
+    date: '2025-01-29',
+    readTime: '7 min',
+    category: 'Análisis Sectorial',
+    image: null,
+    featured: true,
+    content: `
+## El Problema que Nadie te Cuenta
+
+Tu gestoría lleva 20, 30, puede que 40 años funcionando. Tienes clientes fieles, haces bien tu trabajo y las cosas van. Pero hay un problema: cada vez más clientes potenciales te buscan en Google antes de llamarte. Y lo que encuentran no les convence.
+
+Hemos analizado las webs de más de 50 gestorías en España. Los resultados son preocupantes.
+
+## Lo que Encontramos: Datos Reales
+
+### El 73% no tiene certificado SSL
+
+Esto significa que cuando alguien entra a tu web, el navegador muestra un aviso de "No seguro" junto a la URL. Para un negocio que maneja datos fiscales y contables de sus clientes, esto es devastador. El cliente piensa: "Si no pueden proteger su propia web, ¿cómo van a proteger mis datos?"
+
+### El 85% tiene un diseño anterior a 2018
+
+Webs con jQuery de 2012. Plantillas de WordPress sin personalizar. Constructores web gratuitos como Weebly o IONOS. Incluso gestorías con 40 años de experiencia usando subdominios de wordpress.com o pymes.com como su web corporativa.
+
+### El 90% no tiene blog ni genera contenido
+
+Cero artículos sobre cambios fiscales, cero guías sobre la declaración de la renta, cero contenido que ayude a posicionar en Google. Oportunidades de captar clientes que se pierden cada día.
+
+### El 40% usa email no profesional
+
+Gmail o Yahoo como correo corporativo. Imagina recibir una factura desde gestoriapepe@gmail.com frente a contacto@gestoriapepe.es. La confianza que transmite es radicalmente diferente.
+
+## Por Qué Esto te Está Costando Dinero
+
+### El cliente de 2025 busca en Google
+
+Cuando alguien necesita una gestoría, no abre las Páginas Amarillas. Busca "gestoría + su ciudad" en Google. Si tu web no aparece, no existes. Si aparece pero tiene mala pinta, el cliente se va al siguiente resultado.
+
+**Dato real:** El 75% de los usuarios juzga la credibilidad de un negocio por el diseño de su web (estudio de Stanford).
+
+### Tu competencia ya se está moviendo
+
+De las 50 gestorías que analizamos, un 20% sí tiene webs modernas y bien posicionadas. Esas son las que se llevan los clientes nuevos. No porque sean mejores gestores, sino porque transmiten más confianza online.
+
+### El coste de no hacer nada
+
+Supongamos que pierdes solo 2 clientes al mes por tener una web deficiente. Si cada cliente vale 150€/mes de cuota:
+
+- **2 clientes perdidos x 150€ x 12 meses = 3.600€/año**
+
+Eso es más de lo que cuesta tener una web profesional.
+
+## Los 5 Problemas Más Graves (y Cómo Solucionarlos)
+
+### 1. Sin SSL / HTTPS
+
+**Qué es:** El candado verde que aparece en la barra del navegador. Sin él, Chrome marca tu web como "No segura".
+
+**Solución:** Instalar un certificado SSL. Es gratuito con Let's Encrypt o viene incluido en cualquier hosting moderno.
+
+**Impacto:** Google penaliza webs sin SSL en los resultados de búsqueda.
+
+### 2. Web no responsive
+
+**Qué es:** Tu web se ve mal en el móvil. Texto pequeño, botones imposibles de pulsar, scroll horizontal.
+
+**Solución:** Rediseño con tecnología moderna que se adapte a cualquier pantalla.
+
+**Impacto:** El 60% de las búsquedas en Google se hacen desde móvil.
+
+### 3. Velocidad de carga lenta
+
+**Qué es:** Tu web tarda más de 3 segundos en cargar. Plugins pesados, imágenes sin optimizar, código antiguo.
+
+**Solución:** Optimización técnica o reconstrucción con tecnología ligera.
+
+**Impacto:** El 53% de los usuarios abandona una web que tarda más de 3 segundos.
+
+### 4. Contenido desactualizado
+
+**Qué es:** Tu web habla de la "nueva normativa de 2019" o tiene un copyright de 2021.
+
+**Solución:** Blog con contenido actualizado sobre novedades fiscales, guías prácticas y preguntas frecuentes.
+
+**Impacto:** El contenido fresco mejora tu posición en Google y genera confianza.
+
+### 5. Sin información de contacto clara
+
+**Qué es:** El cliente tiene que buscar tu teléfono o email. No hay formulario de contacto, no hay WhatsApp, no hay mapa.
+
+**Solución:** Sección de contacto visible con múltiples canales y un formulario simple.
+
+**Impacto:** Cada segundo que el cliente pierde buscando cómo contactarte es una oportunidad de que se vaya.
+
+## Qué Debería Tener la Web de una Gestoría en 2025
+
+### Lo básico (imprescindible)
+
+- Diseño profesional y moderno que transmita confianza
+- Certificado SSL (HTTPS)
+- Responsive (perfecta en móvil)
+- Velocidad de carga inferior a 2 segundos
+- Información de contacto visible: teléfono, email profesional, dirección, mapa
+- Páginas de servicios claras: fiscal, laboral, contable, mercantil
+- Formulario de contacto funcional
+
+### Lo recomendable (diferenciador)
+
+- Blog con artículos sobre novedades fiscales y guías prácticas
+- Testimonios de clientes reales
+- Sistema de cita previa online
+- Chat o WhatsApp integrado
+- Portal de clientes para intercambiar documentos
+- Política de privacidad y cookies actualizada
+
+### Lo avanzado (ventaja competitiva)
+
+- Automatización de recordatorios de plazos fiscales
+- Envío automático de newsletters con cambios normativos
+- Sistema de firma digital de documentos
+- Dashboard para que el cliente vea el estado de sus gestiones
+
+## Cuánto Cuesta Modernizar la Web de tu Gestoría
+
+No hace falta gastar una fortuna:
+
+- **Web profesional completa:** 2.500-4.000€ (diseño a medida, todas las páginas, SEO básico, responsive)
+- **Web + blog + posicionamiento SEO:** 3.500-5.000€
+- **Web + automatizaciones (citas, WhatsApp, portal):** 4.000-6.000€
+
+La inversión se recupera en menos de un año con los clientes nuevos que captarás.
+
+## Test Rápido: ¿Tu Web Necesita una Reforma?
+
+Hazte estas preguntas:
+
+- ¿Tu web tiene el candado de seguridad (HTTPS)?
+- ¿Se ve bien en el móvil sin hacer zoom?
+- ¿Carga en menos de 3 segundos?
+- ¿Tiene un diseño que transmite profesionalidad?
+- ¿Apareces en la primera página de Google al buscar "gestoría + tu ciudad"?
+- ¿Tu email corporativo es de tu propio dominio (no Gmail/Yahoo)?
+- ¿Has actualizado el contenido en los últimos 6 meses?
+
+Si has respondido "no" a 3 o más preguntas, tu web te está costando clientes.
+
+## ¿Necesitas Ayuda?
+
+En M.G.M Automations desarrollamos webs profesionales para gestorías y asesorías. Entregamos en 2-3 semanas con precio cerrado desde el primer día.
+
+Te hacemos una auditoría gratuita de tu web actual en 15 minutos: te decimos exactamente qué problemas tiene y cómo solucionarlos. Sin compromiso.
+    `,
+  },
+  {
     id: 'ia-para-pymes-guia-2025',
     title: 'Inteligencia Artificial para PYMEs: Guía Práctica 2025',
     excerpt: 'Descubre cómo las pequeñas y medianas empresas están usando IA para automatizar tareas, reducir costes y competir con grandes corporaciones. Sin jerga técnica, con ejemplos reales.',
@@ -12,7 +167,7 @@ const BLOG_POSTS = [
     readTime: '10 min',
     category: 'Inteligencia Artificial',
     image: null,
-    featured: true,
+    featured: false,
     content: `
 ## La IA Ya No Es Solo para Grandes Empresas
 

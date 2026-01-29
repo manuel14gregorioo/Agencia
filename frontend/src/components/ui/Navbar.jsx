@@ -31,6 +31,7 @@ const Navbar = () => {
     { href: '#portfolio', label: 'Trabajo', id: 'portfolio' },
     { href: '#servicios', label: 'Servicios', id: 'servicios' },
     { href: '/blog', label: 'Blog', id: 'blog', isPage: true },
+    { href: '/guia-dominio', label: 'Dominio', id: 'domain-guide', isPage: true },
   ];
 
   return (

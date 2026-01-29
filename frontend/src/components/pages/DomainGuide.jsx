@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ArrowLeft, ArrowRight, Globe, ExternalLink, AlertTriangle, CheckCircle, Copy, ChevronDown, ChevronUp, Search, Shield, Server, RefreshCw } from 'lucide-react';
+import { ArrowLeft, ArrowRight, Globe, ExternalLink, AlertTriangle, CheckCircle, ChevronDown, ChevronUp, Search, Shield, Server, RefreshCw, Code, Settings, ShoppingCart, Palette, Square, CircleDot, Layers, Tag } from 'lucide-react';
 import { Link } from '../../App';
 
 // Datos de las plataformas
@@ -7,7 +7,7 @@ const PLATFORMS = [
   {
     id: 'wordpress-com',
     name: 'WordPress.com',
-    icon: '🔵',
+    Icon: Globe,
     difficulty: 'Fácil',
     time: '5-10 min',
     description: 'Para dominios comprados directamente en WordPress.com (planes Personal, Premium, Business o eCommerce).',
@@ -39,7 +39,7 @@ const PLATFORMS = [
   {
     id: 'wordpress-org',
     name: 'WordPress Autoalojado',
-    icon: '⚙️',
+    Icon: Settings,
     difficulty: 'Media',
     time: '10-15 min',
     description: 'Si tu web usa WordPress.org (autoalojado), el dominio está registrado en un proveedor externo (GoDaddy, Namecheap, IONOS, etc.). Identifica primero dónde compraste el dominio.',
@@ -71,7 +71,7 @@ const PLATFORMS = [
   {
     id: 'shopify',
     name: 'Shopify',
-    icon: '🛒',
+    Icon: ShoppingCart,
     difficulty: 'Fácil',
     time: '5-10 min',
     description: 'Para dominios comprados directamente a través de Shopify (gestionados por Shopify/Tucows).',
@@ -103,7 +103,7 @@ const PLATFORMS = [
   {
     id: 'wix',
     name: 'Wix',
-    icon: '🎨',
+    Icon: Palette,
     difficulty: 'Fácil',
     time: '5-10 min',
     description: 'Para dominios comprados a través de Wix (Wix actúa como revendedor de dominios).',
@@ -135,7 +135,7 @@ const PLATFORMS = [
   {
     id: 'squarespace',
     name: 'Squarespace',
-    icon: '⬛',
+    Icon: Square,
     difficulty: 'Fácil',
     time: '5-10 min',
     description: 'Para dominios registrados o transferidos a Squarespace (usa Tucows como registrador subyacente).',
@@ -167,7 +167,7 @@ const PLATFORMS = [
   {
     id: 'godaddy',
     name: 'GoDaddy',
-    icon: '🟢',
+    Icon: CircleDot,
     difficulty: 'Fácil',
     time: '5-10 min',
     description: 'GoDaddy es uno de los registradores más populares del mundo. El proceso de transferencia es directo.',
@@ -199,7 +199,7 @@ const PLATFORMS = [
   {
     id: 'ionos',
     name: 'IONOS (1&1)',
-    icon: '🔷',
+    Icon: Layers,
     difficulty: 'Media',
     time: '10-15 min',
     description: 'Para dominios registrados en IONOS (anteriormente 1&1). Muy común entre negocios españoles.',
@@ -231,7 +231,7 @@ const PLATFORMS = [
   {
     id: 'namecheap',
     name: 'Namecheap',
-    icon: '🟠',
+    Icon: Tag,
     difficulty: 'Fácil',
     time: '5 min',
     description: 'Namecheap facilita mucho las transferencias salientes. Proceso muy directo.',
@@ -298,7 +298,9 @@ const PlatformCard = ({ platform }) => {
         className="w-full flex items-center justify-between p-6 text-left hover:bg-cream-100 dark:hover:bg-noir-800 transition-colors"
       >
         <div className="flex items-center gap-4">
-          <span className="text-3xl">{platform.icon}</span>
+          <div className="w-10 h-10 bg-lime-400 flex items-center justify-center flex-shrink-0">
+            <platform.Icon className="w-5 h-5 text-noir-900" />
+          </div>
           <div>
             <h3 className="text-xl font-display font-bold text-noir-900 dark:text-cream-50">
               {platform.name}
@@ -608,7 +610,7 @@ const DomainGuide = () => {
               <ArrowRight className="w-5 h-5" />
             </Link>
             <a
-              href="https://wa.me/34600000000?text=Hola%2C%20necesito%20ayuda%20con%20la%20transferencia%20de%20mi%20dominio"
+              href="https://wa.me/34654858367?text=Hola%2C%20necesito%20ayuda%20con%20la%20transferencia%20de%20mi%20dominio"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-white dark:bg-noir-800 text-noir-900 dark:text-cream-50 px-6 py-4 font-bold border-3 border-noir-200 dark:border-noir-700 hover:border-lime-400 transition-all"

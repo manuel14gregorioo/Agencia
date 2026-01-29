@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ArrowLeft, ArrowRight, Globe, ExternalLink, AlertTriangle, CheckCircle, ChevronDown, ChevronUp, Search, Shield, Server, RefreshCw, Code, Settings, ShoppingCart, Palette, Square, CircleDot, Layers, Tag } from 'lucide-react';
+import { ArrowLeft, ArrowRight, Globe, ExternalLink, AlertTriangle, CheckCircle, ChevronDown, ChevronUp, Search, Shield, Server, RefreshCw, Settings, ShoppingCart, Palette, Square, CircleDot, Layers, Tag, UserCheck, Key, FolderGit2, Handshake } from 'lucide-react';
 import { Link } from '../../App';
 
 // Datos de las plataformas
@@ -590,6 +590,82 @@ const DomainGuide = () => {
                 </div>
               </details>
             ))}
+          </div>
+        </section>
+
+        {/* Propiedad del proyecto */}
+        <section className="mb-16">
+          <h2 className="text-2xl font-display font-bold text-noir-900 dark:text-cream-50 mb-6">
+            Propiedad y continuidad del proyecto
+          </h2>
+
+          <div className="border-3 border-noir-200 dark:border-noir-700 bg-white dark:bg-noir-900 overflow-hidden">
+            <div className="p-8">
+              <p className="text-noir-600 dark:text-noir-400 mb-8">
+                Todo lo que desarrollamos es tuyo: el dominio, el código y los accesos. No hay permanencia ni letra pequeña. Una vez terminado el proyecto, decides cómo quieres continuar.
+              </p>
+
+              <div className="grid md:grid-cols-2 gap-6 mb-8">
+                {/* Gestión propia */}
+                <div className="p-6 border-3 border-lime-400 bg-lime-50/50 dark:bg-lime-900/10">
+                  <div className="flex items-center gap-3 mb-3">
+                    <UserCheck className="w-5 h-5 text-lime-600 dark:text-lime-400" />
+                    <h4 className="font-display font-bold text-noir-900 dark:text-cream-50">
+                      Gestión propia
+                    </h4>
+                  </div>
+                  <p className="text-sm text-noir-500 dark:text-noir-400 mb-4">
+                    Te entregamos todo y gestionas el proyecto por tu cuenta.
+                  </p>
+                  <ul className="space-y-2">
+                    {[
+                      { icon: Globe, text: 'Dominio transferido a tu cuenta' },
+                      { icon: Server, text: 'Hosting migrado a tu nombre' },
+                      { icon: FolderGit2, text: 'Código fuente entregado' },
+                      { icon: Key, text: 'Todos los accesos y credenciales' },
+                    ].map((item, idx) => (
+                      <li key={idx} className="flex items-center gap-2 text-sm text-noir-600 dark:text-noir-400">
+                        <item.icon className="w-4 h-4 text-lime-600 dark:text-lime-400 flex-shrink-0" />
+                        {item.text}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
+                {/* Mantenimiento con nosotros */}
+                <div className="p-6 border-3 border-noir-200 dark:border-noir-700 bg-cream-50 dark:bg-noir-800">
+                  <div className="flex items-center gap-3 mb-3">
+                    <Handshake className="w-5 h-5 text-lime-600 dark:text-lime-400" />
+                    <h4 className="font-display font-bold text-noir-900 dark:text-cream-50">
+                      Mantenimiento con nosotros
+                    </h4>
+                  </div>
+                  <p className="text-sm text-noir-500 dark:text-noir-400 mb-4">
+                    Nos encargamos de la parte técnica para que te centres en tu negocio.
+                  </p>
+                  <ul className="space-y-2">
+                    {[
+                      { icon: RefreshCw, text: 'Renovación de dominio y hosting incluida' },
+                      { icon: Shield, text: 'Actualizaciones de seguridad y rendimiento' },
+                      { icon: Settings, text: 'Soporte técnico y ajustes menores' },
+                      { icon: UserCheck, text: 'Sin permanencia: puedes irte cuando quieras' },
+                    ].map((item, idx) => (
+                      <li key={idx} className="flex items-center gap-2 text-sm text-noir-600 dark:text-noir-400">
+                        <item.icon className="w-4 h-4 text-lime-600 dark:text-lime-400 flex-shrink-0" />
+                        {item.text}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+
+              <div className="flex gap-3 p-4 bg-lime-50 dark:bg-lime-900/20 border-2 border-lime-300 dark:border-lime-700">
+                <Shield className="w-5 h-5 text-lime-600 dark:text-lime-400 flex-shrink-0 mt-0.5" />
+                <p className="text-sm text-lime-800 dark:text-lime-300">
+                  <strong>Compromiso:</strong> Elijas la opción que elijas, el proyecto siempre es tuyo. Si en algún momento quieres cambiar de proveedor o asumir la gestión, te facilitamos la transición completa sin coste adicional.
+                </p>
+              </div>
+            </div>
           </div>
         </section>
 

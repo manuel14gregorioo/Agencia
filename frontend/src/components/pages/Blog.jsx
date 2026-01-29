@@ -6,6 +6,182 @@ import { SEOHead, getBlogListSchemas, getArticleSchema } from '../seo';
 // Datos de los posts del blog
 const BLOG_POSTS = [
   {
+    id: 'que-es-geo-generative-engine-optimization',
+    title: 'GEO: Qué Es y Por Qué tu Web Necesita Optimización para IA en 2025',
+    excerpt: 'Google ya no es el único que decide si te encuentran. ChatGPT, Perplexity y Google AI Overviews están cambiando las reglas. Te explicamos qué es GEO y cómo preparar tu negocio.',
+    date: '2025-01-30',
+    readTime: '9 min',
+    category: 'SEO & GEO',
+    image: null,
+    featured: true,
+    author: { name: 'Manuel Gregorio', role: 'Founder de M.G.M Automations' },
+    content: `
+## El SEO ya no es suficiente
+
+Durante 20 años, posicionar tu web significaba una cosa: aparecer en Google. Elegías palabras clave, escribías contenido, conseguías enlaces y subías en los resultados. Simple (aunque laborioso).
+
+Pero en 2025, el panorama ha cambiado radicalmente. Cada vez más personas no buscan en Google: **preguntan directamente a una IA**.
+
+- "ChatGPT, recomiéndame una agencia de desarrollo web en Madrid"
+- "Perplexity, ¿cuánto cuesta una web profesional en España?"
+- "Google, ¿qué opciones hay para automatizar reservas en mi clínica?"
+
+Si tu web no está preparada para que las IAs te citen, estás perdiendo clientes sin saberlo. Aquí es donde entra **GEO**.
+
+## ¿Qué es GEO?
+
+**GEO (Generative Engine Optimization)** es el conjunto de técnicas para optimizar tu presencia web de manera que los motores de IA generativa —ChatGPT, Perplexity, Google AI Overviews, Claude, Copilot— te citen, te recomienden y enlacen cuando un usuario hace una consulta relacionada con tu negocio.
+
+Mientras el SEO tradicional se centra en aparecer en una lista de 10 enlaces azules, el GEO se centra en **ser la respuesta** que la IA da directamente al usuario.
+
+### La diferencia clave
+
+**SEO tradicional:** Tu web aparece en el resultado #3 de Google → el usuario hace clic → llega a tu web.
+
+**GEO:** Un usuario pregunta a ChatGPT "¿qué agencia de desarrollo web entrega rápido en España?" → la IA responde citando tu marca → el usuario ya confía en ti antes de visitarte.
+
+En GEO, no compites por un clic. **Compites por ser la respuesta.**
+
+## ¿Por qué importa ahora?
+
+### Los datos hablan
+
+- El 30% de las búsquedas en Google ya muestran una respuesta generada por IA (AI Overviews) antes de los resultados tradicionales.
+- ChatGPT tiene más de 200 millones de usuarios activos semanales.
+- Perplexity procesa millones de consultas diarias como alternativa a Google.
+- El 40% de la Generación Z prefiere buscar información en IA o TikTok antes que en Google.
+
+### Qué significa para tu negocio
+
+Si alguien pregunta a una IA "¿qué empresa me puede hacer un chatbot de WhatsApp para mi clínica?" y la IA no te menciona, has perdido ese cliente. No importa que estés en la primera página de Google.
+
+Lo preocupante es que la mayoría de negocios **ni siquiera sabe que esto está pasando**, porque no hay una métrica equivalente al "ranking de Google" para las IAs. Es tráfico invisible que nunca llega.
+
+## Los 6 pilares del GEO
+
+### 1. Datos estructurados (Schema JSON-LD)
+
+Las IAs necesitan entender qué eres, qué haces y cómo encontrarte. Los schemas JSON-LD le dan esa información de forma directa.
+
+**Qué implementar:**
+- Schema de **Organization** con datos de contacto, idiomas y fundador
+- Schema de **ProfessionalService** con servicios, precios y área de cobertura
+- Schema de **FAQPage** con preguntas y respuestas completas
+- Schema de **Article** con autor, fecha y contenido speakable
+- Schema de **Person** para el fundador o equipo directivo
+
+**Por qué funciona:** Cuando ChatGPT o Perplexity rastrean tu web, los schemas les dan información procesable al instante. Sin schemas, la IA tiene que "interpretar" tu HTML, con mucho más margen de error.
+
+### 2. Contenido citrable
+
+Las IAs citan frases concretas, no páginas enteras. Tu contenido debe incluir **definiciones claras** que la IA pueda extraer.
+
+**Ejemplo malo:** "Somos una empresa que hace cosas de tecnología"
+
+**Ejemplo bueno:** "M.G.M Automations es una agencia de desarrollo web y automatización de procesos con sede en Madrid que entrega proyectos funcionales en 1-3 semanas con precio fijo cerrado"
+
+La segunda frase es una definición que una IA puede citar textualmente cuando alguien pregunte "¿Qué es M.G.M Automations?".
+
+**Regla práctica:** Cada página principal de tu web debería tener al menos una frase definitoria que responda "¿Qué es [tu marca/servicio]?" de forma clara y completa.
+
+### 3. E-E-A-T (Experiencia, Expertise, Autoridad, Confianza)
+
+Google lleva años usando E-E-A-T para evaluar contenido. Las IAs hacen lo mismo, pero de forma aún más estricta. Necesitan saber **quién dice qué** para decidir si es fiable.
+
+**Qué implementar:**
+- Artículos firmados con nombre real, rol y datos del autor
+- Schema Person vinculado al autor del blog y a la organización
+- Contenido basado en experiencia propia, no genérico
+- Casos de estudio reales con datos verificables
+
+**Ejemplo:** Un artículo sobre "Cómo automatizar reservas" tiene más peso si está firmado por alguien que ha desarrollado un sistema de reservas real, no por un redactor anónimo.
+
+### 4. FAQs optimizadas para queries de IA
+
+Las preguntas frecuentes son oro puro para GEO. Cuando un usuario pregunta algo a una IA, esta busca pares pregunta-respuesta que coincidan con la consulta.
+
+**Claves para FAQs efectivas:**
+- Redactar las preguntas exactamente como las haría un usuario ("¿Cuánto cuesta una web en 2025?" en vez de "Información de precios")
+- Respuestas completas pero concisas (2-4 frases)
+- Incluir datos específicos (precios, plazos, nombres de tecnologías)
+- Marcarlas con schema FAQPage para que las IAs las detecten al instante
+
+### 5. Archivo llms.txt
+
+Es un concepto nuevo: un archivo de texto plano en la raíz de tu web (como el robots.txt) que resume tu negocio en un formato fácil de procesar por IAs.
+
+**Qué incluir:**
+- Descripción del negocio en 2-3 frases
+- Lista de servicios con precios
+- Portfolio y casos de estudio
+- Stack tecnológico
+- Datos de contacto
+- Hechos clave diferenciadores
+
+**Por qué funciona:** Cuando un crawler de IA visita tu web, lo primero que busca es información estructurada. El llms.txt le da un resumen perfecto sin necesidad de parsear todo tu HTML.
+
+### 6. Acceso para crawlers de IA
+
+De nada sirve optimizar si bloqueas a los robots de IA. Tu robots.txt debe permitir explícitamente el acceso a:
+
+- **GPTBot** y **ChatGPT-User** (OpenAI)
+- **Google-Extended** (Google AI)
+- **ClaudeBot** y **anthropic-ai** (Anthropic)
+- **PerplexityBot** (Perplexity)
+
+Muchos sitios bloquean estos bots por defecto sin saberlo, especialmente si usan plugins de seguridad de WordPress.
+
+## GEO vs. SEO: ¿Se complementan?
+
+Sí, al 100%. No se trata de elegir uno u otro. El GEO **construye sobre el SEO**, no lo reemplaza.
+
+| Aspecto | SEO | GEO |
+|---------|-----|-----|
+| Objetivo | Aparecer en resultados de Google | Ser citado por IAs |
+| Formato | Links azules + snippets | Respuesta directa en lenguaje natural |
+| Señal clave | Backlinks + relevancia | Datos estructurados + autoridad |
+| Métricas | Posición, CTR, tráfico orgánico | Menciones, citaciones, tráfico referido desde IA |
+| Contenido | Optimizado por keywords | Optimizado para definiciones citables |
+
+Si ya tienes buen SEO, implementar GEO es relativamente sencillo porque ya tienes la base: contenido de calidad, estructura limpia y autoridad temática.
+
+## Checklist: ¿Tu web está preparada para GEO?
+
+Hazte estas preguntas:
+
+- ¿Tienes schemas JSON-LD (Organization, FAQPage, Article)?
+- ¿Tu robots.txt permite GPTBot, ClaudeBot y PerplexityBot?
+- ¿Tienes un archivo llms.txt?
+- ¿Cada página tiene una frase definitoria que una IA pueda citar?
+- ¿Tus artículos incluyen autor con nombre real y rol?
+- ¿Tus FAQs están marcadas con schema y tienen respuestas completas?
+- ¿Tu contenido incluye datos específicos (precios, plazos, cifras)?
+
+Si has respondido "no" a 3 o más, tu web no está optimizada para los motores de IA que ya están decidiendo si te recomiendan o no.
+
+## Cómo implementamos GEO en M.G.M Automations
+
+Nosotros mismos hemos aplicado GEO en nuestra propia web. Esto es lo que hicimos:
+
+1. **Meta tags dinámicos** por página con react-helmet-async
+2. **6 tipos de schemas JSON-LD**: ProfessionalService, FAQPage, Article (con speakable), CollectionPage, WebApplication y WebPage
+3. **Frases definitorias** en cada sección principal (Hero, Servicios)
+4. **8 FAQs enriquecidas** con preguntas orientadas a queries de IA
+5. **Schema Person** para vincular autoría del blog con entidad real
+6. **Byline de autor** visual en cada artículo con nombre y rol
+7. **llms.txt** con resumen estructurado del negocio
+8. **robots.txt** con acceso explícito para 6 crawlers de IA
+
+El resultado: nuestra web ahora está preparada para que ChatGPT, Perplexity y Google AI Overviews nos citen cuando alguien pregunte por desarrollo web o automatizaciones en España.
+
+## ¿Necesitas implementar GEO en tu web?
+
+En M.G.M Automations implementamos optimización GEO como parte de nuestros servicios de desarrollo web. No es un extra: es parte de cómo construimos webs en 2025.
+
+Si quieres que analicemos tu web actual y te digamos cómo está de preparada para los motores de IA, agenda una consulta gratuita. En 30 minutos te damos un diagnóstico claro y un plan de acción.
+    `,
+  },
+  {
     id: 'gestoria-web-pierde-clientes',
     title: 'Por Qué tu Gestoría Pierde Clientes por Culpa de su Web',
     excerpt: 'Analizamos las webs de más de 50 gestorías en España. El 80% tiene problemas técnicos graves que espantan clientes. Descubre si la tuya es una de ellas.',
@@ -13,7 +189,7 @@ const BLOG_POSTS = [
     readTime: '7 min',
     category: 'Análisis Sectorial',
     image: null,
-    featured: true,
+    featured: false,
     author: { name: 'Manuel Gregorio', role: 'Founder de M.G.M Automations' },
     content: `
 ## El Problema que Nadie te Cuenta

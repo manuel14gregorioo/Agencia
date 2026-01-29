@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ArrowLeft, ArrowRight, Globe, ExternalLink, AlertTriangle, CheckCircle, ChevronDown, ChevronUp, Search, Shield, Server, RefreshCw, Settings, ShoppingCart, Palette, Square, CircleDot, Layers, Tag, UserCheck, Key, FolderGit2, Handshake } from 'lucide-react';
+import { ArrowLeft, ArrowRight, Globe, ExternalLink, AlertTriangle, CheckCircle, ChevronDown, ChevronUp, Search, Shield, Server, RefreshCw, Settings, ShoppingCart, Palette, Square, CircleDot, Layers, Tag, UserCheck, Key, FolderGit2, HeartHandshake } from 'lucide-react';
 import { Link } from '../../App';
 
 // Datos de las plataformas
@@ -635,7 +635,7 @@ const DomainGuide = () => {
                 {/* Mantenimiento con nosotros */}
                 <div className="p-6 border-3 border-noir-200 dark:border-noir-700 bg-cream-50 dark:bg-noir-800">
                   <div className="flex items-center gap-3 mb-3">
-                    <Handshake className="w-5 h-5 text-lime-600 dark:text-lime-400" />
+                    <HeartHandshake className="w-5 h-5 text-lime-600 dark:text-lime-400" />
                     <h4 className="font-display font-bold text-noir-900 dark:text-cream-50">
                       Mantenimiento con nosotros
                     </h4>

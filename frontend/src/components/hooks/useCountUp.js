@@ -1,10 +1,20 @@
 import { useState, useEffect } from 'react';
 
+const prefersReducedMotion = () =>
+  window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+const isMobile = () => window.innerWidth < 768;
+
 const useCountUp = (end, duration = 2000, isVisible = true) => {
   const [count, setCount] = useState(0);
 
   useEffect(() => {
     if (!isVisible) return;
+
+    if (isMobile() || prefersReducedMotion()) {
+      setCount(end);
+      return;
+    }
 
     let startTime;
     let animationFrame;

@@ -1918,6 +1918,907 @@ En M.G.M Automations diseñamos e implementamos sistemas de automatización de W
 **Agenda una consulta gratuita** y te mostraremos exactamente qué procesos puedes automatizar en tu negocio, cuánto tiempo vas a ahorrar y cómo sería el flujo de conversación de tu chatbot antes de escribir una sola línea de código.
     `,
   },
+  {
+    id: 'como-crear-landing-page-que-convierte-2026',
+    title: 'Cómo Crear una Landing Page que Convierte en 2026: Guía con Datos Reales',
+    excerpt: 'La media de conversión de una landing page es del 2.35%. Las mejores superan el 11%. Te explicamos qué separa a unas de otras con ejemplos concretos, errores fatales y la estructura exacta que usamos en nuestros proyectos.',
+    date: '2026-02-04',
+    readTime: '10 min',
+    category: 'Desarrollo Web',
+    image: null,
+    featured: false,
+    author: { name: 'Manuel Gregorio', role: 'Founder de M.G.M Automations' },
+    content: `
+## Qué Es una Landing Page y Por Qué No Es una Web Normal
+
+Una landing page tiene un único objetivo: que el visitante haga una acción concreta. Pedir presupuesto, reservar una llamada, descargar un recurso o comprar. Nada más.
+
+La diferencia con una web corporativa es que elimina distracciones. No hay menú de navegación con 15 opciones, no hay sidebar, no hay enlaces a "quiénes somos". Todo el diseño, el texto y los elementos visuales apuntan a un solo CTA (call to action).
+
+### Por qué importa en 2026
+
+- El coste por clic en Google Ads en España ha subido un 35% en los últimos 2 años.
+- Cada visitante que llega a tu web te cuesta más que nunca.
+- Si tu landing page convierte al 2% en vez del 6%, necesitas **el triple de presupuesto** para conseguir los mismos resultados.
+- Una landing optimizada no es un lujo: es la diferencia entre que tu inversión en publicidad sea rentable o tire dinero.
+
+## La Anatomía de una Landing Page que Convierte al 8%+
+
+### 1. Headline que ataca el dolor, no el producto
+
+El 80% de los visitantes decide si sigue leyendo o se va en los primeros 5 segundos. Tu headline debe hablar del problema del cliente, no de tu solución.
+
+**Malo:** "Somos expertos en desarrollo web con 10 años de experiencia"
+
+**Bueno:** "Tu negocio pierde 3 de cada 4 clientes potenciales porque tu web tarda más de 3 segundos en cargar"
+
+El primer headline habla de ti. El segundo habla de lo que el cliente pierde. La diferencia en conversión puede ser del 40%.
+
+### 2. Subtítulo que presenta la solución
+
+Inmediatamente después del headline, explica cómo resuelves ese dolor en una frase. Sin tecnicismos, sin jerga. Como se lo explicarías a un amigo.
+
+**Ejemplo:** "Creamos webs que cargan en menos de 1 segundo y convierten visitantes en clientes. Precio cerrado. Entrega en 2 semanas."
+
+### 3. Social proof antes del scroll
+
+Antes de que el usuario haga scroll, debe ver al menos una señal de confianza:
+
+- Logos de clientes reconocibles
+- Número de proyectos completados
+- Una frase de testimonio impactante
+- Valoración media con estrellas
+
+No esperes a la sección de testimonios para generar confianza. La primera impresión se forma en 50 milisegundos.
+
+### 4. Beneficios en formato scannable
+
+Nadie lee párrafos largos en una landing page. Usa bloques visuales con icono + título + descripción corta. Máximo 3-4 beneficios principales.
+
+**Estructura que funciona:**
+
+- Icono visual que comunica el beneficio al instante
+- Título de 3-5 palabras (el beneficio, no la característica)
+- Descripción de 1-2 líneas que explique el impacto real
+
+**Ejemplo de beneficio mal escrito:** "Tecnología React + Tailwind CSS con servidor optimizado"
+
+**Ejemplo bien escrito:** "Tu web carga en 0.8 segundos — 3 veces más rápido que tu competencia"
+
+### 5. CTA visible y con fricción mínima
+
+El formulario de contacto o botón de CTA debe ser visible sin hacer scroll (above the fold) y repetirse al menos 2-3 veces a lo largo de la página.
+
+**Reglas de oro para CTAs:**
+
+- El botón debe decir qué pasa al hacer clic: "Recibir mi presupuesto gratis" en vez de "Enviar"
+- Pide solo los datos imprescindibles (nombre + email + teléfono máximo)
+- Añade un texto de reducción de riesgo bajo el botón: "Sin compromiso. Respuesta en 24h."
+- Color de contraste alto con el fondo de la página
+
+### 6. Objeciones resueltas
+
+Antes del CTA final, resuelve las 3-4 objeciones más comunes que tiene tu cliente potencial. Las típicas son:
+
+- "¿Es muy caro?" → Muestra precio o rango de precio
+- "¿Cuánto tarda?" → Plazos concretos
+- "¿Y si no funciona?" → Garantía o resultado medible
+- "¿Por qué vosotros y no la competencia?" → Diferencial claro
+
+Las FAQs al final de la landing son el formato perfecto para esto.
+
+## Los 7 Errores que Matan la Conversión
+
+### 1. Velocidad de carga superior a 3 segundos
+
+Por cada segundo extra de carga, la conversión cae un 7%. Si tu landing tarda 5 segundos, has perdido un 20% de conversiones antes de que el usuario vea tu contenido. Usa imágenes WebP, código minificado, CDN y hosting de calidad.
+
+### 2. No ser mobile-first
+
+El 68% del tráfico en España es móvil. Si tu landing se ve mal en un iPhone SE o un Android de gama media, estás tirando dos tercios de tu presupuesto publicitario.
+
+### 3. Demasiados campos en el formulario
+
+Cada campo extra reduce la conversión un 10-15%. ¿Necesitas la dirección postal para dar un presupuesto? No. ¿Necesitas el nombre de la empresa? Probablemente tampoco. Nombre, email y una línea de "¿Qué necesitas?" es suficiente para el primer contacto.
+
+### 4. CTA genérico ("Enviar", "Contactar")
+
+"Enviar" no comunica valor. "Recibir mi análisis gratuito" sí. El texto del botón debe reflejar lo que el usuario obtiene, no lo que hace.
+
+### 5. Sin prueba social
+
+Una landing sin testimonios, casos de estudio o cifras es como un restaurante vacío: nadie quiere ser el primero. Aunque solo tengas 3 clientes, muestra sus resultados.
+
+### 6. Múltiples CTAs compitiendo
+
+Si tu landing pide que el usuario contacte, se suscriba a la newsletter, te siga en redes y lea tu blog, no hará nada. Un objetivo, un CTA. Todo lo demás sobra.
+
+### 7. No hacer seguimiento del rendimiento
+
+Si no mides, no puedes mejorar. Como mínimo necesitas: tasa de conversión, tasa de rebote, scroll depth y mapas de calor. Google Analytics 4 + Hotjar (gratis hasta 35 sesiones/día) es suficiente para empezar.
+
+## Herramientas para Crear Landing Pages en 2026
+
+| Herramienta | Ideal para | Precio desde | Velocidad |
+|-------------|-----------|-------------|-----------|
+| Desarrollo custom (React/Next.js) | Control total + rendimiento | Proyecto desde 800€ | Excelente |
+| Webflow | Diseñadores que no programan | 14€/mes | Buena |
+| Framer | Startups y SaaS | 5€/mes | Buena |
+| WordPress + Elementor | Presupuesto ajustado | 0€ (hosting aparte) | Regular |
+| Carrd | Landing simple de 1 página | 19€/año | Buena |
+
+**Nuestra recomendación:** Para negocios que dependen de su web para captar clientes, el desarrollo custom siempre gana. La inversión inicial es mayor, pero el rendimiento, la conversión y la escalabilidad no tienen comparación con builders.
+
+## Caso Real: Landing Page para Consultoría de RRHH
+
+**Situación:** Una consultora de recursos humanos en Madrid invertía 2.000€/mes en Google Ads y generaba 8 leads mensuales con su web genérica de WordPress. Coste por lead: 250€.
+
+**Lo que hicimos:**
+
+- Landing page custom con React, optimizada para la keyword "consultoría RRHH Madrid"
+- Headline centrado en el dolor: "El 40% de tus nuevas contrataciones fallan en los primeros 6 meses"
+- Formulario de 3 campos con CTA "Recibir diagnóstico gratuito"
+- 3 casos de estudio con datos de retención
+- FAQ con las 6 objeciones principales resueltas
+- Velocidad de carga: 0.9 segundos (antes: 4.2 segundos)
+
+**Resultado tras 60 días:**
+
+- Leads mensuales: de 8 a 23 (sin aumentar presupuesto)
+- Tasa de conversión: del 2.1% al 6.8%
+- Coste por lead: de 250€ a 87€
+- ROI de la landing: la inversión se recuperó en 3 semanas
+
+## Checklist Final: Tu Landing Page en 10 Puntos
+
+- Headline que ataca un dolor concreto del cliente
+- Subtítulo que presenta tu solución en 1 frase
+- Prueba social visible antes del primer scroll
+- Beneficios en formato visual (no párrafos)
+- CTA con texto de acción específico (no "Enviar")
+- Formulario de máximo 3-4 campos
+- FAQs que resuelven objeciones
+- Velocidad de carga inferior a 2 segundos
+- Diseño responsive mobile-first
+- Tracking configurado (GA4 + conversiones)
+
+## ¿Necesitas una Landing que Convierta?
+
+En M.G.M Automations diseñamos y desarrollamos landing pages orientadas a conversión con tecnología moderna (React, Tailwind, Vite). No usamos plantillas: cada landing se construye a medida para tu negocio, tu público y tu objetivo.
+
+Agenda una consulta gratuita y te mostramos cómo sería tu landing page antes de comprometerte con nada.
+    `,
+  },
+  {
+    id: 'chatbots-ia-atencion-cliente-pymes-2026',
+    title: 'Chatbots con IA para Atención al Cliente en PYMEs: Guía Práctica 2026',
+    excerpt: 'Los chatbots con inteligencia artificial ya no son exclusivos de grandes empresas. Te explicamos cómo implementar uno en tu PYME sin arruinarte, qué puede hacer realmente y qué errores evitar.',
+    date: '2026-02-03',
+    readTime: '12 min',
+    category: 'IA & Tecnología',
+    image: null,
+    featured: false,
+    author: { name: 'Manuel Gregorio', role: 'Founder de M.G.M Automations' },
+    content: `
+## La Revolución Silenciosa de los Chatbots con IA
+
+En 2024, los chatbots eran novelty: bonitos pero torpes. En 2026, la cosa ha cambiado radicalmente. Gracias a modelos de lenguaje como GPT-4o, Claude y Gemini, los chatbots ahora entienden contexto, mantienen conversaciones naturales y resuelven problemas reales.
+
+Lo más importante: ya no necesitas ser Amazon o Telefónica para tener uno. Una PYME con 5 empleados puede implementar un chatbot con IA que atienda el 70% de las consultas de clientes sin intervención humana, por menos de 100€/mes.
+
+### Los números que deberían importarte
+
+- El **64% de los consumidores** espera respuesta de una empresa en menos de 1 hora.
+- El **73%** dice que la experiencia de atención al cliente influye directamente en su decisión de compra.
+- Las empresas que implementan chatbots con IA reducen costes de atención al cliente entre un **30% y un 50%**.
+- El **55% de las PYMEs** en España aún no tiene ningún sistema automatizado de atención al cliente.
+
+Eso último es tu ventaja competitiva si actúas ahora.
+
+## Qué Puede Hacer un Chatbot con IA en 2026
+
+### Lo que sí funciona bien
+
+- **Responder preguntas frecuentes:** Horarios, precios, servicios, ubicación, formas de pago. El chatbot consulta tu base de conocimiento y responde en lenguaje natural, adaptando la respuesta a cómo pregunta cada persona.
+- **Gestionar reservas y citas:** Integrado con tu calendario, el chatbot ofrece huecos disponibles, confirma, envía recordatorios y gestiona cancelaciones.
+- **Cualificar leads:** Hace las preguntas adecuadas para entender qué necesita el cliente y pasa solo los leads cualificados a tu equipo comercial.
+- **Soporte post-venta:** Estado de pedidos, política de devoluciones, resolución de incidencias comunes, seguimiento de reclamaciones.
+- **Recomendaciones personalizadas:** Basándose en el historial o las preferencias expresadas, sugiere productos o servicios relevantes.
+- **Multiidioma:** Un solo chatbot que atiende en español, inglés, francés o cualquier otro idioma sin coste adicional.
+
+### Lo que todavía no funciona bien
+
+- **Negociación de precios:** La IA no tiene criterio comercial para decidir descuentos.
+- **Gestión de quejas emocionales:** Cuando un cliente está enfadado de verdad, necesita empatía humana.
+- **Decisiones que requieren juicio profesional:** Diagnósticos médicos, asesoramiento legal específico, recomendaciones financieras personalizadas.
+- **Conversaciones que derivan en temas muy específicos del negocio:** Si tu negocio tiene casuísticas muy particulares, el bot necesita supervisión.
+
+**Regla práctica:** Automatiza lo repetitivo y lo predecible. Escala a humano lo emocional y lo complejo.
+
+## Tipos de Chatbots: Cuál Necesita tu PYME
+
+### 1. Chatbot basado en reglas (flujos predefinidos)
+
+El usuario navega por un menú de opciones o responde preguntas con botones. El flujo está predefinido y no hay IA real.
+
+- **Coste:** 200-500€ de setup + 20-40€/mes
+- **Ideal para:** Negocios con 5-10 preguntas frecuentes claras y procesos simples
+- **Limitación:** No entiende texto libre. Si el usuario escribe algo que no está en el flujo, se atasca
+
+### 2. Chatbot con IA conversacional
+
+Usa un modelo de lenguaje (GPT-4o, Claude) entrenado con la información de tu negocio. Entiende preguntas escritas de forma natural, mantiene contexto y responde de forma personalizada.
+
+- **Coste:** 800-3.000€ de setup + 50-150€/mes (incluye API del modelo de IA)
+- **Ideal para:** PYMEs con consultas variadas, múltiples servicios o necesidad de atención 24/7
+- **Ventaja:** Se adapta a cómo habla cada persona. "¿Cuánto cuesta una limpieza?" y "quiero saber el precio de hacerme una limpieza dental" son la misma pregunta para la IA
+
+### 3. Chatbot con IA + integraciones
+
+El chatbot no solo conversa: ejecuta acciones. Crea reservas en tu calendario, consulta stock en tu ERP, envía emails de confirmación, actualiza tu CRM.
+
+- **Coste:** 2.000-6.000€ de setup + 80-200€/mes
+- **Ideal para:** Negocios que quieren automatizar flujos completos (no solo respuestas)
+- **Ventaja:** El chatbot se convierte en un empleado digital que trabaja 24/7
+
+## Cómo Implementar un Chatbot con IA: Paso a Paso
+
+### Paso 1: Define qué va a resolver el chatbot
+
+No intentes que haga todo. Elige los 3 casos de uso con mayor volumen e impacto:
+
+- ¿Qué preguntas te hacen más los clientes? (revisa WhatsApp, email, llamadas)
+- ¿Qué tareas repetitivas consumen más tiempo a tu equipo?
+- ¿Dónde pierdes más clientes por falta de respuesta rápida?
+
+### Paso 2: Prepara tu base de conocimiento
+
+El chatbot solo es tan bueno como la información que le das. Necesitas:
+
+- Documento con todas las preguntas frecuentes y sus respuestas
+- Catálogo de servicios/productos con precios actualizados
+- Políticas de empresa (devoluciones, cancelaciones, garantías)
+- Información práctica (horarios, ubicación, formas de pago)
+- Casos especiales y excepciones que debe conocer
+
+### Paso 3: Elige la tecnología
+
+| Volumen mensajes | Complejidad | Recomendación |
+|-------------------|------------|---------------|
+| Menos de 100/mes | Baja | Chatbot de reglas (Manychat, Tidio) |
+| 100-500/mes | Media | IA conversacional (Voiceflow, Botpress) |
+| Más de 500/mes | Alta | Desarrollo custom (API OpenAI/Anthropic) |
+
+### Paso 4: Diseña los flujos de escalado
+
+El chatbot debe saber cuándo pasar la conversación a un humano. Define triggers claros:
+
+- El usuario pide explícitamente hablar con una persona
+- El chatbot no tiene respuesta tras 2 intentos
+- El tema es una queja o reclamación
+- Se trata de una negociación de precio o condiciones especiales
+- El usuario muestra señales de frustración
+
+### Paso 5: Entrena, prueba y ajusta
+
+- Entrena con conversaciones reales (no inventes preguntas teóricas)
+- Haz pruebas con personas reales (empleados, clientes de confianza)
+- Revisa las conversaciones del bot las primeras 2 semanas a diario
+- Ajusta respuestas incorrectas o incompletas
+- Añade nuevas preguntas que no habías previsto
+
+### Paso 6: Lanza con transparencia
+
+Comunica a tus clientes que tienes un asistente virtual. Sé claro sobre qué puede hacer y qué no. Los clientes aprecian la honestidad y se frustran menos cuando saben que hablan con un bot.
+
+## Caso Real: Tienda de Electrónica Online
+
+**Situación:** Tienda online de electrónica con 3 empleados y 1.200 visitas mensuales a la web. Recibían 80 mensajes semanales por email y WhatsApp, el 65% eran preguntas sobre disponibilidad, envíos y garantías. Tiempo medio de respuesta: 6 horas.
+
+**Solución:**
+
+- Chatbot con GPT-4o integrado en la web y WhatsApp
+- Base de conocimiento con 150 productos, políticas y FAQs
+- Integración con su sistema de stock para respuestas de disponibilidad en tiempo real
+- Escalado automático a email cuando el bot no puede resolver
+
+**Resultados tras 3 meses:**
+
+- **72% de consultas** resueltas sin intervención humana
+- **Tiempo de primera respuesta:** de 6 horas a 15 segundos
+- **Satisfacción del cliente:** subió del 3.8 a 4.5 sobre 5
+- **Ventas asistidas por chatbot:** 18% de los pedidos mensuales pasaron por el bot
+- **Ahorro estimado:** 25 horas semanales de atención al cliente
+
+## Cuánto Cuesta un Chatbot con IA para tu PYME
+
+### Opción económica: 500-1.500€ + 30-60€/mes
+
+Chatbot con IA básica en tu web usando plataformas como Tidio, Crisp o Botpress. Responde preguntas frecuentes basándose en tu documentación. Sin integraciones complejas.
+
+### Opción profesional: 2.000-5.000€ + 80-150€/mes
+
+Chatbot con IA avanzada integrado en web + WhatsApp. Conectado a tu calendario, CRM y sistemas de gestión. Flujos de cualificación de leads y escalado inteligente.
+
+### Opción enterprise: 5.000-12.000€ + 150-300€/mes
+
+Desarrollo completamente a medida con IA conversacional de última generación. Múltiples canales, analytics avanzados, aprendizaje continuo, dashboard de gestión propio.
+
+## Errores Fatales al Implementar Chatbots
+
+### 1. No definir los límites del bot
+
+Si el bot intenta responder a todo, responderá mal a muchas cosas. Es mejor un bot que dice "No tengo esa información, te paso con mi compañero" que uno que inventa respuestas.
+
+### 2. Entrenar con datos inventados
+
+Los chatbots con IA necesitan datos reales. Usa conversaciones reales con clientes, no preguntas que crees que harán. La realidad siempre sorprende.
+
+### 3. No monitorizar las conversaciones
+
+Un chatbot sin supervisión es un riesgo. Las primeras semanas, revisa todas las conversaciones. Después, revisa al menos las que el bot no supo resolver.
+
+### 4. Esperar que reemplace al equipo humano
+
+El chatbot es un complemento, no un sustituto. Libera a tu equipo de lo repetitivo para que se concentren en lo que genera valor: cerrar ventas, resolver problemas complejos y construir relaciones.
+
+## ¿Es el Momento de Implementar un Chatbot en tu PYME?
+
+Sí, si cumples al menos 2 de estas condiciones:
+
+- Recibes más de 20 consultas semanales repetitivas
+- Tu tiempo de respuesta medio supera las 2 horas
+- Pierdes clientes por no responder fuera de horario
+- Tu equipo dedica más de 1 hora diaria a responder las mismas preguntas
+- Quieres ofrecer atención 24/7 sin contratar turnos de noche
+
+En M.G.M Automations diseñamos e implementamos chatbots con IA adaptados a cada negocio. Desde la definición de los flujos hasta la integración con tus sistemas, nos encargamos de todo para que tú te concentres en hacer crecer tu negocio.
+
+**Solicita una demo gratuita** y te mostramos cómo funcionaría un chatbot entrenado con la información de tu empresa.
+    `,
+  },
+  {
+    id: 'academias-formacion-web-matriculas-online-2026',
+    title: 'Academias y Centros de Formación: Cómo una Web Moderna Multiplica tus Matrículas',
+    excerpt: 'El 82% de los estudiantes investigan online antes de matricularse. Si tu academia no tiene una web profesional con matriculación online, estás perdiendo alumnos frente a tu competencia. Guía completa con datos.',
+    date: '2026-02-01',
+    readTime: '9 min',
+    category: 'Análisis Sectorial',
+    image: null,
+    featured: false,
+    author: { name: 'Manuel Gregorio', role: 'Founder de M.G.M Automations' },
+    content: `
+## El Problema de las Academias en 2026
+
+El sector de la formación presencial en España mueve más de 4.500 millones de euros anuales. Academias de idiomas, centros de formación profesional, escuelas de música, academias de oposiciones, autoescuelas... Miles de negocios que dependen de captar alumnos cada temporada.
+
+El problema es que la mayoría sigue captando alumnos como en 2010: boca a boca, cartel en la puerta y un perfil de Google con fotos del 2018. Mientras tanto, sus competidores con web moderna y procesos digitalizados les comen cuota de mercado sin hacer ruido.
+
+### Datos que deberían preocuparte
+
+- El **82% de los estudiantes** (o sus padres) investigan online antes de decidir dónde matricularse.
+- El **67%** descarta una academia si su web parece desactualizada o no funciona bien en el móvil.
+- Las academias con matriculación online tienen un **45% más de conversión** que las que solo ofrecen matrícula presencial.
+- El **53%** de los potenciales alumnos abandona el proceso si tiene que llamar por teléfono o ir en persona solo para pedir información.
+
+Si tu academia no tiene presencia digital seria, estás siendo invisible para la mayoría de tus potenciales clientes.
+
+## Qué Espera un Alumno de la Web de una Academia en 2026
+
+### 1. Información clara de cursos y precios
+
+No escondas los precios. El 71% de los usuarios abandona una web si no encuentra precios. "Consultar" no es una respuesta aceptable en 2026. El potencial alumno quiere ver:
+
+- Lista de cursos/programas disponibles
+- Duración y horarios
+- Precio o rango de precio
+- Modalidad (presencial, online, híbrido)
+- Requisitos previos
+- Próximas fechas de inicio
+
+### 2. Matriculación online o reserva de plaza
+
+El proceso de matrícula debe poder completarse (o al menos iniciarse) desde el móvil en menos de 5 minutos. Formulario simple, pago online y confirmación inmediata por email.
+
+### 3. Resultados y prueba social
+
+Testimonios de alumnos, tasa de aprobados (para oposiciones), portfolio de trabajos (para formación creativa), cifras de empleabilidad. El potencial alumno necesita evidencia de que tu academia funciona.
+
+### 4. Contenido que demuestre expertise
+
+Blog con contenido útil relacionado con tu área de formación. Una academia de idiomas debería tener artículos sobre "cómo preparar el B2". Una de oposiciones, sobre "cambios en el temario 2026". Esto atrae tráfico orgánico y genera confianza.
+
+### 5. Contacto inmediato
+
+Chat en la web, WhatsApp, o al menos un formulario que prometa respuesta en menos de 24 horas. La velocidad de respuesta es decisiva: el alumno que no recibe respuesta hoy, se matricula mañana en otra academia.
+
+## Los 5 Problemas Más Comunes en Webs de Academias
+
+### 1. Web de los años 2010 que nunca se actualizó
+
+Tipografías pequeñas, diseño de dos columnas, slider gigante con fotos de stock genéricas. Transmite una imagen de abandono y falta de profesionalidad que contradice lo que vendes (formación de calidad).
+
+### 2. No mobile-friendly
+
+El 72% del tráfico web en educación viene de móviles. Si tu web no se ve bien en un iPhone o Android, estás perdiendo 7 de cada 10 visitantes. Y Google te penaliza en los resultados de búsqueda.
+
+### 3. Procesos offline para todo
+
+"Pasa por secretaría para matricularte." "Llama de lunes a viernes de 10 a 14." Cada fricción en el proceso es un alumno que se matricula en la academia de enfrente que sí permite hacerlo online a las 11 de la noche.
+
+### 4. Sin SEO local
+
+Si alguien busca "academia de inglés en [tu ciudad]" y no apareces en los primeros resultados, no existes para ese usuario. El SEO local es crítico para academias: la decisión de matrícula tiene un componente geográfico muy fuerte.
+
+### 5. Sin sistema de seguimiento de leads
+
+Alguien pide información y le contestas por email 3 días después (si te acuerdas). Sin CRM ni automatización, los leads se pierden entre la bandeja de entrada y la atención del día a día.
+
+## La Solución: Web Moderna + Automatización
+
+### Qué debe incluir la web de una academia en 2026
+
+- **Catálogo de cursos** con filtros por categoría, nivel, modalidad y fecha de inicio
+- **Fichas individuales de curso** con toda la información (objetivos, programa, profesor, precio, horario)
+- **Formulario de matrícula o pre-matrícula online** con pago integrado (Stripe, Redsys)
+- **Sistema de reserva de plaza** para cursos con plazas limitadas
+- **Área de testimonios** con vídeo y resultados verificables
+- **Blog optimizado para SEO** con contenido de valor sobre tu área de formación
+- **Chat o WhatsApp integrado** para resolver dudas al instante
+- **Panel de administración** para gestionar matrículas, alumnos y pagos sin Excel
+
+### Automatizaciones que multiplican la eficiencia
+
+- **Email automático de confirmación** al matricularse con datos del curso, acceso al aula y pasos siguientes
+- **Recordatorio 1 semana antes** del inicio del curso con instrucciones prácticas
+- **Secuencia de nurturing** para leads que pidieron información pero no se matricularon (email 1 a las 24h, email 2 a los 3 días, email 3 a la semana)
+- **Recordatorio de rematrícula** 2 meses antes de que acabe el curso actual
+- **Encuesta de satisfacción** automática al finalizar cada curso
+- **Notificación al equipo** cuando un lead de alto valor pide información
+
+## Caso Real: Academia de Idiomas en Valencia
+
+**Situación:** Academia de inglés, francés y alemán con 15 años de trayectoria. 4 profesores, 120 alumnos por trimestre. Web hecha en WordPress en 2017, sin actualizar. Matrículas solo presenciales y por teléfono. Captación basada en boca a boca y reparto de flyers.
+
+**Problemas detectados:**
+
+- Web no responsive (se veía mal en móvil)
+- Sin información de precios ni horarios online
+- Sin ficha de Google My Business optimizada
+- Proceso de matrícula 100% presencial
+- Sin seguimiento digital de interesados
+
+**Solución implementada:**
+
+- Web nueva con catálogo de cursos, precios, horarios y matriculación online
+- Integración de pago con Stripe (tarjeta y bizum)
+- Blog con 8 artículos SEO sobre preparación de exámenes Cambridge, DELF, Goethe
+- Ficha de Google My Business optimizada con fotos reales, horarios y reseñas
+- Chat de WhatsApp integrado con respuestas automáticas para preguntas frecuentes
+- Secuencia automatizada de emails para interesados que no completan la matrícula
+- Panel de administración para gestionar alumnos, cursos y pagos
+
+**Resultados tras un trimestre:**
+
+- **Matrículas online:** 38% del total (antes 0%)
+- **Consultas web/WhatsApp:** +210% respecto al trimestre anterior
+- **Tráfico orgánico:** +165% (de 180 a 478 visitas mensuales)
+- **Tasa de conversión interesado → matrícula:** del 22% al 41%
+- **Tiempo dedicado a gestión administrativa:** reducido en 12 horas semanales
+
+## Cuánto Cuesta la Web de una Academia
+
+### Web básica: 1.500-3.000€
+
+Catálogo de cursos, formulario de contacto, diseño responsive, SEO on-page básico. Sin matrícula online ni automatizaciones.
+
+### Web profesional: 3.000-6.000€
+
+Todo lo anterior + sistema de matrícula con pago online, blog, WhatsApp integrado, automatizaciones de email, panel de administración básico.
+
+### Web completa: 6.000-12.000€
+
+Todo lo anterior + área de alumnos, plataforma de contenido online, analytics avanzados, integraciones con sistemas de gestión existentes, chatbot con IA.
+
+## ¿Tu Academia Necesita una Web Nueva?
+
+Si tu web tiene más de 3 años, no permite matriculación online, o no apareces en la primera página de Google cuando alguien busca tu tipo de academia + tu ciudad, la respuesta es sí.
+
+En M.G.M Automations desarrollamos webs para academias y centros de formación con tecnología moderna, optimizadas para captar alumnos y reducir la carga administrativa. Precio cerrado, sin sorpresas, entrega en 2-3 semanas.
+
+**Solicita un análisis gratuito de tu web actual** y te mostramos exactamente qué mejorar y qué impacto tendría en tus matrículas.
+    `,
+  },
+  {
+    id: 'hoteles-rurales-web-reservas-directas-2026',
+    title: 'Hoteles Rurales: Cómo Conseguir Reservas Directas y Dejar de Depender de Booking',
+    excerpt: 'Booking se lleva entre el 15% y el 25% de comisión por cada reserva. Te explicamos cómo montar un sistema de reservas directas en tu web que reduzca la dependencia de OTAs y aumente tu margen de beneficio.',
+    date: '2026-01-28',
+    readTime: '10 min',
+    category: 'Análisis Sectorial',
+    image: null,
+    featured: false,
+    author: { name: 'Manuel Gregorio', role: 'Founder de M.G.M Automations' },
+    content: `
+## El Problema de las Comisiones de Booking y Airbnb
+
+Si tienes un hotel rural, casa rural o alojamiento turístico en España, probablemente Booking y Airbnb son tus principales canales de captación. Y probablemente también son tu mayor gasto operativo después de los salarios.
+
+Las cifras duelen:
+
+- **Booking.com:** comisión del 15% al 25% por reserva (media: 17-18%)
+- **Airbnb:** comisión del 3% al 5% al anfitrión + 14-16% al huésped
+- **Expedia:** comisión del 15% al 25%
+
+Para un hotel rural con tarifa media de 90€/noche y ocupación del 65%, eso puede suponer **entre 12.000 y 22.000€ anuales** en comisiones. Dinero que podría quedarse en tu bolsillo si consiguieras que esos huéspedes reservaran directamente en tu web.
+
+### El mito de "sin Booking no tendría reservas"
+
+Es comprensible que tengas miedo de reducir tu presencia en OTAs. Pero el objetivo no es desaparecer de Booking: es **reducir tu dependencia** de él.
+
+El escenario ideal es:
+
+- **40-50% reservas directas** (margen completo)
+- **30-40% via Booking/Airbnb** (captación de nuevos clientes)
+- **10-20% via otros canales** (Google Hotels, redes sociales, colaboraciones)
+
+Booking es un buen escaparate para que te descubran. Pero si el 90% de tus reservas vienen por ahí, estás pagando comisión incluso por clientes que ya te conocen y volverían a reservar directamente si fuera fácil hacerlo.
+
+## Por Qué los Huéspedes No Reservan en tu Web
+
+### 1. Tu web no inspira confianza
+
+Web anticuada, fotos de baja resolución, sin información de precios o disponibilidad en tiempo real. El huésped piensa: "Mejor reservo en Booking, que es seguro."
+
+### 2. No tienes sistema de reservas online
+
+El huésped tiene que llamar, enviar un email o rellenar un formulario de consulta. Demasiada fricción. En Booking, en 2 minutos tiene la reserva confirmada.
+
+### 3. No ofreces mejor precio que Booking
+
+Si tu web tiene el mismo precio que Booking, ¿por qué iba el huésped a arriesgarse a reservar en una web que no conoce? Necesitas un incentivo: mejor precio, extras incluidos, cancelación más flexible.
+
+### 4. No apareces en Google
+
+Cuando alguien busca "hotel rural en [tu zona]", aparece Booking, Escapadarural, Tripadvisor... pero no tu web. Sin SEO local ni Google Hotels, eres invisible fuera de las OTAs.
+
+### 5. No fidelizas a los huéspedes
+
+El huésped que vino el año pasado vuelve a buscar en Booking porque no recuerda tu web y tú no le has enviado ni un email desde entonces. Booking se lleva otra comisión por un cliente que ya era tuyo.
+
+## La Solución: Web con Motor de Reservas Directas
+
+### Qué necesita tu web para competir con Booking
+
+- **Motor de reservas integrado:** Calendario de disponibilidad en tiempo real, selección de habitación/alojamiento, cálculo automático de precio, pago online seguro (tarjeta, Bizum) y confirmación instantánea por email.
+- **Fotos profesionales:** Mínimo 15-20 fotos de alta calidad de las habitaciones, zonas comunes, exteriores y entorno. Las fotos son el factor #1 de decisión. Si no tienes fotos buenas, invierte en un fotógrafo antes que en la web.
+- **Precios y disponibilidad visibles:** Sin "consultar disponibilidad". Si el huésped puede ver las fechas disponibles y el precio en tiempo real, la fricción desaparece.
+- **Incentivo para reservar directo:** "Reserva en nuestra web y obtén: 5% de descuento, late checkout gratuito, botella de vino de bienvenida." El incentivo debe ser visible y claro.
+- **SEO local optimizado:** Aparecer cuando alguien busca "casa rural en [tu comarca/provincia]" o "hotel rural [nombre de tu zona]".
+- **Diseño que transmita la experiencia:** La web de un hotel rural debe evocar la experiencia: naturaleza, tranquilidad, gastronomía local. No debe parecer una página de un hotel de cadena.
+- **Mobile-first:** El 73% de las búsquedas de alojamiento rural se hacen desde el móvil, muchas veces durante el fin de semana o por la noche.
+
+### Automatizaciones que marcan la diferencia
+
+- **Email de pre-estancia** (3 días antes): Instrucciones de llegada, recomendaciones de la zona, opciones de extras (cena, actividades)
+- **Email de bienvenida** (día de llegada): WiFi, horarios, contacto directo
+- **Email post-estancia** (1 día después): Agradecimiento + enlace a reseña en Google + descuento para próxima visita
+- **Email de fidelización** (2-3 meses después): Oferta especial para repetir, novedades de la temporada
+- **Recordatorio de temporada** (antes de puentes y vacaciones): "Las fechas de Semana Santa ya están disponibles. Reserva antes que nadie."
+
+## Channel Manager: El Cerebro de tu Distribución
+
+Un channel manager sincroniza tu disponibilidad entre tu web, Booking, Airbnb y cualquier otra OTA en tiempo real. Esto es imprescindible para evitar overbookings.
+
+### Opciones recomendadas para alojamientos pequeños
+
+| Herramienta | Ideal para | Precio desde | Canales |
+|-------------|-----------|-------------|---------|
+| Cloudbeds | Hoteles rurales 5-30 hab. | 50€/mes | Booking, Airbnb, Expedia + 300 más |
+| Lodgify | Casas rurales 1-10 prop. | 12€/mes | Booking, Airbnb, Vrbo |
+| Smoobu | Pequeños propietarios | 0€ (hasta 1 prop.) | Booking, Airbnb |
+| Avaibook | Mercado español | 6€/mes/aloj. | Booking, Airbnb, Escapadarural |
+| Motor propio | Control total | Desarrollo único | Los que necesites |
+
+### Estrategia de precios por canal
+
+- **Web directa:** Precio base (el más bajo disponible)
+- **Booking/Airbnb:** Precio base + 10-15% (para compensar la comisión)
+- **Google Hotels:** Precio base (Google favorece las reservas directas en el ranking)
+
+Esto es legal y Booking lo permite siempre que no muestres un precio menor en su plataforma. Puedes dar mejor precio en tu web sin problema.
+
+## SEO Local para Turismo Rural
+
+### Ficha de Google Business Profile
+
+Es tu arma más importante para SEO local. Optimízala:
+
+- Nombre exacto del alojamiento (sin keywords stuffing)
+- Categoría principal: "Hotel rural" o "Casa rural"
+- Descripción completa con keywords naturales
+- Fotos actualizadas cada trimestre (mínimo 25)
+- Responde a TODAS las reseñas (positivas y negativas)
+- Publica posts de Google Business semanalmente (eventos, ofertas, novedades)
+
+### Keywords objetivo para tu web
+
+Crea páginas o artículos de blog para cada tipo de búsqueda:
+
+- **Transaccional:** "reservar casa rural en Sierra de Gredos"
+- **Informacional:** "mejores rutas de senderismo cerca de [tu zona]"
+- **Comparativa:** "casas rurales con piscina en [tu provincia]"
+- **Temporal:** "escapada rural fin de semana [tu zona]"
+
+### Blog de contenido local
+
+Un blog sobre tu zona es oro puro para el SEO de un hotel rural:
+
+- "10 rutas de senderismo desde [tu alojamiento]"
+- "Qué ver en [tu comarca] en un fin de semana"
+- "Restaurantes recomendados cerca de [tu alojamiento]"
+- "Guía de fiestas y eventos en [tu zona] 2026"
+
+Este contenido atrae tráfico orgánico de personas que están planificando una visita a tu zona — tu público objetivo exacto.
+
+## Caso Real: Casa Rural en Sierra de Guadarrama
+
+**Situación:** Casa rural con 6 habitaciones, capacidad para 18 personas. 95% de reservas via Booking. Web básica sin motor de reservas. Comisiones anuales de Booking: 14.800€. Ocupación: 58%.
+
+**Solución implementada:**
+
+- Web nueva con motor de reservas directo (Stripe + calendario en tiempo real)
+- Fotografía profesional (40 fotos + vídeo drone)
+- Incentivo web: 7% descuento + late checkout + cesta de bienvenida
+- Blog con 12 artículos sobre rutas, gastronomía y planes en la sierra
+- SEO local optimizado + Google Business Profile completo
+- Emails automatizados pre/post estancia + fidelización trimestral
+- Channel manager (Avaibook) sincronizando web + Booking + Airbnb
+- Estrategia de precios diferenciada: web 7% más barato que Booking
+
+**Resultados tras 6 meses:**
+
+- **Reservas directas:** del 5% al 38%
+- **Ahorro en comisiones:** 5.600€ (proyección anual: 9.200€)
+- **Ocupación:** del 58% al 71%
+- **Tráfico orgánico:** +280% (de 90 a 342 visitas mensuales)
+- **Reseñas Google:** de 12 a 47 reseñas (media 4.8)
+- **Inversión en web + setup:** 4.500€ — recuperada en 5 meses solo con el ahorro en comisiones
+
+## Plan de Acción en 4 Fases
+
+### Fase 1: Fundamentos (mes 1)
+
+- Web nueva con motor de reservas directo
+- Fotografía profesional
+- Incentivo de reserva directa
+- Google Business Profile optimizado
+
+### Fase 2: Contenido (meses 2-3)
+
+- Blog con 6-8 artículos sobre tu zona
+- SEO on-page para keywords de turismo rural + tu ubicación
+- Publicaciones semanales en Google Business
+
+### Fase 3: Automatización (mes 3)
+
+- Emails pre y post estancia
+- Secuencia de fidelización
+- Channel manager configurado con precios diferenciados
+
+### Fase 4: Crecimiento (mes 4+)
+
+- Google Ads para keywords transaccionales de alta intención
+- Campañas de email para repetidores antes de cada temporada
+- Contenido de blog continuo (2 artículos/mes)
+- Optimización basada en datos de conversión
+
+## ¿Tu Alojamiento Rural Necesita una Web Profesional?
+
+Si más del 70% de tus reservas vienen de Booking o Airbnb y pagas más de 5.000€/año en comisiones, la respuesta es clara. Una web con reservas directas se paga sola en menos de un año.
+
+En M.G.M Automations desarrollamos webs para alojamientos turísticos con motor de reservas integrado, SEO local y automatizaciones de email. Todo lo que necesitas para recuperar el control de tus reservas y tu margen.
+
+**Agenda una consulta gratuita** y te calculamos exactamente cuánto ahorrarías en comisiones con un sistema de reservas directas.
+    `,
+  },
+  {
+    id: 'automatizacion-procesos-empresariales-rpa-pymes-guia',
+    title: 'Automatización de Procesos Empresariales para PYMEs: Guía RPA sin Código 2026',
+    excerpt: 'El 60% de los trabajos de oficina tienen al menos un 30% de tareas automatizables. Te explicamos qué es RPA, qué herramientas no-code existen y cómo empezar a automatizar sin necesidad de programar.',
+    date: '2026-01-25',
+    readTime: '11 min',
+    category: 'Automatización',
+    image: null,
+    featured: false,
+    author: { name: 'Manuel Gregorio', role: 'Founder de M.G.M Automations' },
+    content: `
+## Qué Es la Automatización de Procesos (y Qué No Es)
+
+La automatización de procesos empresariales (BPA/RPA) consiste en usar tecnología para que tareas repetitivas se ejecuten solas, sin intervención humana. No hablamos de robots físicos ni de inteligencia artificial sofisticada. Hablamos de cosas como:
+
+- Que cuando llega un email de un cliente, automáticamente se cree un registro en tu CRM
+- Que las facturas de proveedores se extraigan del email, se registren en tu contabilidad y se archiven en la carpeta correcta de Drive
+- Que cuando un empleado pide vacaciones, se envíe la aprobación a su responsable, se actualice el calendario y se notifique a RRHH
+- Que los informes de ventas semanales se generen y se envíen solos cada lunes a las 9:00
+
+### Lo que NO es automatización
+
+- No es despedir gente. Es liberar a tu equipo de tareas que no aportan valor para que se concentren en las que sí.
+- No es caro. Muchas automatizaciones se configuran en horas y cuestan menos de 50€/mes.
+- No es solo para grandes empresas. Las herramientas no-code actuales están diseñadas para PYMEs.
+- No requiere programar. Aunque tener conocimientos técnicos ayuda, la mayoría de automatizaciones se crean con interfaces visuales de arrastrar y soltar.
+
+## Cuánto Tiempo Pierde tu Empresa en Tareas Manuales
+
+Datos del Instituto McKinsey Global (2025):
+
+- El **60% de los trabajos de oficina** tienen al menos un 30% de tareas automatizables.
+- Los empleados dedican una media de **3.6 horas semanales** a tareas repetitivas de bajo valor.
+- Las PYMEs españolas pierden una media de **22.000€ anuales** en ineficiencias de procesos manuales.
+- Solo el **23%** de las PYMEs en España ha implementado algún tipo de automatización.
+
+### Las tareas más automatizables (y más comunes)
+
+| Tarea | Tiempo semanal medio | Automatizable |
+|-------|---------------------|---------------|
+| Introducir datos entre sistemas | 4h | 95% |
+| Generar y enviar informes | 3h | 90% |
+| Gestionar emails rutinarios | 5h | 70% |
+| Programar reuniones y citas | 2h | 85% |
+| Crear y enviar facturas | 2h | 90% |
+| Seguimiento de pagos | 1.5h | 80% |
+| Actualizar hojas de cálculo | 3h | 95% |
+| Publicar en redes sociales | 2h | 75% |
+
+Si sumas, son más de 20 horas semanales de trabajo que podrían ejecutarse automáticamente. Para una PYME con 5 empleados, eso equivale a **medio empleado a tiempo completo**.
+
+## Herramientas No-Code para Automatizar en 2026
+
+### Make (antes Integromat)
+
+La herramienta más versátil para PYMEs. Conecta más de 1.500 aplicaciones entre sí con una interfaz visual de escenarios.
+
+- **Precio:** Desde 9€/mes (1.000 operaciones)
+- **Ideal para:** Automatizaciones de complejidad media. Flujos con condiciones, filtros y múltiples pasos
+- **Ejemplo:** Email nuevo de cliente → Extraer datos → Crear contacto en CRM → Enviar respuesta automática → Notificar al comercial por Slack
+
+### Zapier
+
+El más conocido y con mayor número de integraciones (6.000+ apps). Más sencillo que Make pero menos flexible para flujos complejos.
+
+- **Precio:** Desde 19.99€/mes (750 tareas)
+- **Ideal para:** Automatizaciones simples de 2-5 pasos. Perfecta para empezar
+- **Ejemplo:** Formulario web completado → Crear fila en Google Sheets → Enviar email de confirmación
+
+### n8n (autoalojado)
+
+Alternativa open-source a Make. Se instala en tu propio servidor, lo que significa que no pagas por operaciones y tus datos no salen de tu infraestructura.
+
+- **Precio:** Gratis (autoalojado) o desde 20€/mes (cloud)
+- **Ideal para:** Empresas con requisitos de privacidad o que manejan alto volumen de automatizaciones
+- **Ejemplo:** Webhook de tu ERP → Procesar datos → Actualizar base de datos → Generar PDF → Enviar por email
+
+### Power Automate (Microsoft)
+
+Si tu empresa usa Microsoft 365, Power Automate ya está incluido en muchas licencias. Integración nativa con Excel, Outlook, Teams y SharePoint.
+
+- **Precio:** Incluido en M365 Business Basic (5.60€/usuario/mes)
+- **Ideal para:** Empresas ya inmersas en el ecosistema Microsoft
+- **Ejemplo:** Email con factura adjunta en Outlook → Extraer datos → Registrar en Excel → Mover a carpeta de SharePoint
+
+## 10 Automatizaciones que Toda PYME Debería Tener
+
+### 1. Captura automática de leads
+
+Cuando alguien rellena un formulario en tu web, automáticamente: se crea un contacto en tu CRM, se envía un email de confirmación personalizado, se notifica al comercial asignado y se programa un seguimiento a las 48 horas.
+
+### 2. Facturación recurrente
+
+Para servicios mensuales o cuotas: la factura se genera automáticamente el día 1 de cada mes, se envía por email al cliente con enlace de pago, se registra en tu software de contabilidad y se envía un recordatorio si no se paga en 7 días.
+
+### 3. Onboarding de clientes nuevos
+
+Al cerrar un nuevo cliente: se crea la carpeta del proyecto en Drive, se genera el contrato desde plantilla con los datos del cliente, se envía la secuencia de bienvenida por email, se programa la primera reunión de kickoff y se asignan tareas al equipo.
+
+### 4. Informes automáticos
+
+Cada lunes a las 9:00: se recopilan datos de ventas de tu CRM, se generan gráficos en Google Sheets, se crea un PDF con el informe semanal y se envía por email al equipo directivo. Sin que nadie tenga que hacer nada.
+
+### 5. Gestión de reseñas
+
+Después de completar un servicio: se envía automáticamente una encuesta de satisfacción. Si la valoración es 4-5, se envía enlace para dejar reseña en Google. Si es 1-3, se alerta al responsable para que contacte al cliente.
+
+### 6. Publicación en redes sociales
+
+Creas el contenido una vez y se programa automáticamente en Instagram, LinkedIn, Facebook y X/Twitter. Herramientas como Buffer o Later se integran con Make para crear flujos más avanzados.
+
+### 7. Seguimiento de pagos
+
+Si una factura no se paga en el plazo: recordatorio automático al cliente a los 7 días, segundo recordatorio a los 15 días con tono más formal, alerta al responsable a los 30 días para gestión manual.
+
+### 8. Respuestas automáticas a emails
+
+Los emails que se repiten (confirmaciones, instrucciones, recursos) se envían automáticamente según triggers definidos. El equipo solo interviene cuando el email requiere respuesta personalizada.
+
+### 9. Backup automático de datos
+
+Copias de seguridad automáticas diarias de tu base de datos, archivos críticos y configuraciones. Se almacenan en cloud (Google Drive, Dropbox, S3) y se te notifica si algo falla.
+
+### 10. Sincronización entre herramientas
+
+Tu CRM, tu calendario, tu email, tu software de contabilidad, tu hoja de cálculo... todos sincronizados en tiempo real. Un cambio en un sitio se refleja automáticamente en todos los demás.
+
+## Cómo Empezar: El Método de las 3 Preguntas
+
+Para cada proceso de tu empresa, hazte estas tres preguntas:
+
+### Pregunta 1: ¿Se repite más de 3 veces por semana?
+
+Si una tarea se hace menos de 3 veces por semana, probablemente no merece la pena automatizarla (a menos que sea muy lenta o propensa a errores).
+
+### Pregunta 2: ¿Sigue siempre los mismos pasos?
+
+Si la tarea tiene reglas claras y no requiere juicio humano en cada ejecución, es automatizable. Si cada caso es diferente y requiere decisiones ad hoc, mejor dejarlo manual.
+
+### Pregunta 3: ¿Cuánto tiempo/dinero cuesta hacerla manualmente?
+
+Calcula el coste real: horas de empleado × coste por hora. Si la automatización cuesta menos que 3 meses de hacerlo manualmente, es rentable.
+
+## Caso Real: Agencia de Marketing en Barcelona
+
+**Situación:** Agencia de marketing digital con 8 empleados. Gestionaban 25 clientes con un mix de Google Sheets, email, WhatsApp y Trello. El fundador dedicaba 8 horas semanales solo a generar informes mensuales para clientes.
+
+**Automatizaciones implementadas:**
+
+- **Captura de leads:** Formulario web → HubSpot CRM → Email automático → Tarea de seguimiento
+- **Informes de clientes:** Google Analytics + Meta Ads → Google Sheets → PDF automático → Email al cliente el día 1 de cada mes
+- **Onboarding:** Nuevo cliente en CRM → Carpeta Drive → Contrato desde plantilla → Secuencia de bienvenida
+- **Facturación:** El día 1 de cada mes se generan todas las facturas automáticamente en Holded
+- **Reseñas:** Al cerrar proyecto exitoso → Encuesta de satisfacción → Si positiva, pedir reseña en Google
+
+**Herramientas utilizadas:** Make (automatización), HubSpot (CRM free), Holded (facturación), Google Workspace (productividad)
+
+**Resultados:**
+
+- **62 horas mensuales** de trabajo manual eliminadas
+- **Informes:** de 8 horas mensuales a 0 (100% automatizado)
+- **Errores en facturación:** de 2-3/mes a 0
+- **Tiempo de respuesta a leads:** de 4 horas a 12 minutos
+- **Coste de las automatizaciones:** 47€/mes (Make Pro) + 0€ (HubSpot Free)
+- **Ahorro equivalente:** 1.800€/mes en horas de trabajo
+
+## Errores Comunes al Automatizar
+
+### 1. Automatizar procesos que no funcionan
+
+Si tu proceso manual es caótico, automatizarlo no lo arregla: lo hace caóticamente más rápido. Primero optimiza el proceso, luego automatiza.
+
+### 2. Intentar automatizar todo de golpe
+
+Empieza con 2-3 automatizaciones de alto impacto y bajo riesgo. Valida que funcionan. Aprende. Luego expande. Automatizar 15 procesos a la vez es receta para el desastre.
+
+### 3. No documentar las automatizaciones
+
+Cuando la persona que configuró la automatización se va de vacaciones o de la empresa, nadie sabe cómo funciona ni cómo arreglarla si falla. Documenta cada automatización: qué hace, cuándo se activa, qué sistemas conecta y quién es responsable.
+
+### 4. No poner alertas de fallo
+
+Las automatizaciones fallan. APIs que cambian, servicios que se caen, datos en formato inesperado. Configura alertas (email, Slack) para cuando una automatización falle, para poder actuar antes de que el problema se acumule.
+
+### 5. No medir el impacto
+
+Si no mides cuánto tiempo ahorras, no puedes justificar la inversión ni decidir qué automatizar después. Lleva un registro simple: proceso automatizado, tiempo que costaba hacerlo manual, tiempo que cuesta ahora.
+
+## El Siguiente Paso para tu PYME
+
+La automatización no es una moda ni un lujo tecnológico. Es una necesidad competitiva. Las PYMEs que automatizan sus procesos operan con menores costes, responden más rápido a sus clientes y liberan a su equipo para trabajo de mayor valor.
+
+En M.G.M Automations diseñamos e implementamos automatizaciones a medida para PYMEs usando Make, n8n, APIs y desarrollo custom. Desde la auditoría de procesos hasta la implementación y el mantenimiento.
+
+**Agenda una auditoría gratuita de procesos** y te identificamos las 3 automatizaciones que mayor impacto tendrían en tu negocio con el menor esfuerzo.
+    `,
+  },
 ];
 
 // --- Utilidades ---

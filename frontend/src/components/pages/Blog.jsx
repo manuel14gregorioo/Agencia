@@ -3024,12 +3024,19 @@ const RelatedPosts = ({ currentPost }) => {
 const NewsletterCTA = () => {
   const [email, setEmail] = useState('');
   const [submitted, setSubmitted] = useState(false);
+  const [error, setError] = useState('');
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    if (email) {
+    if (!email) return;
+    setError('');
+    try {
+      const { subscribeNewsletter } = await import('../../utils/api');
+      await subscribeNewsletter(email);
       setSubmitted(true);
       setEmail('');
+    } catch (err) {
+      setError(err.message || 'Error al suscribirse. Inténtalo de nuevo.');
     }
   };
 
@@ -3052,22 +3059,25 @@ const NewsletterCTA = () => {
               ¡Suscrito correctamente!
             </p>
           ) : (
-            <form onSubmit={handleSubmit} className="flex gap-2">
-              <input
-                type="email"
-                required
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                placeholder="tu@email.com"
-                className="flex-1 md:w-56 px-4 py-3 border-3 border-noir-200 dark:border-noir-700 bg-cream-50 dark:bg-noir-800 text-noir-900 dark:text-cream-50 focus:border-lime-400 focus:outline-none focus:shadow-[4px_4px_0_0_rgba(163,230,53,0.3)] transition-all text-sm"
-              />
-              <button
-                type="submit"
-                className="px-5 py-3 bg-noir-900 dark:bg-lime-400 text-lime-400 dark:text-noir-900 font-bold border-3 border-noir-900 dark:border-lime-400 hover:translate-x-[-2px] hover:translate-y-[-2px] hover:shadow-brutal transition-all text-sm whitespace-nowrap"
-              >
-                Suscribirse
-              </button>
-            </form>
+            <>
+              <form onSubmit={handleSubmit} className="flex gap-2">
+                <input
+                  type="email"
+                  required
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  placeholder="tu@email.com"
+                  className="flex-1 md:w-56 px-4 py-3 border-3 border-noir-200 dark:border-noir-700 bg-cream-50 dark:bg-noir-800 text-noir-900 dark:text-cream-50 focus:border-lime-400 focus:outline-none focus:shadow-[4px_4px_0_0_rgba(163,230,53,0.3)] transition-all text-sm"
+                />
+                <button
+                  type="submit"
+                  className="px-5 py-3 bg-noir-900 dark:bg-lime-400 text-lime-400 dark:text-noir-900 font-bold border-3 border-noir-900 dark:border-lime-400 hover:translate-x-[-2px] hover:translate-y-[-2px] hover:shadow-brutal transition-all text-sm whitespace-nowrap"
+                >
+                  Suscribirse
+                </button>
+              </form>
+              {error && <p className="text-red-500 text-xs mt-2">{error}</p>}
+            </>
           )}
         </div>
       </div>

@@ -7,7 +7,7 @@
   <!-- Página principal -->
   <url>
     <loc>https://mgmautomations.es/</loc>
-    <lastmod>2026-02-05</lastmod>
+    <lastmod>2026-02-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -23,21 +23,33 @@
   <!-- Blog index -->
   <url>
     <loc>https://mgmautomations.es/blog</loc>
-    <lastmod>2026-02-05</lastmod>
+    <lastmod>2026-02-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 
-  <!-- Blog posts - Nuevos 2026 -->
+  <!-- Blog posts - 2026 -->
   <url>
-    <loc>https://mgmautomations.es/blog/como-crear-landing-page-que-convierte-2026</loc>
-    <lastmod>2026-02-04</lastmod>
+    <loc>https://mgmautomations.es/blog/hoteles-rurales-web-reservas-directas-2026</loc>
+    <lastmod>2026-02-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://mgmautomations.es/blog/academias-formacion-web-matriculas-online-2026</loc>
+    <lastmod>2026-02-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://mgmautomations.es/blog/chatbots-ia-atencion-cliente-pymes-2026</loc>
-    <lastmod>2026-02-03</lastmod>
+    <lastmod>2026-02-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://mgmautomations.es/blog/como-crear-landing-page-que-convierte-2026</loc>
+    <lastmod>2026-02-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -48,16 +60,10 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://mgmautomations.es/blog/academias-formacion-web-matriculas-online-2026</loc>
-    <lastmod>2026-02-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://mgmautomations.es/blog/hoteles-rurales-web-reservas-directas-2026</loc>
+    <loc>https://mgmautomations.es/blog/clinica-dental-web-moderna-2025</loc>
     <lastmod>2026-01-28</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://mgmautomations.es/blog/automatizacion-procesos-empresariales-rpa-pymes-guia</loc>
@@ -65,8 +71,44 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+  <url>
+    <loc>https://mgmautomations.es/blog/peluqueria-duplicar-reservas-automatizacion</loc>
+    <lastmod>2026-01-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mgmautomations.es/blog/web-abogados-captar-clientes-2025</loc>
+    <lastmod>2026-01-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mgmautomations.es/blog/automatizacion-inmobiliarias-leads</loc>
+    <lastmod>2026-01-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mgmautomations.es/blog/digitalizacion-clinicas-veterinarias-guia</loc>
+    <lastmod>2026-01-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mgmautomations.es/blog/sistema-reservas-gimnasios-guia</loc>
+    <lastmod>2026-01-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mgmautomations.es/blog/talleres-mecanicos-web-comercial-2025</loc>
+    <lastmod>2026-01-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 
-  <!-- Blog posts - Existentes -->
+  <!-- Blog posts - 2025 -->
   <url>
     <loc>https://mgmautomations.es/blog/que-es-geo-generative-engine-optimization</loc>
     <lastmod>2025-01-30</lastmod>
@@ -100,48 +142,6 @@
   <url>
     <loc>https://mgmautomations.es/blog/cuanto-cuesta-web-2025</loc>
     <lastmod>2025-01-10</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://mgmautomations.es/blog/clinica-dental-web-moderna-2025</loc>
-    <lastmod>2025-01-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://mgmautomations.es/blog/peluqueria-duplicar-reservas-automatizacion</loc>
-    <lastmod>2025-01-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://mgmautomations.es/blog/web-abogados-captar-clientes-2025</loc>
-    <lastmod>2025-01-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://mgmautomations.es/blog/automatizacion-inmobiliarias-leads</loc>
-    <lastmod>2024-12-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://mgmautomations.es/blog/digitalizacion-clinicas-veterinarias-guia</loc>
-    <lastmod>2024-12-22</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://mgmautomations.es/blog/sistema-reservas-gimnasios-guia</loc>
-    <lastmod>2024-12-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://mgmautomations.es/blog/talleres-mecanicos-web-comercial-2025</loc>
-    <lastmod>2024-12-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

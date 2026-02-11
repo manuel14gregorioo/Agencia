@@ -3,6 +3,7 @@ AgenciaDev Backend - Application Factory
 """
 
 import os
+import threading
 from flask import Flask, send_from_directory
 from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
@@ -73,7 +74,11 @@ def create_app(config_name='default'):
     # Health check endpoint
     @app.route('/health')
     def health():
-        return {'status': 'healthy', 'service': 'agencia-backend'}
+        try:
+            db.session.execute(db.text('SELECT 1'))
+            return {'status': 'healthy', 'service': 'agencia-backend', 'database': 'connected'}
+        except Exception as e:
+            return {'status': 'unhealthy', 'error': str(e)}, 503
 
     # Servir React frontend (solo si existe el build)
     if os.path.exists(static_folder):

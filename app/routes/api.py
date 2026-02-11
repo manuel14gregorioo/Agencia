@@ -2,6 +2,8 @@
 API Routes - Endpoints públicos para el frontend
 """
 
+import threading
+
 from flask import Blueprint, request, jsonify, current_app
 from email_validator import validate_email, EmailNotValidError
 
@@ -68,12 +70,22 @@ def submit_contact():
     db.session.add(lead)
     db.session.commit()
 
-    # Enviar notificaciones por email (async en producción)
-    try:
-        send_lead_notification(lead)
-        send_lead_confirmation(lead)
-    except Exception as e:
-        current_app.logger.error(f"Error sending emails: {e}")
+    # Enviar notificaciones por email en background
+    def _send_emails(app, lead_id):
+        with app.app_context():
+            from app.models.lead import Lead as LeadModel
+            lead_obj = LeadModel.query.get(lead_id)
+            if lead_obj:
+                try:
+                    send_lead_notification(lead_obj)
+                    send_lead_confirmation(lead_obj)
+                except Exception as e:
+                    app.logger.error(f"Error sending emails: {e}")
+
+    threading.Thread(
+        target=_send_emails,
+        args=(current_app._get_current_object(), lead.id)
+    ).start()
 
     return jsonify({
         'success': True,

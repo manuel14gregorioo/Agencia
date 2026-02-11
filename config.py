@@ -29,6 +29,12 @@ class Config:
     SQLALCHEMY_ENGINE_OPTIONS = {
         'pool_recycle': 300,
         'pool_pre_ping': True,
+        'pool_size': 2,
+        'max_overflow': 3,
+        'pool_timeout': 10,
+        'connect_args': {
+            'connect_timeout': 5,
+        }
     }
 
     # CORS - No permitir * por defecto

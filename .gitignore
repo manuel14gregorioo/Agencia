@@ -45,3 +45,13 @@ htmlcov/
 # Misc
 *.bak
 *.tmp
+
+# Lead data and business files (not for repo)
+*.csv
+*.xlsx
+~$*.xlsx
+emails_hoy_*.md
+plantillas_email_frio.md
+Guia_Gestion_Dominios_MGM.html
+Instrucciones_Cliente_Dominio.html
+csv_to_xlsx.py

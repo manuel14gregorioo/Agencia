@@ -8,7 +8,7 @@ const BLOG_POSTS = [
   {
     id: 'que-es-geo-generative-engine-optimization',
     title: 'GEO: Qué Es y Por Qué tu Web Necesita Optimización para IA en 2025',
-    excerpt: 'Google ya no es el único que decide si te encuentran. ChatGPT, Perplexity y Google AI Overviews están cambiando las reglas. Te explicamos qué es GEO y cómo preparar tu negocio.',
+    excerpt: 'ChatGPT, Perplexity y Google AI Overviews cambian las reglas del SEO. Te explicamos qué es GEO y cómo preparar tu negocio.',
     date: '2025-01-30',
     readTime: '9 min',
     category: 'SEO & GEO',
@@ -340,7 +340,7 @@ Te hacemos una auditoría gratuita de tu web actual en 15 minutos: te decimos ex
   {
     id: 'ia-para-pymes-guia-2025',
     title: 'Inteligencia Artificial para PYMEs: Guía Práctica 2025',
-    excerpt: 'Descubre cómo las pequeñas y medianas empresas están usando IA para automatizar tareas, reducir costes y competir con grandes corporaciones. Sin jerga técnica, con ejemplos reales.',
+    excerpt: 'Cómo las PYMEs usan IA para automatizar tareas, reducir costes y competir con grandes empresas. Sin jerga, con ejemplos reales.',
     date: '2025-01-27',
     readTime: '10 min',
     category: 'Inteligencia Artificial',
@@ -512,7 +512,7 @@ Sin compromisos: te hacemos una consulta gratuita donde analizamos tu caso y te 
   {
     id: 'vocap-caso-estudio',
     title: 'Cómo Desarrollamos VOCAP.io en 3 Semanas',
-    excerpt: 'Un vistazo detrás de escenas al desarrollo de nuestra plataforma SaaS de transcripción con IA. Stack tecnológico, decisiones de arquitectura y lecciones aprendidas.',
+    excerpt: 'Cómo desarrollamos VOCAP.io, nuestro SaaS de transcripción con IA. Stack técnico, arquitectura y lecciones aprendidas.',
     date: '2025-01-20',
     readTime: '8 min',
     category: 'Caso de Estudio',
@@ -700,7 +700,7 @@ El sweet spot para la mayoría de negocios está entre 2.000-5.000€.
   {
     id: 'clinica-dental-web-moderna-2025',
     title: 'Por Qué tu Clínica Dental Necesita una Web Moderna en 2025',
-    excerpt: 'El 70% de pacientes busca dentista en Google antes de llamar. Si tu web no convence en 5 segundos, ese paciente se va a la competencia. Analizamos qué necesita la web de una clínica dental.',
+    excerpt: 'El 70% de pacientes busca dentista en Google. Si tu web no convence en 5 segundos, pierdes al paciente. Qué necesita tu clínica.',
     date: '2026-01-28',
     readTime: '8 min',
     category: 'Análisis Sectorial',
@@ -840,7 +840,7 @@ Agenda una consulta gratuita y te hacemos un análisis de tu web actual con reco
   {
     id: 'peluqueria-duplicar-reservas-automatizacion',
     title: 'Cómo una Peluquería Puede Duplicar sus Reservas con Automatización',
-    excerpt: 'El 60% de las citas que pierdes son porque el cliente no pudo reservar fuera de horario. Te enseñamos cómo un sistema de reservas y recordatorios automáticos transforma tu salón.',
+    excerpt: 'El 60% de citas perdidas son por no poder reservar fuera de horario. Un sistema de reservas automático transforma tu salón.',
     date: '2026-01-24',
     readTime: '7 min',
     category: 'Automatización',
@@ -971,7 +971,7 @@ Agenda una consulta gratuita y te mostramos cómo funcionaría en tu negocio con
   {
     id: 'web-abogados-captar-clientes-2025',
     title: 'Web para Abogados: Cómo Captar Clientes Online en 2025',
-    excerpt: 'El 80% de las personas que necesitan un abogado buscan primero en Google. Si tu despacho no tiene una web profesional con contenido legal SEO, estás dejando clientes a la competencia.',
+    excerpt: 'El 80% de quienes necesitan abogado buscan en Google. Sin web profesional con SEO legal, pierdes clientes ante la competencia.',
     date: '2026-01-20',
     readTime: '9 min',
     category: 'Análisis Sectorial',
@@ -1117,7 +1117,7 @@ Te hacemos una auditoría gratuita de tu presencia online y te decimos exactamen
   {
     id: 'automatizacion-inmobiliarias-leads',
     title: 'Automatización para Inmobiliarias: De 50 Llamadas Diarias a 5',
-    excerpt: 'El 80% de los leads inmobiliarios no están cualificados. Un sistema de automatización con chatbot WhatsApp y filtrado inteligente libera tu tiempo para cerrar los que sí importan.',
+    excerpt: 'El 80% de leads inmobiliarios no están cualificados. Automatización con chatbot WhatsApp y filtrado inteligente para cerrar más.',
     date: '2026-01-16',
     readTime: '8 min',
     category: 'Automatización',
@@ -1252,7 +1252,7 @@ Agenda una consulta gratuita y te mostramos exactamente cómo se reduciría tu c
   {
     id: 'digitalizacion-clinicas-veterinarias-guia',
     title: 'Digitalización de Clínicas Veterinarias: Guía Completa',
-    excerpt: 'Recordatorios de vacunas automáticos, historial de pacientes online, reservas 24/7. Todo lo que una clínica veterinaria necesita para modernizarse sin perder la cercanía con sus clientes.',
+    excerpt: 'Recordatorios de vacunas automáticos, historial online, reservas 24/7. Todo para modernizar tu clínica veterinaria sin perder cercanía.',
     date: '2026-01-12',
     readTime: '8 min',
     category: 'Análisis Sectorial',
@@ -1695,7 +1695,7 @@ Agenda una consulta gratuita y te hacemos un análisis de tu presencia online co
   {
     id: 'automatizar-whatsapp-business-pymes-guia',
     title: 'Cómo Automatizar WhatsApp Business para tu PYME: Guía Completa 2026',
-    excerpt: 'El 78% de los clientes prefieren contactar por WhatsApp. Aprende a automatizar respuestas, citas, seguimientos y ventas sin perder el toque personal. Casos reales y herramientas.',
+    excerpt: 'El 78% de clientes prefieren WhatsApp. Automatiza respuestas, citas y ventas sin perder el toque personal. Casos reales incluidos.',
     date: '2026-02-02',
     readTime: '11 min',
     category: 'Automatización',
@@ -1921,7 +1921,7 @@ En M.G.M Automations diseñamos e implementamos sistemas de automatización de W
   {
     id: 'como-crear-landing-page-que-convierte-2026',
     title: 'Cómo Crear una Landing Page que Convierte en 2026: Guía con Datos Reales',
-    excerpt: 'La media de conversión de una landing page es del 2.35%. Las mejores superan el 11%. Te explicamos qué separa a unas de otras con ejemplos concretos, errores fatales y la estructura exacta que usamos en nuestros proyectos.',
+    excerpt: 'La media de conversión de una landing es del 2.35%, las mejores superan el 11%. Qué las separa: ejemplos, errores y estructura real.',
     date: '2026-02-04',
     readTime: '10 min',
     category: 'Desarrollo Web',
@@ -2092,7 +2092,7 @@ Agenda una consulta gratuita y te mostramos cómo sería tu landing page antes d
   {
     id: 'chatbots-ia-atencion-cliente-pymes-2026',
     title: 'Chatbots con IA para Atención al Cliente en PYMEs: Guía Práctica 2026',
-    excerpt: 'Los chatbots con inteligencia artificial ya no son exclusivos de grandes empresas. Te explicamos cómo implementar uno en tu PYME sin arruinarte, qué puede hacer realmente y qué errores evitar.',
+    excerpt: 'Los chatbots con IA ya no son exclusivos de grandes empresas. Cómo implementar uno en tu PYME, qué puede hacer y qué errores evitar.',
     date: '2026-02-03',
     readTime: '12 min',
     category: 'IA & Tecnología',
@@ -2280,7 +2280,7 @@ En M.G.M Automations diseñamos e implementamos chatbots con IA adaptados a cada
   {
     id: 'academias-formacion-web-matriculas-online-2026',
     title: 'Academias y Centros de Formación: Cómo una Web Moderna Multiplica tus Matrículas',
-    excerpt: 'El 82% de los estudiantes investigan online antes de matricularse. Si tu academia no tiene una web profesional con matriculación online, estás perdiendo alumnos frente a tu competencia. Guía completa con datos.',
+    excerpt: 'El 82% de estudiantes investigan online antes de matricularse. Sin web profesional con matrícula online, pierdes alumnos. Guía completa.',
     date: '2026-02-01',
     readTime: '9 min',
     category: 'Análisis Sectorial',
@@ -2432,7 +2432,7 @@ En M.G.M Automations desarrollamos webs para academias y centros de formación c
   {
     id: 'hoteles-rurales-web-reservas-directas-2026',
     title: 'Hoteles Rurales: Cómo Conseguir Reservas Directas y Dejar de Depender de Booking',
-    excerpt: 'Booking se lleva entre el 15% y el 25% de comisión por cada reserva. Te explicamos cómo montar un sistema de reservas directas en tu web que reduzca la dependencia de OTAs y aumente tu margen de beneficio.',
+    excerpt: 'Booking cobra 15-25% de comisión por reserva. Cómo montar reservas directas en tu web para reducir OTAs y aumentar tu margen.',
     date: '2026-01-28',
     readTime: '10 min',
     category: 'Análisis Sectorial',
@@ -2625,7 +2625,7 @@ En M.G.M Automations desarrollamos webs para alojamientos turísticos con motor 
   {
     id: 'automatizacion-procesos-empresariales-rpa-pymes-guia',
     title: 'Automatización de Procesos Empresariales para PYMEs: Guía RPA sin Código 2026',
-    excerpt: 'El 60% de los trabajos de oficina tienen al menos un 30% de tareas automatizables. Te explicamos qué es RPA, qué herramientas no-code existen y cómo empezar a automatizar sin necesidad de programar.',
+    excerpt: 'El 60% de trabajos de oficina tienen un 30% de tareas automatizables. Qué es RPA, herramientas no-code y cómo empezar sin programar.',
     date: '2026-01-25',
     readTime: '11 min',
     category: 'Automatización',

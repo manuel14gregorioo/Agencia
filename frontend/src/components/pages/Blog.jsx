@@ -551,6 +551,31 @@ const BlogPost = ({ postId }) => {
           <div>
             <article className="prose prose-lg dark:prose-invert max-w-none prose-headings:font-display prose-headings:text-noir-900 dark:prose-headings:text-cream-50 prose-p:text-noir-600 dark:prose-p:text-noir-400 prose-li:text-noir-600 dark:prose-li:text-noir-400 prose-strong:text-noir-900 dark:prose-strong:text-cream-50 prose-a:text-lime-600 dark:prose-a:text-lime-400">
               {post.content.split('\n').map((paragraph, idx) => {
+                // Procesar inline markdown: **bold** y [links](/url)
+                const renderInline = (text) => {
+                  const parts = [];
+                  let remaining = text;
+                  let key = 0;
+                  const inlineRe = /(\*\*(.+?)\*\*|\[(.+?)\]\((.+?)\))/;
+                  while (remaining) {
+                    const m = remaining.match(inlineRe);
+                    if (!m) { parts.push(remaining); break; }
+                    if (m.index > 0) parts.push(remaining.slice(0, m.index));
+                    if (m[2]) {
+                      parts.push(<strong key={key++} className="text-noir-900 dark:text-cream-50">{m[2]}</strong>);
+                    } else if (m[3] && m[4]) {
+                      const isInternal = m[4].startsWith('/');
+                      parts.push(
+                        isInternal
+                          ? <Link key={key++} to={m[4]} className="text-lime-600 dark:text-lime-400 underline hover:text-lime-500">{m[3]}</Link>
+                          : <a key={key++} href={m[4]} className="text-lime-600 dark:text-lime-400 underline hover:text-lime-500" target="_blank" rel="noopener noreferrer">{m[3]}</a>
+                      );
+                    }
+                    remaining = remaining.slice(m.index + m[0].length);
+                  }
+                  return parts;
+                };
+
                 if (paragraph.startsWith('## ')) {
                   const text = paragraph.replace('## ', '');
                   return <h2 key={idx} id={slugify(text)} className="text-2xl font-display font-bold mt-12 mb-4">{text}</h2>;
@@ -558,25 +583,16 @@ const BlogPost = ({ postId }) => {
                 if (paragraph.startsWith('### ')) {
                   return <h3 key={idx} className="text-xl font-display font-bold mt-8 mb-3">{paragraph.replace('### ', '')}</h3>;
                 }
-                if (paragraph.startsWith('- **')) {
-                  const [label, ...rest] = paragraph.replace('- **', '').split(':**');
+                if (paragraph.startsWith('- ')) {
                   return (
                     <div key={idx} className="flex gap-2 my-2">
                       <span className="text-lime-500">•</span>
-                      <span><strong className="text-noir-900 dark:text-cream-50">{label}:</strong> {rest.join(':**')}</span>
+                      <span>{renderInline(paragraph.slice(2))}</span>
                     </div>
                   );
                 }
-                if (paragraph.startsWith('**')) {
-                  const [label, ...rest] = paragraph.replace('**', '').split(':**');
-                  return (
-                    <p key={idx} className="my-4">
-                      <strong className="text-noir-900 dark:text-cream-50">{label}:</strong> {rest.join(':**').replace('**', '')}
-                    </p>
-                  );
-                }
                 if (paragraph.trim() === '') return null;
-                return <p key={idx} className="my-4">{paragraph}</p>;
+                return <p key={idx} className="my-4">{renderInline(paragraph)}</p>;
               })}
             </article>
 

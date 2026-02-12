@@ -2914,6 +2914,255 @@ En M.G.M Automations diseñamos e implementamos automatizaciones a medida para P
 **Agenda una auditoría gratuita de procesos** y te identificamos las 3 automatizaciones que mayor impacto tendrían en tu negocio con el menor esfuerzo.
     `,
   },
+  {
+    id: 'errores-web-pymes-que-matan-ventas-2026',
+    title: 'Los 10 Errores en Webs de PYMEs que Están Matando tus Ventas (y Cómo Solucionarlos)',
+    excerpt: 'El 68% de las PYMEs españolas pierden clientes por errores evitables en su web. Analizamos los 10 más comunes con datos reales y soluciones concretas.',
+    date: '2026-02-12',
+    readTime: '11 min',
+    category: 'Desarrollo Web',
+    image: null,
+    featured: false,
+    author: { name: 'Manuel Gregorio', role: 'Founder de M.G.M Automations' },
+    content: `
+## Tu web está espantando clientes (y probablemente no lo sabes)
+
+Imagina que abres una tienda física en el centro de Madrid. El escaparate está sucio, la puerta se atasca, los productos no tienen precio y el dependiente tarda 15 segundos en reaccionar cuando alguien entra. ¿Cuántos clientes se quedarían?
+
+Eso es exactamente lo que pasa con la mayoría de webs de PYMEs en España. Según datos del INE, más del 75% de las pequeñas empresas tienen presencia online, pero la mayoría de esas webs **trabajan activamente en contra del negocio** en lugar de a su favor.
+
+No es un problema de no tener web. Es un problema de tener una web que ahuyenta a quien la visita.
+
+Estos son los 10 errores más frecuentes que vemos al auditar webs de PYMEs, ordenados por impacto en ventas.
+
+## Error 1: Velocidad de carga superior a 3 segundos
+
+Este es el error más costoso y el más ignorado. **El 53% de los usuarios abandona una web que tarda más de 3 segundos en cargar** (Google, 2023). Cada segundo adicional reduce las conversiones un 7%.
+
+### Por qué pasa
+
+- Imágenes sin comprimir (una foto de 4MB del local subida directamente desde el móvil)
+- Hosting barato y lento (servidores compartidos saturados)
+- Plugins innecesarios en WordPress (20 plugins para una web de 5 páginas)
+- Sin CDN ni caché configurada
+- JavaScript y CSS sin minificar
+
+### Cómo solucionarlo
+
+- Comprime imágenes a WebP o AVIF (TinyPNG, Squoosh)
+- Usa lazy loading para imágenes que no están en el viewport inicial
+- Migra a un hosting con SSD y buena infraestructura (no el plan de 2€/mes)
+- Configura caché del navegador y CDN (Cloudflare gratuito funciona bien)
+- Mide con PageSpeed Insights y apunta a un score de 90+ en móvil
+
+**Dato clave:** Una mejora de 1 segundo en tiempo de carga puede aumentar las conversiones hasta un 27%.
+
+## Error 2: Web no adaptada a móvil
+
+En 2026, entre el 60% y el 70% del tráfico web en España viene de dispositivos móviles. Si tu web no se ve bien en un iPhone SE, estás perdiendo a la mayoría de tus visitantes.
+
+### Señales de que tu web no es responsive
+
+- Hay que hacer zoom para leer el texto
+- Los botones son demasiado pequeños para pulsar con el dedo
+- El menú no funciona o se solapa con el contenido
+- Las imágenes se desbordan fuera de la pantalla
+- Los formularios son imposibles de rellenar en móvil
+
+### Cómo solucionarlo
+
+- Diseña mobile-first: primero la versión móvil, luego adapta a escritorio
+- Botones de mínimo 44x44 píxeles (estándar de accesibilidad)
+- Texto legible sin zoom (mínimo 16px para cuerpo de texto)
+- Menú hamburguesa funcional con área de toque generosa
+- Testea en dispositivos reales, no solo en el inspector del navegador
+
+## Error 3: No tener un CTA claro (o no tener ninguno)
+
+Muchas webs de PYMEs son "webs folleto": muestran información pero no piden al visitante que haga nada. No hay un botón de contacto visible, no hay formulario accesible, no hay una acción clara que realizar.
+
+### El problema
+
+El visitante llega, lee, y se va. No porque no le interese tu servicio, sino porque **no le has dicho qué hacer a continuación**. Cada página de tu web debería tener un objetivo claro y un camino obvio para llegar a él.
+
+### Cómo solucionarlo
+
+- Un CTA principal visible sin hacer scroll (above the fold)
+- Usa verbos de acción específicos: "Pide tu presupuesto gratis" en vez de "Enviar"
+- Repite el CTA cada 2-3 secciones en páginas largas
+- Usa contraste visual para que el botón destaque (color diferente al resto)
+- Añade un botón flotante de WhatsApp o chat para contacto inmediato
+- Testea diferentes textos y posiciones (A/B testing incluso básico marca diferencia)
+
+**Dato clave:** Las páginas con un solo CTA claro convierten un 266% más que las que tienen múltiples opciones compitiendo entre sí.
+
+## Error 4: Contenido genérico que no conecta con tu cliente
+
+"Somos una empresa líder en el sector con años de experiencia ofreciendo soluciones integrales de calidad para nuestros clientes." ¿Te suena? Esta frase podría estar en la web de una gestoría, una ferretería o una clínica dental. No dice nada.
+
+### El problema
+
+El visitante necesita entender en 5 segundos: **qué haces, para quién lo haces y por qué debería elegirte a ti**. Si tu web habla de "soluciones" y "experiencia" sin concretar, el visitante se va a la competencia que sí es específica.
+
+### Cómo solucionarlo
+
+- Cambia "soluciones integrales" por lo que realmente haces: "Hacemos tu declaración de la renta en 48 horas por 60€"
+- Habla de los problemas de tu cliente, no de ti: "¿Cansado de esperar 3 semanas para una cita?" en vez de "Tenemos amplia disponibilidad"
+- Usa números concretos: "147 clínicas ya gestionan sus citas con nosotros" en vez de "Muchos clientes confían en nosotros"
+- Incluye testimonios reales con nombre y contexto
+- Escribe como hablas: si tu cliente es un fontanero de barrio, no le hables como si fuera el CEO de Telefónica
+
+## Error 5: Sin certificado SSL (HTTPS)
+
+Si tu web muestra "No es seguro" en la barra del navegador, estás perdiendo credibilidad instantáneamente. Desde 2018, Google Chrome marca como inseguras las webs sin HTTPS, y desde 2014, Google penaliza en rankings las webs sin SSL.
+
+### Por qué sigue pasando
+
+- Webs antiguas que nunca se migraron
+- Hosting que no incluye SSL gratuito
+- Se instaló pero caducó y nadie lo renovó
+- Contenido mixto (HTTP y HTTPS mezclado) que rompe el candado
+
+### Cómo solucionarlo
+
+- Instala Let's Encrypt (gratuito) o usa el SSL que incluya tu hosting
+- Configura redirección automática de HTTP a HTTPS
+- Revisa contenido mixto con herramientas como Why No Padlock
+- Renueva automáticamente (Let's Encrypt se puede configurar con auto-renewal)
+
+**Dato clave:** El 84% de los usuarios abandonaría una compra si la conexión no es segura.
+
+## Error 6: No tener Google Business Profile optimizado (y vinculado a la web)
+
+Esto no es estrictamente un error de la web, pero afecta directamente al tráfico que llega a ella. Muchas PYMEs no tienen Google Business Profile o lo tienen desactualizado, perdiendo visibilidad en búsquedas locales.
+
+### El impacto
+
+- El 46% de las búsquedas en Google tienen intención local
+- El 76% de las personas que buscan algo local en su móvil visitan un negocio en 24 horas
+- Google Business Profile es la primera impresión que muchos clientes tendrán de tu negocio
+
+### Cómo solucionarlo
+
+- Crea o reclama tu ficha en Google Business Profile
+- Completa TODA la información: horario, dirección, teléfono, web, categorías
+- Sube fotos reales y actualizadas (mínimo 10)
+- Responde a todas las reseñas (positivas y negativas)
+- Publica actualizaciones semanales (ofertas, novedades)
+- Vincula la URL de tu web y asegúrate de que los datos coincidan (NAP consistency)
+
+## Error 7: Formularios de contacto que frustran
+
+Un formulario con 15 campos obligatorios es una barrera, no una puerta. Cada campo adicional reduce la tasa de conversión entre un 4% y un 11%.
+
+### Errores comunes en formularios
+
+- Demasiados campos obligatorios (nombre, apellidos, teléfono, empresa, cargo, dirección, código postal...)
+- No funciona bien en móvil
+- No confirma que el mensaje se ha enviado (el usuario no sabe si ha funcionado)
+- Envía a un email que nadie revisa
+- Captcha agresivo que requiere 5 intentos
+- No indica qué campos tienen error ni por qué
+
+### Cómo solucionarlo
+
+- Máximo 3-4 campos: nombre, email, mensaje (y teléfono opcional)
+- Feedback visual claro: mensaje de confirmación, botón que cambia de estado
+- Validación en tiempo real (no esperar al envío para mostrar errores)
+- Asegúrate de que alguien responda en menos de 24 horas
+- Usa un honeypot invisible en vez de un captcha visible para filtrar spam
+
+## Error 8: SEO básico inexistente
+
+No hablamos de estrategias SEO avanzadas. Hablamos de lo mínimo: títulos, descripciones y estructura que Google pueda entender.
+
+### Errores SEO que vemos constantemente
+
+- Todas las páginas tienen el mismo title tag ("Inicio - Mi Empresa")
+- No hay meta descriptions (Google las autogenera, normalmente mal)
+- No hay etiquetas H1/H2/H3 (todo es texto plano con negritas)
+- URLs tipo "miempresa.com/page?id=847" en vez de "miempresa.com/servicios-limpieza-oficinas"
+- Imágenes sin texto alternativo (alt text)
+- No hay sitemap.xml ni robots.txt
+
+### Cómo solucionarlo
+
+- Un H1 único por página con la palabra clave principal
+- Title tag descriptivo y único (máx. 60 caracteres): "Limpieza de Oficinas en Madrid | Empresa X"
+- Meta description que invite al clic (máx. 155 caracteres)
+- URLs legibles con palabras clave
+- Alt text descriptivo en todas las imágenes
+- Genera y envía sitemap.xml a Google Search Console
+- Registra tu web en Google Search Console (gratuito y esencial)
+
+## Error 9: Información de contacto escondida o incompleta
+
+Si un cliente potencial tiene que buscar durante más de 5 segundos cómo contactarte, muchos no lo harán.
+
+### Lo que falta habitualmente
+
+- Teléfono solo en la página de contacto (y no en el header o footer)
+- No hay dirección física (genera desconfianza)
+- Email tipo info@miempresa.com que nadie revisa
+- Horario de atención no especificado
+- Sin enlace a redes sociales o WhatsApp
+
+### Cómo solucionarlo
+
+- Teléfono clicable (tel:) visible en header y footer
+- Dirección física con enlace a Google Maps
+- WhatsApp Business con botón flotante
+- Horario de atención visible
+- Email que alguien revise activamente (mejor aún, un formulario que genere notificación)
+
+## Error 10: No medir nada
+
+Si no mides, no puedes mejorar. La mayoría de PYMEs no saben cuántas visitas recibe su web, de dónde vienen, qué páginas ven ni cuántos se convierten en clientes.
+
+### El mínimo que deberías tener
+
+- **Google Analytics 4**: Tráfico, fuentes, comportamiento, eventos
+- **Google Search Console**: Rendimiento en búsquedas, errores de indexación, palabras clave
+- **Seguimiento de conversiones**: Cuántos formularios se envían, cuántas llamadas se generan desde la web
+- **Heatmaps** (opcional pero revelador): Herramientas como Hotjar o Microsoft Clarity (gratuita) muestran dónde hacen clic tus visitantes
+
+### Cómo empezar
+
+- Instala GA4 y Search Console (ambos gratuitos)
+- Configura al menos 1 evento de conversión (envío de formulario)
+- Revisa los datos una vez al mes como mínimo
+- Toma decisiones basadas en datos, no en intuición
+
+## Checklist rápido: Audita tu web en 5 minutos
+
+- ¿Carga en menos de 3 segundos? (testea en PageSpeed Insights)
+- ¿Se ve bien en tu móvil? (abre tu web desde el teléfono ahora mismo)
+- ¿Hay un botón de acción visible sin hacer scroll?
+- ¿Un desconocido entendería qué haces en 5 segundos?
+- ¿Tiene el candado HTTPS en la barra del navegador?
+- ¿Tu Google Business Profile está completo y actualizado?
+- ¿El formulario de contacto tiene 4 campos o menos?
+- ¿Cada página tiene un título y descripción únicos?
+- ¿Tu teléfono y dirección son visibles en todas las páginas?
+- ¿Tienes Google Analytics instalado y configurado?
+
+Si has respondido "no" a 3 o más preguntas, tu web tiene margen de mejora significativo.
+
+## También te puede interesar
+
+- [Cómo Crear una Landing Page que Convierte en 2026](/blog/como-crear-landing-page-que-convierte-2026)
+- [¿Cuánto Cuesta una Web en 2025? Guía de Precios Actualizada](/blog/cuanto-cuesta-web-2025)
+- [GEO: Qué Es y Por Qué tu Web Necesita Optimización para IA](/blog/que-es-geo-generative-engine-optimization)
+
+## El coste real de no actuar
+
+Cada día que tu web tiene estos errores es un día que estás perdiendo potenciales clientes. No se trata de invertir miles de euros en un rediseño. Muchos de estos errores se solucionan en horas, no en semanas.
+
+En M.G.M Automations hacemos auditorías web gratuitas donde analizamos tu web actual, identificamos los errores críticos y te damos un plan de acción con prioridades claras.
+
+**Solicita tu auditoría web gratuita** y descubre exactamente qué está frenando tu web — y cómo solucionarlo.
+    `,
+  },
 ];
 
 export default BLOG_POSTS;

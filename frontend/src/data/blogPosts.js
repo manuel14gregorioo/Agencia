@@ -3163,6 +3163,244 @@ En M.G.M Automations hacemos auditorías web gratuitas donde analizamos tu web a
 **Solicita tu auditoría web gratuita** y descubre exactamente qué está frenando tu web — y cómo solucionarlo.
     `,
   },
+  {
+    id: 'seo-ctr-mejorar-clics-google-2026',
+    title: 'CTR en Google: Cómo Conseguir que Hagan Clic en tu Web (y No en la de tu Competencia)',
+    excerpt: 'Aparecer en Google no sirve de nada si nadie hace clic. Te explicamos qué es el CTR, por qué está bajando y 9 técnicas probadas para que tu resultado destaque sobre los demás.',
+    date: '2026-02-15',
+    readTime: '10 min',
+    category: 'SEO & GEO',
+    image: null,
+    featured: false,
+    author: { name: 'Manuel Gregorio', role: 'Founder de M.G.M Automations' },
+    content: `
+## Estás en Google, pero nadie hace clic
+
+Muchos negocios se obsesionan con aparecer en la primera página de Google. Lo consiguen, celebran... y no pasa nada. Las visitas no llegan. Los leads tampoco.
+
+El problema no es el posicionamiento. El problema es el **CTR**.
+
+**CTR (Click-Through Rate)** es el porcentaje de personas que ven tu resultado en Google y hacen clic en él. Si 100 personas ven tu web en los resultados y solo 2 hacen clic, tu CTR es del 2%.
+
+Y en 2026, el CTR medio está cayendo en picado.
+
+## Por qué el CTR está bajando (y por qué debería preocuparte)
+
+### Google ya no quiere que hagas clic
+
+Suena contradictorio, pero es la realidad. Google ha ido añadiendo elementos que responden al usuario **sin necesidad de salir de la página de resultados**:
+
+- **AI Overviews**: Resúmenes generados por IA que aparecen antes de cualquier resultado orgánico.
+- **Featured Snippets**: Extractos de contenido que responden la pregunta directamente.
+- **Knowledge Panels**: Cajas informativas con datos del negocio.
+- **People Also Ask**: Preguntas relacionadas con respuestas desplegables.
+- **Resultados de Google Maps**: Para búsquedas locales, el mapa se lleva los clics.
+
+**Dato:** Un estudio de SparkToro reveló que más del 58% de las búsquedas en Google terminan sin ningún clic. En búsquedas desde móvil, esa cifra supera el 65%.
+
+### Lo que eso significa para tu negocio
+
+Si tu CTR es bajo, da igual que estés en posición 1. Google interpreta que tu resultado no es relevante y empieza a bajarte. Es un círculo vicioso:
+
+1. Tu resultado no atrae clics → Google te baja posiciones
+2. Al bajar posiciones → menos gente ve tu resultado
+3. Menos visibilidad → menos clics → Google te baja más
+
+El CTR no es solo una métrica de vanidad. Es un **factor de ranking indirecto** que puede hundirte o catapultarte.
+
+## CTR medio por posición en Google (datos 2026)
+
+Estos son los CTRs medios según la posición en los resultados orgánicos:
+
+| Posición | CTR medio (desktop) | CTR medio (móvil) |
+|----------|---------------------|--------------------|
+| 1 | 31.7% | 24.0% |
+| 2 | 14.5% | 11.8% |
+| 3 | 8.7% | 7.2% |
+| 4 | 5.5% | 4.6% |
+| 5 | 3.4% | 2.9% |
+| 6-10 | 1.2-2.5% | 0.8-1.8% |
+
+**La diferencia entre la posición 1 y la 3 es brutal**: el primero se lleva casi 4 veces más clics que el tercero. Y a partir de la posición 5, estás prácticamente invisible.
+
+Pero aquí viene lo interesante: estos son **promedios**. Hay resultados en posición 3 que consiguen un CTR del 15% y resultados en posición 1 que no llegan al 10%. La diferencia está en cómo presentas tu resultado.
+
+## 9 técnicas para mejorar tu CTR en Google
+
+### 1. Escribe titles que generen curiosidad (sin clickbait)
+
+El **title tag** es lo primero que ve el usuario. Tienes 60 caracteres para convencerle de que haga clic en ti y no en los otros 9 resultados.
+
+**Title genérico (bajo CTR):**
+"Servicios de desarrollo web | Empresa de diseño web"
+
+**Title optimizado (alto CTR):**
+"Tu Web en 2 Semanas con Precio Fijo | M.G.M Automations"
+
+**Fórmulas que funcionan:**
+- **Número + beneficio**: "7 Errores en tu Web que te Cuestan Clientes (y Cómo Arreglarlos)"
+- **Pregunta directa**: "¿Cuánto Cuesta una Web Profesional en 2026? Precios Reales"
+- **Año actual**: Incluir el año ("2026") señala contenido fresco y actualizado
+- **Paréntesis/corchetes**: Los títulos con paréntesis tienen un CTR un 33% mayor según HubSpot
+
+### 2. Meta descriptions que vendan el clic
+
+La **meta description** son esas 2 líneas de texto debajo del título. Google a veces las reescribe, pero si la tuya es buena, la usará.
+
+**Description genérica:**
+"Somos una empresa de desarrollo web en Madrid. Ofrecemos servicios de diseño web, SEO y marketing digital. Contacta con nosotros."
+
+**Description optimizada:**
+"Webs profesionales entregadas en 2-3 semanas. Precio fijo desde el día 1. Sin sorpresas, sin retrasos. Más de 30 proyectos entregados en España. Auditoría gratuita."
+
+**Claves:**
+- Incluye tu **propuesta de valor** única (lo que te diferencia)
+- Usa **números concretos** (plazos, precios, cifras)
+- Incluye un **CTA implícito** ("Auditoría gratuita", "Consulta sin compromiso")
+- Ocupa los 155-160 caracteres disponibles (si la dejas corta, Google la reescribirá)
+
+### 3. URLs limpias y descriptivas
+
+La URL aparece en verde/gris encima del título. Una URL limpia genera confianza:
+
+**URL mala:** mgmautomations.es/p?id=374&cat=12
+
+**URL buena:** mgmautomations.es/blog/cuanto-cuesta-web-2026
+
+Las URLs legibles tienen un CTR hasta un 25% mayor que las URLs con parámetros incomprensibles. Además, Google destaca en negrita las palabras de la URL que coinciden con la búsqueda del usuario.
+
+### 4. Datos estructurados para rich snippets
+
+Los **rich snippets** son esos resultados enriquecidos que incluyen estrellas, precios, FAQs, imágenes o breadcrumbs. Ocupan más espacio visual y destacan sobre los resultados normales.
+
+**Tipos de rich snippets más efectivos para negocios:**
+- **FAQ schema**: Tus preguntas frecuentes aparecen desplegables directamente en Google. Puede duplicar el espacio que ocupa tu resultado.
+- **Review/Rating schema**: Estrellas amarillas que captan la atención al instante.
+- **How-to schema**: Pasos numerados para guías y tutoriales.
+- **Local Business schema**: Horarios, dirección, teléfono directamente en el resultado.
+- **Breadcrumb schema**: Muestra la ruta de navegación en vez de la URL completa.
+
+**Impacto real:** Los resultados con rich snippets tienen un CTR entre un 20% y un 40% superior a los resultados normales en la misma posición.
+
+### 5. Optimiza para la posición 0 (featured snippets)
+
+El **featured snippet** es ese recuadro que aparece encima de todos los resultados orgánicos. Si lo consigues, te llevas entre el 8% y el 12% de todos los clics, y tu resultado normal sigue apareciendo debajo.
+
+**Cómo optimizar para snippets:**
+- Responde la pregunta en un párrafo de 40-60 palabras justo después de un H2/H3
+- Usa listas numeradas o con viñetas para procesos paso a paso
+- Crea tablas comparativas (Google adora las tablas para featured snippets)
+- Responde primero, desarrolla después (pirámide invertida)
+
+**Ejemplo de estructura que atrae snippets:**
+
+```
+## ¿Cuánto cuesta una web profesional?
+
+Una web profesional en España cuesta entre 2.000€ y 8.000€ en 2026,
+dependiendo de la complejidad, funcionalidades y tecnología utilizada.
+Los factores principales que influyen en el precio son:
+
+- Número de páginas
+- Funcionalidades a medida
+- Integraciones con terceros
+- Diseño personalizado vs template
+```
+
+### 6. Usa el poder de los números y datos
+
+Los resultados con cifras concretas generan más clics porque transmiten precisión y credibilidad:
+
+- "**30** proyectos entregados" mejor que "muchos proyectos entregados"
+- "En **2 semanas**" mejor que "en poco tiempo"
+- "Desde **2.500€**" mejor que "precios competitivos"
+- "**+40%** más conversiones" mejor que "mejores conversiones"
+
+Los números rompen el patrón visual del texto y el ojo humano los detecta antes que las palabras. En una lista de 10 resultados con títulos genéricos, el que tiene un número destaca.
+
+### 7. Apunta a search intent, no solo a keywords
+
+El CTR se desploma cuando el contenido no coincide con lo que el usuario busca. Google clasifica las búsquedas en 4 intenciones:
+
+- **Informativa**: "qué es el CTR" → Quiere aprender. Dale un artículo completo.
+- **Navegacional**: "M.G.M Automations" → Quiere ir a tu web. Asegúrate de aparecer primero con tu marca.
+- **Comercial**: "mejor agencia web Madrid" → Está comparando. Dale comparativas, casos de estudio, precios.
+- **Transaccional**: "contratar desarrollo web Madrid" → Quiere comprar. Dale una landing con CTA directo.
+
+**Error común:** Intentar posicionar una página de servicios para una búsqueda informativa. Si alguien busca "qué es una landing page", quiere un artículo, no tu formulario de contacto. Alineando intención con contenido, tu CTR sube de forma natural.
+
+### 8. Optimiza tu Google Business Profile
+
+Para búsquedas locales, el **Google Business Profile** aparece antes que los resultados orgánicos. Si tu perfil está completo y optimizado, te llevas los clics antes de que el usuario baje al primer resultado orgánico.
+
+**Checklist GBP para maximizar CTR:**
+- Foto de portada profesional y actualizada
+- Categorías de negocio correctas (principal + secundarias)
+- Descripción completa con keywords naturales
+- Horarios actualizados (incluyendo festivos)
+- Publicaciones regulares (ofertas, novedades, artículos)
+- Responder a TODAS las reseñas (positivas y negativas)
+- Fotos reales del equipo, oficina y proyectos
+- Servicios con descripciones y precios
+
+**Dato:** Los negocios con más de 100 fotos en GBP reciben un 520% más de llamadas que los que no tienen fotos.
+
+### 9. Testea y mide con Google Search Console
+
+Nada de lo anterior sirve si no lo mides. **Google Search Console** es tu herramienta gratuita para ver exactamente qué CTR tiene cada página y cada keyword.
+
+**Cómo encontrar oportunidades rápidas:**
+1. Ve a Rendimiento > Resultados de búsqueda
+2. Filtra por posición media entre 1 y 10
+3. Ordena por CTR ascendente
+4. Busca páginas con buena posición pero CTR bajo → son las que necesitan optimización urgente
+
+**Ejemplo:** Si tienes una página en posición media 3 pero con un CTR del 2%, algo falla en tu título o description. Cámbialo, espera 2-3 semanas y mide el impacto.
+
+## El CTR como estrategia de negocio
+
+Mejorar tu CTR es probablemente la acción de SEO con mejor relación esfuerzo-resultado. No necesitas crear contenido nuevo ni conseguir backlinks. Solo necesitas **optimizar lo que ya tienes**.
+
+**Ejemplo real con números:**
+
+Imagina que tu web recibe 5.000 impresiones al mes en Google con un CTR del 2%:
+- **Situación actual**: 5.000 × 2% = 100 visitas/mes
+- **Si mejoras el CTR al 5%**: 5.000 × 5% = 250 visitas/mes
+- **Si mejoras el CTR al 8%**: 5.000 × 8% = 400 visitas/mes
+
+Has multiplicado por 4 tus visitas **sin mejorar tu posición ni una sola plaza**. Y si de esas visitas conviertes un 3% en leads:
+- 100 visitas → 3 leads/mes
+- 400 visitas → 12 leads/mes
+
+Eso es la diferencia entre un negocio que sobrevive y uno que crece.
+
+## Errores que destrozan tu CTR (y que vemos constantemente)
+
+### Title tags duplicados o genéricos
+"Inicio | Mi Empresa" no le dice nada a nadie. Cada página necesita un título único que refleje lo que el usuario va a encontrar.
+
+### Meta descriptions vacías
+Si no escribes una meta description, Google genera una automáticamente recortando texto de tu página. Casi siempre queda mal, cortada a mitad de frase y sin gancho.
+
+### Contenido que no cumple la promesa del título
+Si tu título dice "Guía Completa de Precios 2026" y el contenido tiene 200 palabras sin un solo precio, el usuario vuelve a Google en 5 segundos. Eso aumenta tu tasa de rebote y le dice a Google que tu resultado no es útil → tu CTR baja a largo plazo.
+
+### Web lenta o no responsive
+Google muestra un icono de "experiencia de página" en los resultados móviles. Si tu web es lenta, los usuarios ven la señal y evitan hacer clic.
+
+## También te puede interesar
+
+- [GEO: Qué Es y Por Qué tu Web Necesita Optimización para IA](/blog/que-es-geo-generative-engine-optimization)
+- [Cómo Crear una Landing Page que Convierte en 2026](/blog/como-crear-landing-page-que-convierte-2026)
+- [7 Errores en tu Web que Están Matando tus Ventas](/blog/errores-web-pymes-que-matan-ventas-2026)
+
+## ¿Quieres que analicemos el CTR de tu web?
+
+En M.G.M Automations no solo construimos webs: las construimos para que aparezcan en Google y para que la gente haga clic. SEO técnico, contenido optimizado y datos estructurados vienen de serie en todos nuestros proyectos.
+
+Si ya tienes una web pero sospechas que no está rindiendo como debería, te hacemos una auditoría SEO gratuita. Analizamos tu CTR real con Search Console, identificamos las páginas con más potencial y te damos un plan de acción concreto.
+    `,
+  },
 ];
 
 export default BLOG_POSTS;

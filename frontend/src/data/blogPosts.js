@@ -3294,18 +3294,14 @@ El **featured snippet** es ese recuadro que aparece encima de todos los resultad
 
 **Ejemplo de estructura que atrae snippets:**
 
-```
-## ¿Cuánto cuesta una web profesional?
-
-Una web profesional en España cuesta entre 2.000€ y 8.000€ en 2026,
-dependiendo de la complejidad, funcionalidades y tecnología utilizada.
-Los factores principales que influyen en el precio son:
-
-- Número de páginas
-- Funcionalidades a medida
-- Integraciones con terceros
-- Diseño personalizado vs template
-```
+> **¿Cuánto cuesta una web profesional?**
+>
+> Una web profesional en España cuesta entre 2.000€ y 8.000€ en 2026, dependiendo de la complejidad, funcionalidades y tecnología utilizada. Los factores principales que influyen en el precio son:
+>
+> - Número de páginas
+> - Funcionalidades a medida
+> - Integraciones con terceros
+> - Diseño personalizado vs template
 
 ### 6. Usa el poder de los números y datos
 

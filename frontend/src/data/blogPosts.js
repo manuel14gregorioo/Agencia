@@ -3397,6 +3397,210 @@ En M.G.M Automations no solo construimos webs: las construimos para que aparezca
 Si ya tienes una web pero sospechas que no está rindiendo como debería, te hacemos una auditoría SEO gratuita. Analizamos tu CTR real con Search Console, identificamos las páginas con más potencial y te damos un plan de acción concreto.
     `,
   },
+  {
+    id: 'google-my-business-guia-seo-local-2026',
+    title: 'Google My Business en 2026: La Guía Definitiva para Dominar el SEO Local',
+    excerpt: 'Tu ficha de Google es lo primero que ven tus clientes. Te enseñamos paso a paso cómo optimizar tu Perfil de Empresa en Google para aparecer en el mapa, conseguir reseñas y atraer clientes de tu zona.',
+    date: '2026-02-16',
+    readTime: '11 min',
+    category: 'SEO & GEO',
+    image: null,
+    featured: false,
+    author: { name: 'Manuel Gregorio', role: 'Founder de M.G.M Automations' },
+    content: `
+## Tu negocio existe en Google aunque no lo sepas
+
+Hay una realidad que muchos negocios locales ignoran: **Google ya tiene una ficha de tu empresa**. Puede que tú no la hayas creado, pero algún usuario, algún mapa, algún directorio la generó automáticamente.
+
+El problema es que esa ficha puede tener horarios incorrectos, fotos que no son tuyas, o directamente información que no te representa. Y es lo primero que ven tus clientes potenciales cuando buscan lo que tú ofreces.
+
+En 2026, el **Perfil de Empresa en Google** (antes Google My Business) sigue siendo la herramienta más poderosa y gratuita de marketing local que existe. Y la mayoría de negocios la tienen abandonada o mal configurada.
+
+## Por qué el SEO local es más importante que nunca
+
+Algunos datos que deberían hacerte prestar atención:
+
+- El **46% de todas las búsquedas en Google** tienen intención local
+- El **76% de las personas** que buscan algo cercano en el móvil visitan el negocio en las siguientes 24 horas
+- El **28% de esas búsquedas** terminan en una compra
+- Las búsquedas de "cerca de mí" y "abierto ahora" han crecido un 400% en los últimos 3 años
+
+Cuando alguien busca "dentista en Ávila" o "taller mecánico cerca de mí", Google muestra un mapa con 3 resultados destacados (el llamado **Local Pack**). Si tu negocio aparece ahí, tienes una ventaja enorme sobre la competencia. Si no aparece, es como si no existieras para ese cliente.
+
+## Cómo reclamar y verificar tu perfil paso a paso
+
+Si aún no has reclamado tu perfil, este es el proceso:
+
+**1. Accede a Google Business Profile**
+
+Ve a business.google.com e inicia sesión con una cuenta de Google. Usa una cuenta profesional, no la personal. Si después contratas a alguien para gestionarlo, podrás darle acceso sin compartir tu cuenta principal.
+
+**2. Busca tu negocio**
+
+Google te pedirá el nombre de tu empresa. Si ya existe una ficha automática, te la mostrará para que la reclames. Si no existe, podrás crear una nueva.
+
+**3. Verifica la propiedad**
+
+Google necesita confirmar que eres el dueño real. Los métodos de verificación disponibles son:
+
+- **Postal**: Te envían una carta con un código a la dirección del negocio (5-14 días)
+- **Teléfono**: Recibes un SMS o llamada con un código (instantáneo, no siempre disponible)
+- **Email**: Te envían un código al email del dominio de tu web (instantáneo)
+- **Vídeo**: Grabas un vídeo corto mostrando el negocio y la señalización (2-3 días de revisión)
+
+El método por teléfono o email es el más rápido. Si no te aparece esa opción, el postal funciona siempre.
+
+## Los 8 elementos que debes optimizar sí o sí
+
+Una vez verificado, no te limites a rellenar lo básico. Cada campo que Google ofrece es una oportunidad para posicionarte mejor.
+
+### 1. Nombre del negocio
+
+Usa tu nombre real, tal como aparece en tu fachada. No añadas palabras clave (tipo "Clínica Dental García - Mejor Dentista de Madrid"). Google penaliza eso y puede suspender tu ficha. Tu nombre debe ser exacto y consistente con el que usas en tu web, redes sociales y directorios.
+
+### 2. Categoría principal y secundarias
+
+La categoría principal es el factor que más influye en para qué búsquedas apareces. Google ofrece miles de categorías predefinidas. Elige la más específica posible:
+
+- "Restaurante" es demasiado genérico
+- "Restaurante italiano" es mejor
+- "Restaurante de pizza napolitana" es ideal si es lo que eres
+
+Puedes añadir hasta 9 categorías secundarias. Añade las que sean relevantes, pero no infles la lista con categorías que no representan lo que haces.
+
+### 3. Descripción del negocio
+
+Tienes 750 caracteres para explicar qué haces. Los primeros 250 se ven sin hacer clic en "más", así que son los más importantes. Incluye:
+
+- Qué servicios ofreces
+- Para quién trabajas
+- Qué te diferencia
+- Tu zona geográfica de actuación
+
+No repitas la palabra clave 15 veces. Escribe para personas, no para robots. Google entiende perfectamente el contexto en 2026.
+
+### 4. Horarios
+
+Mantén los horarios actualizados siempre. Nada frustra más a un cliente que ir a un negocio que Google dice que está abierto y encontrárselo cerrado. Configura también:
+
+- **Horarios especiales**: festivos, vacaciones, puentes
+- **Más horarios**: si tienes horarios diferentes para distintos servicios (cocina, recogida, atención al público)
+
+### 5. Fotos y vídeos
+
+Los perfiles con fotos reciben un **42% más de solicitudes de rutas** y un **35% más de clics a la web**. No subas 3 fotos borrosas del móvil. Invierte en:
+
+- **Exterior**: que el cliente sepa cómo es tu fachada y la entrada
+- **Interior**: muestra el ambiente, la limpieza, la decoración
+- **Equipo**: las personas generan confianza
+- **Productos/servicios**: lo que realmente ofreces
+- **Antes y después**: especialmente potente para reformas, peluquerías, clínicas
+
+Sube al menos 10-15 fotos de calidad. Actualiza con fotos nuevas cada mes. Google prioriza los perfiles activos.
+
+### 6. Servicios y productos
+
+Google permite listar tus servicios con nombre, descripción y precio. Rellena todos los que ofrezcas. Esto no solo informa al cliente, sino que le dice a Google para qué búsquedas eres relevante.
+
+### 7. Atributos
+
+Dependiendo de tu categoría, Google te ofrecerá atributos diferentes: accesibilidad para silla de ruedas, WiFi gratis, parking, terraza, reservas online, pagos con tarjeta, etc. Marca todos los que apliquen. Los usuarios filtran por estos atributos.
+
+### 8. Zona de servicio
+
+Si vas al cliente (fontanero, electricista, reformas), configura las zonas donde trabajas en lugar de mostrar tu dirección. Puedes definir ciudades, provincias o radios específicos.
+
+## Cómo conseguir reseñas (y por qué son tu mejor arma)
+
+Las reseñas son el factor de confianza número 1 para negocios locales. El **93% de los consumidores** lee reseñas antes de visitar un negocio, y el **73%** solo confía en negocios con más de 10 reseñas.
+
+**Estrategias para conseguir más reseñas:**
+
+**Pide en el momento adecuado.** El mejor momento para pedir una reseña es justo después de entregar un buen resultado. No esperes días. Cuando el cliente está satisfecho, es cuando más probabilidades hay de que lo haga.
+
+**Hazlo fácil.** Google genera un enlace directo para dejar reseñas desde tu panel de control. Crea un QR con ese enlace y ponlo en la factura, en el mostrador, en el email de confirmación.
+
+**Responde a todas las reseñas.** Sí, a todas. Las positivas con agradecimiento genuino (no un copy-paste). Las negativas con profesionalidad, reconociendo el problema y ofreciendo solución. Los clientes potenciales se fijan en cómo respondes a las críticas.
+
+**No compres reseñas falsas.** Google las detecta cada vez mejor. Una oleada de 20 reseñas de 5 estrellas en una semana, todas de cuentas nuevas, puede resultar en la eliminación de todas tus reseñas o la suspensión del perfil.
+
+## Las publicaciones de Google: tu blog dentro de Google
+
+Google permite publicar posts directamente en tu perfil. Son como mini publicaciones que aparecen cuando alguien ve tu ficha. Los tipos disponibles son:
+
+- **Novedades**: actualizaciones generales, noticias del negocio
+- **Ofertas**: promociones con fecha de inicio y fin, botón de canje
+- **Eventos**: con fecha, hora y descripción
+
+Publica al menos una vez por semana. Las publicaciones caducan a los 7 días (las ofertas a su fecha de fin). Un perfil con publicaciones recientes transmite que el negocio está activo y Google lo premia con mejor visibilidad.
+
+**Ideas de publicaciones:**
+
+- Nuevo servicio disponible
+- Fotos de un trabajo reciente terminado
+- Consejo rápido relacionado con tu sector
+- Promoción de temporada
+- Caso de éxito de un cliente (con su permiso)
+
+## Errores que hunden tu posicionamiento local
+
+### Información inconsistente (NAP)
+
+NAP significa Name, Address, Phone. Tu nombre, dirección y teléfono deben ser idénticos en absolutamente todos los sitios: Google, tu web, Páginas Amarillas, redes sociales, directorios. Si en un sitio pones "Calle Mayor, 5" y en otro "C/ Mayor, 5" o "C/ Mayor 5", Google no está seguro de que sea el mismo negocio y te posiciona peor.
+
+### Categoría equivocada
+
+Si eres un "Centro de fisioterapia" y tu categoría dice "Clínica médica", estás compitiendo en la liga equivocada y perdiendo búsquedas de clientes que buscan exactamente lo que tú haces.
+
+### No responder reseñas negativas
+
+Una reseña de 1 estrella sin respuesta es un cartel de "nos da igual" para cualquier cliente potencial que la lea.
+
+### Horarios desactualizados
+
+Especialmente grave en festivos y vacaciones. Un cliente que se desplaza hasta tu negocio y lo encuentra cerrado no solo no vuelve: probablemente deje una reseña negativa.
+
+### Perfil sin fotos o con fotos malas
+
+Un perfil sin fotos genera un 94% menos de interacción que uno con fotos de calidad. Las fotos borrosas, oscuras o desenfocadas son casi peor que no tener ninguna.
+
+## Cómo medir si tu perfil funciona
+
+Google ofrece estadísticas dentro del panel de tu perfil. Los datos clave que debes vigilar cada mes:
+
+- **Búsquedas**: cuántas veces apareció tu perfil (directas vs. descubrimiento)
+- **Visualizaciones**: en búsqueda vs. en mapas
+- **Acciones**: clics a la web, llamadas, solicitudes de ruta, mensajes
+- **Fotos**: cuántas veces se ven tus fotos vs. la media de negocios similares
+
+Si tus "búsquedas de descubrimiento" (cuando te encuentran buscando tu categoría, no tu nombre) superan a las directas, significa que tu SEO local funciona. Si no, necesitas optimizar más.
+
+## Google My Business y tu página web: el combo ganador
+
+Tu perfil de Google no sustituye a tu web. Se complementan. El perfil capta al cliente que busca en el mapa o por categoría. Tu web le da la información detallada que necesita para decidirse.
+
+Para que el combo funcione:
+
+- **Enlaza tu web en el perfil** (parece obvio, pero muchos lo olvidan)
+- **Usa datos estructurados LocalBusiness** en tu web para que Google conecte ambos
+- **Mantén la misma información** en los dos sitios (NAP consistente)
+- **Tu web debe ser rápida y móvil** porque el 80% de las búsquedas locales son desde el móvil
+
+Un negocio con un perfil de Google optimizado y una web profesional que carga rápido tiene una ventaja competitiva brutal sobre los que solo tienen una cosa o la otra.
+
+## También te puede interesar
+
+- [CTR en Google: Cómo Conseguir que Hagan Clic en tu Web](/blog/seo-ctr-mejorar-clics-google-2026)
+- [GEO: Qué Es y Por Qué tu Web Necesita Optimización para IA](/blog/que-es-geo-generative-engine-optimization)
+- [7 Errores en tu Web que Están Matando tus Ventas](/blog/errores-web-pymes-que-matan-ventas-2026)
+
+## ¿Quieres que optimicemos tu Perfil de Empresa en Google?
+
+En M.G.M Automations configuramos y optimizamos perfiles de Google Business como parte de todos nuestros proyectos web. SEO local, datos estructurados, estrategia de reseñas y seguimiento mensual incluido.
+
+Si ya tienes un perfil pero no sabes si está bien configurado, te hacemos una auditoría gratuita. Te decimos exactamente qué mejorar y cuánto impacto puede tener en tu visibilidad local.
+    `,
+  },
 ];
 
 export default BLOG_POSTS;

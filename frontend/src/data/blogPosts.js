@@ -3601,6 +3601,257 @@ En M.G.M Automations configuramos y optimizamos perfiles de Google Business como
 Si ya tienes un perfil pero no sabes si está bien configurado, te hacemos una auditoría gratuita. Te decimos exactamente qué mejorar y cuánto impacto puede tener en tu visibilidad local.
     `,
   },
+  {
+    id: 'email-marketing-pymes-guia-automatizacion-2026',
+    title: 'Email Marketing para PYMEs en 2026: La Guía Completa para Automatizar y Vender Más',
+    excerpt: 'El email sigue siendo el canal con mayor ROI del marketing digital: 36€ por cada 1€ invertido. Te enseñamos cómo montar un sistema de email automatizado que convierte suscriptores en clientes.',
+    date: '2026-02-17',
+    readTime: '12 min',
+    category: 'Automatización',
+    image: null,
+    featured: false,
+    author: { name: 'Manuel Gregorio', role: 'Founder de M.G.M Automations' },
+    content: `
+## El canal que todo el mundo ignora (y que más dinero genera)
+
+Redes sociales, SEO, Google Ads, TikTok, IA... Cada año aparece un canal "revolucionario" que va a cambiarlo todo. Mientras tanto, el email marketing sigue ahí, generando un **retorno medio de 36€ por cada euro invertido** (DMA, 2025). Ningún otro canal se acerca.
+
+Y sin embargo, la mayoría de PYMEs españolas no hace email marketing. O lo hace mal: un newsletter mensual que nadie lee, enviado desde un Gmail personal a una lista de 50 contactos en CCO.
+
+El email no ha muerto. Lo que ha muerto es el email mal hecho. En 2026, las herramientas de automatización permiten a un negocio pequeño montar sistemas de email que hace cinco años solo podían permitirse las grandes empresas. Y el coste es ridículo comparado con los resultados.
+
+## Por qué el email sigue ganando al resto de canales
+
+### Es tuyo
+
+Tu lista de seguidores en Instagram no es tuya. Es de Meta. Si mañana cambian el algoritmo, te cierran la cuenta o suben el precio de los anuncios, pierdes el acceso a tu audiencia. Tu lista de email sí es tuya. Nadie te la puede quitar.
+
+### Llega directamente
+
+Un post en redes sociales llega al 5-10% de tus seguidores (orgánico). Un email llega al **85-95% de tu lista** directamente a su bandeja de entrada. La diferencia de alcance es abismal.
+
+### Convierte más
+
+La tasa de conversión media del email marketing es del **3-5%**, frente al 1-2% de redes sociales y el 2-3% de búsqueda orgánica. El email no solo llega más, sino que convierte mejor porque el usuario te dio permiso explícito para escribirle.
+
+### Es medible
+
+Sabes exactamente quién abrió tu email, quién hizo clic, en qué enlace y cuándo. Esa información es oro para entender qué le interesa a tu audiencia y ajustar tu mensaje.
+
+## Los 3 errores que cometen las PYMEs con el email
+
+Antes de hablar de estrategia, hablemos de lo que NO funciona.
+
+### Error 1: Enviar sin estrategia
+
+Mandar un email cuando "te acuerdas" o cuando tienes una oferta no es email marketing. Es spam esporádico. Sin una frecuencia consistente y un plan de contenido, tus suscriptores se olvidan de ti entre email y email.
+
+### Error 2: Solo vender
+
+Si cada email que mandas es "OFERTA -20% SOLO HOY", tu lista se quemará en semanas. La gente se da de baja o directamente deja de abrir tus emails. La regla clásica es 80/20: el 80% de tus emails debe aportar valor (información útil, consejos, contenido relevante) y solo el 20% debe ser venta directa.
+
+### Error 3: No segmentar
+
+Enviar el mismo email a toda tu lista es como gritar en una plaza. Un cliente que ya te compró no necesita el mismo mensaje que alguien que se apuntó ayer. La segmentación básica (por interés, por comportamiento, por fase del cliente) multiplica los resultados.
+
+## Cómo construir tu lista desde cero
+
+No necesitas miles de suscriptores para que el email marketing funcione. Una lista de 200 contactos cualificados puede generar más negocio que 10.000 seguidores en Instagram. La clave es la calidad.
+
+### El lead magnet: el imán de suscriptores
+
+Nadie da su email a cambio de nada. Necesitas ofrecer algo de valor inmediato a cambio de la suscripción. Esto se llama **lead magnet** y es la base de cualquier lista.
+
+**Ejemplos por sector:**
+
+- **Clínica dental**: "Guía gratuita: 7 señales de que necesitas una ortodoncia (y cuánto cuesta realmente)"
+- **Gestoría**: "Checklist descargable: Todo lo que necesitas para tu declaración de la renta 2026"
+- **Restaurante**: "Reserva online y recibe un 10% en tu primera cena"
+- **Taller mecánico**: "Calendario de mantenimiento personalizado para tu coche"
+- **Inmobiliaria**: "Informe mensual de precios de vivienda en tu zona"
+- **Peluquería**: "Guía de cuidado capilar según tu tipo de pelo + descuento primera visita"
+
+El lead magnet debe resolver un problema concreto de tu cliente ideal. Si es genérico ("Suscríbete a nuestra newsletter"), nadie se apuntará.
+
+### Dónde capturar emails
+
+- **Tu web**: Formulario en el footer, popup de salida (exit intent), barra superior fija
+- **Blog**: Formulario al final de cada artículo relevante
+- **Redes sociales**: Enlace a la landing del lead magnet en bio y stories
+- **Presencialmente**: QR en el mostrador, en la tarjeta de visita, en el ticket de compra
+- **WhatsApp**: Después de una conversación, invita a suscribirse para recibir contenido exclusivo
+
+### Cumple la ley (RGPD)
+
+En España, la legislación es clara:
+
+- **Consentimiento explícito**: El usuario debe marcar activamente una casilla (no premarcada)
+- **Doble opt-in**: Envía un email de confirmación antes de añadir a la lista
+- **Enlace de baja visible**: En cada email, siempre
+- **Política de privacidad**: Explica qué datos recoges y cómo los usas
+- **No compres listas**: Además de ser ilegal, las tasas de apertura serán miserables y te marcarán como spam
+
+## Las 5 automatizaciones que toda PYME debería tener
+
+Aquí es donde el email marketing pasa de ser un trabajo manual a una máquina que trabaja sola las 24 horas. Una vez configuradas, estas secuencias funcionan sin que toques nada.
+
+### 1. Secuencia de bienvenida (Welcome Series)
+
+Se activa cuando alguien se suscribe. Es tu primera impresión y la secuencia más importante.
+
+**Estructura recomendada (3-5 emails en 7-10 días):**
+
+- **Email 1 (inmediato)**: Entrega el lead magnet + preséntate brevemente. Quién eres, qué haces, qué puede esperar de tus emails.
+- **Email 2 (día 2)**: Tu historia. Por qué haces lo que haces. Las personas conectan con personas, no con marcas.
+- **Email 3 (día 4)**: Contenido de valor relacionado con el lead magnet. Profundiza en el tema que le interesó.
+- **Email 4 (día 7)**: Caso de éxito o testimonio. Prueba social de que lo que ofreces funciona.
+- **Email 5 (día 10)**: Primera oferta suave. Invita a dar el siguiente paso (consulta gratuita, presupuesto, reserva).
+
+**Tasa de apertura media de emails de bienvenida: 50-60%** (el doble que un email normal). No desperdicies esta oportunidad.
+
+### 2. Secuencia post-compra
+
+El cliente ya te compró. Ahora el objetivo es que repita y te recomiende.
+
+- **Email 1 (día 1)**: Agradecimiento + instrucciones de uso o próximos pasos
+- **Email 2 (día 7)**: "¿Cómo va todo?" — Pregunta si necesita ayuda
+- **Email 3 (día 14)**: Contenido complementario relacionado con su compra
+- **Email 4 (día 30)**: Solicita una reseña (con enlace directo a Google)
+- **Email 5 (día 45)**: Oferta de producto/servicio relacionado (cross-sell)
+
+### 3. Recuperación de carritos / presupuestos abandonados
+
+Si tienes un e-commerce o envías presupuestos, esta automatización es dinero directo. **El 70% de los carritos online se abandonan** y un simple email de recordatorio recupera entre el 5% y el 15%.
+
+- **Email 1 (1 hora después)**: "Te dejaste algo pendiente" — Recordatorio simple
+- **Email 2 (24 horas)**: Resuelve objeciones comunes (envío, garantía, dudas)
+- **Email 3 (48-72 horas)**: Último recordatorio con incentivo pequeño (envío gratis, 5% descuento)
+
+### 4. Reactivación de inactivos
+
+Si alguien lleva 90 días sin abrir tus emails, probablemente no los abrirá más. Antes de asumir que están muertos, prueba una secuencia de reactivación.
+
+- **Email 1**: Asunto directo: "¿Sigues ahí?" — Recuerda qué ofreces y por qué se suscribió
+- **Email 2 (3 días después)**: Ofrece algo exclusivo para recuperarle (descuento, contenido especial)
+- **Email 3 (7 días después)**: "Última oportunidad" — Si no responde, lo eliminas de la lista
+
+Eliminar inactivos no es perder suscriptores. Es limpiar tu lista para que tus métricas sean reales y tu reputación de envío mejore.
+
+### 5. Fecha especial / recordatorio
+
+Automatizaciones basadas en fechas: cumpleaños del cliente, aniversario de la primera compra, recordatorio de revisión anual (dentista, taller, veterinario), renovación de servicio.
+
+- **Email 1 (7 días antes)**: Aviso previo con oferta especial
+- **Email 2 (el día)**: Felicitación o recordatorio directo
+- **Email 3 (3 días después)**: Seguimiento si no ha actuado
+
+Estas automatizaciones son simples pero extremadamente efectivas porque llegan en el momento exacto en que el cliente tiene la necesidad.
+
+## Qué herramienta usar
+
+No necesitas gastar 200€/mes en una plataforma enterprise. Para una PYME, estas opciones cubren de sobra:
+
+### Opciones gratuitas o económicas
+
+- **Brevo (antes Sendinblue)**: Gratis hasta 300 emails/día. Automatizaciones incluidas. Servidores en Europa (RGPD nativo). Muy buena opción para empezar.
+- **MailerLite**: Gratis hasta 1.000 suscriptores. Interfaz intuitiva. Automatizaciones y landing pages incluidas.
+- **Mailchimp**: Gratis hasta 500 contactos. El más conocido, pero ha subido precios agresivamente. Bueno para empezar, caro para crecer.
+
+### Si necesitas más potencia
+
+- **ActiveCampaign**: Desde 15€/mes. Automatizaciones avanzadas, CRM integrado, scoring de leads. Ideal si quieres un sistema serio.
+- **ConvertKit**: Desde 15€/mes. Pensado para creadores de contenido. Muy buenas secuencias automatizadas.
+
+**Nuestra recomendación para PYMEs españolas: Brevo.** Servidores europeos, RGPD cumplido de serie, generoso plan gratuito y automatizaciones sin coste extra.
+
+## Cómo escribir emails que se abran (y se lean)
+
+### El asunto: tienes 3 segundos
+
+El **47% de los usuarios** decide si abre un email basándose solo en el asunto. Si tu asunto no engancha, da igual lo bueno que sea el contenido.
+
+**Reglas para asuntos efectivos:**
+
+- Máximo 50 caracteres (en móvil se corta antes)
+- Genera curiosidad o urgencia real (no falsa)
+- Personaliza cuando sea posible ("Manuel, esto te interesa")
+- Evita palabras spam: GRATIS, URGENTE, $$, exclamaciones múltiples
+- Testea dos versiones (A/B) y quédate con la que más abre
+
+**Ejemplos buenos:**
+- "El error que le cuesta 500€/mes a tu restaurante"
+- "3 citas canceladas esta semana? Lee esto"
+- "Lo que tu competencia ya está haciendo (y tú no)"
+
+**Ejemplos malos:**
+- "NEWSLETTER FEBRERO 2026"
+- "¡¡¡OFERTA INCREÍBLE SOLO HOY!!!"
+- "Boletín informativo de Empresa X"
+
+### El cuerpo: una idea, una acción
+
+Cada email debe tener **un solo objetivo**. Si quieres que lean tu artículo, que reserven cita y que te sigan en Instagram, el resultado es que no harán nada.
+
+**Estructura que funciona:**
+
+1. **Gancho** (primera línea): Engancha con un problema, dato o pregunta
+2. **Desarrollo** (3-5 párrafos cortos): Aporta valor, cuenta algo útil
+3. **CTA** (llamada a la acción): Un solo botón o enlace claro
+
+Escribe como si le hablaras a una persona, no a una lista. Párrafos cortos. Frases directas. Sin jerga corporativa.
+
+## Las métricas que importan (y las que no)
+
+### Métricas clave
+
+- **Tasa de apertura**: Porcentaje que abre el email. Media por sector: 20-25%. Por debajo del 15%, revisa tus asuntos y tu frecuencia de envío.
+- **Tasa de clic (CTR)**: Porcentaje que hace clic en un enlace. Media: 2-5%. Si es menor, tu contenido no está conectando con la audiencia.
+- **Tasa de conversión**: Porcentaje que realiza la acción deseada (compra, reserva, contacto). Aquí está el dinero real.
+- **Tasa de baja**: Porcentaje que se desuscribe por envío. Normal: 0,1-0,5%. Si supera el 1%, algo falla (frecuencia, relevancia, expectativas no cumplidas).
+
+### Métricas trampa
+
+- **Tamaño de la lista**: 10.000 suscriptores que no abren tus emails valen menos que 500 que sí lo hacen. Calidad sobre cantidad, siempre.
+- **Tasa de apertura en Apple**: Desde iOS 15, Apple pre-carga los emails, inflando las tasas de apertura. El CTR es ahora una métrica más fiable que la apertura.
+
+## Calendario de email: qué enviar cada semana
+
+Si no sabes qué enviar, este calendario te da una estructura base:
+
+**Semana 1**: Contenido educativo (consejo, guía, tutorial relacionado con tu sector)
+**Semana 2**: Historia o caso de éxito (testimonio de cliente, resultado conseguido)
+**Semana 3**: Contenido curado (recurso útil, herramienta, tendencia del sector)
+**Semana 4**: Oferta o promoción (aquí sí vendes directamente)
+
+Un email por semana es la frecuencia mínima recomendada. Menos de eso y te olvidan. Más de 3 por semana y empiezan las bajas (salvo que tu contenido sea excepcional).
+
+## Checklist: tu sistema de email marketing
+
+- ¿Tienes una herramienta de email marketing configurada?
+- ¿Tienes un lead magnet que resuelve un problema concreto de tu cliente?
+- ¿Hay formularios de suscripción en tu web (mínimo footer y blog)?
+- ¿Cumples RGPD (doble opt-in, enlace de baja, política de privacidad)?
+- ¿Tienes una secuencia de bienvenida automatizada?
+- ¿Envías al menos un email por semana a tu lista?
+- ¿Cada email tiene un solo CTA claro?
+- ¿Mides apertura, clics y conversiones mensualmente?
+- ¿Limpias tu lista de inactivos cada trimestre?
+
+Si has respondido "no" a más de 3, tienes una oportunidad enorme de crecimiento sin explotar.
+
+## También te puede interesar
+
+- [Automatizar WhatsApp Business para PYMEs: Guía Completa](/blog/automatizar-whatsapp-business-pymes-guia)
+- [Chatbots de IA para Atención al Cliente en PYMEs](/blog/chatbots-ia-atencion-cliente-pymes-2026)
+- [Automatización de Procesos Empresariales con RPA](/blog/automatizacion-procesos-empresariales-rpa-pymes-guia)
+
+## ¿Quieres montar tu sistema de email marketing automatizado?
+
+En M.G.M Automations diseñamos e implementamos sistemas completos de email marketing: desde la estrategia y el lead magnet hasta las secuencias automatizadas y la integración con tu web. Todo llave en mano, con métricas claras y optimización continua.
+
+Si ya tienes una lista pero no le sacas partido, te hacemos una auditoría gratuita de tu email marketing actual. Te decimos qué automatizaciones te faltan y cuánto podrías estar facturando con lo que ya tienes.
+    `,
+  },
 ];
 
 export default BLOG_POSTS;

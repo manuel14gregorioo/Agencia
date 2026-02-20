@@ -3852,6 +3852,236 @@ En M.G.M Automations diseñamos e implementamos sistemas completos de email mark
 Si ya tienes una lista pero no le sacas partido, te hacemos una auditoría gratuita de tu email marketing actual. Te decimos qué automatizaciones te faltan y cuánto podrías estar facturando con lo que ya tienes.
     `,
   },
+  {
+    id: 'estrategia-palabras-clave-pymes-guia-2026',
+    title: 'Estrategia de Palabras Clave para PYMEs: Cómo Elegir las Keywords que Traen Clientes (No Solo Visitas)',
+    excerpt: 'La mayoría de PYMEs atacan keywords imposibles de posicionar o que no generan ventas. Te enseñamos paso a paso cómo investigar, elegir y organizar las palabras clave que realmente traen clientes a tu negocio.',
+    date: '2026-02-20',
+    readTime: '13 min',
+    category: 'SEO & GEO',
+    image: null,
+    featured: false,
+    author: { name: 'Manuel Gregorio', role: 'Founder de M.G.M Automations' },
+    content: `
+## El error que comete el 90% de las PYMEs con sus keywords
+
+Vamos a ser directos: la mayoría de negocios pequeños eligen sus palabras clave con el instinto. Piensan en lo que venden, escriben eso en Google y, si ven competencia, se frustran. O peor: contratan a alguien que les dice "vamos a posicionar tu web para [tu sector]" sin más análisis.
+
+El resultado es predecible:
+
+- Atacan keywords con millones de resultados donde compiten contra Amazon, Wikipedia y portales con 15 años de autoridad.
+- Posicionan para términos que nadie busca.
+- Consiguen visitas que nunca se convierten en clientes.
+
+**La investigación de palabras clave no es opcional. Es la base de todo tu SEO.** Sin ella, estás construyendo una casa sin cimientos. Este artículo te enseña a hacerlo bien, paso a paso, con herramientas gratuitas y sin necesidad de ser un experto.
+
+## Qué es realmente una palabra clave (y qué no)
+
+Una palabra clave no es solo una palabra. Es la **expresión exacta que alguien escribe en Google cuando tiene un problema, una necesidad o una pregunta**. Puede ser:
+
+- Una sola palabra: "dentista"
+- Una frase corta: "dentista en Madrid"
+- Una pregunta completa: "cuánto cuesta una limpieza dental en Madrid"
+- Una búsqueda con intención de compra: "pedir cita dentista Madrid centro urgente"
+
+Cada una de estas tiene un volumen de búsqueda diferente, una competencia diferente y, lo más importante, una **intención** diferente. Y la intención lo cambia todo.
+
+### Los 4 tipos de intención de búsqueda
+
+Toda búsqueda en Google tiene una intención detrás. Entenderlas es la diferencia entre atraer curiosos y atraer clientes:
+
+- **Informativa**: El usuario quiere aprender algo. "Qué es el blanqueamiento dental". Busca información, no comprar. Útil para atraer tráfico y construir autoridad, pero no vende directamente.
+- **Navegacional**: El usuario busca una web o marca concreta. "Clínica Dental Sonrisa Madrid". Ya te conoce. Si no apareces para tu propia marca, tienes un problema serio.
+- **Comercial**: El usuario compara opciones antes de decidir. "Mejores clínicas dentales Madrid opiniones". Está evaluando. Si apareces aquí con contenido útil (comparativas, reseñas, casos de éxito), tienes una oportunidad de oro.
+- **Transaccional**: El usuario quiere actuar ya. "Pedir cita dentista Madrid centro". Está listo para comprar, reservar o contratar. Estas son las keywords que generan ingresos directos.
+
+**La clave para PYMEs:** No desperdicies tu energía en keywords puramente informativas con millones de resultados. Prioriza las comerciales y transaccionales, donde el usuario ya tiene intención de compra.
+
+## El concepto que lo cambia todo: long-tail keywords
+
+Si solo te llevas una idea de este artículo, que sea esta: **las keywords largas y específicas son tu mayor oportunidad**.
+
+Se llaman **long-tail keywords** (palabras clave de cola larga) y son búsquedas más largas, más específicas y con menos volumen individual, pero que en conjunto representan el 70% de todas las búsquedas en Google.
+
+### Ejemplo práctico
+
+| Keyword | Volumen mensual | Competencia | Tasa de conversión |
+|---------|----------------|-------------|-------------------|
+| abogado | 90.000 | Extrema | ~0,5% |
+| abogado Madrid | 12.000 | Muy alta | ~1% |
+| abogado laboralista Madrid | 2.400 | Media | ~3% |
+| abogado despido improcedente Madrid centro | 140 | Baja | ~8-12% |
+
+¿Ves el patrón? A medida que la keyword es más específica:
+
+- El volumen baja, pero la competencia también.
+- La intención es mucho más clara.
+- La tasa de conversión se dispara.
+
+**Para una PYME, 140 búsquedas mensuales de "abogado despido improcedente Madrid centro" con un 10% de conversión son 14 clientes potenciales al mes.** Eso es más de lo que la mayoría de despachos pequeños pueden gestionar.
+
+## Investigación de keywords paso a paso (con herramientas gratuitas)
+
+No necesitas pagar 100€ al mes en Ahrefs o Semrush para hacer una investigación decente. Estas herramientas gratuitas te dan suficiente información para empezar:
+
+### Paso 1: Lluvia de ideas inicial
+
+Antes de tocar ninguna herramienta, piensa como tu cliente. Hazte estas preguntas:
+
+- ¿Qué problema tiene mi cliente cuando me busca?
+- ¿Cómo describiría ese problema con sus propias palabras?
+- ¿Qué preguntas me hacen más frecuentemente por teléfono o email?
+- ¿Qué buscaría yo en Google si necesitara mi propio servicio?
+
+Escribe todo lo que se te ocurra. No filtres todavía. Un fontanero podría listar: fontanero urgente, reparar cisterna, tubería rota, fuga de agua, desatascar desagüe, cambiar calentador, instalación calefacción, presupuesto fontanero...
+
+### Paso 2: Google Autocomplete (gratis y potente)
+
+Abre Google en modo incógnito y empieza a escribir tus ideas. Google te sugiere automáticamente las búsquedas más populares relacionadas. Estas sugerencias son oro porque reflejan lo que la gente realmente busca.
+
+**Truco avanzado:** Pon un guión bajo (_) antes, después o en medio de tu keyword para que Google rellene ese hueco con las sugerencias más populares:
+
+- "_ fontanero Madrid" → te muestra qué palabras pone la gente antes
+- "fontanero Madrid _" → te muestra lo que buscan después
+- "fontanero _ Madrid" → te muestra palabras intermedias
+
+### Paso 3: Google Search Console (datos reales de tu web)
+
+Si ya tienes una web, Search Console es tu herramienta más valiosa. Ve a Rendimiento > Resultados de búsqueda y verás:
+
+- **Las keywords exactas** por las que tu web ya aparece en Google
+- **Las impresiones** (cuántas veces apareciste)
+- **Los clics** (cuántas veces hicieron clic)
+- **La posición media** para cada keyword
+
+Busca keywords donde tengas muchas impresiones pero pocos clics, o donde estés en posiciones 8-20. Esas son tus **oportunidades rápidas**: ya estás cerca, solo necesitas un empujón con mejor contenido o mejor SEO on-page.
+
+### Paso 4: Google Keyword Planner (volumen y competencia)
+
+Aunque está diseñado para Google Ads, el Planificador de Palabras Clave te da datos útiles para SEO orgánico. Necesitas una cuenta de Google Ads (no hace falta gastar dinero).
+
+Lo que te interesa:
+
+- **Volumen de búsqueda mensual**: Cuánta gente busca esa keyword al mes
+- **Competencia**: Baja, media o alta (esto es para Ads, pero sirve como referencia)
+- **Ideas de keywords relacionadas**: Google sugiere variaciones que quizás no habías considerado
+
+### Paso 5: AnswerThePublic y AlsoAsked
+
+Estas herramientas te muestran las preguntas que la gente hace alrededor de un tema. Son perfectas para encontrar:
+
+- Ideas para artículos de blog
+- Preguntas frecuentes (FAQ) para tu web
+- Keywords informativas que alimentan tu embudo de contenido
+
+Escribes "fontanero Madrid" y te devuelven decenas de preguntas reales: "¿cuánto cobra un fontanero por hora en Madrid?", "¿cómo saber si tengo una fuga de agua?", "fontanero urgente 24 horas Madrid precio"...
+
+### Paso 6: Analiza a tu competencia (gratis)
+
+Busca tus keywords principales en Google y analiza los primeros 5 resultados:
+
+- ¿Qué temas cubren que tú no?
+- ¿Qué preguntas responden?
+- ¿Qué estructura tienen sus artículos?
+- ¿Qué keywords usan en sus títulos y subtítulos?
+
+No copies su contenido. Haz algo mejor: cubre los mismos temas pero con más profundidad, datos más actuales o ejemplos más prácticos.
+
+## Cómo organizar tus keywords: el mapa de contenido
+
+Una vez tienes tu lista de keywords, necesitas organizarlas. No puedes atacar 200 keywords al azar. Necesitas un sistema.
+
+### Agrupa por temas (topic clusters)
+
+Agrupa keywords que comparten la misma intención o tema en clusters. Cada cluster tendrá:
+
+- **Una página pilar**: Contenido largo y completo sobre el tema principal
+- **Páginas satélite**: Artículos más específicos que enlazan a la página pilar
+
+**Ejemplo para una clínica dental:**
+
+Página pilar: "Tratamientos dentales en Madrid: guía completa"
+
+Páginas satélite:
+- "¿Cuánto cuesta un implante dental en Madrid?"
+- "Blanqueamiento dental: tipos, precios y resultados"
+- "Ortodoncia invisible vs brackets: qué elegir en 2026"
+- "Carillas dentales: todo lo que necesitas saber"
+
+Todas las páginas satélite enlazan a la página pilar y viceversa. Esto le dice a Google que tu web es una **autoridad** en ese tema.
+
+### Asigna cada keyword a una página
+
+Cada keyword principal debe tener una sola página asignada. Si dos páginas de tu web compiten por la misma keyword, se canibalizan entre ellas y ninguna posiciona bien.
+
+Crea una hoja de cálculo simple:
+
+- Columna 1: Keyword principal
+- Columna 2: Keywords secundarias (variaciones)
+- Columna 3: Volumen mensual estimado
+- Columna 4: Intención (informativa, comercial, transaccional)
+- Columna 5: URL asignada (existente o por crear)
+- Columna 6: Prioridad (alta, media, baja)
+
+### Prioriza por impacto
+
+No todas las keywords merecen el mismo esfuerzo. Prioriza según esta fórmula mental:
+
+**Prioridad alta:** Keywords transaccionales + volumen decente + competencia baja/media. Son las que traen clientes directos.
+
+**Prioridad media:** Keywords comerciales con volumen medio. Usuarios que comparan opciones y pueden convertir con el contenido adecuado.
+
+**Prioridad baja:** Keywords informativas con alto volumen. Útiles para tráfico y autoridad, pero no generan ventas inmediatas.
+
+## Errores fatales que debes evitar
+
+### 1. Obsesionarte con el volumen de búsqueda
+
+Una keyword con 50.000 búsquedas mensuales no te sirve de nada si nunca vas a posicionar para ella. Es mejor ser el #1 para una keyword de 200 búsquedas que el #50 para una de 50.000.
+
+### 2. Ignorar la intención de búsqueda
+
+Si alguien busca "qué es SEO" quiere aprender, no contratar. Si le muestras una página de servicios, rebotará inmediatamente. Cada keyword debe coincidir con el tipo de contenido que ofreces en esa página.
+
+### 3. Keyword stuffing (rellenar de keywords)
+
+Google penaliza las páginas que repiten la misma keyword de forma artificial. Escribe para personas, no para robots. Si tu texto suena raro al leerlo en voz alta, has metido demasiadas keywords.
+
+### 4. No actualizar tu investigación
+
+Las tendencias de búsqueda cambian. Keywords que eran relevantes hace un año pueden haber perdido volumen, y nuevas oportunidades aparecen constantemente. Revisa tu investigación de keywords al menos cada 6 meses.
+
+### 5. Crear contenido sin keyword research previo
+
+Cada página de tu web, cada artículo de blog, cada página de servicio debería tener una keyword principal asignada antes de escribir una sola línea. Si escribes primero y buscas keywords después, el contenido nunca estará realmente optimizado.
+
+## Checklist de keywords para tu PYME
+
+- ¿Has identificado al menos 30-50 keywords relevantes para tu negocio?
+- ¿Has clasificado cada keyword por intención (informativa, comercial, transaccional)?
+- ¿Tienes un mix de keywords head (generales) y long-tail (específicas)?
+- ¿Has analizado qué keywords usa tu competencia directa?
+- ¿Cada página de tu web tiene una keyword principal asignada?
+- ¿Has revisado Google Search Console para encontrar oportunidades ocultas?
+- ¿Tienes un mapa de topic clusters con páginas pilar y satélite?
+- ¿Has priorizado las keywords por impacto potencial en tu negocio?
+- ¿Tienes un calendario para revisar y actualizar tu investigación?
+
+Si has respondido "no" a más de 3 preguntas, tu estrategia de keywords necesita trabajo. Pero ahora tienes las herramientas para hacerlo.
+
+## También te puede interesar
+
+- [GEO: Qué Es y Por Qué tu Web Necesita Optimización para IA](/blog/que-es-geo-generative-engine-optimization)
+- [CTR en Google: Cómo Conseguir que Hagan Clic en tu Web](/blog/seo-ctr-mejorar-clics-google-2026)
+- [Google My Business: La Guía Definitiva para el SEO Local](/blog/google-my-business-guia-seo-local-2026)
+
+## ¿Quieres una estrategia de keywords profesional para tu negocio?
+
+En M.G.M Automations hacemos investigación de palabras clave como parte de cada proyecto web. No elegimos keywords al azar: analizamos tu sector, tu competencia local, el volumen real de búsqueda y la intención detrás de cada consulta. Cada página que construimos está optimizada para las keywords que realmente traen clientes.
+
+Si ya tienes una web pero no sabes para qué keywords estás posicionando (o si estás posicionando para las correctas), te hacemos una auditoría SEO gratuita. Revisamos tu Search Console, identificamos tus oportunidades de keywords y te damos un plan de acción concreto para empezar a atraer tráfico cualificado.
+    `,
+  },
 ];
 
 export default BLOG_POSTS;

@@ -4082,6 +4082,326 @@ En M.G.M Automations hacemos investigación de palabras clave como parte de cada
 Si ya tienes una web pero no sabes para qué keywords estás posicionando (o si estás posicionando para las correctas), te hacemos una auditoría SEO gratuita. Revisamos tu Search Console, identificamos tus oportunidades de keywords y te damos un plan de acción concreto para empezar a atraer tráfico cualificado.
     `,
   },
+  {
+    id: 'velocidad-web-core-web-vitals-guia-seo-2026',
+    title: 'Velocidad Web y Core Web Vitals en 2026: La Guía que tu PYME Necesita para No Perder Posiciones en Google',
+    excerpt: 'Google penaliza las webs lentas. Te explicamos qué son los Core Web Vitals, cómo medir la velocidad de tu web y qué hacer para mejorarla sin ser programador.',
+    date: '2026-02-22',
+    readTime: '11 min',
+    category: 'SEO & GEO',
+    image: null,
+    featured: false,
+    author: { name: 'Manuel Gregorio', role: 'Founder de M.G.M Automations' },
+    content: `
+## Tu web es lenta y estás perdiendo clientes (aunque no lo sepas)
+
+Haz la prueba ahora mismo: abre tu web en el móvil. Cuenta los segundos hasta que puedes leer todo el contenido y hacer clic en algo. Si han pasado más de 3 segundos, tienes un problema.
+
+No es una opinión. Son datos:
+
+- **El 53% de los usuarios abandona una web móvil que tarda más de 3 segundos en cargar** (Google, 2023).
+- **Cada segundo adicional de carga reduce las conversiones un 7%** (Portent, 2024).
+- **El 70% del tráfico web en España viene de dispositivos móviles** (Statcounter, 2025).
+
+Y lo más importante: **Google usa la velocidad de tu web como factor de posicionamiento** desde 2021. Si tu web es lenta, Google la empuja hacia abajo en los resultados. No importa lo bueno que sea tu contenido o cuántos backlinks tengas.
+
+## ¿Qué son los Core Web Vitals?
+
+Los **Core Web Vitals** son tres métricas que Google usa para medir la experiencia de usuario de tu web. No son opcionales: son un factor directo de ranking en los resultados de búsqueda.
+
+### LCP (Largest Contentful Paint)
+
+**Qué mide:** El tiempo que tarda en cargarse el elemento más grande visible en la pantalla. Normalmente es la imagen principal, un banner o el bloque de texto más grande.
+
+**Umbrales:**
+- Bueno: menos de 2,5 segundos
+- Necesita mejora: entre 2,5 y 4 segundos
+- Malo: más de 4 segundos
+
+**En lenguaje llano:** Cuánto tarda tu usuario en ver algo útil en la pantalla. Si tarda más de 2,5 segundos, Google considera que la experiencia es mala.
+
+### INP (Interaction to Next Paint)
+
+**Qué mide:** El tiempo que pasa desde que el usuario interactúa con tu web (hace clic en un botón, toca un menú, escribe en un campo) hasta que la web responde visualmente.
+
+**Umbrales:**
+- Bueno: menos de 200 milisegundos
+- Necesita mejora: entre 200 y 500 milisegundos
+- Malo: más de 500 milisegundos
+
+**En lenguaje llano:** Cuando alguien pulsa un botón en tu web, ¿responde al instante o hay un retardo? Si el usuario nota un lag, la experiencia es mala.
+
+**Nota importante:** INP reemplazó a FID (First Input Delay) en marzo de 2024. Si tu herramienta de medición todavía muestra FID en vez de INP, necesitas actualizarla.
+
+### CLS (Cumulative Layout Shift)
+
+**Qué mide:** Cuánto se mueve el contenido de tu web mientras carga. ¿Alguna vez has intentado hacer clic en un enlace y, justo en ese momento, la página se desplaza porque se ha cargado un anuncio o una imagen? Eso es layout shift.
+
+**Umbrales:**
+- Bueno: menos de 0,1
+- Necesita mejora: entre 0,1 y 0,25
+- Malo: más de 0,25
+
+**En lenguaje llano:** Si tu web se mueve sola mientras carga, es una mala experiencia. El contenido debería quedarse quieto.
+
+## Por qué los Core Web Vitals afectan directamente a tu SEO
+
+Google lleva integrando la experiencia de usuario en su algoritmo desde 2021, con la actualización Page Experience. Los Core Web Vitals son la forma concreta en que Google mide esa experiencia.
+
+### Cómo funciona en la práctica
+
+Imagina que dos gestorías en Madrid compiten por la keyword "gestoría fiscal Madrid centro":
+
+- **Gestoría A:** Buen contenido, 5 backlinks, Core Web Vitals en verde (todo bueno).
+- **Gestoría B:** Buen contenido, 5 backlinks, Core Web Vitals en rojo (LCP de 6 segundos, CLS de 0,4).
+
+Si el resto de factores son similares, **Google posiciona a la Gestoría A por encima**. No porque su contenido sea mejor, sino porque la experiencia de usuario es mejor.
+
+### El efecto cascada
+
+Una web lenta no solo pierde posiciones en Google. También:
+
+- **Aumenta la tasa de rebote:** Los usuarios se van antes de ver tu contenido.
+- **Reduce el tiempo en página:** Google interpreta que tu contenido no es relevante.
+- **Baja el CTR:** Si Google ve que los usuarios vuelven rápido a los resultados tras entrar a tu web, te posiciona peor.
+- **Mata las conversiones:** Cada segundo de carga es dinero perdido.
+
+Es un círculo vicioso: web lenta → peor posición → menos tráfico → menos clientes → menos ingresos.
+
+## Cómo medir la velocidad de tu web (herramientas gratuitas)
+
+No necesitas ser programador para saber si tu web tiene problemas de velocidad. Estas herramientas son gratuitas y te dan un diagnóstico claro:
+
+### 1. Google PageSpeed Insights
+
+**URL:** pagespeed.web.dev
+
+Es la herramienta oficial de Google. Introduces tu URL y en 30 segundos te da:
+
+- Puntuación de 0 a 100 (rendimiento móvil y escritorio por separado)
+- Valores exactos de LCP, INP y CLS
+- Lista detallada de problemas y cómo solucionarlos
+- Datos reales de usuarios (si tu web tiene suficiente tráfico)
+
+**Puntuaciones de referencia:**
+- 90-100: Excelente
+- 50-89: Necesita mejora
+- 0-49: Mala
+
+**Consejo:** Mide siempre la versión móvil. Es la que Google usa para posicionar (mobile-first indexing).
+
+### 2. Google Search Console
+
+Si ya tienes Search Console configurado (y deberías), ve a Experiencia > Métricas Web Principales. Ahí ves el estado real de tus Core Web Vitals basado en datos de usuarios reales, no simulaciones.
+
+Te muestra qué URLs tienen problemas y de qué tipo. Es la fuente de datos más fiable porque usa datos reales de navegación.
+
+### 3. GTmetrix
+
+**URL:** gtmetrix.com
+
+Similar a PageSpeed Insights pero con más detalles técnicos. Te muestra un "waterfall" visual de todos los recursos que carga tu web y cuánto tarda cada uno. Útil para identificar exactamente qué está ralentizando tu web.
+
+### 4. WebPageTest
+
+**URL:** webpagetest.org
+
+La herramienta más avanzada. Te permite medir desde diferentes ubicaciones geográficas y conexiones (3G, 4G, fibra). Ideal si quieres saber cómo carga tu web para un usuario con móvil y conexión media en España.
+
+## Los 8 problemas más comunes que ralentizan tu web
+
+### 1. Imágenes sin optimizar
+
+**El problema:** Una foto sacada del móvil pesa entre 3 y 8 MB. Si subes esa foto directamente a tu web sin optimizarla, estás obligando a cada visitante a descargar 8 MB solo por una imagen. Una web con 5 fotos sin optimizar puede pesar 40 MB.
+
+**La solución:**
+- Convierte tus imágenes a formato **WebP** o **AVIF** (pesan un 50-80% menos que JPEG sin perder calidad visible)
+- Redimensiona las imágenes al tamaño real que se muestran (si la imagen se muestra a 800px de ancho, no subas una de 4000px)
+- Usa **lazy loading** (las imágenes que no están visibles en pantalla no se cargan hasta que el usuario hace scroll)
+
+**Impacto:** En la mayoría de webs de PYMEs, optimizar las imágenes mejora el LCP entre un 40% y un 70%.
+
+### 2. Demasiados plugins o scripts de terceros
+
+**El problema:** Cada plugin de WordPress, cada widget de chat, cada script de analytics, cada pixel de tracking es código adicional que tu web tiene que cargar. Hemos visto webs con 15 plugins de WordPress donde solo 4 eran realmente necesarios.
+
+**La solución:**
+- Audita todos los plugins y elimina los que no uses activamente
+- Sustituye plugins pesados por alternativas más ligeras
+- Carga los scripts de terceros de forma **asíncrona** o **diferida** (async/defer)
+- Pregúntate: "¿Este plugin genera ingresos o mejora la experiencia? Si no, fuera"
+
+### 3. Sin caché del navegador
+
+**El problema:** Cada vez que un usuario visita tu web, descarga todos los archivos desde cero. Si vuelve mañana, los descarga otra vez. Es como comprar el periódico cada mañana pero tirarlo a la basura al llegar a casa.
+
+**La solución:** Configurar cabeceras de caché para que el navegador guarde los archivos estáticos (imágenes, CSS, JavaScript) y no los vuelva a descargar en visitas posteriores.
+
+**Impacto:** Los visitantes recurrentes experimentan una carga un 80% más rápida.
+
+### 4. Hosting barato o compartido
+
+**El problema:** Un hosting compartido a 3€/mes aloja tu web junto con cientos de otras webs en el mismo servidor. Si alguna de esas webs tiene un pico de tráfico, tu web se ralentiza.
+
+**La solución:**
+- Mínimo un hosting con **LiteSpeed** o **Nginx** (no Apache básico)
+- Ubicación del servidor en **Europa** si tus clientes son españoles
+- Si usas WordPress, considera un hosting especializado en WordPress (Raiola, SiteGround, Cloudways)
+
+**Dato real:** Migrar de un hosting compartido barato a uno decente puede reducir el TTFB (Time to First Byte) de 1,5 segundos a 200 milisegundos.
+
+### 5. CSS y JavaScript sin minificar
+
+**El problema:** El código de tu web tiene espacios, comentarios y líneas en blanco que son útiles para los programadores pero innecesarios para el navegador. Un archivo CSS de 200KB puede reducirse a 120KB eliminando todo lo innecesario.
+
+**La solución:**
+- Activar la **minificación** de CSS y JavaScript
+- Eliminar CSS no utilizado (las webs de WordPress cargan de media un 60% de CSS que no se usa en ninguna página)
+- Combinar archivos pequeños en uno solo para reducir las peticiones al servidor
+
+### 6. Sin CDN (Content Delivery Network)
+
+**El problema:** Tu web está alojada en un servidor en, digamos, Alemania. Cuando un usuario en Sevilla la visita, los datos tienen que viajar de Sevilla a Alemania y volver. Si usas un CDN, una copia de tu web está en un servidor en Madrid (o incluso en Sevilla).
+
+**La solución:** Activar un CDN. Cloudflare tiene un plan gratuito que funciona muy bien para la mayoría de webs de PYMEs.
+
+**Impacto:** Reduce la latencia un 50-70% para usuarios geográficamente lejos del servidor original.
+
+### 7. Fuentes web mal cargadas
+
+**El problema:** Las fuentes personalizadas (Google Fonts, Typekit, etc.) pueden bloquear el renderizado de la web. El usuario ve una pantalla en blanco o texto invisible durante 1-3 segundos mientras las fuentes se descargan.
+
+**La solución:**
+- Usar **font-display: swap** para que se muestre una fuente del sistema mientras carga la personalizada
+- **Precargar** las fuentes críticas con link rel="preload"
+- Limitar el número de fuentes (2-3 familias como máximo)
+- Considerar alojar las fuentes en tu propio servidor en vez de cargarlas desde Google Fonts
+
+### 8. Renderizado bloqueante (render-blocking resources)
+
+**El problema:** Tu web carga archivos CSS y JavaScript en el head del HTML que bloquean el renderizado. El navegador no puede mostrar nada hasta que esos archivos se descargan y procesan.
+
+**La solución:**
+- Mover el CSS no crítico al final del documento
+- Usar **CSS crítico inline** (el CSS mínimo para mostrar lo que se ve sin hacer scroll)
+- Cargar JavaScript con atributos **async** o **defer**
+- Eliminar JavaScript que no se usa
+
+## Plan de acción: mejora tu velocidad en orden de prioridad
+
+No intentes arreglarlo todo a la vez. Sigue este orden de mayor a menor impacto:
+
+### Fase 1: Lo urgente (mayor impacto, menor esfuerzo)
+
+- Optimiza todas las imágenes (formato WebP, tamaño correcto, lazy loading)
+- Activa un CDN gratuito como Cloudflare
+- Elimina plugins y scripts innecesarios
+
+### Fase 2: Lo importante
+
+- Configura la caché del navegador correctamente
+- Minifica CSS y JavaScript
+- Corrige problemas de font-display
+- Revisa el hosting y considera migrar si el TTFB es superior a 600ms
+
+### Fase 3: Optimización avanzada
+
+- Implementa CSS crítico inline
+- Elimina CSS no utilizado
+- Precarga recursos críticos (fuentes, imágenes hero)
+- Implementa service workers para caché avanzada
+
+### Cómo verificar los resultados
+
+Después de cada fase, mide otra vez con PageSpeed Insights y compara. Lleva un registro:
+
+- Puntuación de rendimiento (móvil): antes vs. después
+- LCP: antes vs. después
+- INP: antes vs. después
+- CLS: antes vs. después
+
+## Core Web Vitals y las IAs: el vínculo con GEO
+
+Aquí hay un punto que pocos mencionan. Los motores de IA como ChatGPT y Perplexity también tienen en cuenta la calidad técnica de una web a la hora de citarla.
+
+Si una IA rastrea tu web y tarda demasiado en obtener el contenido, o la estructura es caótica por culpa de layout shifts, es menos probable que te cite como fuente fiable. **Una web rápida y bien estructurada no solo posiciona mejor en Google: también tiene más probabilidades de ser citada por IAs.**
+
+Esto conecta directamente con lo que explicamos en nuestro artículo sobre [GEO: Optimización para Motores de IA](/blog/que-es-geo-generative-engine-optimization). La velocidad es un pilar invisible del GEO que la mayoría de negocios ignora.
+
+## Errores comunes al intentar mejorar la velocidad
+
+### Instalar un plugin de caché y olvidarse
+
+Los plugins de caché (WP Super Cache, W3 Total Cache, LiteSpeed Cache) ayudan, pero no son magia. Si tus imágenes pesan 5 MB cada una, ningún plugin de caché va a solucionarlo.
+
+### Obsesionarse con la puntuación de PageSpeed
+
+La puntuación es orientativa. Lo que importa son los Core Web Vitals reales (LCP, INP, CLS). Puedes tener una puntuación de 70 y unos Web Vitals perfectos, o una puntuación de 95 y un CLS problemático.
+
+### Optimizar solo la página de inicio
+
+Google evalúa cada URL individualmente. Tu página de inicio puede ser rapidísima, pero si tu página de servicios o tu blog cargan lento, esas páginas pierden posiciones.
+
+### Ignorar el móvil
+
+Google usa mobile-first indexing. La velocidad que importa para el SEO es la del móvil, no la del escritorio. Si tu web va a 95 en escritorio pero a 40 en móvil, tienes un problema de SEO.
+
+## Caso real: el impacto de optimizar la velocidad
+
+Un restaurante en Madrid con el que trabajamos tenía estos números antes de la optimización:
+
+- PageSpeed móvil: 28/100
+- LCP: 7,2 segundos
+- CLS: 0,35
+- Tráfico orgánico: 120 visitas/mes
+
+**Qué hicimos:**
+- Migramos de un hosting compartido a uno con LiteSpeed
+- Optimizamos 47 imágenes (de 38 MB totales a 4,2 MB)
+- Eliminamos 8 plugins innecesarios
+- Activamos Cloudflare CDN
+- Configuramos caché de navegador
+
+**Resultados después de 8 semanas:**
+
+- PageSpeed móvil: 91/100
+- LCP: 1,8 segundos
+- CLS: 0,04
+- Tráfico orgánico: 310 visitas/mes (+158%)
+
+El restaurante no cambió una sola palabra de su contenido ni consiguió un solo backlink nuevo. Solo mejoró la velocidad. Y el tráfico casi se triplicó.
+
+## Checklist de velocidad web para tu PYME
+
+- ¿Tu puntuación de PageSpeed móvil es superior a 70?
+- ¿Tu LCP es inferior a 2,5 segundos?
+- ¿Tu INP es inferior a 200 milisegundos?
+- ¿Tu CLS es inferior a 0,1?
+- ¿Tus imágenes están en formato WebP o AVIF?
+- ¿Tienes lazy loading activado para las imágenes?
+- ¿Usas un CDN?
+- ¿Tu hosting tiene un TTFB inferior a 600ms?
+- ¿Has minificado CSS y JavaScript?
+- ¿Tus fuentes usan font-display: swap?
+- ¿Has eliminado plugins y scripts innecesarios?
+- ¿Has revisado los Core Web Vitals en Search Console?
+
+Si has respondido "no" a más de 4, tu web tiene un problema de velocidad que está afectando a tu SEO y a tus conversiones.
+
+## También te puede interesar
+
+- [GEO: Qué Es y Por Qué tu Web Necesita Optimización para IA](/blog/que-es-geo-generative-engine-optimization)
+- [Los 10 Errores en Webs de PYMEs que Están Matando tus Ventas](/blog/errores-web-pymes-que-matan-ventas-2026)
+- [CTR en Google: Cómo Conseguir que Hagan Clic en tu Web](/blog/seo-ctr-mejorar-clics-google-2026)
+- [Estrategia de Palabras Clave para PYMEs](/blog/estrategia-palabras-clave-pymes-guia-2026)
+
+## ¿Tu web es lenta y no sabes por dónde empezar?
+
+En M.G.M Automations construimos webs rápidas desde el primer día. Usamos React con Vite, optimización de imágenes automática, lazy loading nativo, CDN y hosting de alto rendimiento. Nuestras webs puntúan consistentemente por encima de 90 en PageSpeed Insights.
+
+Si ya tienes una web y quieres saber exactamente qué la está ralentizando, te hacemos un análisis de velocidad gratuito. En 15 minutos revisamos tus Core Web Vitals, identificamos los cuellos de botella y te damos un plan de acción priorizado para mejorar tu rendimiento y tu posición en Google.
+    `,
+  },
 ];
 
 export default BLOG_POSTS;

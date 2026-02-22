@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- Background - Rounded square -->
+  <rect width="100" height="100" rx="22" ry="22" fill="#0A0A0B"/>
+
+  <!-- Lightning bolt / Speed symbol -->
+  <path
+    d="M58 15 L38 48 L50 48 L42 85 L62 52 L50 52 Z"
+    fill="#BFFF00"
+  />
+</svg>

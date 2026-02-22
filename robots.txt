@@ -1,0 +1,39 @@
+# Robots.txt for M.G.M Automations
+# https://mgmautomations.es
+
+User-agent: *
+Allow: /
+
+# Bloquear rutas de administración y API
+Disallow: /admin
+Disallow: /auth
+Disallow: /api/
+
+# Bloquear archivos internos
+Disallow: /*.json$
+Disallow: /assets/*.map$
+
+# Sitemap
+Sitemap: https://mgmautomations.es/sitemap.xml
+
+# Crawl-delay (optional, for politeness)
+Crawl-delay: 1
+
+# AI Crawlers - Acceso permitido
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /

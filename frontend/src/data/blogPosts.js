@@ -4402,6 +4402,290 @@ En M.G.M Automations construimos webs rápidas desde el primer día. Usamos Reac
 Si ya tienes una web y quieres saber exactamente qué la está ralentizando, te hacemos un análisis de velocidad gratuito. En 15 minutos revisamos tus Core Web Vitals, identificamos los cuellos de botella y te damos un plan de acción priorizado para mejorar tu rendimiento y tu posición en Google.
     `,
   },
+  {
+    id: 'analitica-web-google-analytics-pymes-guia-2026',
+    title: 'Google Analytics 4 para PYMEs: Cómo Usar los Datos para Tomar Mejores Decisiones de Negocio',
+    excerpt: 'La mayoría de PYMEs tienen Google Analytics instalado pero no lo usan. Te enseñamos a configurar GA4, interpretar los informes clave y tomar decisiones basadas en datos reales.',
+    date: '2026-02-23',
+    readTime: '11 min',
+    category: 'Desarrollo Web',
+    image: null,
+    featured: false,
+    author: { name: 'Manuel Gregorio', role: 'Founder de M.G.M Automations' },
+    content: `
+## Por qué la mayoría de PYMEs ignoran sus datos web
+
+Según un estudio de Google, más del 60% de las pequeñas empresas tienen alguna herramienta de analítica instalada en su web. Pero solo el 30% revisa los datos al menos una vez al mes. Y menos del 10% toma decisiones de negocio basándose en ellos.
+
+El resultado es previsible: webs que llevan meses sin actualizar, campañas de publicidad que queman presupuesto sin saber si funcionan, y decisiones basadas en intuiciones en lugar de datos.
+
+**¿Te suena alguna de estas situaciones?**
+
+- "Creo que la web funciona bien, pero no sé cuántas visitas tenemos"
+- "Pagamos Google Ads, pero no sabemos si nos llegan clientes por ahí"
+- "No sé qué páginas visita la gente ni cuánto tiempo se queda"
+- "Tenemos Analytics instalado, pero nadie lo mira"
+
+Si has asentido con la cabeza, este artículo es para ti. Vamos a convertir Google Analytics de un widget decorativo a una herramienta que te ayude a tomar mejores decisiones.
+
+## Qué es Google Analytics 4 y por qué importa
+
+Google Analytics 4 (GA4) es la versión actual de la herramienta de analítica web de Google. Sustituyó a Universal Analytics (la versión anterior) en julio de 2023, y desde entonces es la única opción oficial.
+
+### Las diferencias clave con Universal Analytics
+
+Si usaste la versión anterior, GA4 puede resultar confuso al principio. Los cambios más importantes son:
+
+- **Modelo basado en eventos**: En Universal Analytics, todo giraba en torno a "sesiones" y "páginas vistas". En GA4, todo es un **evento**. Una visita a página es un evento. Un clic es un evento. Un scroll es un evento. Esto da mucha más flexibilidad.
+- **Informes simplificados**: GA4 tiene menos informes predefinidos, pero son más relevantes. No te pierdes entre 200 pestañas que nunca miras.
+- **Integración con Google Ads**: La conexión con campañas de publicidad es nativa y mucho más potente.
+- **Métricas de engagement**: GA4 introduce el concepto de "sesión con engagement" (sesiones donde el usuario interactúa activamente), que es más útil que la antigua tasa de rebote.
+- **Predicciones con IA**: GA4 incluye métricas predictivas como la probabilidad de compra o la probabilidad de abandono, aunque funcionan mejor con volúmenes altos de tráfico.
+
+### ¿Por qué importa para una PYME?
+
+Porque GA4 te permite responder preguntas concretas que afectan a tu negocio:
+
+- ¿De dónde vienen mis visitantes? ¿Google? ¿Redes sociales? ¿Directamente?
+- ¿Qué páginas generan más interés?
+- ¿Los visitantes hacen lo que quiero que hagan (rellenar formularios, llamar, comprar)?
+- ¿Mi inversión en publicidad está generando retorno?
+
+Sin estos datos, estás navegando a ciegas.
+
+## Cómo instalar GA4 paso a paso
+
+### Crear cuenta y propiedad
+
+1. Ve a [analytics.google.com](https://analytics.google.com) e inicia sesión con tu cuenta de Google.
+2. Haz clic en **"Empezar a medir"** si es tu primera vez, o en **Administrar > Crear propiedad** si ya tienes cuenta.
+3. Pon el nombre de tu negocio, selecciona la zona horaria (España, UTC+1) y la moneda (EUR).
+4. En la configuración del flujo de datos, selecciona **"Web"**.
+5. Introduce la URL de tu web (por ejemplo, `www.tunegocio.es`) y pon un nombre descriptivo al flujo.
+6. GA4 te generará un **ID de medición** con formato `G-XXXXXXXXXX`. Guárdalo, lo necesitas para el siguiente paso.
+
+### Instalar el tag con Google Tag Manager
+
+Google Tag Manager (GTM) es la forma más limpia de instalar GA4. Te permite añadir y gestionar etiquetas sin tocar el código de tu web.
+
+**Paso 1: Crear cuenta en GTM**
+- Ve a [tagmanager.google.com](https://tagmanager.google.com).
+- Crea una cuenta y un contenedor para tu web.
+- GTM te dará dos fragmentos de código: uno para el \`<head>\` y otro para el \`<body>\` de tu web.
+
+**Paso 2: Instalar el código de GTM en tu web**
+- Si usas WordPress, puedes usar un plugin como "Insert Headers and Footers" o "GTM4WP".
+- Si tienes una web a medida, tu desarrollador debe pegar los dos fragmentos en el HTML.
+
+**Paso 3: Crear la etiqueta de GA4 en GTM**
+- En GTM, ve a **Etiquetas > Nueva**.
+- Selecciona **"Etiqueta de Google"** como tipo.
+- Introduce tu ID de medición (el \`G-XXXXXXXXXX\`).
+- En activador, selecciona **"All Pages"**.
+- Guarda y publica el contenedor.
+
+### Verificar que funciona
+
+1. Abre tu web en una pestaña del navegador.
+2. En GA4, ve a **Informes > Tiempo real**.
+3. Deberías ver al menos 1 usuario activo (tú mismo).
+4. También puedes instalar la extensión **Google Tag Assistant** en Chrome para verificar que el tag se dispara correctamente.
+
+**Consejo**: Si no ves datos inmediatamente, espera 24-48 horas. GA4 puede tardar en procesar los primeros datos.
+
+## Los 5 informes clave que toda PYME debe revisar
+
+No necesitas ser un experto en analítica. Con revisar estos 5 informes una vez por semana (o al menos al mes), tendrás una visión clara de cómo funciona tu web.
+
+### 1. Informe de adquisición: de dónde vienen las visitas
+
+**Ruta**: Informes > Adquisición > Adquisición de tráfico
+
+Este informe responde a la pregunta más básica: **¿cómo llegan los visitantes a tu web?**
+
+Los canales principales que verás son:
+
+- **Organic Search**: Visitas desde Google u otros buscadores (SEO).
+- **Direct**: Personas que escriben tu URL directamente o tienen tu web en marcadores.
+- **Referral**: Visitas desde enlaces en otras webs.
+- **Organic Social**: Visitas desde redes sociales (sin pagar).
+- **Paid Search**: Visitas desde Google Ads.
+- **Paid Social**: Visitas desde anuncios en redes sociales.
+
+**Qué buscar**: Si el 80% de tu tráfico viene de "Direct" y casi nada de "Organic Search", tu SEO necesita trabajo. Si inviertes en Google Ads pero "Paid Search" trae pocas visitas, algo falla en tus campañas.
+
+### 2. Páginas más vistas
+
+**Ruta**: Informes > Engagement > Páginas y pantallas
+
+Aquí ves qué páginas visita la gente y cuáles generan más interés.
+
+**Qué buscar**:
+- ¿Tu página de servicios o producto estrella está entre las más vistas?
+- ¿La gente llega a tu página de contacto?
+- ¿Hay páginas con muchas visitas pero poco engagement? Pueden necesitar una revisión de contenido.
+
+### 3. Tasa de rebote y engagement
+
+**Ruta**: Informes > Engagement > Páginas y pantallas (personaliza las columnas para añadir "Tasa de rebote")
+
+En GA4, la **tasa de engagement** es más relevante que la tasa de rebote. Una sesión "con engagement" es aquella donde el usuario:
+- Permaneció más de 10 segundos, **o**
+- Tuvo 2 o más páginas vistas, **o**
+- Generó un evento de conversión.
+
+**Qué buscar**: Una tasa de engagement por debajo del 50% en páginas importantes indica que los visitantes llegan pero no encuentran lo que buscan. Revisa el contenido, la velocidad de carga y la experiencia de usuario.
+
+### 4. Conversiones y eventos
+
+**Ruta**: Informes > Engagement > Conversiones
+
+Este es probablemente el informe más importante. Una **conversión** es cualquier acción valiosa para tu negocio: enviar un formulario de contacto, hacer clic en el botón de WhatsApp, llamar por teléfono, descargar un catálogo.
+
+**Qué buscar**: ¿Cuántas conversiones tienes por semana? ¿De qué canal vienen? Si inviertes 500€ al mes en Google Ads y solo generas 2 conversiones, necesitas revisar tus landing pages o tu segmentación.
+
+### 5. Datos demográficos de la audiencia
+
+**Ruta**: Informes > Datos demográficos > Visión general
+
+GA4 te muestra datos sobre tus visitantes: país, ciudad, idioma, edad, género e intereses (si tienes habilitadas las señales de Google).
+
+**Qué buscar**: ¿Tu audiencia real coincide con tu cliente ideal? Si tienes una clínica dental en Sevilla pero el 60% de tus visitas son de Ciudad de México, tu estrategia de contenido o publicidad no está bien segmentada.
+
+## Cómo configurar eventos y conversiones
+
+GA4 registra automáticamente algunos eventos básicos:
+
+- **page_view**: Cada vez que alguien ve una página.
+- **scroll**: Cuando alguien hace scroll hasta el 90% de la página.
+- **click**: Clics en enlaces que llevan fuera de tu web.
+- **first_visit**: La primera visita de un usuario nuevo.
+- **session_start**: El inicio de cada sesión.
+
+Pero los eventos más valiosos para tu negocio los tienes que configurar tú:
+
+### Eventos recomendados para PYMEs
+
+**Envío de formulario de contacto**: El más importante. Cada vez que alguien rellena tu formulario, deberías registrar un evento \`generate_lead\`.
+
+**Clic en botón de WhatsApp**: Si tienes un botón de WhatsApp en tu web (como debería ser), trackea cada clic como un evento.
+
+**Clic en número de teléfono**: Igual que WhatsApp, cada clic en "Llamar" es un evento valioso.
+
+**Scroll a sección de precios**: Si la gente llega a ver tus precios, es señal de interés real.
+
+### Cómo configurar un evento en GTM
+
+1. En Google Tag Manager, ve a **Etiquetas > Nueva**.
+2. Selecciona **"Evento de GA4"** como tipo de etiqueta.
+3. Introduce tu ID de medición y el nombre del evento (por ejemplo, \`formulario_contacto\`).
+4. Crea un **activador**: por ejemplo, "Envío de formulario" filtrando por el ID o la clase CSS de tu formulario.
+5. Publica el contenedor.
+
+### Marcar un evento como conversión
+
+Una vez que el evento aparece en GA4 (puede tardar 24-48h), ve a **Administrar > Conversiones > Nuevo evento de conversión** y añade el nombre exacto del evento. A partir de ese momento, GA4 lo contará como conversión.
+
+## Google Search Console: el complemento perfecto
+
+Google Analytics te dice qué pasa **dentro** de tu web. Google Search Console (GSC) te dice qué pasa **antes** de que lleguen a tu web: cómo te encuentran en Google.
+
+### Qué datos te da Search Console
+
+- **Consultas**: Qué búsquedas exactas hacen los usuarios antes de ver tu web en Google.
+- **Impresiones**: Cuántas veces aparece tu web en los resultados de Google.
+- **Clics**: Cuántas veces hacen clic en tu resultado.
+- **CTR (Click-Through Rate)**: El porcentaje de personas que ven tu resultado y hacen clic.
+- **Posición media**: En qué posición apareces de media para cada búsqueda.
+
+### Cómo conectar Search Console con GA4
+
+1. Ve a **Administrar > Vincular productos > Search Console** en GA4.
+2. Selecciona tu propiedad de Search Console (debes ser propietario verificado).
+3. Una vez vinculado, los datos de Search Console aparecerán en **Informes > Search Console** dentro de GA4.
+
+### Por qué es tan valioso
+
+Search Console te revela oportunidades que Analytics no puede ver:
+
+- **Palabras clave con muchas impresiones pero pocos clics**: Tu web aparece en Google, pero nadie hace clic. Mejora tus títulos y meta descripciones.
+- **Páginas con buena posición pero bajo CTR**: Estás en los primeros resultados, pero tu snippet no es atractivo.
+- **Errores de indexación**: Páginas que Google no puede rastrear o que tienen problemas técnicos.
+
+## Errores comunes al usar analítica web
+
+### 1. Instalar GA4 y nunca mirar los datos
+
+El error más frecuente. Tener Analytics instalado no sirve de nada si nadie lo revisa. Bloquea 30 minutos a la semana para revisar los informes clave.
+
+### 2. Obsesionarse con las visitas totales
+
+"Tenemos 5.000 visitas al mes" suena bien, pero no significa nada si esas visitas no generan leads ni ventas. **Las conversiones importan más que las visitas.**
+
+### 3. No filtrar el tráfico interno
+
+Si tú y tu equipo visitáis vuestra propia web a diario, estáis inflando los datos. Configura un filtro en GA4 para excluir el tráfico interno (Administrar > Flujos de datos > Definir tráfico interno).
+
+### 4. No configurar conversiones
+
+Sin conversiones definidas, GA4 solo te muestra visitas y páginas vistas. Es como tener un marcador de un partido pero sin saber quién ha ganado.
+
+### 5. Tomar decisiones con datos insuficientes
+
+Si tu web recibe 200 visitas al mes, no puedes sacar conclusiones fiables de un solo día. Necesitas al menos 2-4 semanas de datos para identificar tendencias. No cambies toda tu estrategia porque un martes tuviste menos visitas de lo normal.
+
+### 6. Ignorar el móvil
+
+Revisa siempre los informes segmentando por dispositivo. En España, más del 70% del tráfico web es móvil. Si tu web convierte bien en escritorio pero mal en móvil, tienes un problema de experiencia de usuario que está costándote clientes.
+
+### 7. No vincular Google Ads con GA4
+
+Si pagas publicidad en Google y no has vinculado GA4 con Google Ads, no puedes ver el recorrido completo: desde el clic en el anuncio hasta la conversión en tu web. Estás gastando dinero sin poder medir el retorno real.
+
+## De los datos a la acción: ejemplos reales
+
+Los datos solo valen si los usas para tomar decisiones. Aquí van ejemplos concretos de cómo PYMEs reales han usado la analítica para mejorar su negocio:
+
+### Caso 1: La clínica que descubrió su mejor servicio
+
+Una clínica de fisioterapia en Madrid tenía 5 servicios en su web. Revisando GA4, descubrieron que la página de "fisioterapia deportiva" recibía el triple de visitas que las demás y tenía la tasa de engagement más alta. **Decisión**: Crearon una landing page específica para ese servicio, invirtieron en Google Ads segmentando esas palabras clave, y duplicaron los leads en 2 meses.
+
+### Caso 2: El restaurante que optimizó su carta
+
+Un restaurante revisó Search Console y descubrió que la búsqueda "restaurante menú del día [barrio]" generaba cientos de impresiones pero pocos clics. **Decisión**: Mejoraron el título y la meta descripción de su página de menús, añadieron schema de Restaurant con precio del menú, y el CTR pasó del 2% al 8% en 6 semanas.
+
+### Caso 3: La academia que cambió su publicidad
+
+Una academia de formación gastaba 800€/mes en Google Ads. Al vincular GA4 con Ads, descubrieron que el 70% de los clics venían de búsquedas genéricas ("cursos online") que no convertían, mientras que las búsquedas específicas ("curso contabilidad presencial Madrid") convertían 10 veces más. **Decisión**: Eliminaron las palabras clave genéricas, concentraron el presupuesto en búsquedas específicas, y redujeron el coste por lead un 60%.
+
+### Caso 4: La tienda que arregló su página de contacto
+
+Una tienda de muebles tenía un formulario de presupuesto que casi nadie rellenaba. Configurando el evento de scroll en GA4, descubrieron que solo el 20% de los visitantes llegaba hasta el formulario (estaba al final de una página muy larga). **Decisión**: Movieron el formulario al primer tercio de la página y añadieron un botón flotante. Las solicitudes de presupuesto se triplicaron.
+
+### El patrón común
+
+En todos los casos, el proceso es el mismo:
+
+1. **Medir**: Configurar correctamente GA4 y los eventos relevantes.
+2. **Analizar**: Revisar los informes con regularidad y buscar anomalías o patrones.
+3. **Decidir**: Elegir una acción concreta basada en los datos.
+4. **Verificar**: Medir el impacto del cambio y ajustar si es necesario.
+
+No necesitas un equipo de analistas. Solo necesitas revisar los datos básicos con regularidad y hacerte las preguntas correctas.
+
+## También te puede interesar
+
+- [Velocidad Web y Core Web Vitals: Guía para PYMEs](/blog/velocidad-web-core-web-vitals-guia-seo-2026)
+- [CTR en Google: Cómo Conseguir que Hagan Clic en tu Web](/blog/seo-ctr-mejorar-clics-google-2026)
+- [Los 10 Errores en Webs de PYMEs que Están Matando tus Ventas](/blog/errores-web-pymes-que-matan-ventas-2026)
+
+## ¿Necesitas ayuda configurando la analítica de tu web?
+
+En M.G.M Automations no solo construimos webs rápidas y optimizadas para SEO. También configuramos Google Analytics 4, Google Tag Manager y Search Console para que tengas visibilidad completa de lo que pasa en tu web desde el primer día.
+
+Si ya tienes una web pero no sabes si la analítica está bien configurada, te hacemos una auditoría gratuita. Revisamos tu instalación de GA4, verificamos que los eventos y conversiones estén bien definidos, y te enseñamos a interpretar los informes que realmente importan para tu negocio.
+    `,
+  },
 ];
 
 export default BLOG_POSTS;

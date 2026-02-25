@@ -1,4 +1,4 @@
-import{j as e,L as p,_ as w}from"./index-CqGp-qrC.js";import{r as u}from"./vendor-react-F9Y4d3HK.js";import{S as E,c as M,d as G}from"./schemas-DVQAYnJh.js";import{K as C,n as x,U as T,l as N,N as h,m as R,D as A,O as L,u as S,V as I,W as y,Y as k,h as W}from"./vendor-icons-q7rks5o3.js";const b=[{id:"que-es-geo-generative-engine-optimization",title:"GEO: Qué Es y Por Qué tu Web Necesita Optimización para IA en 2025",excerpt:"ChatGPT, Perplexity y Google AI Overviews cambian las reglas del SEO. Te explicamos qué es GEO y cómo preparar tu negocio.",date:"2025-01-30",readTime:"9 min",category:"SEO & GEO",image:null,featured:!0,author:{name:"Manuel Gregorio",role:"Founder de M.G.M Automations"},content:`
+import{j as e,L as p,_ as j}from"./index-B-uV49l5.js";import{r as u}from"./vendor-react-F9Y4d3HK.js";import{S as E,c as M,d as G}from"./schemas-Cr_B6pDn.js";import{K as C,n as z,U as T,l as L,N as h,m as I,D as A,O as R,u as S,V as N,W as y,Y as k,h as O}from"./vendor-icons-q7rks5o3.js";const b=[{id:"que-es-geo-generative-engine-optimization",title:"GEO: Qué Es y Por Qué tu Web Necesita Optimización para IA en 2025",excerpt:"ChatGPT, Perplexity y Google AI Overviews cambian las reglas del SEO. Te explicamos qué es GEO y cómo preparar tu negocio.",date:"2025-01-30",readTime:"9 min",category:"SEO & GEO",image:null,featured:!0,author:{name:"Manuel Gregorio",role:"Founder de M.G.M Automations"},content:`
 ## El SEO ya no es suficiente
 
 Durante 20 años, posicionar tu web significaba una cosa: aparecer en Google. Elegías palabras clave, escribías contenido, conseguías enlaces y subías en los resultados. Simple (aunque laborioso).
@@ -4098,6 +4098,1615 @@ Si has respondido "no" a más de 4, tu web tiene un problema de velocidad que es
 En M.G.M Automations construimos webs rápidas desde el primer día. Usamos React con Vite, optimización de imágenes automática, lazy loading nativo, CDN y hosting de alto rendimiento. Nuestras webs puntúan consistentemente por encima de 90 en PageSpeed Insights.
 
 Si ya tienes una web y quieres saber exactamente qué la está ralentizando, te hacemos un análisis de velocidad gratuito. En 15 minutos revisamos tus Core Web Vitals, identificamos los cuellos de botella y te damos un plan de acción priorizado para mejorar tu rendimiento y tu posición en Google.
-    `}],z=n=>n.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g,"").replace(/[^a-z0-9]+/g,"-").replace(/(^-|-$)/g,""),D=n=>{const a=[];return n.split(`
-`).forEach(o=>{if(o.startsWith("## ")&&!o.startsWith("### ")){const r=o.replace("## ","").trim();a.push({text:r,id:z(r)})}}),a},q=({headings:n})=>{const[a,o]=u.useState(!1);return n.length<=5?null:e.jsxs(e.Fragment,{children:[e.jsxs("div",{className:"lg:hidden mb-8",children:[e.jsxs("button",{onClick:()=>o(!a),className:"w-full flex items-center justify-between p-4 border-3 border-noir-200 dark:border-noir-700 bg-white dark:bg-noir-900 font-display font-bold text-noir-900 dark:text-cream-50",children:[e.jsxs("span",{className:"flex items-center gap-2",children:[e.jsx(y,{className:"w-5 h-5 text-lime-500"}),"Tabla de contenidos"]}),e.jsx(k,{className:`w-5 h-5 transition-transform ${a?"rotate-180":""}`})]}),a&&e.jsx("nav",{className:"border-3 border-t-0 border-noir-200 dark:border-noir-700 bg-white dark:bg-noir-900 p-4",children:e.jsx("ul",{className:"space-y-2",children:n.map(r=>e.jsx("li",{children:e.jsx("a",{href:`#${r.id}`,onClick:()=>o(!1),className:"text-sm text-noir-600 dark:text-noir-400 hover:text-lime-600 dark:hover:text-lime-400 transition-colors",children:r.text})},r.id))})})]}),e.jsx("aside",{className:"hidden lg:block",children:e.jsxs("div",{className:"sticky top-24 border-3 border-noir-200 dark:border-noir-700 bg-white dark:bg-noir-900 p-5",children:[e.jsxs("h4",{className:"font-display font-bold text-noir-900 dark:text-cream-50 mb-4 flex items-center gap-2",children:[e.jsx(y,{className:"w-4 h-4 text-lime-500"}),"Contenidos"]}),e.jsx("nav",{children:e.jsx("ul",{className:"space-y-2",children:n.map(r=>e.jsx("li",{children:e.jsx("a",{href:`#${r.id}`,className:"text-sm text-noir-600 dark:text-noir-400 hover:text-lime-600 dark:hover:text-lime-400 transition-colors block py-0.5",children:r.text})},r.id))})})]})})]})},O=({title:n,postId:a})=>{const[o,r]=u.useState(!1),c=`https://mgmautomations.es/blog/${a}`,t=encodeURIComponent(n),i=encodeURIComponent(c),s=async()=>{try{await navigator.clipboard.writeText(c),r(!0),setTimeout(()=>r(!1),2e3)}catch{}};return e.jsxs("div",{className:"flex items-center gap-2 mt-4",children:[e.jsxs("span",{className:"text-noir-500 text-xs mr-1 flex items-center gap-1",children:[e.jsx(L,{className:"w-3.5 h-3.5"})," Compartir:"]}),e.jsx("a",{href:`https://wa.me/?text=${t}%20${i}`,target:"_blank",rel:"noopener noreferrer",className:"p-1.5 border-2 border-noir-300 dark:border-noir-600 text-noir-500 hover:border-green-500 hover:text-green-500 transition-colors","aria-label":"Compartir en WhatsApp",children:e.jsx("svg",{className:"w-4 h-4",viewBox:"0 0 24 24",fill:"currentColor",children:e.jsx("path",{d:"M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"})})}),e.jsx("a",{href:`https://twitter.com/intent/tweet?text=${t}&url=${i}`,target:"_blank",rel:"noopener noreferrer",className:"p-1.5 border-2 border-noir-300 dark:border-noir-600 text-noir-500 hover:border-sky-500 hover:text-sky-500 transition-colors","aria-label":"Compartir en X",children:e.jsx("svg",{className:"w-4 h-4",viewBox:"0 0 24 24",fill:"currentColor",children:e.jsx("path",{d:"M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"})})}),e.jsx("a",{href:`https://www.linkedin.com/sharing/share-offsite/?url=${i}`,target:"_blank",rel:"noopener noreferrer",className:"p-1.5 border-2 border-noir-300 dark:border-noir-600 text-noir-500 hover:border-blue-600 hover:text-blue-600 transition-colors","aria-label":"Compartir en LinkedIn",children:e.jsx("svg",{className:"w-4 h-4",viewBox:"0 0 24 24",fill:"currentColor",children:e.jsx("path",{d:"M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"})})}),e.jsx("button",{onClick:s,className:`p-1.5 border-2 transition-colors ${o?"border-lime-500 text-lime-500":"border-noir-300 dark:border-noir-600 text-noir-500 hover:border-lime-500 hover:text-lime-500"}`,"aria-label":"Copiar enlace",children:o?e.jsx(S,{className:"w-4 h-4"}):e.jsx(I,{className:"w-4 h-4"})})]})},B=({currentPost:n})=>{const a=u.useMemo(()=>{const o=b.filter(t=>t.category===n.category&&t.id!==n.id),r=b.filter(t=>t.category!==n.category&&t.id!==n.id),c=[...o];return c.length<3&&c.push(...r.slice(0,3-c.length)),c.slice(0,3)},[n]);return a.length===0?null:e.jsxs("section",{className:"mt-16",children:[e.jsx("h3",{className:"text-2xl font-display font-bold text-noir-900 dark:text-cream-50 mb-6",children:"Artículos Relacionados"}),e.jsx("div",{className:"grid sm:grid-cols-2 lg:grid-cols-3 gap-4",children:a.map(o=>e.jsxs(p,{to:`/blog/${o.id}`,className:"group border-3 border-noir-200 dark:border-noir-700 bg-white dark:bg-noir-900 p-5 hover:border-lime-400 transition-all",children:[e.jsxs("div",{className:"flex items-center gap-2 mb-3",children:[e.jsx(A,{className:"w-3.5 h-3.5 text-lime-500"}),e.jsx("span",{className:"text-xs font-bold uppercase text-noir-500",children:o.category})]}),e.jsx("h4",{className:"text-base font-display font-bold text-noir-900 dark:text-cream-50 mb-2 group-hover:text-lime-600 dark:group-hover:text-lime-400 transition-colors line-clamp-2",children:o.title}),e.jsx("p",{className:"text-noir-600 dark:text-noir-400 text-sm line-clamp-2",children:o.excerpt}),e.jsxs("div",{className:"flex items-center justify-between text-xs text-noir-500 mt-3",children:[e.jsx("span",{children:new Date(o.date).toLocaleDateString("es-ES",{day:"numeric",month:"short"})}),e.jsx("span",{children:o.readTime})]})]},o.id))})]})},F=()=>{const[n,a]=u.useState(""),[o,r]=u.useState(!1),[c,t]=u.useState(""),i=async s=>{if(s.preventDefault(),!!n){t("");try{const{subscribeNewsletter:d}=await w(async()=>{const{subscribeNewsletter:m}=await import("./api-nir54oi5.js");return{subscribeNewsletter:m}},[]);await d(n),r(!0),a("")}catch(d){t(d.message||"Error al suscribirse. Inténtalo de nuevo.")}}};return e.jsx("section",{className:"mb-12 border-3 border-lime-400 bg-white dark:bg-noir-900 p-6 md:p-8",children:e.jsxs("div",{className:"flex flex-col md:flex-row md:items-center md:justify-between gap-6",children:[e.jsxs("div",{className:"flex-1",children:[e.jsxs("h3",{className:"text-xl font-display font-bold text-noir-900 dark:text-cream-50 mb-2 flex items-center gap-2",children:[e.jsx(W,{className:"w-5 h-5 text-lime-500"}),"Recibe nuestros artículos en tu email"]}),e.jsx("p",{className:"text-noir-600 dark:text-noir-400 text-sm",children:"Un email a la semana con guías prácticas para digitalizar tu negocio. Sin spam, cancela cuando quieras."})]}),e.jsx("div",{className:"flex-shrink-0 w-full md:w-auto",children:o?e.jsxs("p",{className:"text-lime-600 dark:text-lime-400 font-bold flex items-center gap-2",children:[e.jsx(S,{className:"w-5 h-5"}),"¡Suscrito correctamente!"]}):e.jsxs(e.Fragment,{children:[e.jsxs("form",{onSubmit:i,className:"flex gap-2",children:[e.jsx("input",{type:"email",required:!0,value:n,onChange:s=>a(s.target.value),placeholder:"tu@email.com",className:"flex-1 md:w-56 px-4 py-3 border-3 border-noir-200 dark:border-noir-700 bg-cream-50 dark:bg-noir-800 text-noir-900 dark:text-cream-50 focus:border-lime-400 focus:outline-none focus:shadow-[4px_4px_0_0_rgba(163,230,53,0.3)] transition-all text-sm"}),e.jsx("button",{type:"submit",className:"px-5 py-3 bg-noir-900 dark:bg-lime-400 text-lime-400 dark:text-noir-900 font-bold border-3 border-noir-900 dark:border-lime-400 hover:translate-x-[-2px] hover:translate-y-[-2px] hover:shadow-brutal transition-all text-sm whitespace-nowrap",children:"Suscribirse"})]}),c&&e.jsx("p",{className:"text-red-500 text-xs mt-2",children:c})]})})]})})},U=()=>{const[n,a]=u.useState("Todos"),[o,r]=u.useState(""),c=u.useMemo(()=>["Todos",...new Set(b.map(s=>s.category))],[]),t=u.useMemo(()=>{let s=b;if(n!=="Todos"&&(s=s.filter(d=>d.category===n)),o.trim()){const d=o.toLowerCase();s=s.filter(m=>m.title.toLowerCase().includes(d)||m.excerpt.toLowerCase().includes(d)||m.content.toLowerCase().includes(d))}return s},[n,o]),i=b.find(s=>s.featured);return e.jsxs("div",{className:"min-h-screen bg-cream-50 dark:bg-noir-950",children:[e.jsx(E,{title:"Blog - Desarrollo Web, Automatización e IA | M.G.M Automations",description:"Recursos, guías y casos de estudio sobre desarrollo web, automatización de negocios e inteligencia artificial para PYMEs. Por M.G.M Automations.",canonical:"/blog",ogTitle:"Blog - M.G.M Automations",ogDescription:"Artículos sobre desarrollo web, automatización e IA para negocios. Guías prácticas con ejemplos reales.",ogImage:"https://mgmautomations.es/og-image.jpg",schemas:G()}),e.jsx("header",{className:"bg-noir-900 dark:bg-noir-900 py-12 px-4",children:e.jsxs("div",{className:"max-w-6xl mx-auto",children:[e.jsxs(p,{to:"/",className:"inline-flex items-center gap-2 text-lime-400 hover:text-lime-300 transition-colors mb-8",children:[e.jsx(C,{className:"w-4 h-4"}),"Volver al inicio"]}),e.jsx("h1",{className:"text-4xl md:text-5xl font-display font-bold text-cream-50 mb-4",children:"Blog"}),e.jsx("p",{className:"text-xl text-noir-400 max-w-2xl mb-8",children:"Recursos, guías y casos de estudio sobre desarrollo web y automatización de negocios."}),e.jsxs("div",{className:"relative max-w-md",children:[e.jsx(h,{className:"absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-noir-500"}),e.jsx("input",{type:"text",value:o,onChange:s=>r(s.target.value),placeholder:"Buscar artículos...",className:"w-full pl-11 pr-4 py-3 border-3 border-noir-700 bg-noir-800 text-cream-50 placeholder-noir-500 focus:border-lime-400 focus:outline-none focus:shadow-[4px_4px_0_0_rgba(163,230,53,0.3)] transition-all"})]})]})}),e.jsxs("main",{className:"max-w-6xl mx-auto px-4 py-12",children:[e.jsx("div",{className:"mb-10 -mx-4 px-4 overflow-x-auto",children:e.jsx("div",{className:"flex gap-2 min-w-max pb-2",children:c.map(s=>e.jsx("button",{onClick:()=>a(s),className:`px-4 py-2 text-sm font-bold border-3 transition-all whitespace-nowrap ${n===s?"bg-lime-400 text-noir-900 border-noir-900 dark:border-lime-400":"bg-white dark:bg-noir-900 text-noir-600 dark:text-noir-400 border-noir-200 dark:border-noir-700 hover:border-noir-400 dark:hover:border-noir-500"}`,children:s},s))})}),i&&n==="Todos"&&!o.trim()&&e.jsx("section",{className:"mb-12",children:e.jsx(p,{to:`/blog/${i.id}`,className:"group block border-3 border-noir-900 dark:border-noir-700 bg-white dark:bg-noir-900 overflow-hidden hover:translate-x-[-4px] hover:translate-y-[-4px] hover:shadow-brutal dark:hover:shadow-brutal-lime transition-all",children:e.jsxs("div",{className:"grid md:grid-cols-2",children:[i.image&&e.jsx("div",{className:"aspect-video md:aspect-auto bg-noir-200 dark:bg-noir-800",children:e.jsx("img",{src:i.image,alt:i.title,className:"w-full h-full object-cover"})}),e.jsxs("div",{className:"p-8 md:p-12 flex flex-col justify-center",children:[e.jsxs("div",{className:"flex items-center gap-4 mb-4",children:[e.jsx("span",{className:"px-3 py-1 bg-lime-400 text-noir-900 text-xs font-bold uppercase",children:"Destacado"}),e.jsx("span",{className:"px-3 py-1 bg-noir-100 dark:bg-noir-800 text-noir-600 dark:text-noir-400 text-xs font-bold uppercase",children:i.category})]}),e.jsx("h2",{className:"text-2xl md:text-3xl font-display font-bold text-noir-900 dark:text-cream-50 mb-4 group-hover:text-lime-600 dark:group-hover:text-lime-400 transition-colors",children:i.title}),e.jsx("p",{className:"text-noir-600 dark:text-noir-400 mb-6",children:i.excerpt}),e.jsxs("div",{className:"flex items-center gap-6 text-sm text-noir-500",children:[e.jsxs("span",{className:"flex items-center gap-2",children:[e.jsx(R,{className:"w-4 h-4"}),new Date(i.date).toLocaleDateString("es-ES",{day:"numeric",month:"long",year:"numeric"})]}),e.jsxs("span",{className:"flex items-center gap-2",children:[e.jsx(x,{className:"w-4 h-4"}),i.readTime]})]})]})]})})}),n==="Todos"&&!o.trim()&&e.jsx(F,{}),e.jsxs("section",{children:[e.jsx("h2",{className:"text-2xl font-display font-bold text-noir-900 dark:text-cream-50 mb-8",children:n==="Todos"&&!o.trim()?"Todos los artículos":o.trim()?`Resultados para "${o}"`:n}),t.length===0?e.jsxs("div",{className:"text-center py-16 border-3 border-noir-200 dark:border-noir-700 bg-white dark:bg-noir-900",children:[e.jsx(h,{className:"w-12 h-12 text-noir-300 dark:text-noir-600 mx-auto mb-4"}),e.jsx("p",{className:"text-noir-600 dark:text-noir-400 text-lg font-display font-bold mb-2",children:"No se encontraron artículos"}),e.jsx("p",{className:"text-noir-500 text-sm",children:"Prueba con otros términos de búsqueda o selecciona otra categoría."})]}):e.jsx("div",{className:"grid md:grid-cols-2 lg:grid-cols-3 gap-6",children:t.map(s=>e.jsxs(p,{to:`/blog/${s.id}`,className:"group border-3 border-noir-200 dark:border-noir-700 bg-white dark:bg-noir-900 p-6 hover:border-lime-400 transition-all",children:[e.jsxs("div",{className:"flex items-center gap-2 mb-4",children:[e.jsx(A,{className:"w-4 h-4 text-lime-500"}),e.jsx("span",{className:"text-xs font-bold uppercase text-noir-500",children:s.category})]}),e.jsx("h3",{className:"text-xl font-display font-bold text-noir-900 dark:text-cream-50 mb-3 group-hover:text-lime-600 dark:group-hover:text-lime-400 transition-colors",children:s.title}),e.jsx("p",{className:"text-noir-600 dark:text-noir-400 text-sm mb-4 line-clamp-3",children:s.excerpt}),e.jsxs("div",{className:"flex items-center justify-between text-xs text-noir-500",children:[e.jsx("span",{children:new Date(s.date).toLocaleDateString("es-ES",{day:"numeric",month:"short"})}),e.jsx("span",{children:s.readTime})]})]},s.id))})]})]}),e.jsx("footer",{className:"bg-noir-900 py-8 px-4 text-center",children:e.jsxs("p",{className:"text-noir-500 text-sm",children:["© ",new Date().getFullYear()," M.G.M Automations. Todos los derechos reservados."]})})]})},H=({postId:n})=>{var c,t;const a=b.find(i=>i.id===n),o=u.useMemo(()=>a?D(a.content):[],[a]),r=o.length>5;return a?e.jsxs("div",{className:"min-h-screen bg-cream-50 dark:bg-noir-950",children:[e.jsx(E,{title:`${a.title} | Blog M.G.M Automations`,description:a.excerpt,canonical:`/blog/${a.id}`,ogTitle:a.title,ogDescription:a.excerpt,ogImage:a.image?`https://mgmautomations.es${a.image}`:"https://mgmautomations.es/og-image.jpg",ogType:"article",schemas:M(a)}),e.jsx("header",{className:"bg-noir-900 dark:bg-noir-900 py-12 px-4",children:e.jsxs("div",{className:`mx-auto ${r?"max-w-5xl":"max-w-4xl"}`,children:[e.jsxs(p,{to:"/blog",className:"inline-flex items-center gap-2 text-lime-400 hover:text-lime-300 transition-colors mb-8",children:[e.jsx(C,{className:"w-4 h-4"}),"Volver al blog"]}),e.jsxs("div",{className:"flex items-center gap-4 mb-6",children:[e.jsx("span",{className:"px-3 py-1 bg-lime-400 text-noir-900 text-xs font-bold uppercase",children:a.category}),e.jsxs("span",{className:"flex items-center gap-2 text-sm text-noir-400",children:[e.jsx(x,{className:"w-4 h-4"}),a.readTime]})]}),e.jsx("h1",{className:"text-3xl md:text-4xl font-display font-bold text-cream-50 mb-4",children:a.title}),e.jsxs("div",{className:"flex items-center gap-4 mt-6",children:[e.jsx("div",{className:"w-10 h-10 rounded-full bg-lime-400 flex items-center justify-center border-2 border-lime-400",children:e.jsx(T,{className:"w-5 h-5 text-noir-900"})}),e.jsxs("div",{children:[e.jsx("p",{className:"text-cream-50 font-semibold text-sm",children:((c=a.author)==null?void 0:c.name)||"Manuel Gregorio"}),e.jsxs("p",{className:"text-noir-400 text-xs",children:[((t=a.author)==null?void 0:t.role)||"Founder de M.G.M Automations"," · ",new Date(a.date).toLocaleDateString("es-ES",{day:"numeric",month:"long",year:"numeric"})]})]})]}),e.jsx(O,{title:a.title,postId:a.id})]})}),e.jsxs("main",{className:`mx-auto px-4 py-12 ${r?"max-w-5xl":"max-w-4xl"}`,children:[r&&e.jsx(q,{headings:o}),e.jsxs("div",{className:r?"grid lg:grid-cols-[1fr_250px] gap-8":"",children:[e.jsxs("div",{children:[e.jsx("article",{className:"prose prose-lg dark:prose-invert max-w-none prose-headings:font-display prose-headings:text-noir-900 dark:prose-headings:text-cream-50 prose-p:text-noir-600 dark:prose-p:text-noir-400 prose-li:text-noir-600 dark:prose-li:text-noir-400 prose-strong:text-noir-900 dark:prose-strong:text-cream-50 prose-a:text-lime-600 dark:prose-a:text-lime-400",children:a.content.split(`
-`).map((i,s)=>{const d=m=>{const v=[];let g=m,f=0;const P=/(\*\*(.+?)\*\*|\[(.+?)\]\((.+?)\))/;for(;g;){const l=g.match(P);if(!l){v.push(g);break}if(l.index>0&&v.push(g.slice(0,l.index)),l[2])v.push(e.jsx("strong",{className:"text-noir-900 dark:text-cream-50",children:l[2]},f++));else if(l[3]&&l[4]){const j=l[4].startsWith("/");v.push(j?e.jsx(p,{to:l[4],className:"text-lime-600 dark:text-lime-400 underline hover:text-lime-500",children:l[3]},f++):e.jsx("a",{href:l[4],className:"text-lime-600 dark:text-lime-400 underline hover:text-lime-500",target:"_blank",rel:"noopener noreferrer",children:l[3]},f++))}g=g.slice(l.index+l[0].length)}return v};if(i.startsWith("## ")){const m=i.replace("## ","");return e.jsx("h2",{id:z(m),className:"text-2xl font-display font-bold mt-12 mb-4",children:m},s)}return i.startsWith("### ")?e.jsx("h3",{className:"text-xl font-display font-bold mt-8 mb-3",children:i.replace("### ","")},s):i.startsWith("- ")?e.jsxs("div",{className:"flex gap-2 my-2",children:[e.jsx("span",{className:"text-lime-500",children:"•"}),e.jsx("span",{children:d(i.slice(2))})]},s):i.trim()===""?null:e.jsx("p",{className:"my-4",children:d(i)},s)})}),e.jsx(B,{currentPost:a}),e.jsxs("div",{className:"mt-16 p-8 border-3 border-lime-400 bg-lime-50 dark:bg-lime-900/20",children:[e.jsx("h3",{className:"text-2xl font-display font-bold text-noir-900 dark:text-cream-50 mb-4",children:"¿Te ha resultado útil?"}),e.jsx("p",{className:"text-noir-600 dark:text-noir-400 mb-6",children:"Si estás pensando en un proyecto similar, estaremos encantados de ayudarte."}),e.jsxs(p,{to:"/#contacto",className:"inline-flex items-center gap-2 bg-noir-900 text-lime-400 px-6 py-4 font-bold border-3 border-noir-900 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:shadow-brutal transition-all",children:["Contactar",e.jsx(N,{className:"w-5 h-5"})]})]})]}),r&&e.jsx(q,{headings:o})]})]}),e.jsx("footer",{className:"bg-noir-900 py-8 px-4 text-center",children:e.jsxs("p",{className:"text-noir-500 text-sm",children:["© ",new Date().getFullYear()," M.G.M Automations. Todos los derechos reservados."]})})]}):e.jsx("div",{className:"min-h-screen bg-cream-50 dark:bg-noir-950 flex items-center justify-center",children:e.jsxs("div",{className:"text-center",children:[e.jsx("h1",{className:"text-4xl font-display font-bold text-noir-900 dark:text-cream-50 mb-4",children:"Artículo no encontrado"}),e.jsx(p,{to:"/blog",className:"text-lime-600 dark:text-lime-400 hover:underline",children:"Volver al blog"})]})})},$=({postId:n})=>n?e.jsx(H,{postId:n}):e.jsx(U,{});export{b as BLOG_POSTS,$ as default};
+    `},{id:"analitica-web-google-analytics-pymes-guia-2026",title:"Google Analytics 4 para PYMEs: Cómo Usar los Datos para Tomar Mejores Decisiones de Negocio",excerpt:"La mayoría de PYMEs tienen Google Analytics instalado pero no lo usan. Te enseñamos a configurar GA4, interpretar los informes clave y tomar decisiones basadas en datos reales.",date:"2026-02-23",readTime:"11 min",category:"Desarrollo Web",image:null,featured:!1,author:{name:"Manuel Gregorio",role:"Founder de M.G.M Automations"},content:`
+## Por qué la mayoría de PYMEs ignoran sus datos web
+
+Según un estudio de Google, más del 60% de las pequeñas empresas tienen alguna herramienta de analítica instalada en su web. Pero solo el 30% revisa los datos al menos una vez al mes. Y menos del 10% toma decisiones de negocio basándose en ellos.
+
+El resultado es previsible: webs que llevan meses sin actualizar, campañas de publicidad que queman presupuesto sin saber si funcionan, y decisiones basadas en intuiciones en lugar de datos.
+
+**¿Te suena alguna de estas situaciones?**
+
+- "Creo que la web funciona bien, pero no sé cuántas visitas tenemos"
+- "Pagamos Google Ads, pero no sabemos si nos llegan clientes por ahí"
+- "No sé qué páginas visita la gente ni cuánto tiempo se queda"
+- "Tenemos Analytics instalado, pero nadie lo mira"
+
+Si has asentido con la cabeza, este artículo es para ti. Vamos a convertir Google Analytics de un widget decorativo a una herramienta que te ayude a tomar mejores decisiones.
+
+## Qué es Google Analytics 4 y por qué importa
+
+Google Analytics 4 (GA4) es la versión actual de la herramienta de analítica web de Google. Sustituyó a Universal Analytics (la versión anterior) en julio de 2023, y desde entonces es la única opción oficial.
+
+### Las diferencias clave con Universal Analytics
+
+Si usaste la versión anterior, GA4 puede resultar confuso al principio. Los cambios más importantes son:
+
+- **Modelo basado en eventos**: En Universal Analytics, todo giraba en torno a "sesiones" y "páginas vistas". En GA4, todo es un **evento**. Una visita a página es un evento. Un clic es un evento. Un scroll es un evento. Esto da mucha más flexibilidad.
+- **Informes simplificados**: GA4 tiene menos informes predefinidos, pero son más relevantes. No te pierdes entre 200 pestañas que nunca miras.
+- **Integración con Google Ads**: La conexión con campañas de publicidad es nativa y mucho más potente.
+- **Métricas de engagement**: GA4 introduce el concepto de "sesión con engagement" (sesiones donde el usuario interactúa activamente), que es más útil que la antigua tasa de rebote.
+- **Predicciones con IA**: GA4 incluye métricas predictivas como la probabilidad de compra o la probabilidad de abandono, aunque funcionan mejor con volúmenes altos de tráfico.
+
+### ¿Por qué importa para una PYME?
+
+Porque GA4 te permite responder preguntas concretas que afectan a tu negocio:
+
+- ¿De dónde vienen mis visitantes? ¿Google? ¿Redes sociales? ¿Directamente?
+- ¿Qué páginas generan más interés?
+- ¿Los visitantes hacen lo que quiero que hagan (rellenar formularios, llamar, comprar)?
+- ¿Mi inversión en publicidad está generando retorno?
+
+Sin estos datos, estás navegando a ciegas.
+
+## Cómo instalar GA4 paso a paso
+
+### Crear cuenta y propiedad
+
+1. Ve a [analytics.google.com](https://analytics.google.com) e inicia sesión con tu cuenta de Google.
+2. Haz clic en **"Empezar a medir"** si es tu primera vez, o en **Administrar > Crear propiedad** si ya tienes cuenta.
+3. Pon el nombre de tu negocio, selecciona la zona horaria (España, UTC+1) y la moneda (EUR).
+4. En la configuración del flujo de datos, selecciona **"Web"**.
+5. Introduce la URL de tu web (por ejemplo, \`www.tunegocio.es\`) y pon un nombre descriptivo al flujo.
+6. GA4 te generará un **ID de medición** con formato \`G-XXXXXXXXXX\`. Guárdalo, lo necesitas para el siguiente paso.
+
+### Instalar el tag con Google Tag Manager
+
+Google Tag Manager (GTM) es la forma más limpia de instalar GA4. Te permite añadir y gestionar etiquetas sin tocar el código de tu web.
+
+**Paso 1: Crear cuenta en GTM**
+- Ve a [tagmanager.google.com](https://tagmanager.google.com).
+- Crea una cuenta y un contenedor para tu web.
+- GTM te dará dos fragmentos de código: uno para el \`<head>\` y otro para el \`<body>\` de tu web.
+
+**Paso 2: Instalar el código de GTM en tu web**
+- Si usas WordPress, puedes usar un plugin como "Insert Headers and Footers" o "GTM4WP".
+- Si tienes una web a medida, tu desarrollador debe pegar los dos fragmentos en el HTML.
+
+**Paso 3: Crear la etiqueta de GA4 en GTM**
+- En GTM, ve a **Etiquetas > Nueva**.
+- Selecciona **"Etiqueta de Google"** como tipo.
+- Introduce tu ID de medición (el \`G-XXXXXXXXXX\`).
+- En activador, selecciona **"All Pages"**.
+- Guarda y publica el contenedor.
+
+### Verificar que funciona
+
+1. Abre tu web en una pestaña del navegador.
+2. En GA4, ve a **Informes > Tiempo real**.
+3. Deberías ver al menos 1 usuario activo (tú mismo).
+4. También puedes instalar la extensión **Google Tag Assistant** en Chrome para verificar que el tag se dispara correctamente.
+
+**Consejo**: Si no ves datos inmediatamente, espera 24-48 horas. GA4 puede tardar en procesar los primeros datos.
+
+## Los 5 informes clave que toda PYME debe revisar
+
+No necesitas ser un experto en analítica. Con revisar estos 5 informes una vez por semana (o al menos al mes), tendrás una visión clara de cómo funciona tu web.
+
+### 1. Informe de adquisición: de dónde vienen las visitas
+
+**Ruta**: Informes > Adquisición > Adquisición de tráfico
+
+Este informe responde a la pregunta más básica: **¿cómo llegan los visitantes a tu web?**
+
+Los canales principales que verás son:
+
+- **Organic Search**: Visitas desde Google u otros buscadores (SEO).
+- **Direct**: Personas que escriben tu URL directamente o tienen tu web en marcadores.
+- **Referral**: Visitas desde enlaces en otras webs.
+- **Organic Social**: Visitas desde redes sociales (sin pagar).
+- **Paid Search**: Visitas desde Google Ads.
+- **Paid Social**: Visitas desde anuncios en redes sociales.
+
+**Qué buscar**: Si el 80% de tu tráfico viene de "Direct" y casi nada de "Organic Search", tu SEO necesita trabajo. Si inviertes en Google Ads pero "Paid Search" trae pocas visitas, algo falla en tus campañas.
+
+### 2. Páginas más vistas
+
+**Ruta**: Informes > Engagement > Páginas y pantallas
+
+Aquí ves qué páginas visita la gente y cuáles generan más interés.
+
+**Qué buscar**:
+- ¿Tu página de servicios o producto estrella está entre las más vistas?
+- ¿La gente llega a tu página de contacto?
+- ¿Hay páginas con muchas visitas pero poco engagement? Pueden necesitar una revisión de contenido.
+
+### 3. Tasa de rebote y engagement
+
+**Ruta**: Informes > Engagement > Páginas y pantallas (personaliza las columnas para añadir "Tasa de rebote")
+
+En GA4, la **tasa de engagement** es más relevante que la tasa de rebote. Una sesión "con engagement" es aquella donde el usuario:
+- Permaneció más de 10 segundos, **o**
+- Tuvo 2 o más páginas vistas, **o**
+- Generó un evento de conversión.
+
+**Qué buscar**: Una tasa de engagement por debajo del 50% en páginas importantes indica que los visitantes llegan pero no encuentran lo que buscan. Revisa el contenido, la velocidad de carga y la experiencia de usuario.
+
+### 4. Conversiones y eventos
+
+**Ruta**: Informes > Engagement > Conversiones
+
+Este es probablemente el informe más importante. Una **conversión** es cualquier acción valiosa para tu negocio: enviar un formulario de contacto, hacer clic en el botón de WhatsApp, llamar por teléfono, descargar un catálogo.
+
+**Qué buscar**: ¿Cuántas conversiones tienes por semana? ¿De qué canal vienen? Si inviertes 500€ al mes en Google Ads y solo generas 2 conversiones, necesitas revisar tus landing pages o tu segmentación.
+
+### 5. Datos demográficos de la audiencia
+
+**Ruta**: Informes > Datos demográficos > Visión general
+
+GA4 te muestra datos sobre tus visitantes: país, ciudad, idioma, edad, género e intereses (si tienes habilitadas las señales de Google).
+
+**Qué buscar**: ¿Tu audiencia real coincide con tu cliente ideal? Si tienes una clínica dental en Sevilla pero el 60% de tus visitas son de Ciudad de México, tu estrategia de contenido o publicidad no está bien segmentada.
+
+## Cómo configurar eventos y conversiones
+
+GA4 registra automáticamente algunos eventos básicos:
+
+- **page_view**: Cada vez que alguien ve una página.
+- **scroll**: Cuando alguien hace scroll hasta el 90% de la página.
+- **click**: Clics en enlaces que llevan fuera de tu web.
+- **first_visit**: La primera visita de un usuario nuevo.
+- **session_start**: El inicio de cada sesión.
+
+Pero los eventos más valiosos para tu negocio los tienes que configurar tú:
+
+### Eventos recomendados para PYMEs
+
+**Envío de formulario de contacto**: El más importante. Cada vez que alguien rellena tu formulario, deberías registrar un evento \`generate_lead\`.
+
+**Clic en botón de WhatsApp**: Si tienes un botón de WhatsApp en tu web (como debería ser), trackea cada clic como un evento.
+
+**Clic en número de teléfono**: Igual que WhatsApp, cada clic en "Llamar" es un evento valioso.
+
+**Scroll a sección de precios**: Si la gente llega a ver tus precios, es señal de interés real.
+
+### Cómo configurar un evento en GTM
+
+1. En Google Tag Manager, ve a **Etiquetas > Nueva**.
+2. Selecciona **"Evento de GA4"** como tipo de etiqueta.
+3. Introduce tu ID de medición y el nombre del evento (por ejemplo, \`formulario_contacto\`).
+4. Crea un **activador**: por ejemplo, "Envío de formulario" filtrando por el ID o la clase CSS de tu formulario.
+5. Publica el contenedor.
+
+### Marcar un evento como conversión
+
+Una vez que el evento aparece en GA4 (puede tardar 24-48h), ve a **Administrar > Conversiones > Nuevo evento de conversión** y añade el nombre exacto del evento. A partir de ese momento, GA4 lo contará como conversión.
+
+## Google Search Console: el complemento perfecto
+
+Google Analytics te dice qué pasa **dentro** de tu web. Google Search Console (GSC) te dice qué pasa **antes** de que lleguen a tu web: cómo te encuentran en Google.
+
+### Qué datos te da Search Console
+
+- **Consultas**: Qué búsquedas exactas hacen los usuarios antes de ver tu web en Google.
+- **Impresiones**: Cuántas veces aparece tu web en los resultados de Google.
+- **Clics**: Cuántas veces hacen clic en tu resultado.
+- **CTR (Click-Through Rate)**: El porcentaje de personas que ven tu resultado y hacen clic.
+- **Posición media**: En qué posición apareces de media para cada búsqueda.
+
+### Cómo conectar Search Console con GA4
+
+1. Ve a **Administrar > Vincular productos > Search Console** en GA4.
+2. Selecciona tu propiedad de Search Console (debes ser propietario verificado).
+3. Una vez vinculado, los datos de Search Console aparecerán en **Informes > Search Console** dentro de GA4.
+
+### Por qué es tan valioso
+
+Search Console te revela oportunidades que Analytics no puede ver:
+
+- **Palabras clave con muchas impresiones pero pocos clics**: Tu web aparece en Google, pero nadie hace clic. Mejora tus títulos y meta descripciones.
+- **Páginas con buena posición pero bajo CTR**: Estás en los primeros resultados, pero tu snippet no es atractivo.
+- **Errores de indexación**: Páginas que Google no puede rastrear o que tienen problemas técnicos.
+
+## Errores comunes al usar analítica web
+
+### 1. Instalar GA4 y nunca mirar los datos
+
+El error más frecuente. Tener Analytics instalado no sirve de nada si nadie lo revisa. Bloquea 30 minutos a la semana para revisar los informes clave.
+
+### 2. Obsesionarse con las visitas totales
+
+"Tenemos 5.000 visitas al mes" suena bien, pero no significa nada si esas visitas no generan leads ni ventas. **Las conversiones importan más que las visitas.**
+
+### 3. No filtrar el tráfico interno
+
+Si tú y tu equipo visitáis vuestra propia web a diario, estáis inflando los datos. Configura un filtro en GA4 para excluir el tráfico interno (Administrar > Flujos de datos > Definir tráfico interno).
+
+### 4. No configurar conversiones
+
+Sin conversiones definidas, GA4 solo te muestra visitas y páginas vistas. Es como tener un marcador de un partido pero sin saber quién ha ganado.
+
+### 5. Tomar decisiones con datos insuficientes
+
+Si tu web recibe 200 visitas al mes, no puedes sacar conclusiones fiables de un solo día. Necesitas al menos 2-4 semanas de datos para identificar tendencias. No cambies toda tu estrategia porque un martes tuviste menos visitas de lo normal.
+
+### 6. Ignorar el móvil
+
+Revisa siempre los informes segmentando por dispositivo. En España, más del 70% del tráfico web es móvil. Si tu web convierte bien en escritorio pero mal en móvil, tienes un problema de experiencia de usuario que está costándote clientes.
+
+### 7. No vincular Google Ads con GA4
+
+Si pagas publicidad en Google y no has vinculado GA4 con Google Ads, no puedes ver el recorrido completo: desde el clic en el anuncio hasta la conversión en tu web. Estás gastando dinero sin poder medir el retorno real.
+
+## De los datos a la acción: ejemplos reales
+
+Los datos solo valen si los usas para tomar decisiones. Aquí van ejemplos concretos de cómo PYMEs reales han usado la analítica para mejorar su negocio:
+
+### Caso 1: La clínica que descubrió su mejor servicio
+
+Una clínica de fisioterapia en Madrid tenía 5 servicios en su web. Revisando GA4, descubrieron que la página de "fisioterapia deportiva" recibía el triple de visitas que las demás y tenía la tasa de engagement más alta. **Decisión**: Crearon una landing page específica para ese servicio, invirtieron en Google Ads segmentando esas palabras clave, y duplicaron los leads en 2 meses.
+
+### Caso 2: El restaurante que optimizó su carta
+
+Un restaurante revisó Search Console y descubrió que la búsqueda "restaurante menú del día [barrio]" generaba cientos de impresiones pero pocos clics. **Decisión**: Mejoraron el título y la meta descripción de su página de menús, añadieron schema de Restaurant con precio del menú, y el CTR pasó del 2% al 8% en 6 semanas.
+
+### Caso 3: La academia que cambió su publicidad
+
+Una academia de formación gastaba 800€/mes en Google Ads. Al vincular GA4 con Ads, descubrieron que el 70% de los clics venían de búsquedas genéricas ("cursos online") que no convertían, mientras que las búsquedas específicas ("curso contabilidad presencial Madrid") convertían 10 veces más. **Decisión**: Eliminaron las palabras clave genéricas, concentraron el presupuesto en búsquedas específicas, y redujeron el coste por lead un 60%.
+
+### Caso 4: La tienda que arregló su página de contacto
+
+Una tienda de muebles tenía un formulario de presupuesto que casi nadie rellenaba. Configurando el evento de scroll en GA4, descubrieron que solo el 20% de los visitantes llegaba hasta el formulario (estaba al final de una página muy larga). **Decisión**: Movieron el formulario al primer tercio de la página y añadieron un botón flotante. Las solicitudes de presupuesto se triplicaron.
+
+### El patrón común
+
+En todos los casos, el proceso es el mismo:
+
+1. **Medir**: Configurar correctamente GA4 y los eventos relevantes.
+2. **Analizar**: Revisar los informes con regularidad y buscar anomalías o patrones.
+3. **Decidir**: Elegir una acción concreta basada en los datos.
+4. **Verificar**: Medir el impacto del cambio y ajustar si es necesario.
+
+No necesitas un equipo de analistas. Solo necesitas revisar los datos básicos con regularidad y hacerte las preguntas correctas.
+
+## También te puede interesar
+
+- [Velocidad Web y Core Web Vitals: Guía para PYMEs](/blog/velocidad-web-core-web-vitals-guia-seo-2026)
+- [CTR en Google: Cómo Conseguir que Hagan Clic en tu Web](/blog/seo-ctr-mejorar-clics-google-2026)
+- [Los 10 Errores en Webs de PYMEs que Están Matando tus Ventas](/blog/errores-web-pymes-que-matan-ventas-2026)
+
+## ¿Necesitas ayuda configurando la analítica de tu web?
+
+En M.G.M Automations no solo construimos webs rápidas y optimizadas para SEO. También configuramos Google Analytics 4, Google Tag Manager y Search Console para que tengas visibilidad completa de lo que pasa en tu web desde el primer día.
+
+Si ya tienes una web pero no sabes si la analítica está bien configurada, te hacemos una auditoría gratuita. Revisamos tu instalación de GA4, verificamos que los eventos y conversiones estén bien definidos, y te enseñamos a interpretar los informes que realmente importan para tu negocio.
+    `},{id:"pagina-web-fisioterapeutas-guia-2026",title:"Página Web para Fisioterapeutas: Guía Completa para Atraer Más Pacientes en 2026",excerpt:"Más de 65.000 fisioterapeutas colegiados compiten en España. Descubre qué necesita tu web para destacar: reservas online, WhatsApp automatizado y SEO local.",date:"2026-02-24",readTime:"10 min",category:"Análisis Sectorial",image:null,featured:!1,author:{name:"Manuel Gregorio",role:"Founder de M.G.M Automations"},content:`
+## Por qué tu clínica de fisioterapia necesita una web profesional en 2026
+
+Si eres fisioterapeuta y tienes una clínica privada, probablemente ya te hayas dado cuenta de que tus pacientes te encuentran de manera muy diferente a hace diez años. Según datos del Consejo General de Colegios de Fisioterapeutas de España, hay más de 65.000 fisioterapeutas colegiados en nuestro país, y aproximadamente el 80% trabaja en el sector privado. Esto significa una competencia importante, especialmente en ciudades como Madrid, Barcelona, Valencia o Sevilla.
+
+La realidad es clara: cuando alguien necesita un fisioterapeuta, lo primero que hace es buscar en Google. Estudios recientes sobre comportamiento del consumidor sanitario muestran que más del 85% de las personas investiga online antes de elegir un profesional de salud. Si tu clínica no aparece en esa búsqueda, o si aparece con una web anticuada de 2015, estás perdiendo pacientes cada día.
+
+Muchas clínicas de fisioterapia todavía funcionan solo con un perfil de Google Maps y un número de teléfono. Otras tienen páginas web creadas hace años que no se ven bien en móviles, cargan lentamente o simplemente no transmiten profesionalidad. En 2026, esto no es suficiente.
+
+Una web profesional no es un gasto, es una inversión que trabaja para ti las 24 horas del día. Mientras duermes, tu página web está mostrando tus servicios, respondiendo preguntas frecuentes, permitiendo que los pacientes reserven citas y posicionándote como experto en tu especialidad. Es tu mejor comercial, tu recepcionista virtual y tu carta de presentación, todo en uno.
+
+Además, el panorama digital ha evolucionado. Los pacientes no solo quieren encontrarte, quieren reservar online, recibir recordatorios automáticos por WhatsApp, leer opiniones de otros pacientes y conocer a tu equipo antes de dar el paso de contactarte. Si no ofreces estas facilidades, irán a la competencia que sí las tiene.
+
+La buena noticia es que nunca ha sido tan accesible tener una web profesional con todas estas funcionalidades. Las herramientas de automatización, los sistemas de reservas y las estrategias de SEO local están al alcance de cualquier clínica, independientemente de su tamaño. Lo importante es dar el paso y hacerlo bien.
+
+## Qué debe incluir la web de un fisioterapeuta
+
+No todas las páginas web son iguales, y las necesidades de una clínica de fisioterapia son específicas. Tu web debe responder a las preguntas que tus pacientes potenciales tienen antes de decidirse a contactarte. Aquí están los elementos esenciales que no pueden faltar.
+
+**Diseño limpio y profesional** es lo primero. No necesitas una web llena de animaciones y efectos especiales. De hecho, en el sector sanitario, menos es más. Los pacientes buscan confianza y profesionalidad. Un diseño limpio, con buena jerarquía visual, colores que transmitan calma y seriedad, y una navegación intuitiva es fundamental. Recuerda que muchos de tus pacientes pueden ser personas mayores que no están acostumbradas a navegar webs complicadas.
+
+**Descripción detallada de servicios** es crucial. No basta con poner "fisioterapia deportiva" o "rehabilitación". Cada servicio debe tener su propia página o sección con una explicación clara de qué problema resuelve, cómo es el tratamiento, cuántas sesiones suelen necesitarse y qué resultados puede esperar el paciente. Por ejemplo, si ofreces fisioterapia para dolor lumbar, explica las causas comunes, tu enfoque de tratamiento y casos de éxito.
+
+**Perfiles del equipo con fotografías profesionales** generan confianza inmediata. Los pacientes quieren saber quién les va a tratar. Incluye fotos de calidad de cada fisioterapeuta, su formación específica, especializaciones, número de colegiado y una breve biografía que muestre su experiencia y enfoque. Las fotos deben ser profesionales pero cercanas, idealmente en tu clínica real, no imágenes de banco de fotos.
+
+**Ubicación clara con mapa integrado** parece obvio, pero muchas webs lo hacen mal. Integra Google Maps directamente en tu página de contacto, indica claramente la dirección completa, las paradas de metro o autobús más cercanas, y si tienes parking. También es útil incluir fotos de la fachada de tu clínica para que los pacientes la identifiquen fácilmente.
+
+**Información de contacto visible en todo momento**. Tu número de teléfono y botón de WhatsApp deben estar visibles en el header de todas las páginas. Incluye también un formulario de contacto sencillo para quienes prefieren este canal. Menos campos es mejor: nombre, email, teléfono y mensaje suelen ser suficientes.
+
+**Testimonios y opiniones de pacientes reales** son oro puro. Las decisiones en salud están cargadas de emoción y miedo. Leer que otros pacientes con problemas similares han mejorado gracias a tus tratamientos reduce esa barrera psicológica. Incluye testimonios con nombre y foto si es posible, respetando siempre la privacidad y con consentimiento explícito. También puedes integrar las reseñas de Google Business directamente en tu web.
+
+**Blog o sección de artículos** te posiciona como experto y mejora tu SEO. No necesitas escribir cada día, pero publicar un artículo mensual sobre temas que interesan a tus pacientes te ayudará a aparecer en más búsquedas y a demostrar tu conocimiento. Temas como "ejercicios para dolor cervical", "cómo prevenir lesiones al correr" o "fisioterapia postparto" son muy buscados.
+
+**Certificaciones y colaboraciones** dan credibilidad adicional. Si estás colegiado, si colaboras con clubs deportivos, mutuas o seguros médicos, si has hecho formaciones específicas o tienes certificaciones reconocidas, muéstralo. Todo suma para generar confianza.
+
+Todos estos elementos deben estar organizados de forma que el paciente encuentre lo que busca en menos de tres clics. La arquitectura de información es tan importante como el diseño visual.
+
+## Sistema de reservas online: la funcionalidad imprescindible
+
+Si hay una funcionalidad que marca la diferencia entre una web básica y una web que realmente te ayuda a crecer, es el sistema de reservas online. Piénsalo: cada vez que un paciente potencial tiene que llamar por teléfono para pedir cita, pones una barrera.
+
+Quizás llama fuera del horario de atención, quizás le da pereza esperar al día siguiente, quizás prefiere la clínica que le permite reservar al instante desde su móvil mientras está en el sofá a las 23:00 horas. Cada fricción en el proceso de reserva es una oportunidad perdida.
+
+**Disponibilidad 24/7 sin esfuerzo** es la primera ventaja. Tu agenda está abierta siempre. Los pacientes pueden ver tus huecos disponibles y reservar directamente, sin intermediarios. Esto es especialmente valioso para pacientes nuevos que te encuentran fuera de horario o durante el fin de semana, cuando están buscando soluciones para su dolor o lesión.
+
+**Reducción drástica de llamadas telefónicas** libera tiempo para tu equipo. En lugar de estar contestando el teléfono constantemente para agendar, confirmar o reprogramar citas, tu recepcionista puede dedicarse a atender mejor a los pacientes que están en la clínica. Muchas clínicas reportan una reducción del 60-70% en llamadas telefónicas tras implementar reservas online.
+
+**Sincronización con tu calendario** evita errores y dobles reservas. Los buenos sistemas de reservas se integran con Google Calendar, Outlook o calendarios especializados para clínicas. Cuando un paciente reserva online, el hueco se bloquea automáticamente y se crea un evento en tu calendario con toda la información del paciente.
+
+**Reducción de ausencias y cancelaciones de última hora**. Cuando los pacientes reservan online, suelen recibir confirmaciones automáticas por email y recordatorios previos a la cita. Esto, combinado con la facilidad para reprogramar online si surge un impedimento, reduce significativamente las ausencias sin aviso que tanto perjudican a las clínicas.
+
+**Información previa del paciente** puede recopilarse durante la reserva. Puedes incluir un formulario breve donde el paciente indique si es primera visita, qué tipo de molestia tiene, si viene derivado por alguien, etc. Esto te permite prepararte mejor para la sesión y optimizar tu tiempo.
+
+Las opciones de sistemas de reservas para fisioterapeutas son variadas. Existen plataformas especializadas como Doctoralia o Jameda que ofrecen reservas integradas, pero suelen cobrar comisión por paciente. Otras opciones incluyen calendarios integrados con herramientas como Calendly o Acuity Scheduling, que se pueden personalizar completamente para tu marca.
+
+La mejor solución suele ser un sistema de reservas integrado directamente en tu web, conectado con herramientas de automatización que veremos en el siguiente apartado. Esto te da control total, evita comisiones recurrentes y mantiene toda la experiencia del paciente dentro de tu marca.
+
+[¿Quieres ver cómo funciona un sistema de reservas personalizado para tu clínica? Agenda una demo gratuita](/demo) y te mostramos ejemplos reales.
+
+## Automatización de recordatorios por WhatsApp y email
+
+La automatización es donde la tecnología realmente empieza a trabajar para ti y a generar retorno tangible. Una vez que tienes pacientes reservando citas online, el siguiente paso lógico es automatizar las comunicaciones que consumen tiempo pero son esenciales para tu clínica.
+
+**Recordatorios de cita 24 horas antes** son el caso de uso más obvio y efectivo. Cuando un paciente reserva una cita, el sistema puede programar automáticamente un recordatorio que se envía el día anterior por WhatsApp y/o email. El mensaje puede ser personalizado: "Hola Juan, te recordamos tu cita de fisioterapia mañana 25 de febrero a las 10:30 con Laura. Nos vemos en Calle Alcalá 123. Si necesitas modificarla, pulsa aquí."
+
+Este simple recordatorio puede reducir las ausencias sin aviso en un 40-50%. Cada hueco vacío en tu agenda es dinero perdido, así que la automatización de recordatorios se paga sola en semanas.
+
+**Confirmaciones inmediatas tras la reserva** generan tranquilidad. En cuanto alguien reserva online, recibe al instante un mensaje de confirmación con todos los detalles: fecha, hora, dirección, nombre del fisioterapeuta, y qué debe traer o preparar para la cita. Esto reduce llamadas de verificación y aumenta la percepción de profesionalidad.
+
+**Mensajes de seguimiento post-tratamiento** mejoran la adherencia y los resultados. Dos o tres días después de una sesión, puedes enviar automáticamente un mensaje preguntando cómo se encuentra el paciente, recordándole los ejercicios que debe hacer en casa, y ofreciéndole la posibilidad de reservar la siguiente sesión si es necesaria. Este seguimiento aumenta la satisfacción del paciente y las sesiones recurrentes.
+
+**Felicitaciones de cumpleaños con descuento** pueden parecer un detalle pequeño, pero generan muchísima fidelidad. Un mensaje personalizado el día del cumpleaños del paciente, con un pequeño descuento o una sesión de valoración gratuita, hace que se sientan especiales y te recuerden si necesitan tus servicios.
+
+**Campañas de reactivación para pacientes inactivos**. Si un paciente que venía regularmente deja de reservar durante dos o tres meses, el sistema puede enviar automáticamente un mensaje de reactivación: "Hola María, hace tiempo que no te vemos. ¿Cómo van esas cervicales? Recuerda que estamos aquí si necesitas una sesión de mantenimiento."
+
+Para implementar estas automatizaciones, la herramienta clave es la **API de WhatsApp Business**. A diferencia de WhatsApp normal o WhatsApp Business estándar, la API permite enviar mensajes automáticos, integrarse con tu sistema de reservas y CRM, y gestionar conversaciones de múltiples agentes. Eso sí, requiere verificación de Facebook y configuración técnica, pero el retorno vale absolutamente la pena.
+
+Para emails, servicios como Mailchimp, Brevo (antes Sendinblue) o Resend permiten automatizaciones similares con plantillas profesionales. La clave es que todo esté conectado: cuando alguien reserva en tu web, esa información alimenta automáticamente tus flujos de comunicación.
+
+Muchas clínicas temen que esta automatización despersonalice la relación con sus pacientes. Es exactamente lo contrario. Al automatizar lo rutinario, liberas tiempo para interacciones verdaderamente personales durante las sesiones. Además, los mensajes automáticos se pueden (y deben) personalizar con el nombre del paciente, detalles de su tratamiento y un tono cercano.
+
+La automatización bien hecha se siente como atención personalizada a escala. Cada paciente recibe los mensajes que necesita, en el momento adecuado, sin que tú o tu equipo tengáis que estar pendientes manualmente.
+
+## SEO local para fisioterapeutas: aparece cuando te buscan
+
+De nada sirve tener una web espectacular si nadie la encuentra. Aquí es donde entra el SEO (Search Engine Optimization), y específicamente el SEO local, que es lo que realmente importa para una clínica de fisioterapia.
+
+Cuando alguien en Madrid busca "fisioterapeuta cerca de mí" o "fisioterapeuta en Chamberí", Google debe mostrarte en los primeros resultados. No en la segunda página, no en la posición 15, sino en el top 3 si es posible. Estudios de comportamiento de búsqueda muestran que más del 75% de los usuarios no pasan de la primera página de resultados, y los primeros tres resultados se llevan más del 60% de los clics.
+
+**Google Business Profile es tu herramienta número uno**. Antes llamado Google My Business, es el servicio que hace que tu clínica aparezca en el mapa de Google y en el panel de información local. Configúralo completamente: horarios exactos, fotos de la clínica, servicios específicos, área de servicio, y actualízalo regularmente con posts y ofertas.
+
+La categoría principal debe ser exacta ("Fisioterapeuta" o "Clínica de fisioterapia"), y puedes añadir categorías secundarias si ofreces servicios específicos como fisioterapia deportiva u osteopatía. Verifica tu negocio oficialmente para poder gestionar toda la información.
+
+**Reseñas de pacientes son críticas** no solo para SEO sino para conversión. Google valora mucho las reseñas recientes y frecuentes. Una clínica con 50 reseñas y 4.8 estrellas superará en rankings a una con 5 reseñas perfectas. Además, cuando un paciente potencial te encuentra, las opiniones de otros son el factor decisivo.
+
+Implementa una estrategia sistemática para conseguir reseñas: tras una sesión exitosa, pide amablemente al paciente que deje su opinión. Puedes automatizar un mensaje 2-3 días después de la cita con un enlace directo a tu perfil de Google. Responde siempre a todas las reseñas, tanto positivas como negativas, con profesionalidad y cercanía.
+
+**Optimización de palabras clave locales** en tu web es fundamental. No optimices solo para "fisioterapia", que es genérica y competitiva. Optimiza para "fisioterapeuta en Madrid", "fisioterapia deportiva Chamartín", "tratamiento dolor lumbar Madrid centro". Incluye estas keywords naturalmente en tus títulos, descripciones de servicios, artículos del blog y metadatos.
+
+Crea páginas específicas para cada servicio principal y para cada localidad si atiendes varias zonas. Por ejemplo, si tu clínica está en el barrio de Salamanca pero muchos pacientes vienen de zonas cercanas, puedes crear contenido optimizado para esas búsquedas: "Fisioterapia en Retiro", "Fisioterapeuta cerca de Goya", etc.
+
+**Schema markup para clínicas** ayuda a Google a entender mejor tu negocio. Es un código estructurado que añades a tu web indicando que eres un negocio local de salud, con horarios, ubicación, servicios y datos de contacto claros. Esto puede hacer que aparezcas en rich snippets (resultados enriquecidos) con información destacada.
+
+**Contenido local relevante** en tu blog atrae búsquedas. Artículos como "Las mejores rutas para correr en Madrid sin lesionarte", "Fisioterapia para oficinistas en el centro de Madrid" o "Cómo elegir fisioterapeuta en Madrid" no solo posicionan para búsquedas locales, sino que demuestran que conoces tu entorno y las necesidades específicas de tus pacientes potenciales.
+
+**NAP consistency (Name, Address, Phone)** parece un detalle menor pero importa. Tu nombre de negocio, dirección exacta y teléfono deben ser idénticos en todas partes: web, Google Business, Facebook, directorios, etc. Inconsistencias confunden a Google y perjudican tu ranking.
+
+El SEO local no da resultados inmediatos, pero es acumulativo. Cada mes que trabajas en ello, tu posicionamiento mejora. Y a diferencia de anuncios de pago, el SEO sigue funcionando aunque dejes de invertir activamente. Es la inversión digital con mejor retorno a medio-largo plazo.
+
+[¿Quieres que analicemos el SEO actual de tu clínica? Contáctanos para una auditoría gratuita](/contacto).
+
+## Diseño responsive y velocidad: claves para convertir visitas en pacientes
+
+Tener muchas visitas en tu web no sirve de nada si esas visitas se van sin reservar cita. La tasa de conversión depende críticamente de dos factores técnicos que muchas clínicas descuidan: el diseño responsive y la velocidad de carga.
+
+**Más del 75% del tráfico web viene de móviles**. Si tu web no se ve perfectamente en un iPhone o un Android, estás perdiendo a tres de cada cuatro visitantes potenciales. Y no hablamos solo de que "se vea", sino de que sea realmente usable: textos legibles sin hacer zoom, botones suficientemente grandes para pulsarlos con el dedo, formularios sencillos de rellenar, imágenes que se adapten al tamaño de pantalla.
+
+El diseño responsive no es opcional en 2026, es absolutamente obligatorio. Google incluso penaliza en sus rankings a webs que no están optimizadas para móvil. Cuando diseñes tu web, la mentalidad debe ser "mobile-first": primero asegúrate de que funciona perfectamente en móvil, luego adapta para tablet y escritorio.
+
+**Llamadas a la acción claras en móvil** son cruciales. El botón para llamar por teléfono debe ser inmediatamente visible y pulsable. El botón de WhatsApp debe estar en una posición fija (sticky) para que siempre esté disponible. El acceso al sistema de reservas debe estar a máximo dos toques desde cualquier página.
+
+Piensa en el contexto de uso: alguien con dolor cervical buscando solución en el metro de camino al trabajo desde su móvil. No tiene paciencia para navegar menús complicados o esperar que carguen imágenes gigantes. Quiere encontrar rápidamente qué ofreces, dónde estás, y reservar cita. Si tu web no le facilita esto en segundos, se irá a la competencia.
+
+**Velocidad de carga es crítica**. Google ha confirmado que Core Web Vitals (métricas de experiencia de usuario) son factor de ranking, pero más importante aún es el impacto en conversión. Estudios muestran que por cada segundo adicional de carga, pierdes aproximadamente un 7% de conversiones. Si tu web tarda 5 segundos en cargar en lugar de 2, estás perdiendo más del 20% de pacientes potenciales.
+
+¿Qué hace que una web sea rápida? Imágenes optimizadas en formatos modernos como WebP, código limpio sin plugins innecesarios, un buen servicio de hosting, uso de CDN para contenido estático, carga diferida de elementos no críticos, y minimización de JavaScript innecesario.
+
+Muchas webs de clínicas cargan lentamente porque usan plantillas de WordPress sobrecargadas con funcionalidades que no necesitan, o porque suben fotos directamente desde la cámara sin comprimirlas. Una foto de 5MB puede verse igual que una optimizada de 200KB, pero la diferencia en velocidad es brutal.
+
+**Accesibilidad también cuenta**. Colores con suficiente contraste para personas con problemas visuales, textos alternativos en imágenes para lectores de pantalla, navegación por teclado funcional. No solo es ético y en algunos casos legalmente requerido, sino que Google también lo valora y amplía tu audiencia potencial.
+
+El diseño y la velocidad no son solo cuestiones técnicas o estéticas. Son directamente responsables de cuántos de tus visitantes se convierten en pacientes. Una inversión en optimización técnica tiene ROI inmediato y medible en forma de más conversiones con el mismo tráfico.
+
+## Cuánto cuesta una página web para fisioterapeutas
+
+Llegamos a la pregunta que probablemente tenías en mente desde el principio: ¿cuánto me va a costar realmente tener una web profesional con todas estas funcionalidades?
+
+La respuesta honesta es: depende. Pero podemos establecer rangos realistas según qué nivel de solución necesitas.
+
+**Web básica profesional: 1.500 - 3.000 euros**. Esto incluye un diseño responsive personalizado con tu marca, entre 5-10 páginas (inicio, servicios, equipo, contacto, blog), optimización SEO básica, formulario de contacto, integración de Google Maps, y configuración de Google Analytics. Es suficiente si estás empezando y quieres presencia online profesional, pero tendrás que gestionar las citas manualmente por teléfono o WhatsApp.
+
+**Web con sistema de reservas: 3.000 - 5.000 euros**. Añade a lo anterior un calendario de reservas integrado, sincronización con tu agenda, confirmaciones automáticas por email, gestión de disponibilidad por fisioterapeuta si tienes equipo, y panel de administración para gestionar citas. Este es el punto óptimo para la mayoría de clínicas que quieren dar un salto real en eficiencia.
+
+**Web premium con automatizaciones: 5.000 - 8.000 euros**. Incluye todo lo anterior más integración con WhatsApp Business API para recordatorios y seguimiento automatizado, CRM básico para gestión de pacientes, automatizaciones avanzadas de marketing, optimización SEO local profunda, panel de estadísticas y analíticas personalizadas, y integración con sistemas de pago online si ofreces bonos o productos.
+
+Estos son rangos para desarrollos personalizados y profesionales. Existen alternativas más baratas usando plantillas genéricas de WordPress o constructores como Wix, que pueden costar 300-800 euros, pero generalmente carecen de personalización real, tienen limitaciones técnicas importantes, cargan lentamente, y no incluyen las automatizaciones que marcan la diferencia.
+
+**Costes recurrentes** también hay que considerarlos: dominio (10-15 euros/año), hosting profesional (100-300 euros/año para un buen servidor), licencias de herramientas de automatización (pueden variar de 20 a 200 euros/mes según volumen), mantenimiento y actualizaciones (300-600 euros/año).
+
+Pero ahora viene lo importante: **el cálculo de ROI (retorno de inversión)**. Supongamos que inviertes 4.000 euros en una web con reservas y automatizaciones básicas. Si gracias a ella consigues solo dos pacientes nuevos al mes que no habrías conseguido de otra forma, y cada uno supone un ingreso medio de 200 euros (considerando varias sesiones), estás generando 400 euros adicionales mensuales, es decir, 4.800 euros anuales.
+
+La web se ha pagado sola en 10 meses, y a partir de ahí es todo ganancia. Y eso contando solo pacientes nuevos, sin considerar la reducción de ausencias gracias a recordatorios automáticos, la eficiencia ganada al reducir llamadas telefónicas, o la mejor fidelización gracias al seguimiento automatizado.
+
+Si además mejoras tu posicionamiento SEO y subes del puesto 15 al puesto 3 en "fisioterapeuta en [tu ciudad]", el número de pacientes nuevos puede multiplicarse. No es raro que clínicas bien posicionadas consigan 10-20 contactos mensuales solo desde búsqueda orgánica, sin pagar publicidad.
+
+La clave es ver la web no como un gasto puntual, sino como un activo que genera valor continuamente. Una web bien hecha puede seguir atrayendo pacientes durante años con mantenimiento mínimo. Es una de las mejores inversiones que puedes hacer en tu clínica.
+
+## También te puede interesar
+
+- [Clínica Dental: Por Qué Necesitas una Web Moderna](/blog/clinica-dental-web-moderna-2025)
+- [Automatizar WhatsApp Business: Guía Completa para PYMEs](/blog/automatizar-whatsapp-business-pymes-guia)
+- [¿Cuánto Cuesta una Web en 2025? Guía de Precios](/blog/cuanto-cuesta-web-2025)
+
+## ¿Tu clínica de fisioterapia necesita una web profesional?
+
+En **M.G.M Automations** llevamos años ayudando a clínicas de fisioterapia en Madrid y toda España a transformar su presencia digital. Desarrollamos páginas web profesionales con sistemas de reservas integrados, automatización completa de WhatsApp y email, y estrategias de SEO local que realmente funcionan.
+
+No vendemos plantillas genéricas. Cada proyecto lo diseñamos específicamente para las necesidades de tu clínica, teniendo en cuenta tu especialidad, tu zona de influencia y tus objetivos de crecimiento.
+
+[Agenda una consultoría gratuita con nuestro equipo](/contacto). Analizaremos tu situación actual, te mostraremos ejemplos de proyectos similares al tuyo, y te daremos un presupuesto transparente sin compromiso.
+    `},{id:"pagina-web-psicologos-consulta-online-2026",title:"Página Web para Psicólogos: Cómo Conseguir Más Pacientes con tu Consulta Online en 2026",excerpt:"Con 43.600+ psicólogos colegiados en España y un 86% en consulta privada, tu web es tu mejor herramienta de captación. Guía completa con reservas, telepsicología y SEO local.",date:"2026-02-24",readTime:"10 min",category:"Análisis Sectorial",image:null,featured:!1,author:{name:"Manuel Gregorio",role:"Founder de M.G.M Automations"},content:`
+## Por qué una web profesional es imprescindible para psicólogos en 2026
+
+El panorama de la psicología en España ha experimentado una transformación radical en los últimos años. Actualmente, existen más de 43.600 psicólogos colegiados en nuestro país, con un crecimiento anual del 7,9% que refleja la creciente demanda de servicios de salud mental. De estos profesionales, el 86% trabajan en consulta privada, lo que significa que la competencia por captar nuevos pacientes es cada vez más intensa.
+
+Solo en Madrid, la cifra supera los 19.000 psicólogos colegiados, convirtiendo a la capital en uno de los mercados más competitivos del sector. En este contexto, destacar entre la multitud ya no es opcional: es una necesidad estratégica para la supervivencia y crecimiento de tu gabinete.
+
+La pandemia de COVID-19 marcó un punto de inflexión en la percepción social de la salud mental. Lo que antes se mantenía en la intimidad ahora se habla abiertamente. La demanda de servicios psicológicos se ha disparado, pero también lo han hecho las expectativas de los pacientes. Y aquí viene el dato más relevante para tu práctica: más del 80% de los potenciales pacientes buscan y comparan psicólogos online antes de tomar una decisión.
+
+Piénsalo: cuando alguien necesita ayuda psicológica, el primer impulso ya no es pedir recomendaciones a familiares o amigos (aunque sigue siendo importante). El primer paso es abrir Google y buscar "psicólogo en [tu ciudad]", "terapia de pareja Madrid" o "psicólogo ansiedad cerca de mí". Si no tienes presencia online profesional en ese momento crítico, simplemente no existes para ese paciente potencial.
+
+Pero no se trata solo de estar presente. Tu web es el primer contacto que un paciente tiene contigo, y en el ámbito de la salud mental, este primer contacto es decisivo. Una persona que busca ayuda psicológica se encuentra en un estado de vulnerabilidad. Necesita sentirse segura, comprendida y en buenas manos incluso antes de conocerte. Tu web debe transmitir esa confianza, profesionalidad y calidez que luego ofreces en consulta.
+
+Además, el modelo de práctica psicológica ha evolucionado. La telepsicología ya no es una tendencia del futuro, es una realidad del presente. Los pacientes valoran la flexibilidad de poder elegir entre sesiones presenciales y online según sus necesidades. Una web moderna debe reflejar y facilitar esta nueva forma de trabajar.
+
+En 2026, no tener una web profesional como psicólogo es equivalente a ejercer sin tarjetas de presentación en la década de los 90. Es perder oportunidades diariamente frente a competidores que sí han entendido la importancia de la presencia digital.
+
+## Elementos esenciales de una web para gabinetes de psicología
+
+No todas las webs son iguales, y una página para un gabinete de psicología tiene necesidades muy específicas. El diseño y la estructura deben reflejar los valores de tu profesión: confianza, profesionalidad, empatía y confidencialidad.
+
+### Diseño que transmite calma y profesionalidad
+
+La estética de tu web habla antes que tus palabras. Los colores, tipografías y espacios blancos deben crear una atmósfera de serenidad. Evita diseños recargados, colores agresivos o animaciones excesivas. Piensa en tonos neutros, azules suaves o verdes que transmitan equilibrio. El objetivo es que el visitante, que probablemente llega con ansiedad o preocupación, se sienta acogido desde el primer momento.
+
+### Página de servicios clara y específica
+
+No basta con decir "servicios de psicología". Los pacientes buscan soluciones a problemas concretos. Tu web debe tener páginas dedicadas a cada área de especialización: terapia para la ansiedad, tratamiento de la depresión, terapia de pareja, psicología infantil, trastornos alimentarios, etc. Cada página debe explicar en qué consiste el problema, cómo lo abordas y qué puede esperar el paciente del tratamiento.
+
+Esto no solo ayuda al paciente a identificarse con tu oferta, sino que también mejora enormemente tu posicionamiento en buscadores. Cuando alguien busca "psicólogo para ansiedad Madrid", Google prioriza webs que tienen contenido específico sobre ese tema.
+
+### Tu biografía profesional y credenciales
+
+En salud mental, las credenciales importan enormemente. Tu página "Sobre mí" o "Equipo" debe incluir tu formación académica, número de colegiado, especializaciones, enfoque terapéutico y experiencia. Pero no te quedes solo en lo técnico: comparte también tu filosofía de trabajo, qué te motivó a dedicarte a la psicología y cómo te gusta trabajar con tus pacientes.
+
+Las fotos profesionales son imprescindibles. Nada de imágenes de stock genéricas. Los pacientes quieren ver con quién van a trabajar, y una foto real, cercana y profesional genera muchísima más confianza que cualquier texto.
+
+### Información práctica y transparencia en precios
+
+Debe ser extremadamente fácil saber dónde estás y cómo contactarte. Integra Google Maps directamente en tu página de contacto, indica claramente la dirección completa con referencias, opciones de transporte público y disponibilidad de parking.
+
+Muchos psicólogos evitan mostrar precios por miedo a perder pacientes. Sin embargo, la tendencia actual es hacia la transparencia. No necesitas poner precios exactos si no te sientes cómodo, pero al menos ofrece rangos orientativos. Esto filtra consultas, ahorra tiempo y genera confianza.
+
+### Blog con contenido de valor
+
+Un blog actualizado con artículos sobre salud mental cumple múltiples funciones: te posiciona como experto, mejora tu SEO al generar contenido relevante, y ofrece valor a potenciales pacientes antes de la primera consulta. Escribe sobre técnicas de manejo de ansiedad, mitos sobre la terapia, consejos para mejorar la comunicación en pareja. Cada artículo es una puerta de entrada a tu web.
+
+### Cumplimiento legal: LOPD y cookies
+
+La psicología maneja datos extremadamente sensibles. Tu web debe cumplir escrupulosamente con la Ley Orgánica de Protección de Datos. Incluye política de privacidad clara, aviso de cookies conforme al RGPD, y explica cómo garantizas la confidencialidad de los datos de tus pacientes.
+
+## Genera confianza desde el primer clic
+
+En psicología, la confianza es la moneda más valiosa. A diferencia de otros servicios profesionales, aquí el paciente va a compartir sus pensamientos más íntimos, sus miedos, sus traumas. Esa confianza debe empezar a construirse desde el primer contacto online, mucho antes de la primera sesión.
+
+**La barrera del estigma sigue existiendo**. Aunque la salud mental ha ganado visibilidad y aceptación social, todavía existe cierto estigma. Muchas personas llegan a tu web con dudas, temores e incluso vergüenza. Tu página debe normalizar el acto de buscar ayuda psicológica, transmitir que es un paso valiente y saludable, no una debilidad.
+
+**Tienes aproximadamente 3 segundos para causar una buena impresión**. En ese tiempo, el visitante evalúa inconscientemente si tu página transmite profesionalidad, si se ve actualizada, si es fácil de navegar. Una web desactualizada, con errores, lenta o con diseño anticuado comunica inconscientemente: "Este profesional no está al día."
+
+**Fotografías reales y profesionales** son innegociables. Las fotos de stock con modelos sonriendo en consultorios genéricos destruyen la confianza. Los pacientes pueden distinguir perfectamente entre fotos reales y de stock. Invierte en una sesión de fotografía profesional en tu consulta real. Incluye fotos tuyas en tu despacho, en la sala de espera, quizás en un momento más informal pero profesional.
+
+**Testimonios de pacientes** son increíblemente poderosos, pero requieren manejo cuidadoso por la confidencialidad. Puedes incluir testimonios anónimos (solo iniciales o nombres ficticios) con permiso explícito y por escrito. Otra opción son las valoraciones de Google, que se pueden integrar en tu web y son verificables.
+
+**Acreditaciones y membresías profesionales** funcionan como atajos mentales que dicen "este profesional es legítimo y está respaldado por instituciones reconocidas". Muestra visiblemente los logos de colegios profesionales, asociaciones especializadas y cualquier certificación relevante.
+
+**Transparencia en el proceso** reduce la ansiedad del primer contacto. Muchas personas nunca han ido a terapia y no saben qué esperar. Incluye una sección que explique cómo es una primera sesión, qué duración tienen las sesiones, con qué frecuencia se recomiendan, cuánto puede durar un tratamiento típico.
+
+**Protocolo de confidencialidad visible**. Explica claramente cómo garantizas la privacidad: dónde se guardan los historiales, quién tiene acceso a ellos, cómo cumples con la LOPD. Para alguien que va a compartir información muy personal, saber que existe un protocolo estricto de confidencialidad es fundamental.
+
+La confianza no se genera con un solo elemento, sino con la suma coherente de todos estos factores. Cada detalle cuenta, y la web que presta atención a estos aspectos se diferencia radicalmente de la competencia.
+
+## Reserva de citas online: simplifica el primer paso del paciente
+
+El momento más crítico en la captación de un nuevo paciente es el paso de "estoy considerando ir a terapia" a "he reservado mi primera cita". Este paso, aparentemente simple, está cargado de barreras psicológicas. Un sistema de reserva online bien implementado puede reducir dramáticamente estas barreras.
+
+**La ansiedad de la llamada telefónica** es real para muchas personas, especialmente aquellas con ansiedad social. Hacer una llamada para pedir cita representa una barrera enorme: tienen que hablar con una persona desconocida, explicar (aunque sea brevemente) su situación, a veces en un momento emocionalmente vulnerable. Muchos postergan esta llamada indefinidamente o simplemente desisten.
+
+Un sistema de reserva online elimina esta barrera. El paciente puede explorar tu disponibilidad, elegir el horario que mejor le conviene y confirmar la cita, todo desde la privacidad de su casa, sin presión, en el momento que se siente preparado.
+
+**Disponibilidad 24/7** es fundamental porque la decisión de buscar ayuda psicológica no siempre ocurre en horario de oficina. Muchas veces es a las 11 de la noche, después de una crisis, o un domingo por la tarde tras una reflexión personal. Cuando el paciente está motivado, debe poder actuar inmediatamente.
+
+**Un buen formulario de contacto inicial** no es solo un calendario. Incluye un breve cuestionario donde el paciente puede indicar el motivo de consulta de manera general (ansiedad, depresión, terapia de pareja, etc.), si ha tenido terapia previamente, y cualquier pregunta inicial. Para el paciente, comenzar a poner en palabras su situación puede ser terapéutico y refuerza su decisión.
+
+**Confirmación y recordatorios automáticos** son imprescindibles. Inmediatamente después de la reserva, el sistema envía un email de confirmación con todos los detalles. Si ofreces consulta online, el email incluye instrucciones sobre la plataforma, cómo conectarse y recomendaciones técnicas.
+
+En psicología las tasas de no presentación pueden alcanzar el 20-30%, especialmente en primeras citas. Recordatorios 48 y 24 horas antes (por email y WhatsApp) reducen drásticamente este problema.
+
+[¿Quieres ver cómo funciona un sistema de reservas optimizado? Solicita una demo personalizada](/demo) para tu gabinete.
+
+## Automatiza recordatorios y seguimiento con WhatsApp
+
+WhatsApp se ha convertido en la aplicación de mensajería dominante en España, con una penetración cercana al 90% de la población con smartphone. Para gabinetes de psicología, aprovechar esta plataforma de manera profesional y automatizada puede transformar radicalmente la gestión de pacientes.
+
+### El problema de las ausencias en psicología
+
+Las tasas de no presentación en servicios de salud mental oscilan entre el 20% y el 30%. Las razones son variadas: olvido genuino, ansiedad que lleva a la evitación, ambivalencia sobre el tratamiento, o simplemente cambio de planes.
+
+Cada cita perdida representa ingresos no percibidos y tiempo que podría haberse ofrecido a otro paciente. En una semana típica con 25 sesiones, una tasa del 25% significa 6-7 sesiones perdidas. A 70 euros por sesión, son más de 400 euros semanales, cerca de **20.000 euros al año**.
+
+### Recordatorios automáticos que funcionan
+
+Con la **API de WhatsApp Business**, puedes configurar flujos automáticos sin intervención manual. Un recordatorio 48 horas antes: "Hola, te recordamos que tienes cita con [tu nombre] el [día] a las [hora]. Si necesitas reprogramar, responde a este mensaje." Un segundo recordatorio 24 horas antes refuerza el compromiso.
+
+Estos recordatorios simples pueden reducir la tasa de no presentación a la mitad, lo que significaría recuperar más de 10.000 euros anuales.
+
+### Seguimiento post-primera sesión
+
+La primera sesión es crítica para la continuidad del tratamiento. Muchos pacientes no reservan la segunda cita por dudas o vergüenza tras abrirse. Un mensaje automático 24 horas después puede marcar la diferencia: "Gracias por la confianza depositada en nuestra primera sesión. Si tienes alguna duda o quieres reservar tu próxima cita, estoy disponible."
+
+### Check-ins periódicos
+
+Para pacientes que han completado tratamiento o están en fase de mantenimiento, mensajes automatizados de check-in mantienen la conexión: "Ha pasado un mes desde nuestra última sesión. ¿Cómo te va? Si quieres una sesión de seguimiento, dímelo y coordinamos."
+
+### Respeto a la privacidad
+
+Es fundamental establecer límites claros. WhatsApp para gestión administrativa y recordatorios es muy diferente a WhatsApp como canal de consulta terapéutica. Los mensajes solo se envían a pacientes que han dado consentimiento explícito, y los datos se manejan cumpliendo la LOPD.
+
+La automatización con WhatsApp es una de las mejoras de mayor retorno de inversión que puedes implementar. [Contacta con nosotros](/contacto) para descubrir cómo podemos configurar WhatsApp Business API específicamente para tu gabinete.
+
+## SEO local para psicólogos: posiciónate en tu ciudad
+
+De poco sirve tener una web excelente si nadie la encuentra. Para psicólogos, el SEO local es especialmente crucial porque la mayoría de tus pacientes buscarán servicios en su ciudad o barrio.
+
+**Google Business Profile es tu herramienta más poderosa**. Es lo que hace que aparezcas en el mapa de Google cuando alguien busca "psicólogo cerca de mí". Configúralo completamente: nombre exacto del gabinete, dirección, teléfono, horario, categoría principal ("Psicólogo"), categorías secundarias (Psicoterapeuta, Psicólogo infantil, etc.), descripción completa, enlace a tu web y fotos de calidad.
+
+Un perfil bien optimizado puede posicionarte en el "Local Pack" de Google, esos tres resultados destacados con mapa que aparecen antes que los resultados orgánicos. Estar ahí es oro puro.
+
+**Palabras clave locales** son tu objetivo principal. Las personas no buscan "psicólogo" genéricamente. Buscan "psicólogo en Chamberí", "terapia de pareja en Madrid", "psicólogo infantil Malasaña", "tratamiento ansiedad Pozuelo". Tu web debe incluir naturalmente estas combinaciones en títulos, encabezados, textos y metadatos.
+
+**Páginas dedicadas por servicio** mejoran dramáticamente tu SEO. Cada una optimizada para palabras clave específicas:
+
+- "Tratamiento de la ansiedad en [ciudad]"
+- "Terapia de pareja [ciudad]"
+- "Psicólogo infantil [barrio]"
+- "Tratamiento depresión [ciudad]"
+
+**La estrategia de reseñas** es fundamental por dos razones. Primero, Google las considera para el ranking local. Segundo, son la prueba social definitiva. Un gabinete con 50 reseñas y 4.8 estrellas tendrá muchísima más credibilidad que uno sin reseñas. Pide a pacientes satisfechos que dejen una valoración tras una terapia completada exitosamente, y responde siempre a todas las reseñas.
+
+**Schema markup para psicólogos** ayuda a Google a entender mejor qué tipo de negocio eres. Puedes usar el schema de "Physician" o "MedicalBusiness", indicando especialidad, servicios, ubicación y horarios. Esto puede hacer que tu listado muestre rich snippets con información adicional.
+
+**Enlaces y menciones locales** fortalecen tu autoridad. Participar en eventos comunitarios, dar charlas, colaborar con medios locales, todo genera menciones y enlaces que mejoran tu posicionamiento.
+
+El SEO local no da resultados instantáneos, pero los resultados son sostenibles. Una vez bien posicionado, mantienes ese tráfico sin necesidad de pagar por anuncios constantemente.
+
+## Consulta online y telepsicología: adapta tu web al modelo híbrido
+
+La integración de la telepsicología en la práctica habitual ya no es una tendencia: es una realidad consolidada. En 2026, un gabinete moderno debe ofrecer opciones tanto presenciales como online, y tu web debe reflejar y facilitar esta flexibilidad.
+
+### El modelo híbrido como ventaja competitiva
+
+Ya no se trata de elegir entre consulta presencial o terapia online. El modelo más efectivo es híbrido: ofrecer ambas opciones y permitir que el paciente elija según sus necesidades. Algunos preferirán siempre presencial, otros siempre online, pero la mayoría valorará poder alternar según circunstancias (enfermedad, viaje, mal tiempo, agenda apretada).
+
+Tu web debe comunicar claramente esta flexibilidad. Dedica una página específica a "Consulta Online" explicando cómo funciona, qué plataforma usas, qué ventajas ofrece y cuándo es recomendable.
+
+### Ventajas para ti y tus pacientes
+
+Para el paciente: ahorro de tiempo y desplazamiento, mayor flexibilidad horaria, acceso desde cualquier ubicación (especialmente valioso para personas con movilidad reducida o en zonas rurales), menor barrera psicológica para algunos, y continuidad del tratamiento ante cambios de circunstancias.
+
+Para ti: amplías tu mercado potencial más allá de tu área geográfica, optimizas tu tiempo al eliminar desplazamientos entre sedes, y ofreces un servicio más completo que te diferencia de la competencia.
+
+### Marco legal en España
+
+La telepsicología está regulada y reconocida en España. El Consejo General de la Psicología emitió guías específicas sobre la práctica online, estableciendo que es legítima siempre que se cumplan estándares de calidad, confidencialidad y consentimiento informado equivalentes a la consulta presencial.
+
+Debes informar al paciente sobre las características específicas de la modalidad online y obtener consentimiento informado explícito documentado. Tu web puede incluir un documento descargable explicando estos aspectos.
+
+### Plataformas seguras y especializadas
+
+Existen plataformas especializadas en telemedicina que cumplen con el RGPD, ofrecen cifrado de extremo a extremo, y están diseñadas para consultas psicológicas: Doxy.me, Vsee, o plataformas integradas como Doctoralia.
+
+Tu web debe explicar qué plataforma usas, incluir guías de cómo conectarse, requisitos técnicos mínimos, y recomendaciones para una buena sesión (espacio privado, auriculares, buena conexión).
+
+### Alcance geográfico ampliado
+
+Una ventaja estratégica de la telepsicología es que tu mercado se expande enormemente. Un psicólogo en Madrid puede atender a pacientes de cualquier ciudad española. Esto es especialmente valioso si tienes especialización en nichos específicos (terapia EMDR, trastornos alimentarios, terapia LGTBIQ+) donde puede haber menos oferta local.
+
+Tu estrategia de SEO puede expandirse a nivel nacional para especialidades concretas. Una página optimizada para "terapia EMDR online España" puede captar pacientes de todo el país.
+
+### Integración con reservas y pagos
+
+Tu sistema de reserva online debe permitir al paciente elegir modalidad: presencial u online. La confirmación de cita debe ser diferente según modalidad: si es presencial, incluye dirección y mapa; si es online, incluye enlace a la videollamada. Para consultas online, integrar pasarelas de pago seguras (Stripe, PayPal, Redsys) profesionaliza el proceso.
+
+## Cuánto cuesta y qué retorno puedes esperar
+
+Llegamos a la pregunta inevitable: ¿cuánto cuesta una web profesional para un gabinete de psicología? Y, más importante, ¿vale la pena la inversión?
+
+### Rango de inversión según funcionalidad
+
+**Web básica profesional (1.500 - 3.000 euros):** Diseño profesional a medida, 5-8 páginas, diseño responsive, optimización SEO básica, formulario de contacto, integración con Google Maps, cumplimiento LOPD. Válida si estás empezando con presupuesto limitado.
+
+**Web intermedia con sistema de reservas (3.000 - 5.000 euros):** Todo lo anterior más sistema de reserva de citas online, calendario sincronizado, confirmaciones automáticas por email, formulario de primera cita personalizado, panel de administración. **La opción más recomendada** para la mayoría de gabinetes establecidos.
+
+**Web premium con telepsicología y automatizaciones (5.000 - 9.000 euros):** Todo lo anterior más integración de plataforma de videoconsulta, sistema de pagos online, automatización de WhatsApp Business API, optimización SEO avanzada, analíticas personalizadas y mantenimiento incluido durante el primer año. Ideal para gabinetes establecidos o equipos de varios psicólogos.
+
+### Costes recurrentes
+
+Dominio (10-20 euros/año), hosting profesional (100-300 euros/año), WhatsApp Business API (30-60 euros/mes según volumen), mantenimiento y actualizaciones (300-800 euros/año). En total, entre 600-1.500 euros anuales.
+
+### El cálculo del retorno de inversión
+
+Supongamos una inversión de 4.000 euros en una web intermedia. Tu tarifa por sesión es 70 euros. Si tu web atrae 3 pacientes nuevos adicionales al mes (número conservador), y cada paciente hace un tratamiento promedio de 10 sesiones:
+
+- 3 pacientes x 10 sesiones x 70 euros = **2.100 euros por cada mes de captación**
+- En 2 meses de captación (6 pacientes nuevos) has generado 4.200 euros, superando ya la inversión
+
+Pero el retorno no es solo en nuevos pacientes:
+
+**Reducción de ausencias:** Si la automatización reduce tu tasa del 25% al 12%, en 20 sesiones semanales recuperas 2-3 sesiones perdidas. Eso son 150-200 euros semanales, más de **8.000 euros al año**.
+
+**Ahorro de tiempo administrativo:** Si el sistema reduce 3 horas semanales de gestión de citas, a 70 euros/hora son más de **10.000 euros anuales** en tiempo recuperado.
+
+**Alcance expandido por telepsicología:** Pacientes de otras ciudades que acceden a ti online amplían tu base potencial sin coste marginal.
+
+### Inversión escalonada
+
+No necesitas implementar todo desde el día uno. Una estrategia inteligente: primero web profesional con buen SEO, luego sistema de reservas cuando tengas flujo estable, después telepsicología y automatizaciones cuando tu agenda esté más llena. Cada fase se paga con los ingresos generados por la anterior.
+
+La pregunta no es si puedes permitirte invertir en una web profesional, sino si puedes permitirte no hacerlo mientras tu competencia sí lo hace.
+
+## También te puede interesar
+
+- [Clínica Dental: Por Qué Necesitas una Web Moderna](/blog/clinica-dental-web-moderna-2025)
+- [Automatizar WhatsApp Business: Guía Completa para PYMEs](/blog/automatizar-whatsapp-business-pymes-guia)
+- [Landing Page que Convierte: Guía 2026](/blog/como-crear-landing-page-que-convierte-2026)
+
+## ¿Quieres hacer crecer tu gabinete de psicología?
+
+En **M.G.M Automations** desarrollamos soluciones digitales completas para gabinetes de psicología. Creamos webs profesionales con sistemas de reserva de citas online, automatización de recordatorios vía WhatsApp Business API, plataformas de telepsicología seguras y optimización SEO local para que aparezcas cuando tus pacientes potenciales te buscan.
+
+No trabajamos con plantillas genéricas. Cada proyecto se diseña específicamente para las necesidades de tu práctica, cuidando cada detalle que genera confianza: desde la estética que transmite calma hasta el cumplimiento riguroso de LOPD y protección de datos sensibles.
+
+[Agenda una consultoría gratuita sin compromiso](/contacto) y hablemos de tu proyecto. Te mostraremos casos reales de éxito y diseñaremos una propuesta adaptada a tu momento y presupuesto.
+    `},{id:"pagina-web-farmacias-digitalizacion-ventas-2026",title:"Página Web para Farmacias: Cómo Digitalizar tu Farmacia y Vender Más en 2026",excerpt:"El 70% de los clientes buscan su farmacia en Google antes de ir. Descubre cómo una web profesional con e-commerce puede transformar tu farmacia.",date:"2026-02-25",readTime:"10 min",category:"Análisis Sectorial",image:null,featured:!1,author:{name:"Manuel Gregorio",role:"Founder de M.G.M Automations"},content:`
+## La Digitalización de las Farmacias: Una Necesidad en 2026
+
+El sector farmacéutico español está experimentando una **transformación digital sin precedentes**. Según datos recientes del Consejo General de Colegios Farmacéuticos, más del **70% de los pacientes buscan información sobre farmacias en Internet** antes de acudir físicamente al establecimiento. Sin embargo, solo el 35% de las farmacias en España cuentan con una presencia digital profesional.
+
+Si tu farmacia aún no tiene una **página web moderna** o si tu sitio actual no genera resultados, estás perdiendo clientes cada día frente a competidores que sí han digitalizado su negocio. En este artículo descubrirás cómo una web para farmacias bien diseñada puede aumentar tus ventas entre un 25% y un 40% en el primer año.
+
+## Por Qué tu Farmacia Necesita una Web Profesional en 2026
+
+### El Cambio en el Comportamiento del Cliente
+
+El perfil del cliente farmacéutico ha cambiado radicalmente. Ya no basta con tener una buena ubicación física. Los datos son claros:
+
+- **El 68% de los pacientes** consultan horarios y servicios online antes de visitar una farmacia
+- **El 52% busca información sobre productos** de parafarmacia en Internet
+- **El 43% prefiere farmacias** que ofrecen servicios de reserva o consulta online
+- **El 81% de menores de 45 años** espera que su farmacia tenga presencia digital
+
+Una farmacia sin web profesional en 2026 es como una farmacia sin escaparate: invisible para una parte importante de tus potenciales clientes.
+
+### Ventajas Competitivas de una Web para Farmacias
+
+Una **página web para farmacias** bien desarrollada te ofrece múltiples ventajas estratégicas:
+
+**1. Visibilidad 24/7**: Tu farmacia está disponible para consultas e información incluso cuando está cerrada, captando clientes que buscan en horarios nocturnos o festivos.
+
+**2. Captación de nuevos clientes**: Una estrategia de [SEO local](/blog/google-my-business-guia-seo-local-2026) bien ejecutada te posiciona frente a personas que buscan "farmacia cerca de mí" o "farmacia de guardia Madrid".
+
+**3. Venta de parafarmacia online**: Amplía tu mercado vendiendo productos de parafarmacia, cosmética y dermocosmética más allá de tu zona geográfica.
+
+**4. Fidelización digital**: Herramientas como recordatorios de prescripciones, programas de puntos y contenido educativo mantienen a tus clientes conectados con tu marca.
+
+**5. Diferenciación profesional**: Una web moderna transmite confianza, profesionalidad y actualización, valores esenciales en el sector salud.
+
+## El Paisaje Digital de las Farmacias Españolas en 2026
+
+### Estado Actual del Sector
+
+El mercado farmacéutico español facturó más de **24.000 millones de euros en 2025**, con un crecimiento sostenido del sector parafarmacéutico del **8,2% anual**. Sin embargo, existe una **brecha digital significativa**:
+
+- Solo el **35% de las farmacias** tiene una web operativa
+- Apenas el **12% ofrece e-commerce** de productos de parafarmacia
+- El **89% no utiliza sistemas de reserva** o consulta online
+- Solo el **23% tiene optimizada** su ficha de Google My Business
+
+Esta brecha representa una **oportunidad extraordinaria** para las farmacias que decidan apostar por la digitalización ahora.
+
+### Marco Legal y Regulación
+
+Es importante conocer el **marco legal de la farmacia online** en España. Según el Real Decreto 870/2013, las farmacias pueden vender online exclusivamente:
+
+- Productos de parafarmacia (cosmética, dermocosmética, higiene, dietética)
+- Medicamentos sin receta (OTC) autorizados expresamente
+- Productos sanitarios de venta libre
+
+Los **medicamentos con receta NO pueden venderse online**, pero sí puedes ofrecer servicios de reserva para recogida en farmacia, una funcionalidad muy valorada por los clientes.
+
+## E-commerce para Farmacias: Vende Parafarmacia Online
+
+### Potencial del Mercado Parafarmacéutico Online
+
+El mercado de **parafarmacia online en España creció un 34% en 2025**, alcanzando los **1.200 millones de euros**. Las categorías con mayor demanda son:
+
+- **Dermocosmética**: 32% de las ventas online
+- **Suplementos alimenticios**: 24%
+- **Productos para bebés**: 18%
+- **Higiene y cuidado personal**: 16%
+- **Ortopedia y productos sanitarios**: 10%
+
+Una **farmacia online especializada** puede captar clientes de toda España, multiplicando el mercado potencial más allá del barrio o ciudad donde se ubica físicamente.
+
+### Funcionalidades Esenciales de una Tienda Online Farmacéutica
+
+Tu **plataforma de e-commerce farmacéutico** debe incluir:
+
+**Catálogo organizado por categorías**: Dermocosmética, suplementos, bebé, ortopedia, higiene, cosmética natural, etc.
+
+**Fichas de producto completas**: Con descripción detallada, composición, modo de uso, advertencias, imágenes de calidad y vídeos cuando sea posible.
+
+**Sistema de búsqueda avanzada**: Que permita buscar por marca, principio activo, tipo de piel, edad, necesidad específica.
+
+**Carrito y checkout optimizado**: Proceso de compra simple, con opciones de pago seguras (tarjeta, PayPal, Bizum) y diferentes métodos de envío.
+
+**Área de cliente personalizada**: Donde guardar historial de pedidos, lista de favoritos, programa de fidelización y recordatorios de recompra.
+
+**Chat o WhatsApp integrado**: Para consultas farmacéuticas profesionales en tiempo real.
+
+**Blog de salud y consejos**: Contenido educativo que posicione tu web en buscadores y te establezca como referente de confianza.
+
+### Logística y Envíos: Clave para el Éxito
+
+La **logística farmacéutica** requiere consideraciones especiales:
+
+- **Embalaje discreto y seguro** que proteja productos frágiles (cremas, frascos)
+- **Envío rápido** (24-48h) para competir con grandes plataformas
+- **Control de temperatura** para productos sensibles
+- **Seguimiento en tiempo real** para que el cliente sepa cuándo llegará su pedido
+- **Opciones de recogida en farmacia** para clientes locales que prefieran no pagar envío
+
+El **coste de envío** es crítico: ofrecer envío gratuito a partir de 30-40 euros incentiva compras más grandes y mejora la conversión.
+
+## SEO Local para Farmacias: Domina tu Zona Geográfica
+
+### Por Qué el SEO Local es Fundamental
+
+El **70% de las búsquedas de farmacias** tienen intención local: "farmacia cerca de mí", "farmacia de guardia Chamartín", "farmacia abierta ahora Madrid". Si no apareces en estos resultados, estás perdiendo clientes que están literalmente buscando tus servicios.
+
+### Optimización de Google My Business para Farmacias
+
+Tu ficha de [Google My Business](/blog/google-my-business-guia-seo-local-2026) es tu **escaparate digital más importante**. Optimízala siguiendo estos pasos:
+
+**1. Información completa y actualizada**: Horario exacto (incluyendo festivos), teléfono con WhatsApp, dirección precisa, servicios especiales.
+
+**2. Categorías correctas**: "Farmacia" como principal, y secundarias como "Parafarmacia", "Productos de cosmética", "Ortopedia", según tus especialidades.
+
+**3. Fotos profesionales**: Exterior e interior de la farmacia, equipo profesional, zonas específicas (dermocosmética, ortopedia), productos destacados.
+
+**4. Reseñas y reputación**: Pide activamente reseñas a clientes satisfechos y responde siempre (tanto a positivas como negativas) de forma profesional.
+
+**5. Publicaciones regulares**: Anuncia turnos de guardia, nuevos productos, consejos de salud estacional, promociones especiales.
+
+**6. Preguntas y respuestas**: Anticipa dudas frecuentes (¿Hacéis test de COVID? ¿Tenéis servicio de nutricionista? ¿Aceptáis recetas electrónicas?).
+
+### SEO On-Page para Páginas Web de Farmacias
+
+Tu web debe estar **optimizada técnicamente** para aparecer en los primeros resultados:
+
+- **Palabras clave locales** en títulos y contenido: "Farmacia en [barrio]", "Parafarmacia [ciudad]"
+- **Contenido de valor**: Blog con artículos sobre salud, consejos estacionales, guías de productos
+- **Velocidad de carga óptima**: Especialmente en móvil, donde se realizan el 65% de las búsquedas locales
+- **Diseño responsive**: Que funcione perfectamente en smartphones y tablets
+- **Datos estructurados**: Schema markup para farmacias que ayuda a Google a entender tu negocio
+- **Enlaces internos**: Conecta servicios, productos y contenido del blog de forma natural
+
+## WhatsApp Business para Farmacias: Comunicación Directa
+
+### El Poder de WhatsApp en el Sector Farmacéutico
+
+**WhatsApp Business** se ha convertido en una herramienta fundamental para farmacias. El **83% de los españoles** usa WhatsApp diariamente, y cada vez más esperan poder comunicarse con su farmacia por este canal.
+
+### Casos de Uso de WhatsApp en Farmacias
+
+**Recordatorios de medicación**: Envía recordatorios automáticos a pacientes crónicos para retirar sus medicamentos mensuales.
+
+**Reserva de productos**: Permite que los clientes consulten disponibilidad y reserven productos sin desplazarse.
+
+**Consultas farmacéuticas rápidas**: Responde dudas sobre interacciones, posología, efectos secundarios de forma ágil.
+
+**Turnos de guardia**: Notifica automáticamente cuando tu farmacia está de guardia.
+
+**Promociones personalizadas**: Envía ofertas de productos relevantes según el historial de cada cliente.
+
+**Alertas de recetas**: Avisa cuando la receta electrónica está lista para dispensar.
+
+### Automatización de WhatsApp para Farmacias
+
+La [automatización de WhatsApp Business](/blog/automatizar-whatsapp-business-pymes-guia) te permite escalar el servicio sin aumentar carga de trabajo:
+
+- **Respuestas automáticas** para consultas frecuentes (horarios, ubicación, servicios)
+- **Chatbots con IA** que responden 24/7 y derivan consultas complejas al farmacéutico
+- **Envíos masivos segmentados** respetando la privacidad y normativa RGPD
+- **Integración con CRM** para seguimiento personalizado de cada cliente
+
+## Programas de Fidelización Digital
+
+### Por Qué Implementar un Programa de Fidelización
+
+Conseguir un **nuevo cliente cuesta 5 veces más** que retener uno existente. Un programa de fidelización digital bien diseñado puede:
+
+- Aumentar la **frecuencia de compra en un 25-35%**
+- Incrementar el **ticket medio entre 15-20%**
+- Mejorar la **retención de clientes en un 40%**
+- Generar **recomendaciones boca a boca** (el mejor marketing)
+
+### Tipos de Programas para Farmacias
+
+**Sistema de puntos**: Acumula puntos por cada euro gastado, canjeables por descuentos o productos.
+
+**Tarjeta VIP digital**: Descuentos exclusivos en marcas seleccionadas para clientes recurrentes.
+
+**Suscripción para productos recurrentes**: Envío automático mensual de suplementos, productos para bebés o dermocosmética con descuento.
+
+**Gamificación**: Retos de salud (pasos diarios, hidratación) vinculados a recompensas.
+
+**Programa de referidos**: Incentivos para clientes que recomienden tu farmacia a amigos y familiares.
+
+## Costes de Desarrollo y ROI Esperado
+
+### Inversión en una Web para Farmacias
+
+El coste de desarrollar una **página web profesional para farmacias** varía según funcionalidades:
+
+**Web informativa básica** (horarios, servicios, contacto, blog): 1.500-3.500 euros
+
+**Web con reserva de productos**: 3.000-5.500 euros
+
+**E-commerce completo de parafarmacia**: 5.000-12.000 euros
+
+**Plataforma avanzada con CRM, automatización y app**: 10.000-25.000 euros
+
+A esto se suma el **mantenimiento y hosting** (60-150 euros/mes) y opcionalmente servicios de **marketing digital** (SEO, publicidad, contenido): 300-1.500 euros/mes según agresividad de la estrategia.
+
+### Retorno de Inversión Real
+
+Basándonos en casos de farmacias que han digitalizado su negocio:
+
+**Escenario conservador** (farmacia pequeña, solo web informativa + SEO local):
+- Inversión inicial: 3.000 euros
+- Coste mensual: 100 euros
+- Nuevos clientes captados: 20-30/mes
+- Incremento de facturación: 6.000-9.000 euros/año
+- **ROI: 150-200% en el primer año**
+
+**Escenario medio** (farmacia mediana, e-commerce + marketing digital):
+- Inversión inicial: 8.000 euros
+- Coste mensual: 500 euros
+- Ventas online: 3.000-6.000 euros/mes adicionales
+- **ROI: 250-400% en el primer año**
+
+La pregunta no es si puedes permitirte invertir en digitalización, sino si puedes permitirte no hacerlo mientras tu competencia sí lo hace.
+
+---
+
+## También te puede interesar
+
+- [Clínica Dental: Por Qué Necesitas una Web Moderna](/blog/clinica-dental-web-moderna-2025)
+- [Google My Business: Guía Definitiva SEO Local](/blog/google-my-business-guia-seo-local-2026)
+- [Automatizar WhatsApp Business: Guía Completa para PYMEs](/blog/automatizar-whatsapp-business-pymes-guia)
+
+---
+
+## ¿Listo para Digitalizar tu Farmacia?
+
+En **M.G.M Automations** somos especialistas en desarrollo web y automatización para el sector salud. Diseñamos páginas web para farmacias optimizadas para conversión, implementamos e-commerce farmacéutico que cumple toda la normativa, y automatizamos procesos para que vendas más trabajando menos.
+
+**[Agenda una consultoría gratuita](/contacto)** y descubre cómo podemos llevar tu farmacia al siguiente nivel digital.
+    `},{id:"web-fotografos-portfolio-online-clientes-2026",title:"Web para Fotógrafos: Cómo Crear un Portfolio Online que Atraiga Clientes en 2026",excerpt:"Instagram no es suficiente. Descubre por qué necesitas una web profesional como fotógrafo y cómo convertir visitas en reservas.",date:"2026-02-25",readTime:"9 min",category:"Análisis Sectorial",image:null,featured:!1,author:{name:"Manuel Gregorio",role:"Founder de M.G.M Automations"},content:`
+## ¿Por Qué Instagram Ya No Es Suficiente para Fotógrafos Profesionales?
+
+Si eres fotógrafo y dependes exclusivamente de Instagram para conseguir clientes, estás dejando dinero sobre la mesa. Según datos de 2025, el **alcance orgánico en Instagram se ha reducido al 8,7%** para cuentas profesionales, lo que significa que solo 1 de cada 10 seguidores ve tu contenido sin pagar por publicidad.
+
+Mientras que Instagram es excelente para mostrar snippets de tu trabajo, **no es tu espacio**. El algoritmo cambia constantemente, las cuentas pueden ser suspendidas sin previo aviso, y lo más importante: no tienes control sobre la experiencia del cliente potencial que está considerando contratarte.
+
+Una **web para fotógrafos** profesional te da:
+
+- **Propiedad completa** de tu presencia digital
+- **Mejor posicionamiento en Google** para búsquedas locales como "fotógrafo de bodas Madrid"
+- **Mayor credibilidad profesional** ante clientes corporativos
+- **Conversión optimizada** con formularios y sistema de reservas
+- **Control total sobre tu portfolio** sin compresión de imágenes
+
+En 2026, los fotógrafos que cierran más contratos son aquellos que utilizan Instagram como canal de descubrimiento, pero dirigen el tráfico a una **página web fotógrafo** optimizada para conversión.
+
+## Qué Hace que una Web de Fotógrafo Realmente Convierta
+
+No todas las webs de fotógrafos son iguales. La diferencia entre una página que genera consultas y una que simplemente existe está en los detalles estratégicos.
+
+### Propuesta de Valor Clara en los Primeros 3 Segundos
+
+Tu homepage debe responder inmediatamente: **¿qué tipo de fotografía haces y para quién?** Un error común es crear portfolios genéricos que muestran bodas, retratos corporativos, producto y paisajes. Los clientes buscan especialistas, no generalistas.
+
+### Portfolio Estratégicamente Curado
+
+Menos es más. Estudios de UX en sitios de fotografía muestran que portfolios de **15-25 imágenes cuidadosamente seleccionadas** convierten mejor que galerías de 100+ fotos. Los visitantes toman su decisión en los primeros 30 segundos.
+
+Organiza tu **portfolio fotógrafo online** por:
+
+- **Tipo de servicio**: Bodas, eventos, corporativo, producto
+- **Proyectos completos**: Muestra 8-12 fotos de un mismo evento para contar historias
+- **Trabajo reciente**: El 70% debe ser del último año
+
+### Testimonios con Contexto Real
+
+"Fotos increíbles" no vende. Los testimonios que convierten incluyen detalles específicos sobre la experiencia completa: proceso, puntualidad, facilidad de entrega, y resultado final.
+
+## Optimización de Imágenes: Velocidad Sin Sacrificar Calidad
+
+Aquí está la paradoja del fotógrafo: necesitas mostrar imágenes de alta calidad, pero cada segundo adicional de carga reduce las conversiones en un 7% según Google.
+
+### Formato de Imagen Correcto en 2026
+
+Olvida JPG como estándar principal. Los formatos modernos ofrecen hasta **40% menos peso** con la misma calidad visual:
+
+- **WebP**: Soporte universal del 97% de navegadores
+- **AVIF**: 30% más eficiente que WebP, ideal para hero images
+- **Fallbacks automáticos** para navegadores antiguos
+
+### Lazy Loading Inteligente
+
+Carga solo las imágenes que el visitante va a ver. En una galería de 50 fotos, ¿por qué cargar las 50 cuando el usuario solo verá 10-15?
+
+- **Placeholders con blur-up**: Muestra versión de baja resolución mientras carga la real
+- **Intersection Observer API**: Carga imágenes 200-300px antes de que entren al viewport
+- **Precarga de siguiente imagen**: En galerías secuenciales
+
+### CDN Específico para Imágenes
+
+Servicios como Cloudflare Images o ImageKit reducen tiempos de carga en un **60-75%** comparado con hosting tradicional. Ofrecen redimensionamiento automático según dispositivo, compresión adaptativa y distribución global.
+
+Una **web para fotógrafos** rápida no solo mejora la experiencia; es factor de ranking en Google desde los Core Web Vitals. Más sobre esto en nuestra [guía de velocidad web y Core Web Vitals](/blog/velocidad-web-core-web-vitals-guia-seo-2026).
+
+## SEO para Fotógrafos: Cómo Aparecer Cuando Te Buscan
+
+El 78% de novias buscan fotógrafos en Google antes de revisar redes sociales. Si no apareces en la primera página para "fotógrafo de bodas [tu ciudad]", estás invisible.
+
+### SEO Local: Tu Mayor Oportunidad
+
+La mayoría de servicios fotográficos son locales. Optimiza para búsquedas geográficas:
+
+**En tu página principal:**
+- Menciona tu ciudad/región en el H1 y primeros 100 palabras
+- Incluye landmarks locales en descripciones
+- Schema markup de LocalBusiness con dirección y área de servicio
+
+**Google Business Profile:**
+- Categoría principal: "Fotógrafo" o "Servicio de fotografía de bodas"
+- Sube 3-5 fotos nuevas semanalmente
+- Responde todas las reseñas en menos de 48 horas
+
+### SEO de Especialización
+
+Posicionarse para "fotógrafo" es casi imposible. Posicionarse para "fotógrafo newborn Madrid estilo natural" es alcanzable en 3-6 meses.
+
+**Crea contenido específico:**
+- Blog post: "Cómo preparar tu casa para sesión newborn"
+- Guía: "Qué esperar de tu sesión de embarazo en exteriores"
+- FAQ: "Cuánto cuesta un fotógrafo de bodas en Madrid 2026"
+
+### Optimización de Alt Text para Imágenes
+
+Los fotógrafos suelen ignorar esto, pero es oro para SEO. Google no ve tus fotos; lee el alt text. Cada imagen es una oportunidad de ranking.
+
+## Sistema de Reservas: Convierte Visitas en Clientes Pagados
+
+### Formulario de Contacto Optimizado
+
+El equilibrio ideal para fotógrafos incluye: nombre, email, tipo de servicio, fecha aproximada, presupuesto estimado (rangos) y mensaje breve. La pregunta de presupuesto **filtra leads no cualificados**.
+
+### Integración con Calendario
+
+Herramientas como Calendly permiten que clientes potenciales reserven directamente una videollamada de 15-30 minutos. Reduce emails de ida y vuelta y aumenta compromiso.
+
+### Automatización de Seguimiento
+
+Un 40-50% de consultas no responden al primer email. Configura secuencias automáticas de seguimiento que multiplican conversiones sin trabajo manual repetitivo.
+
+## Galerías Privadas para Clientes
+
+La experiencia post-servicio determina referencias y reseñas. Una **web para fotógrafos** completa incluye sistema de galerías privadas con acceso protegido, descarga en alta resolución, selección de favoritas, y opción de compartir con familiares.
+
+Cuando una novia puede compartir fácilmente su galería de boda con invitados, y esos invitados ven una presentación profesional con tu logo y contacto, **generas leads pasivos**. El 30% de nuevos clientes de fotógrafos de bodas vienen de referencias de bodas anteriores.
+
+## Estrategia de Página de Precios
+
+El 85% de consumidores esperan ver rangos de precio en la web antes de contactar. Tres enfoques efectivos:
+
+**1. Paquetes Claros** (recomendado para bodas/eventos): Básico, Estándar y Premium con detalles claros.
+
+**2. Rango de Inversión** (para proyectos custom): "Sesiones corporativas desde 350 euros."
+
+**3. Página de Inversión Educativa**: Explica factores que influyen en precio y termina con CTA para cotización personalizada.
+
+## Costos Reales y ROI
+
+### Desglose de Inversión
+
+**Plantilla Premium**: 800-1.500 euros
+**Web Semi-Custom**: 2.500-4.500 euros (diseño adaptado, SEO, galerías integradas)
+**Desarrollo Custom**: 5.000-12.000 euros (diseño único, funcionalidades específicas)
+
+### ROI Realista
+
+Si tu ticket promedio es 1.500 euros por servicio fotográfico, necesitas conseguir **2-3 clientes adicionales** en el primer año para recuperar la inversión completa.
+
+Datos de nuestros clientes fotógrafos:
+- **Antes de web profesional**: 80% de leads de Instagram/referencias, 15-20% de conversión
+- **Después de web optimizada**: 45% de leads de Google orgánico, 30-35% de conversión
+
+La web no solo genera más leads; mejora la calidad y conversión de todos tus canales. Más errores comunes en [nuestra guía de errores web en PYMEs](/blog/errores-web-pymes-que-matan-ventas-2026).
+
+## Checklist: Tu Web de Fotógrafo Lista para Convertir
+
+**Contenido y Estructura:**
+- Propuesta de valor clara en hero section
+- Portfolio curado con 15-25 mejores imágenes
+- Sección "Sobre mí" con foto y historia personal
+- Testimonios con contexto específico (3-5 mínimo)
+- Página de servicios con paquetes o rangos de precio
+- Formulario de contacto optimizado (6 campos máximo)
+
+**Optimización Técnica:**
+- Todas las imágenes en WebP/AVIF con fallback
+- Lazy loading implementado correctamente
+- Velocidad de carga bajo 3 segundos en mobile
+- 100% responsive en todos los dispositivos
+- Core Web Vitals en verde
+
+**SEO y Analytics:**
+- Google Business Profile completo y verificado
+- Alt text descriptivo en todas las imágenes
+- Meta títulos y descripciones optimizados
+- Schema markup de LocalBusiness y Service
+- Google Analytics 4 instalado y configurado
+
+---
+
+## También te puede interesar
+
+- [Landing Page que Convierte: Guía 2026](/blog/como-crear-landing-page-que-convierte-2026)
+- [Velocidad Web y Core Web Vitals](/blog/velocidad-web-core-web-vitals-guia-seo-2026)
+- [Los 10 Errores en Webs de PYMEs](/blog/errores-web-pymes-que-matan-ventas-2026)
+
+---
+
+## ¿Listo para Crear tu Web de Fotógrafo que Realmente Vende?
+
+En **M.G.M Automations** ayudamos a profesionales creativos en Madrid a construir presencias digitales que generan resultados reales. No vendemos plantillas genéricas; creamos estrategias digitales personalizadas.
+
+[Agenda una consultoría gratuita](/contacto) y descubre cómo convertir tu talento fotográfico en un negocio digital sostenible.
+    `},{id:"seo-ecommerce-posicionar-tienda-online-guia-2026",title:"SEO para E-commerce: Guía Completa para Posicionar tu Tienda Online en 2026",excerpt:"El 68% del tráfico en tiendas online viene de búsquedas orgánicas. Aprende las técnicas SEO específicas para e-commerce que realmente funcionan.",date:"2026-02-25",readTime:"12 min",category:"SEO & GEO",image:null,featured:!1,author:{name:"Manuel Gregorio",role:"Founder de M.G.M Automations"},content:`
+## Por Qué el SEO es Crítico para tu E-commerce en 2026
+
+El comercio electrónico ha evolucionado significativamente, y con él las estrategias para **posicionar tienda online** en los motores de búsqueda. Según datos recientes, el **68% del tráfico web en tiendas online proviene de búsquedas orgánicas**, superando con creces a las redes sociales (14%) y el tráfico directo (18%).
+
+Para una tienda online, invertir en **SEO ecommerce** no es opcional: es fundamental para la supervivencia del negocio. A diferencia de la publicidad de pago, el SEO genera tráfico constante y cualificado sin un coste por clic, con un **ROI promedio del 275%** para empresas con estrategias SEO sólidas.
+
+En el competitivo mercado español, donde más de 87.000 tiendas online compiten por la atención de los usuarios, las primeras tres posiciones en Google capturan el 54% de todos los clics, mientras que la segunda página recibe menos del 1% del tráfico.
+
+## Investigación de Palabras Clave para Páginas de Producto
+
+La base de cualquier estrategia de **optimización ecommerce** comienza con una investigación exhaustiva de palabras clave.
+
+### Tipos de Palabras Clave para E-commerce
+
+**Palabras clave transaccionales**: Con alta intención de compra como "comprar zapatillas running baratas" o "precio iPhone 15 Pro". Tasas de conversión del 8-12%.
+
+**Palabras clave informacionales**: Términos como "mejor crema hidratante piel seca" que atraen usuarios en fase de investigación. Convierten menos (1-3%) pero generan volumen.
+
+**Palabras clave de marca**: Incluyen nombres de fabricantes y modelos específicos. Usuarios que saben exactamente qué buscan y están muy cerca de comprar.
+
+### Herramientas y Metodología
+
+Busca keywords con volumen de búsqueda mensual entre 100-5.000, dificultad inferior a 40, CPC alto (indica intención comercial fuerte) y presencia de funciones SERP como "Shopping".
+
+Un truco avanzado: utiliza la función de autocompletar de Google y las búsquedas relacionadas. Estas son keywords reales que la gente está usando ahora mismo.
+
+## Optimización de Páginas de Categoría
+
+Las páginas de categoría son el corazón del **SEO para ecommerce**. Tienen el potencial de posicionar para términos competitivos de alto volumen.
+
+### Estructura y Jerarquía
+
+Organiza tus categorías con una estructura lógica que no supere los 3-4 niveles de profundidad. Cada nivel debe ser accesible con un máximo de 3 clics desde la homepage.
+
+### Contenido de Categoría
+
+El error más común es crear páginas de categoría que solo muestran productos sin texto. Necesitas:
+
+**Descripción introductoria de 300-500 palabras** que explique qué es la categoría y por qué comprar en tu tienda.
+
+**Contenido expandible debajo de productos**: Guías de compra, comparativas o FAQs que añaden valor sin afectar la experiencia de usuario.
+
+**Filtros y facetas optimizadas**: Implementados correctamente para evitar contenido duplicado.
+
+## SEO On-Page para Páginas de Producto
+
+### Títulos de Producto Optimizados
+
+La fórmula ideal: [Marca] [Modelo] [Característica Clave] [Especificación]. Evita keyword stuffing o títulos demasiado largos.
+
+### Descripciones de Producto Únicas
+
+Nunca uses las descripciones del fabricante sin modificarlas. Crea descripciones únicas de mínimo 300 palabras con beneficios, casos de uso, especificaciones y palabras clave long-tail. Las tiendas con descripciones únicas ven un incremento promedio del **45% en tráfico orgánico** en 6 meses.
+
+### Optimización de Imágenes
+
+- **Nombres de archivo descriptivos**: "zapatillas-nike-air-max-270-negro.jpg" en lugar de "IMG_2341.jpg"
+- **Alt text específico** con marca, modelo y color
+- **Formato WebP** con fallback
+- **Lazy loading** para mejorar LCP
+- **Múltiples ángulos**: 5-7 imágenes por producto es el óptimo
+
+### Schema Markup para Productos
+
+Implementa Schema.org Product con name, image, description, sku, brand y offers. Añade ratings y reviews para conseguir estrellas en resultados. Los snippets con reseñas tienen un **CTR 35% superior** al promedio.
+
+## SEO Técnico para E-commerce
+
+### Velocidad de Carga y Core Web Vitals
+
+Cada segundo de retraso reduce las conversiones un 7%. Los requisitos mínimos:
+
+- **LCP**: Inferior a 2.5 segundos
+- **INP**: Por debajo de 200ms
+- **CLS**: Inferior a 0.1
+
+Implementa un CDN, activa compresión Brotli/Gzip. Para profundizar, consulta nuestra [guía de velocidad web y Core Web Vitals](/blog/velocidad-web-core-web-vitals-guia-seo-2026).
+
+### Gestión de Crawl Budget
+
+En tiendas con más de 1.000 URLs, el crawl budget es factor limitante. Bloquea URLs innecesarias con robots.txt, crea sitemaps XML separados por tipo de contenido, y mantén el tiempo de respuesta del servidor inferior a 200ms.
+
+### URLs Canónicas y Contenido Duplicado
+
+Cada página filtrada debe apuntar con canonical a la URL principal. Variantes de color/talla deben usar canonical hacia la versión principal. Usa URLs limpias como /categoria/subcategoria/ en lugar de parámetros.
+
+### Paginación Correcta
+
+Permite que Google indexe todas las páginas de paginación. Considera "Load More" con JavaScript que actualice la URL. Implementa números de página en title tags.
+
+## Marketing de Contenidos para E-commerce
+
+### Blog Corporativo Estratégico
+
+Crea contenido que responda preguntas pre-compra, posicione keywords informacionales y genere backlinks naturalmente. Las páginas de producto rara vez consiguen enlaces naturales; el contenido educativo sí.
+
+### Guías de Compra y Comparativas
+
+Crea guías exhaustivas como "Mejores portátiles gaming 2026". Estas páginas posicionan términos de alto volumen, mantienen usuarios en tu sitio y generan conversiones indirectas. Actualízalas trimestralmente.
+
+### Contenido Generado por Usuarios
+
+Las reseñas de clientes son contenido único y constantemente actualizado. Las páginas con 50+ reseñas posicionan un **23% mejor** que páginas sin reviews.
+
+## Estrategias de Link Building para E-commerce
+
+### Relaciones con Fabricantes
+
+Si vendes marcas reconocidas, contacta con fabricantes para aparecer en su página de "Dónde comprar". Estos enlaces son extremadamente valiosos.
+
+### Colaboraciones con Influencers y Bloggers
+
+Ofrece productos para review o programas de afiliación. Un enlace desde un blog de nicho con DA 40+ genera tanto tráfico como rankings mejorados.
+
+### Relaciones Públicas Digitales
+
+Crea estudios de mercado o informes originales sobre tu industria. Los periodistas necesitan datos para sus artículos y citarán tu estudio con enlace incluido.
+
+## Errores Comunes en SEO para E-commerce
+
+**1. Contenido Duplicado Masivo**: Usar descripciones de fabricante sin modificar.
+
+**2. Ignorar Mobile**: El 63% de búsquedas de compras se realizan desde móvil.
+
+**3. Estructura de URLs Deficiente**: URLs con parámetros en lugar de descriptivas.
+
+**4. Páginas de Productos Agotados**: Eliminar URLs causa errores 404 y pierde valor SEO acumulado. Mantén la página activa con sugerencias de productos similares.
+
+**5. No Trabajar la Estrategia de Keywords**: Optimizar sin [investigación exhaustiva de palabras clave](/blog/estrategia-palabras-clave-pymes-guia-2026) previa.
+
+## Medición y Análisis de Resultados
+
+### Métricas Clave
+
+- **Tráfico orgánico por segmento**: Separa tráfico a categorías, productos, blog
+- **Conversiones e ingresos orgánicos**: La métrica definitiva
+- **Rankings de keywords objetivo**: Monitoriza posiciones para tus 20-50 keywords más importantes
+- **Páginas indexadas vs. enviadas**: Ratio inferior a 80% indica problemas técnicos
+
+### Tu Roadmap de SEO E-commerce
+
+1. **Mes 1-2**: Auditoría técnica, investigación de keywords, optimización de arquitectura
+2. **Mes 3-4**: Optimización on-page de categorías y productos principales
+3. **Mes 5-6**: Contenido estratégico y link building
+4. **Mes 7-12**: Iteración basada en datos y expansión
+
+Los primeros resultados significativos aparecen entre mes 4-6, con crecimiento compuesto a partir de ahí. Una estrategia bien ejecutada puede duplicar o triplicar tráfico orgánico en 12 meses.
+
+---
+
+## También te puede interesar
+
+- [Estrategia de Palabras Clave para PYMEs](/blog/estrategia-palabras-clave-pymes-guia-2026)
+- [Velocidad Web y Core Web Vitals](/blog/velocidad-web-core-web-vitals-guia-seo-2026)
+- [CTR en Google: Cómo Conseguir que Hagan Clic](/blog/seo-ctr-mejorar-clics-google-2026)
+
+---
+
+## ¿Necesitas Ayuda con el SEO de tu Tienda Online?
+
+En **M.G.M Automations** ayudamos a e-commerce en Madrid y toda España a multiplicar su tráfico orgánico y ventas mediante estrategias SEO personalizadas y basadas en datos reales.
+
+Nuestros clientes experimentan incrementos promedio del 180% en tráfico orgánico en los primeros 12 meses. Trabajamos con tiendas de todos los tamaños.
+
+**[Agenda una consultoría gratuita](/contacto)** y descubre cómo podemos hacer crecer tu tienda online mediante SEO técnico, optimización de conversiones y estrategias de contenido que realmente funcionan.
+    `},{id:"redes-sociales-vs-web-propia-negocio-2026",title:"Redes Sociales vs Web Propia: Por Qué tu Negocio No Puede Depender Solo de Instagram en 2026",excerpt:"El alcance orgánico en Instagram ha caído al 5%. Descubre por qué necesitas una web propia y cómo combinarla con tus redes sociales.",date:"2026-02-25",readTime:"10 min",category:"Desarrollo Web",image:null,featured:!1,author:{name:"Manuel Gregorio",role:"Founder de M.G.M Automations"},content:`
+## La Realidad que Muchos Negocios Ignoran
+
+"Tengo Instagram, TikTok y Facebook. ¿Para qué necesito una web?" Esta frase la escuchamos al menos una vez por semana. Y lo entendemos. Las redes sociales son fáciles, gratuitas y te permiten empezar a vender desde el primer día.
+
+Pero aquí está el problema: **estás construyendo tu negocio sobre terreno alquilado**. Y en 2026, con el alcance orgánico en Instagram por debajo del 5% y cambios de algoritmo cada mes, depender únicamente de las redes sociales es como construir tu casa sobre arena.
+
+## La Falsa Sensación de Seguridad de las Redes Sociales
+
+Tienes 10.000 seguidores en Instagram. Publicas contenido regularmente. Recibes mensajes y vendes. Todo parece ir bien. Hasta que un día te levantas y descubres que:
+
+- Tu alcance orgánico pasó de 2.000 impresiones a 150 de la noche a la mañana
+- Instagram cambió el algoritmo y ahora prioriza Reels de entretenimiento sobre contenido de negocio
+- Tu cuenta fue suspendida por error y no hay nadie que pueda ayudarte en menos de 3 semanas
+
+**Esto no son escenarios hipotéticos. Son situaciones que negocios reales enfrentan cada día.**
+
+### El Problema del Alcance Orgánico en 2026
+
+Los números no mienten:
+
+- **Instagram**: Alcance orgánico promedio del 4.8% (si tienes 10.000 seguidores, solo 480 personas ven tu contenido)
+- **Facebook**: Alcance orgánico del 2.2% para páginas de negocio
+- **TikTok**: Aunque mejor, el algoritmo es impredecible y puede cambiar tu visibilidad de un día para otro
+- **LinkedIn**: Alcance del 6-8%, pero solo si generas engagement inmediato
+
+¿Qué significa esto? Que **el 95% de tu audiencia no ve lo que publicas**. Y para llegar a ellos, tienes que pagar publicidad. Cada vez más cara.
+
+## No Eres Dueño de Tu Audiencia en Redes Sociales
+
+**Esos seguidores en Instagram no son tuyos**. Son de Meta. Y si mañana deciden cambiar las reglas del juego, no hay absolutamente nada que puedas hacer.
+
+### Casos Reales de Negocios que lo Perdieron Todo
+
+**Caso 1: La tienda de moda en Barcelona** — Una boutique online con 45.000 seguidores facturaba 15.000 euros al mes solo desde DMs. Su cuenta fue suspendida por "actividad sospechosa" (resultó ser un error). Tardaron 6 semanas en recuperarla. Perdió el 80% de sus ventas.
+
+**Caso 2: El coach de fitness en Valencia** — 62.000 seguidores. Su cuenta fue hackeada y convertida en una página de apuestas. Instagram nunca recuperó la cuenta. Años de trabajo desaparecieron en 48 horas.
+
+**Caso 3: La agencia de viajes en Madrid** — Instagram bloqueó su cuenta por enviar "demasiados mensajes" a clientes potenciales. Sin acceso a su base de clientes, tuvieron que cerrar temporalmente.
+
+¿El denominador común? **Ninguno tenía una web propia con una base de datos de emails**.
+
+## Cambios de Algoritmo: El Juego que Nunca Ganas
+
+Las redes sociales cambian sus algoritmos constantemente. Y nunca lo hacen pensando en tu negocio, sino en sus propios intereses comerciales.
+
+En los últimos 18 meses hemos visto:
+
+- Instagram priorizar entretenimiento sobre contenido educativo o comercial
+- TikTok cambiar su algoritmo para promover cuentas nuevas, dejando atrás a creadores establecidos
+- LinkedIn reducir el alcance de posts con links externos
+- Facebook prácticamente eliminar el alcance orgánico para páginas de negocio
+
+**Cada cambio de algoritmo puede destruir meses de estrategia en un instante**.
+
+## Lo que Una Web Propia Te Da que las Redes Sociales No Pueden
+
+### 1. Control Total Sobre Tu Contenido y Audiencia
+
+Con tu propia web eres dueño de tu base de datos de clientes. Nadie te la puede quitar. Decides cómo se ve tu marca sin las limitaciones de templates de redes sociales. Tu contenido no desaparece después de 24 horas.
+
+### 2. SEO: Aparece en Google Cuando la Gente Busca tu Servicio
+
+**El 68% de las experiencias online comienzan con un motor de búsqueda**. Cuando alguien busca "diseñador web Madrid" o "tienda de ropa sostenible Barcelona", las redes sociales casi nunca aparecen en los primeros resultados. Las webs sí.
+
+Una estrategia SEO sólida significa tráfico constante y predecible, clientes que te encuentran cuando ya están buscando lo que vendes, y contenido que sigue generando visitas meses o años después de publicarlo.
+
+### 3. Analítica Real y Datos que Puedes Usar
+
+Instagram Insights te dice cuántas personas vieron tu post. Google Analytics te dice de dónde vienen tus visitantes, qué páginas visitan, cuánto tiempo pasan en cada sección y en qué punto exacto abandonan el proceso de compra. **Esta diferencia en datos es la diferencia entre hacer marketing a ciegas y tomar decisiones informadas**.
+
+### 4. Conversiones Optimizadas
+
+Una web te permite crear embudos de conversión específicos: [landing pages](/blog/como-crear-landing-page-que-convierte-2026) diseñadas para un objetivo, formularios optimizados, checkout sin fricciones y emails automáticos de seguimiento.
+
+En redes sociales, el proceso de compra es: ver post, enviar DM, esperar respuesta, preguntar precio, negociar envío... **Cada paso es una oportunidad para perder la venta**.
+
+### 5. Credibilidad y Profesionalismo
+
+Un estudio de 2025 reveló que **el 84% de los consumidores buscan la web de una empresa antes de tomar una decisión de compra significativa**, incluso si los descubrieron en redes sociales.
+
+### 6. Email Marketing: El Canal que Sí Controlas
+
+El email marketing tiene un **ROI promedio de 42 euros por cada euro invertido**. Cuando alguien te da su email, tú controlas esa comunicación. No hay algoritmo que decida si tus mensajes llegan o no.
+
+Tu web es el mejor lugar para construir tu lista de email. Como detallamos en nuestra [guía de email marketing para PYMEs](/blog/email-marketing-pymes-guia-automatizacion-2026), una estrategia bien ejecutada puede ser tu canal de mayor rentabilidad.
+
+## La Estrategia Ganadora: Web como Hub, Redes Sociales como Radios
+
+**No se trata de redes sociales VS web propia. Se trata de usar cada canal para lo que mejor hace.**
+
+### El Modelo Hub & Spoke
+
+- **Tu web es el centro (hub)**: Aquí vive tu contenido permanente, tu tienda, tu blog, tus servicios completos
+- **Las redes sociales son los radios**: Cada uno lleva tráfico hacia el centro
+
+#### Cómo Funciona en la Práctica
+
+**Instagram y TikTok**: Awareness y engagement. Contenido visual atractivo con CTA constante: "Link en bio para más información".
+
+**LinkedIn**: Credibilidad y networking B2B. Artículos que terminan con enlace a tu blog.
+
+**Email (desde tu web)**: Conversión y retención. Newsletter, secuencias automáticas y ofertas.
+
+### Ejemplo de Contenido Integrado
+
+**Lunes**: Publicas un artículo de blog en tu web. **Martes**: Carrusel de Instagram con los puntos clave + CTA al link completo. **Miércoles**: Reel de 60 segundos con el error principal del artículo. **Jueves**: Post en LinkedIn con reflexión profesional + link. **Viernes**: Newsletter con el artículo + recursos.
+
+**Resultado**: Un solo contenido trabajado 5 veces, cada uno llevando tráfico a tu web donde capturas emails y conviertes visitantes en clientes.
+
+## Comparación de Costos
+
+### Opción A: Solo Redes Sociales
+
+- Publicidad en Instagram para alcanzar a tu audiencia: 300-800 euros/mes
+- Herramientas de gestión: 40 euros/mes
+- **Total: 340-840 euros/mes + tu tiempo**
+- **Riesgo**: Perder todo si tu cuenta es bloqueada
+
+### Opción B: Web Propia + Estrategia Integrada
+
+- Web profesional (inversión inicial): 1.500-3.000 euros
+- Hosting y mantenimiento: 20-50 euros/mes
+- SEO y contenido: 100-200 euros/mes
+- Email marketing: 0-30 euros/mes
+- Redes sociales reducidas: 100-200 euros/mes en ads
+- **Total inicial: 1.500-3.000 euros | Mensual: 220-480 euros/mes**
+- **Beneficio**: Activo digital permanente que aumenta de valor con el tiempo
+
+### El Verdadero ROI
+
+Una web bien hecha sigue generando tráfico y leads años después, su valor aumenta con cada artículo y testimonio, y puede venderse o transferirse. **Es un activo, no un gasto**.
+
+Las redes sociales requieren contenido constante, lo que publiques hoy estará enterrado mañana, y no puedes venderlas ni transferirlas con valor real. **Son un canal, no un activo**.
+
+## Objeciones Comunes
+
+### "Mis clientes están todos en Instagram"
+
+Sí, pero también usan Google. Y cuando deciden comprar, buscan información adicional. El 76% de las personas que descubren un negocio en redes sociales buscan su web antes de comprar.
+
+### "No tengo tiempo para gestionar una web"
+
+Una web no necesita actualizaciones diarias como Instagram. Un blog con 2-4 artículos al mes genera más valor a largo plazo que 120 posts de Instagram que desaparecen en el feed.
+
+### "Es muy complicado, no soy técnico"
+
+En 2026, crear y mantener una web es más fácil que nunca. Y si no quieres lidiar con lo técnico, una agencia se encarga de todo mientras tú te enfocas en tu negocio.
+
+### "Ya gasto en publicidad de redes sociales, no puedo permitirme una web"
+
+Si ya pagas 300-500 euros/mes en ads de Instagram, invertir 1.500-2.000 euros en una web se paga sola en 3-4 meses. Y después, esa web sigue trabajando para ti.
+
+## Tu Plan de Acción para 2026
+
+### Mes 1: Fundación
+- Define qué tipo de web necesitas
+- Selecciona plataforma o agencia
+- Inicia construcción con al menos 5 páginas esenciales
+
+### Mes 2: Construcción y Contenido
+- Finaliza web con diseño profesional y responsive
+- Crea 3-5 artículos de blog
+- Configura email marketing y lead magnet
+
+### Mes 3: Integración y Lanzamiento
+- Actualiza todas tus biografías con link a web
+- Crea contenido de redes específico para llevar tráfico
+- Configura Google Analytics y Search Console
+- Inicia estrategia hub & spoke
+
+## Conclusión
+
+Puedes construir un negocio en Instagram. Pero **siempre estarás a merced de las decisiones de una empresa que no conoces y que no te controla**.
+
+Una web propia es **la diferencia entre tener un negocio digital y alquilar un espacio en el negocio de otra persona**. La pregunta no es "¿necesito una web?" sino "¿cuánto más puedo arriesgarme a no tenerla?"
+
+Tu web es tu hogar digital. Las redes sociales son los barrios donde vas a invitar gente a visitarte. Necesitas ambos. Más errores que evitar en [nuestra guía de errores web en PYMEs](/blog/errores-web-pymes-que-matan-ventas-2026).
+
+---
+
+## También te puede interesar
+
+- [Landing Page que Convierte: Guía 2026](/blog/como-crear-landing-page-que-convierte-2026)
+- [Email Marketing para PYMEs: Guía Completa](/blog/email-marketing-pymes-guia-automatizacion-2026)
+- [Los 10 Errores en Webs de PYMEs](/blog/errores-web-pymes-que-matan-ventas-2026)
+
+---
+
+## ¿Listo para Construir tu Presencia Digital Real?
+
+En **M.G.M Automations** ayudamos a negocios en Madrid y toda España a crear webs profesionales que generan resultados reales, no solo quedan bonitas.
+
+Nos encargamos de todo: desde el diseño hasta la estrategia de contenido, SEO y conexión con tus redes sociales existentes.
+
+**[Agenda una consultoría gratuita](/contacto)** y descubre exactamente qué tipo de web necesita tu negocio y cómo integrarla con tu estrategia actual de redes sociales.
+    `},{id:"web-arquitectos-estudios-diseno-captar-proyectos-2026",title:"Web para Arquitectos y Estudios de Diseño: Cómo Captar Proyectos con tu Presencia Digital en 2026",excerpt:"El 82% de los clientes investigan online antes de contactar un arquitecto. Tu web es tu mejor herramienta de captación de proyectos.",date:"2026-02-25",readTime:"10 min",category:"Análisis Sectorial",image:null,featured:!1,author:{name:"Manuel Gregorio",role:"Founder de M.G.M Automations"},content:`
+El mercado de la arquitectura y el diseño ha cambiado radicalmente. Mientras algunos estudios siguen dependiendo del boca a boca y las referencias tradicionales, **el 82% de los clientes potenciales investigan online antes de contactar con un arquitecto**. En 2026, no tener una presencia digital sólida equivale a cerrar la puerta a la mayoría de tus oportunidades de negocio.
+
+Como arquitecto o estudio de diseño, tu web no es solo una tarjeta de presentación digital: es tu vendedor más eficaz, tu portfolio siempre accesible y tu principal herramienta de captación de proyectos.
+
+## Por Qué los Arquitectos Necesitan Más que el Boca a Boca
+
+Durante décadas, el sector de la arquitectura ha funcionado principalmente mediante recomendaciones personales. Aunque las referencias siguen siendo valiosas, **depender exclusivamente del boca a boca limita dramáticamente tu crecimiento**.
+
+### El Comportamiento del Cliente Ha Cambiado
+
+Según estudios recientes del sector inmobiliario y construcción en España, **el 91% de las personas que planean un proyecto de construcción o reforma comienzan su búsqueda en Google**. Incluso cuando reciben una recomendación personal, el 76% investiga online al profesional antes de hacer el primer contacto.
+
+Si no tienes una **página web para tu estudio de arquitectura** profesional y optimizada, estás perdiendo clientes incluso cuando te recomiendan.
+
+### Ventajas de una Presencia Digital Sólida
+
+- **Captación 24/7**: Tu web trabaja mientras duermes
+- **Alcance geográfico ampliado**: No te limitas a tu red de contactos inmediata
+- **Credibilidad profesional**: Una web bien diseñada transmite seriedad
+- **Control de tu narrativa**: Tú decides qué proyectos destacar
+- **Generación de leads cualificados**: Atraes clientes que buscan específicamente lo que ofreces
+
+## El Portfolio: El Corazón de tu Web
+
+**El 94% de los clientes de arquitectura afirman que el portfolio es el factor decisivo** al elegir con quién trabajar.
+
+### Fotografía Profesional de Alta Calidad
+
+No hay negociación aquí: **invierte en fotografía arquitectónica profesional**. Los estudios que invierten en fotografía profesional reportan un 340% más de consultas desde su web.
+
+### Presentación Antes/Después
+
+Los proyectos de reforma tienen un gancho emocional poderoso. **Las páginas con sección antes/después tienen una tasa de conversión 2.3 veces mayor** que aquellas que solo muestran el resultado final.
+
+### Renders y Visualizaciones 3D
+
+Para proyectos en desarrollo o conceptuales, los renders de alta calidad son indispensables. Comparar render vs. fotografía real demuestra precisión en ejecución.
+
+### Documentación del Proceso
+
+Aquí es donde te diferencias. Mientras la mayoría de arquitectos solo muestran resultados, **mostrar tu proceso de trabajo genera confianza y justifica tu valor profesional**. Incluye bocetos conceptuales, evolución del diseño, desafíos técnicos y cómo los resolviste.
+
+### Organización Estratégica
+
+Organiza tu portfolio por tipología (viviendas, comercial, rehabilitación), por ubicación (importante para SEO local), y con filtros interactivos que permitan encontrar exactamente lo que buscan.
+
+## SEO para Estudios de Arquitectura
+
+### SEO Local: Tu Ventaja Geográfica
+
+La mayoría de proyectos arquitectónicos son locales o regionales. **El 78% de las búsquedas locales en móvil resultan en una contratación dentro de las 24 horas**.
+
+Asegúrate de incluir mención clara de tu ubicación en la web, páginas específicas por área de servicio, [Google My Business optimizado](/blog/google-my-business-guia-seo-local-2026), y reseñas de clientes.
+
+### Palabras Clave por Tipo de Proyecto
+
+Los clientes buscan soluciones específicas: "arquitecto para reforma integral vivienda", "estudio arquitectura diseño restaurantes", "diseño casa pasiva madrid". Identifica las 10-15 búsquedas más relevantes para tu especialidad.
+
+### SEO Técnico para Webs Visuales
+
+Las webs de arquitectura necesitan muchas imágenes de alta calidad, lo que puede ralentizar el sitio. **El 53% de visitantes móviles abandonan sitios que tardan más de 3 segundos en cargar**. Implementa optimización de imágenes (WebP, lazy loading), CDN, y Core Web Vitals optimizados.
+
+## Casos de Estudio que Venden
+
+### La Estructura de un Caso de Estudio Efectivo
+
+**1. El Desafío del Cliente**: ¿Qué necesitaba? ¿Qué limitaciones existían?
+
+**2. Tu Aproximación y Solución**: Concepto de diseño, soluciones técnicas innovadoras, cómo superaste limitaciones.
+
+**3. Resultados Medibles**: Metros cuadrados optimizados, mejora en eficiencia energética, presupuesto final vs. inicial, testimonio del cliente.
+
+**Los casos con resultados medibles generan 2.7 veces más consultas** que aquellos que solo muestran aspectos estéticos.
+
+### Testimonios de Clientes
+
+El 92% de personas confía más en recomendaciones de otros consumidores que en publicidad directa. Los testimonios en vídeo tienen una conversión 3.2x mayor. Solicita testimonios sistemáticamente al finalizar cada proyecto.
+
+## Estrategia de Contenidos para Arquitectos
+
+### Temáticas de Alto Valor
+
+**Guías Educativas**: "Cuánto cuesta construir una casa unifamiliar en 2026", "Guía para licencias de obra en tu ciudad", "Cómo elegir un arquitecto: 10 preguntas esenciales".
+
+**Tendencias y Análisis**: "Arquitectura sostenible", "Materiales innovadores en construcción 2026", "Diseño bioclimático".
+
+**Contenido Local**: "Rehabilitación de edificios protegidos en [ciudad]", "Normativa urbanística actualización 2026".
+
+Los estudios que publican 1-2 artículos mensuales de 1.500+ palabras reportan un **crecimiento orgánico del 47% anual** en tráfico.
+
+## Captación de Leads
+
+### Calculadoras Interactivas
+
+**Las calculadoras generan leads 3.8 veces más efectivamente** que formularios genéricos. Ejemplos: calculadora de coste de construcción, estimador de honorarios, calculadora de ahorro energético.
+
+### Consultas Gratuitas Estratégicas
+
+Ofrecer una "consultoría inicial gratuita de 30 minutos" es un imán de leads potente. Cualifica antes de agendar, limita disponibilidad y define alcance claramente.
+
+### Formularios Optimizados
+
+Incluye tipo de proyecto, ubicación, presupuesto aproximado y timing. No pidas demasiado: 5-7 campos máximo (cada campo adicional reduce conversión ~11%).
+
+Las [landing pages optimizadas](/blog/como-crear-landing-page-que-convierte-2026) para servicios específicos convierten hasta 5 veces mejor que páginas de contacto genéricas.
+
+## Optimización Móvil
+
+**El 68% de las visitas a webs de arquitectura provienen de dispositivos móviles**. Implementa galerías swipe, navegación simplificada, botones de contacto sticky y testea en conexiones 3G/4G reales.
+
+Un estudio barcelonés de interiorismo rediseñó su web con prioridad móvil y vio un **incremento del 234% en formularios completados**.
+
+## Costes y ROI
+
+### Rangos de Inversión en 2026
+
+**Web Básica Plantilla** (1.500-4.000 euros): Plantilla premium personalizada, 10-15 proyectos, blog básico.
+
+**Web Profesional Semi-Personalizada** (4.000-9.000 euros): Diseño adaptado, portfolio con filtros, blog con estrategia SEO, integraciones.
+
+**Web Premium Totalmente Personalizada** (9.000-20.000+ euros): Diseño único, calculadoras, portfolio ilimitado, automatizaciones.
+
+### ROI Real
+
+Supongamos 2 proyectos anuales vía web con honorarios de 12.000 euros:
+
+- **Ingresos anuales vía web**: 24.000 euros
+- **Inversión web profesional**: 6.000 euros
+- **ROI primer año**: 300%
+
+Conforme tu SEO mejora, **la captación tiende a crecer 40-60% anual** sin incrementar costes proporcionalmente.
+
+## Mantenimiento y Evolución
+
+Tu web es un activo vivo. Actualiza el portfolio trimestralmente, publica en el blog mínimo mensualmente, profundiza en 2-3 casos de estudio anuales, y captura testimonios sistemáticamente.
+
+Usa analytics para entender qué páginas generan más contactos, de dónde llega tu tráfico más valioso, y ajusta tu estrategia basándote en datos reales.
+
+---
+
+## También te puede interesar
+
+- [Web para Fotógrafos: Portfolio Online](/blog/web-fotografos-portfolio-online-clientes-2026)
+- [Google My Business: Guía Definitiva SEO Local](/blog/google-my-business-guia-seo-local-2026)
+- [Landing Page que Convierte: Guía 2026](/blog/como-crear-landing-page-que-convierte-2026)
+
+---
+
+## ¿Listo para Transformar tu Captación de Proyectos?
+
+En **M.G.M Automations** diseñamos webs específicamente optimizadas para estudios de arquitectura y diseño que convierten visitantes en clientes. Entendemos las necesidades únicas de tu sector: portfolios visuales potentes, carga rápida con imágenes de alta calidad, y SEO que atrae clientes locales cualificados.
+
+[Agenda una consultoría gratuita](/contacto) y descubre cómo podemos hacer que tu presencia digital sea tu mejor vendedor.
+    `}],P=n=>n.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g,"").replace(/[^a-z0-9]+/g,"-").replace(/(^-|-$)/g,""),W=n=>{const a=[];return n.split(`
+`).forEach(o=>{if(o.startsWith("## ")&&!o.startsWith("### ")){const r=o.replace("## ","").trim();a.push({text:r,id:P(r)})}}),a},q=({headings:n})=>{const[a,o]=u.useState(!1);return n.length<=5?null:e.jsxs(e.Fragment,{children:[e.jsxs("div",{className:"lg:hidden mb-8",children:[e.jsxs("button",{onClick:()=>o(!a),className:"w-full flex items-center justify-between p-4 border-3 border-noir-200 dark:border-noir-700 bg-white dark:bg-noir-900 font-display font-bold text-noir-900 dark:text-cream-50",children:[e.jsxs("span",{className:"flex items-center gap-2",children:[e.jsx(y,{className:"w-5 h-5 text-lime-500"}),"Tabla de contenidos"]}),e.jsx(k,{className:`w-5 h-5 transition-transform ${a?"rotate-180":""}`})]}),a&&e.jsx("nav",{className:"border-3 border-t-0 border-noir-200 dark:border-noir-700 bg-white dark:bg-noir-900 p-4",children:e.jsx("ul",{className:"space-y-2",children:n.map(r=>e.jsx("li",{children:e.jsx("a",{href:`#${r.id}`,onClick:()=>o(!1),className:"text-sm text-noir-600 dark:text-noir-400 hover:text-lime-600 dark:hover:text-lime-400 transition-colors",children:r.text})},r.id))})})]}),e.jsx("aside",{className:"hidden lg:block",children:e.jsxs("div",{className:"sticky top-24 border-3 border-noir-200 dark:border-noir-700 bg-white dark:bg-noir-900 p-5",children:[e.jsxs("h4",{className:"font-display font-bold text-noir-900 dark:text-cream-50 mb-4 flex items-center gap-2",children:[e.jsx(y,{className:"w-4 h-4 text-lime-500"}),"Contenidos"]}),e.jsx("nav",{children:e.jsx("ul",{className:"space-y-2",children:n.map(r=>e.jsx("li",{children:e.jsx("a",{href:`#${r.id}`,className:"text-sm text-noir-600 dark:text-noir-400 hover:text-lime-600 dark:hover:text-lime-400 transition-colors block py-0.5",children:r.text})},r.id))})})]})})]})},D=({title:n,postId:a})=>{const[o,r]=u.useState(!1),c=`https://mgmautomations.es/blog/${a}`,t=encodeURIComponent(n),i=encodeURIComponent(c),s=async()=>{try{await navigator.clipboard.writeText(c),r(!0),setTimeout(()=>r(!1),2e3)}catch{}};return e.jsxs("div",{className:"flex items-center gap-2 mt-4",children:[e.jsxs("span",{className:"text-noir-500 text-xs mr-1 flex items-center gap-1",children:[e.jsx(R,{className:"w-3.5 h-3.5"})," Compartir:"]}),e.jsx("a",{href:`https://wa.me/?text=${t}%20${i}`,target:"_blank",rel:"noopener noreferrer",className:"p-1.5 border-2 border-noir-300 dark:border-noir-600 text-noir-500 hover:border-green-500 hover:text-green-500 transition-colors","aria-label":"Compartir en WhatsApp",children:e.jsx("svg",{className:"w-4 h-4",viewBox:"0 0 24 24",fill:"currentColor",children:e.jsx("path",{d:"M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"})})}),e.jsx("a",{href:`https://twitter.com/intent/tweet?text=${t}&url=${i}`,target:"_blank",rel:"noopener noreferrer",className:"p-1.5 border-2 border-noir-300 dark:border-noir-600 text-noir-500 hover:border-sky-500 hover:text-sky-500 transition-colors","aria-label":"Compartir en X",children:e.jsx("svg",{className:"w-4 h-4",viewBox:"0 0 24 24",fill:"currentColor",children:e.jsx("path",{d:"M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"})})}),e.jsx("a",{href:`https://www.linkedin.com/sharing/share-offsite/?url=${i}`,target:"_blank",rel:"noopener noreferrer",className:"p-1.5 border-2 border-noir-300 dark:border-noir-600 text-noir-500 hover:border-blue-600 hover:text-blue-600 transition-colors","aria-label":"Compartir en LinkedIn",children:e.jsx("svg",{className:"w-4 h-4",viewBox:"0 0 24 24",fill:"currentColor",children:e.jsx("path",{d:"M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"})})}),e.jsx("button",{onClick:s,className:`p-1.5 border-2 transition-colors ${o?"border-lime-500 text-lime-500":"border-noir-300 dark:border-noir-600 text-noir-500 hover:border-lime-500 hover:text-lime-500"}`,"aria-label":"Copiar enlace",children:o?e.jsx(S,{className:"w-4 h-4"}):e.jsx(N,{className:"w-4 h-4"})})]})},B=({currentPost:n})=>{const a=u.useMemo(()=>{const o=b.filter(t=>t.category===n.category&&t.id!==n.id),r=b.filter(t=>t.category!==n.category&&t.id!==n.id),c=[...o];return c.length<3&&c.push(...r.slice(0,3-c.length)),c.slice(0,3)},[n]);return a.length===0?null:e.jsxs("section",{className:"mt-16",children:[e.jsx("h3",{className:"text-2xl font-display font-bold text-noir-900 dark:text-cream-50 mb-6",children:"Artículos Relacionados"}),e.jsx("div",{className:"grid sm:grid-cols-2 lg:grid-cols-3 gap-4",children:a.map(o=>e.jsxs(p,{to:`/blog/${o.id}`,className:"group border-3 border-noir-200 dark:border-noir-700 bg-white dark:bg-noir-900 p-5 hover:border-lime-400 transition-all",children:[e.jsxs("div",{className:"flex items-center gap-2 mb-3",children:[e.jsx(A,{className:"w-3.5 h-3.5 text-lime-500"}),e.jsx("span",{className:"text-xs font-bold uppercase text-noir-500",children:o.category})]}),e.jsx("h4",{className:"text-base font-display font-bold text-noir-900 dark:text-cream-50 mb-2 group-hover:text-lime-600 dark:group-hover:text-lime-400 transition-colors line-clamp-2",children:o.title}),e.jsx("p",{className:"text-noir-600 dark:text-noir-400 text-sm line-clamp-2",children:o.excerpt}),e.jsxs("div",{className:"flex items-center justify-between text-xs text-noir-500 mt-3",children:[e.jsx("span",{children:new Date(o.date).toLocaleDateString("es-ES",{day:"numeric",month:"short"})}),e.jsx("span",{children:o.readTime})]})]},o.id))})]})},F=()=>{const[n,a]=u.useState(""),[o,r]=u.useState(!1),[c,t]=u.useState(""),i=async s=>{if(s.preventDefault(),!!n){t("");try{const{subscribeNewsletter:d}=await j(async()=>{const{subscribeNewsletter:m}=await import("./api-nir54oi5.js");return{subscribeNewsletter:m}},[]);await d(n),r(!0),a("")}catch(d){t(d.message||"Error al suscribirse. Inténtalo de nuevo.")}}};return e.jsx("section",{className:"mb-12 border-3 border-lime-400 bg-white dark:bg-noir-900 p-6 md:p-8",children:e.jsxs("div",{className:"flex flex-col md:flex-row md:items-center md:justify-between gap-6",children:[e.jsxs("div",{className:"flex-1",children:[e.jsxs("h3",{className:"text-xl font-display font-bold text-noir-900 dark:text-cream-50 mb-2 flex items-center gap-2",children:[e.jsx(O,{className:"w-5 h-5 text-lime-500"}),"Recibe nuestros artículos en tu email"]}),e.jsx("p",{className:"text-noir-600 dark:text-noir-400 text-sm",children:"Un email a la semana con guías prácticas para digitalizar tu negocio. Sin spam, cancela cuando quieras."})]}),e.jsx("div",{className:"flex-shrink-0 w-full md:w-auto",children:o?e.jsxs("p",{className:"text-lime-600 dark:text-lime-400 font-bold flex items-center gap-2",children:[e.jsx(S,{className:"w-5 h-5"}),"¡Suscrito correctamente!"]}):e.jsxs(e.Fragment,{children:[e.jsxs("form",{onSubmit:i,className:"flex gap-2",children:[e.jsx("input",{type:"email",required:!0,value:n,onChange:s=>a(s.target.value),placeholder:"tu@email.com",className:"flex-1 md:w-56 px-4 py-3 border-3 border-noir-200 dark:border-noir-700 bg-cream-50 dark:bg-noir-800 text-noir-900 dark:text-cream-50 focus:border-lime-400 focus:outline-none focus:shadow-[4px_4px_0_0_rgba(163,230,53,0.3)] transition-all text-sm"}),e.jsx("button",{type:"submit",className:"px-5 py-3 bg-noir-900 dark:bg-lime-400 text-lime-400 dark:text-noir-900 font-bold border-3 border-noir-900 dark:border-lime-400 hover:translate-x-[-2px] hover:translate-y-[-2px] hover:shadow-brutal transition-all text-sm whitespace-nowrap",children:"Suscribirse"})]}),c&&e.jsx("p",{className:"text-red-500 text-xs mt-2",children:c})]})})]})})},U=()=>{const[n,a]=u.useState("Todos"),[o,r]=u.useState(""),c=u.useMemo(()=>["Todos",...new Set(b.map(s=>s.category))],[]),t=u.useMemo(()=>{let s=b;if(n!=="Todos"&&(s=s.filter(d=>d.category===n)),o.trim()){const d=o.toLowerCase();s=s.filter(m=>m.title.toLowerCase().includes(d)||m.excerpt.toLowerCase().includes(d)||m.content.toLowerCase().includes(d))}return s},[n,o]),i=b.find(s=>s.featured);return e.jsxs("div",{className:"min-h-screen bg-cream-50 dark:bg-noir-950",children:[e.jsx(E,{title:"Blog - Desarrollo Web, Automatización e IA | M.G.M Automations",description:"Recursos, guías y casos de estudio sobre desarrollo web, automatización de negocios e inteligencia artificial para PYMEs. Por M.G.M Automations.",canonical:"/blog",ogTitle:"Blog - M.G.M Automations",ogDescription:"Artículos sobre desarrollo web, automatización e IA para negocios. Guías prácticas con ejemplos reales.",ogImage:"https://mgmautomations.es/og-image.jpg",schemas:G()}),e.jsx("header",{className:"bg-noir-900 dark:bg-noir-900 py-12 px-4",children:e.jsxs("div",{className:"max-w-6xl mx-auto",children:[e.jsxs(p,{to:"/",className:"inline-flex items-center gap-2 text-lime-400 hover:text-lime-300 transition-colors mb-8",children:[e.jsx(C,{className:"w-4 h-4"}),"Volver al inicio"]}),e.jsx("h1",{className:"text-4xl md:text-5xl font-display font-bold text-cream-50 mb-4",children:"Blog"}),e.jsx("p",{className:"text-xl text-noir-400 max-w-2xl mb-8",children:"Recursos, guías y casos de estudio sobre desarrollo web y automatización de negocios."}),e.jsxs("div",{className:"relative max-w-md",children:[e.jsx(h,{className:"absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-noir-500"}),e.jsx("input",{type:"text",value:o,onChange:s=>r(s.target.value),placeholder:"Buscar artículos...",className:"w-full pl-11 pr-4 py-3 border-3 border-noir-700 bg-noir-800 text-cream-50 placeholder-noir-500 focus:border-lime-400 focus:outline-none focus:shadow-[4px_4px_0_0_rgba(163,230,53,0.3)] transition-all"})]})]})}),e.jsxs("main",{className:"max-w-6xl mx-auto px-4 py-12",children:[e.jsx("div",{className:"mb-10 -mx-4 px-4 overflow-x-auto",children:e.jsx("div",{className:"flex gap-2 min-w-max pb-2",children:c.map(s=>e.jsx("button",{onClick:()=>a(s),className:`px-4 py-2 text-sm font-bold border-3 transition-all whitespace-nowrap ${n===s?"bg-lime-400 text-noir-900 border-noir-900 dark:border-lime-400":"bg-white dark:bg-noir-900 text-noir-600 dark:text-noir-400 border-noir-200 dark:border-noir-700 hover:border-noir-400 dark:hover:border-noir-500"}`,children:s},s))})}),i&&n==="Todos"&&!o.trim()&&e.jsx("section",{className:"mb-12",children:e.jsx(p,{to:`/blog/${i.id}`,className:"group block border-3 border-noir-900 dark:border-noir-700 bg-white dark:bg-noir-900 overflow-hidden hover:translate-x-[-4px] hover:translate-y-[-4px] hover:shadow-brutal dark:hover:shadow-brutal-lime transition-all",children:e.jsxs("div",{className:"grid md:grid-cols-2",children:[i.image&&e.jsx("div",{className:"aspect-video md:aspect-auto bg-noir-200 dark:bg-noir-800",children:e.jsx("img",{src:i.image,alt:i.title,className:"w-full h-full object-cover"})}),e.jsxs("div",{className:"p-8 md:p-12 flex flex-col justify-center",children:[e.jsxs("div",{className:"flex items-center gap-4 mb-4",children:[e.jsx("span",{className:"px-3 py-1 bg-lime-400 text-noir-900 text-xs font-bold uppercase",children:"Destacado"}),e.jsx("span",{className:"px-3 py-1 bg-noir-100 dark:bg-noir-800 text-noir-600 dark:text-noir-400 text-xs font-bold uppercase",children:i.category})]}),e.jsx("h2",{className:"text-2xl md:text-3xl font-display font-bold text-noir-900 dark:text-cream-50 mb-4 group-hover:text-lime-600 dark:group-hover:text-lime-400 transition-colors",children:i.title}),e.jsx("p",{className:"text-noir-600 dark:text-noir-400 mb-6",children:i.excerpt}),e.jsxs("div",{className:"flex items-center gap-6 text-sm text-noir-500",children:[e.jsxs("span",{className:"flex items-center gap-2",children:[e.jsx(I,{className:"w-4 h-4"}),new Date(i.date).toLocaleDateString("es-ES",{day:"numeric",month:"long",year:"numeric"})]}),e.jsxs("span",{className:"flex items-center gap-2",children:[e.jsx(z,{className:"w-4 h-4"}),i.readTime]})]})]})]})})}),n==="Todos"&&!o.trim()&&e.jsx(F,{}),e.jsxs("section",{children:[e.jsx("h2",{className:"text-2xl font-display font-bold text-noir-900 dark:text-cream-50 mb-8",children:n==="Todos"&&!o.trim()?"Todos los artículos":o.trim()?`Resultados para "${o}"`:n}),t.length===0?e.jsxs("div",{className:"text-center py-16 border-3 border-noir-200 dark:border-noir-700 bg-white dark:bg-noir-900",children:[e.jsx(h,{className:"w-12 h-12 text-noir-300 dark:text-noir-600 mx-auto mb-4"}),e.jsx("p",{className:"text-noir-600 dark:text-noir-400 text-lg font-display font-bold mb-2",children:"No se encontraron artículos"}),e.jsx("p",{className:"text-noir-500 text-sm",children:"Prueba con otros términos de búsqueda o selecciona otra categoría."})]}):e.jsx("div",{className:"grid md:grid-cols-2 lg:grid-cols-3 gap-6",children:t.map(s=>e.jsxs(p,{to:`/blog/${s.id}`,className:"group border-3 border-noir-200 dark:border-noir-700 bg-white dark:bg-noir-900 p-6 hover:border-lime-400 transition-all",children:[e.jsxs("div",{className:"flex items-center gap-2 mb-4",children:[e.jsx(A,{className:"w-4 h-4 text-lime-500"}),e.jsx("span",{className:"text-xs font-bold uppercase text-noir-500",children:s.category})]}),e.jsx("h3",{className:"text-xl font-display font-bold text-noir-900 dark:text-cream-50 mb-3 group-hover:text-lime-600 dark:group-hover:text-lime-400 transition-colors",children:s.title}),e.jsx("p",{className:"text-noir-600 dark:text-noir-400 text-sm mb-4 line-clamp-3",children:s.excerpt}),e.jsxs("div",{className:"flex items-center justify-between text-xs text-noir-500",children:[e.jsx("span",{children:new Date(s.date).toLocaleDateString("es-ES",{day:"numeric",month:"short"})}),e.jsx("span",{children:s.readTime})]})]},s.id))})]})]}),e.jsx("footer",{className:"bg-noir-900 py-8 px-4 text-center",children:e.jsxs("p",{className:"text-noir-500 text-sm",children:["© ",new Date().getFullYear()," M.G.M Automations. Todos los derechos reservados."]})})]})},Q=({postId:n})=>{var c,t;const a=b.find(i=>i.id===n),o=u.useMemo(()=>a?W(a.content):[],[a]),r=o.length>5;return a?e.jsxs("div",{className:"min-h-screen bg-cream-50 dark:bg-noir-950",children:[e.jsx(E,{title:`${a.title} | Blog M.G.M Automations`,description:a.excerpt,canonical:`/blog/${a.id}`,ogTitle:a.title,ogDescription:a.excerpt,ogImage:a.image?`https://mgmautomations.es${a.image}`:"https://mgmautomations.es/og-image.jpg",ogType:"article",schemas:M(a)}),e.jsx("header",{className:"bg-noir-900 dark:bg-noir-900 py-12 px-4",children:e.jsxs("div",{className:`mx-auto ${r?"max-w-5xl":"max-w-4xl"}`,children:[e.jsxs(p,{to:"/blog",className:"inline-flex items-center gap-2 text-lime-400 hover:text-lime-300 transition-colors mb-8",children:[e.jsx(C,{className:"w-4 h-4"}),"Volver al blog"]}),e.jsxs("div",{className:"flex items-center gap-4 mb-6",children:[e.jsx("span",{className:"px-3 py-1 bg-lime-400 text-noir-900 text-xs font-bold uppercase",children:a.category}),e.jsxs("span",{className:"flex items-center gap-2 text-sm text-noir-400",children:[e.jsx(z,{className:"w-4 h-4"}),a.readTime]})]}),e.jsx("h1",{className:"text-3xl md:text-4xl font-display font-bold text-cream-50 mb-4",children:a.title}),e.jsxs("div",{className:"flex items-center gap-4 mt-6",children:[e.jsx("div",{className:"w-10 h-10 rounded-full bg-lime-400 flex items-center justify-center border-2 border-lime-400",children:e.jsx(T,{className:"w-5 h-5 text-noir-900"})}),e.jsxs("div",{children:[e.jsx("p",{className:"text-cream-50 font-semibold text-sm",children:((c=a.author)==null?void 0:c.name)||"Manuel Gregorio"}),e.jsxs("p",{className:"text-noir-400 text-xs",children:[((t=a.author)==null?void 0:t.role)||"Founder de M.G.M Automations"," · ",new Date(a.date).toLocaleDateString("es-ES",{day:"numeric",month:"long",year:"numeric"})]})]})]}),e.jsx(D,{title:a.title,postId:a.id})]})}),e.jsxs("main",{className:`mx-auto px-4 py-12 ${r?"max-w-5xl":"max-w-4xl"}`,children:[r&&e.jsx(q,{headings:o}),e.jsxs("div",{className:r?"grid lg:grid-cols-[1fr_250px] gap-8":"",children:[e.jsxs("div",{children:[e.jsx("article",{className:"prose prose-lg dark:prose-invert max-w-none prose-headings:font-display prose-headings:text-noir-900 dark:prose-headings:text-cream-50 prose-p:text-noir-600 dark:prose-p:text-noir-400 prose-li:text-noir-600 dark:prose-li:text-noir-400 prose-strong:text-noir-900 dark:prose-strong:text-cream-50 prose-a:text-lime-600 dark:prose-a:text-lime-400",children:a.content.split(`
+`).map((i,s)=>{const d=m=>{const v=[];let g=m,f=0;const x=/(\*\*(.+?)\*\*|\[(.+?)\]\((.+?)\))/;for(;g;){const l=g.match(x);if(!l){v.push(g);break}if(l.index>0&&v.push(g.slice(0,l.index)),l[2])v.push(e.jsx("strong",{className:"text-noir-900 dark:text-cream-50",children:l[2]},f++));else if(l[3]&&l[4]){const w=l[4].startsWith("/");v.push(w?e.jsx(p,{to:l[4],className:"text-lime-600 dark:text-lime-400 underline hover:text-lime-500",children:l[3]},f++):e.jsx("a",{href:l[4],className:"text-lime-600 dark:text-lime-400 underline hover:text-lime-500",target:"_blank",rel:"noopener noreferrer",children:l[3]},f++))}g=g.slice(l.index+l[0].length)}return v};if(i.startsWith("## ")){const m=i.replace("## ","");return e.jsx("h2",{id:P(m),className:"text-2xl font-display font-bold mt-12 mb-4",children:m},s)}return i.startsWith("### ")?e.jsx("h3",{className:"text-xl font-display font-bold mt-8 mb-3",children:i.replace("### ","")},s):i.startsWith("- ")?e.jsxs("div",{className:"flex gap-2 my-2",children:[e.jsx("span",{className:"text-lime-500",children:"•"}),e.jsx("span",{children:d(i.slice(2))})]},s):i.trim()===""?null:e.jsx("p",{className:"my-4",children:d(i)},s)})}),e.jsx(B,{currentPost:a}),e.jsxs("div",{className:"mt-16 p-8 border-3 border-lime-400 bg-lime-50 dark:bg-lime-900/20",children:[e.jsx("h3",{className:"text-2xl font-display font-bold text-noir-900 dark:text-cream-50 mb-4",children:"¿Te ha resultado útil?"}),e.jsx("p",{className:"text-noir-600 dark:text-noir-400 mb-6",children:"Si estás pensando en un proyecto similar, estaremos encantados de ayudarte."}),e.jsxs(p,{to:"/#contacto",className:"inline-flex items-center gap-2 bg-noir-900 text-lime-400 px-6 py-4 font-bold border-3 border-noir-900 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:shadow-brutal transition-all",children:["Contactar",e.jsx(L,{className:"w-5 h-5"})]})]})]}),r&&e.jsx(q,{headings:o})]})]}),e.jsx("footer",{className:"bg-noir-900 py-8 px-4 text-center",children:e.jsxs("p",{className:"text-noir-500 text-sm",children:["© ",new Date().getFullYear()," M.G.M Automations. Todos los derechos reservados."]})})]}):e.jsx("div",{className:"min-h-screen bg-cream-50 dark:bg-noir-950 flex items-center justify-center",children:e.jsxs("div",{className:"text-center",children:[e.jsx("h1",{className:"text-4xl font-display font-bold text-noir-900 dark:text-cream-50 mb-4",children:"Artículo no encontrado"}),e.jsx(p,{to:"/blog",className:"text-lime-600 dark:text-lime-400 hover:underline",children:"Volver al blog"})]})})},X=({postId:n})=>n?e.jsx(Q,{postId:n}):e.jsx(U,{});export{b as BLOG_POSTS,X as default};

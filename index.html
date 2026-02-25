@@ -61,11 +61,21 @@
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
     <meta name="apple-mobile-web-app-title" content="M.G.M Automations" />
-    <script type="module" crossorigin src="/Agencia/assets/index-CqGp-qrC.js"></script>
+    <script type="module" crossorigin src="/Agencia/assets/index-B-uV49l5.js"></script>
     <link rel="modulepreload" crossorigin href="/Agencia/assets/vendor-react-F9Y4d3HK.js">
     <link rel="stylesheet" crossorigin href="/Agencia/assets/index-8rYTkd9R.css">
   </head>
   <body>
+    <!-- SPA redirect handler for GitHub Pages -->
+    <script>
+      (function(){
+        var redirect = sessionStorage.redirect;
+        delete sessionStorage.redirect;
+        if (redirect && redirect !== location.href) {
+          history.replaceState(null, null, redirect);
+        }
+      })();
+    </script>
     <div id="root"></div>
 
     <!-- Static content for SEO crawlers that don't execute JavaScript -->

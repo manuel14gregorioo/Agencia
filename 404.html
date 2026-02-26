@@ -1,14 +1,395 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
   <head>
-    <meta charset="utf-8">
-    <title>M.G.M Automations</title>
-    <script>
-      // SPA redirect for GitHub Pages
-      // Stores the original URL and redirects to index.html
-      sessionStorage.redirect = location.href;
-      location.replace(location.pathname.split('/').slice(0, 2).join('/') + '/');
-    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+
+    <!-- Primary SEO Meta Tags -->
+    <title>Desarrollo Web y Automatizaciones en 2 Semanas | M.G.M Automations Madrid</title>
+    <meta name="description" content="Desarrollamos sistemas web y automatizaciones para negocios en 1-3 semanas. Desde 3.000€. Creadores de VOCAP.io. Precio fijo, sin sorpresas." />
+    <meta name="keywords" content="desarrollo web madrid, automatización procesos, chatbot whatsapp, sistemas de reservas, agencia desarrollo rápido, integración stripe, plataforma saas, vocap" />
+    <meta name="author" content="M.G.M Automations" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <link rel="canonical" href="https://mgmautomations.es/" />
+
+    <!-- Open Graph / Facebook / WhatsApp -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://mgmautomations.es/" />
+    <meta property="og:title" content="De idea a sistema funcionando en 2 semanas | M.G.M Automations" />
+    <meta property="og:description" content="Desarrollo web y automatizaciones para negocios. Desde 3.000€. Creadores de VOCAP.io - SaaS real en producción que puedes probar." />
+    <meta property="og:image" content="https://mgmautomations.es/og-image.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="M.G.M Automations - De idea a sistema funcionando en 2 semanas" />
+    <meta property="og:locale" content="es_ES" />
+    <meta property="og:site_name" content="M.G.M Automations" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://mgmautomations.es/" />
+    <meta name="twitter:title" content="De idea a sistema funcionando en 2 semanas | M.G.M Automations" />
+    <meta name="twitter:description" content="Desarrollo web y automatizaciones. Desde 3.000€. Creadores de VOCAP.io." />
+    <meta name="twitter:image" content="https://mgmautomations.es/og-image.jpg" />
+    <meta name="twitter:image:alt" content="M.G.M Automations - Desarrollo Web y Automatizaciones" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/agencia/favicon.svg?v=5" />
+    <link rel="icon" type="image/x-icon" href="/agencia/favicon.svg?v=5" />
+    <link rel="apple-touch-icon" href="/agencia/favicon.svg?v=5" />
+    <link rel="manifest" href="/agencia/manifest.json" />
+
+    <!-- Theme Color - Noir Brutalist -->
+    <meta name="theme-color" content="#BFFF00" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#0A0A0B" media="(prefers-color-scheme: dark)" />
+    <meta name="msapplication-TileColor" content="#BFFF00" />
+
+    <!-- Fonts - Clash Display + Outfit from Fontshare -->
+    <link rel="preconnect" href="https://api.fontshare.com" />
+    <link href="https://api.fontshare.com/v2/css?f[]=clash-display@500,600,700&f[]=outfit@400,500,600&display=swap" rel="stylesheet" />
+
+    <!-- Preload critical image -->
+    <link rel="preload" href="/agencia/images/vocap-hero.jpg" as="image" />
+
+    <!-- Geo Tags for Local SEO -->
+    <meta name="geo.region" content="ES-MD" />
+    <meta name="geo.placename" content="Madrid" />
+    <meta name="geo.position" content="40.4168;-3.7038" />
+    <meta name="ICBM" content="40.4168, -3.7038" />
+
+    <!-- Additional SEO -->
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="M.G.M Automations" />
+    <script type="module" crossorigin src="/agencia/assets/index-C-3JqiDI.js"></script>
+    <link rel="modulepreload" crossorigin href="/agencia/assets/vendor-react-F9Y4d3HK.js">
+    <link rel="stylesheet" crossorigin href="/agencia/assets/index-8rYTkd9R.css">
   </head>
-  <body></body>
+  <body>
+    <div id="root"></div>
+
+    <!-- Static content for SEO crawlers that don't execute JavaScript -->
+    <noscript>
+      <div style="max-width: 1200px; margin: 0 auto; padding: 2rem; font-family: system-ui, sans-serif;">
+        <header style="margin-bottom: 3rem;">
+          <h1 style="font-size: 2.5rem; font-weight: 700; margin-bottom: 1rem;">M.G.M Automations - Desarrollo Web y Automatizaciones en Madrid</h1>
+          <p style="font-size: 1.25rem; color: #666;">De idea a sistema funcionando en 2 semanas. Precio fijo desde 1.500€.</p>
+        </header>
+
+        <main>
+          <section style="margin-bottom: 3rem;">
+            <h2 style="font-size: 1.75rem; font-weight: 600; margin-bottom: 1rem;">Nuestros Servicios</h2>
+            <ul style="list-style: disc; padding-left: 1.5rem; line-height: 1.8;">
+              <li><strong>Automatización de Procesos</strong> (1.500 - 2.500€): Chatbots WhatsApp, sistemas de reservas automáticas, integración con CRMs</li>
+              <li><strong>Plataformas Web</strong> (2.500 - 4.000€): Landing pages, dashboards, portales de clientes con autenticación</li>
+              <li><strong>SaaS Completo</strong> (a consultar): Autenticación, pagos con Stripe, procesamiento con IA, APIs</li>
+            </ul>
+          </section>
+
+          <section style="margin-bottom: 3rem;">
+            <h2 style="font-size: 1.75rem; font-weight: 600; margin-bottom: 1rem;">Portfolio: VOCAP.io</h2>
+            <p>Nuestro proyecto estrella es <a href="https://vocap.io" style="color: #BFFF00; text-decoration: underline;">VOCAP.io</a>, un SaaS de transcripción con inteligencia artificial que puedes probar gratis. Demuestra nuestra capacidad de desarrollo end-to-end.</p>
+          </section>
+
+          <section style="margin-bottom: 3rem;">
+            <h2 style="font-size: 1.75rem; font-weight: 600; margin-bottom: 1rem;">Proceso de Trabajo</h2>
+            <ol style="list-style: decimal; padding-left: 1.5rem; line-height: 1.8;">
+              <li><strong>Análisis</strong> (1-2 días): Entendemos tu problema y definimos la solución</li>
+              <li><strong>Propuesta</strong> (24-48h): Presupuesto cerrado con alcance detallado</li>
+              <li><strong>Desarrollo</strong> (1-3 semanas): Construimos con updates cada 2-3 días</li>
+              <li><strong>Entrega</strong> (1 día): Deploy y formación incluidos</li>
+            </ol>
+          </section>
+
+          <section style="margin-bottom: 3rem;">
+            <h2 style="font-size: 1.75rem; font-weight: 600; margin-bottom: 1rem;">Preguntas Frecuentes</h2>
+            <dl style="line-height: 1.8;">
+              <dt style="font-weight: 600;">¿Tenéis ejemplos reales de vuestro trabajo?</dt>
+              <dd style="margin-bottom: 1rem;">Sí, VOCAP.io es un proyecto propio que puedes probar gratis ahora mismo.</dd>
+
+              <dt style="font-weight: 600;">¿Cuánto tiempo tarda un proyecto?</dt>
+              <dd style="margin-bottom: 1rem;">Automatizaciones en 1-2 semanas. Plataformas web en 2-3 semanas. SaaS completos en 3-4 semanas.</dd>
+
+              <dt style="font-weight: 600;">¿Trabajáis solo en Madrid?</dt>
+              <dd style="margin-bottom: 1rem;">100% remoto. Trabajamos con clientes de toda España.</dd>
+            </dl>
+          </section>
+
+          <section style="margin-bottom: 3rem;">
+            <h2 style="font-size: 1.75rem; font-weight: 600; margin-bottom: 1rem;">Contacto</h2>
+            <p>Email: <a href="mailto:hola@mgmautomations.es" style="color: #BFFF00;">hola@mgmautomations.es</a></p>
+            <p>Ubicación: Madrid, España (100% remoto)</p>
+            <p>Respuesta garantizada en menos de 24 horas.</p>
+          </section>
+        </main>
+
+        <footer style="border-top: 1px solid #ccc; padding-top: 2rem; margin-top: 3rem; color: #666;">
+          <p>© 2026 M.G.M Automations. Todos los derechos reservados.</p>
+          <p>Desarrollo web y automatizaciones para negocios en España.</p>
+        </footer>
+      </div>
+    </noscript>
+
+
+    <!-- Schema.org JSON-LD Structured Data -->
+
+    <!-- Organization Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "M.G.M Automations",
+      "url": "https://mgmautomations.es",
+      "logo": "https://mgmautomations.es/favicon.svg",
+      "description": "M.G.M Automations es una agencia de desarrollo web y automatización de procesos con sede en Madrid. Entregamos proyectos en 1-3 semanas con precio fijo. Creadores de VOCAP.io.",
+      "email": "hola@mgmautomations.es",
+      "foundingDate": "2024",
+      "founder": {
+        "@type": "Person",
+        "name": "Manuel Gregorio",
+        "jobTitle": "Founder"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Madrid",
+        "addressRegion": "Madrid",
+        "addressCountry": "ES"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "email": "hola@mgmautomations.es",
+        "contactType": "customer service",
+        "availableLanguage": ["Spanish", "English"]
+      },
+      "knowsLanguage": ["es", "en"],
+      "sameAs": [
+        "https://vocap.io"
+      ]
+    }
+    </script>
+
+    <!-- Person Schema (Founder) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Manuel Gregorio",
+      "jobTitle": "Founder",
+      "url": "https://mgmautomations.es",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "M.G.M Automations",
+        "url": "https://mgmautomations.es"
+      },
+      "knowsAbout": ["Desarrollo Web", "Automatización de Procesos", "SaaS", "Inteligencia Artificial", "Python", "React", "Flask"],
+      "knowsLanguage": ["es", "en"]
+    }
+    </script>
+
+    <!-- WebSite Schema for Sitelinks Search Box -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "M.G.M Automations",
+      "url": "https://mgmautomations.es",
+      "description": "Desarrollo web y automatizaciones para negocios en 1-3 semanas",
+      "publisher": {
+        "@type": "Organization",
+        "name": "M.G.M Automations"
+      }
+    }
+    </script>
+
+    <!-- BreadcrumbList Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Inicio",
+          "item": "https://mgmautomations.es/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Portfolio",
+          "item": "https://mgmautomations.es/#portfolio"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Servicios",
+          "item": "https://mgmautomations.es/#servicios"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Contacto",
+          "item": "https://mgmautomations.es/#contacto"
+        }
+      ]
+    }
+    </script>
+
+    <!-- ProfessionalService Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "M.G.M Automations",
+      "image": "https://mgmautomations.es/og-image.jpg",
+      "description": "Agencia de desarrollo web y automatizaciones en Madrid. Entregamos proyectos en 1-3 semanas. Creadores de VOCAP.io.",
+      "url": "https://mgmautomations.es",
+      "email": "hola@mgmautomations.es",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Madrid",
+        "addressRegion": "Madrid",
+        "addressCountry": "ES"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 40.4168,
+        "longitude": -3.7038
+      },
+      "priceRange": "€-€€€",
+      "areaServed": {
+        "@type": "Country",
+        "name": "España"
+      },
+      "serviceType": [
+        "Desarrollo Web",
+        "Automatización de Procesos",
+        "Chatbots WhatsApp",
+        "Sistemas de Reservas Online",
+        "Plataformas SaaS",
+        "Integración Stripe"
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Servicios de Desarrollo",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Automatización de Procesos",
+              "description": "Chatbots WhatsApp, sistemas de reservas automáticas"
+            },
+            "priceSpecification": {
+              "@type": "PriceSpecification",
+              "price": "1500",
+              "priceCurrency": "EUR",
+              "minPrice": "1500"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Plataformas Web",
+              "description": "Landing pages, dashboards, portales de clientes"
+            },
+            "priceSpecification": {
+              "@type": "PriceSpecification",
+              "price": "2500",
+              "priceCurrency": "EUR",
+              "minPrice": "2500"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "SaaS Completo",
+              "description": "Autenticación, pagos Stripe, procesamiento IA"
+            }
+          }
+        ]
+      },
+      "sameAs": [
+        "https://vocap.io"
+      ],
+      "knowsAbout": ["Python", "Flask", "React", "PostgreSQL", "Stripe API", "WhatsApp API", "OpenAI", "Claude AI"]
+    }
+    </script>
+
+    <!-- FAQ Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "¿Tenéis ejemplos reales de vuestro trabajo?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sí, VOCAP.io es un proyecto propio que puedes probar gratis ahora mismo. Es una plataforma SaaS completa de transcripción con IA que demuestra nuestra capacidad end-to-end."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Cuánto tiempo tarda un proyecto?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Automatizaciones en 1-2 semanas. Plataformas web en 2-3 semanas. SaaS completos en 3-4 semanas."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Cuánto cuesta?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Automatizaciones desde 1.500€, plataformas web desde 2.500€, SaaS completos a consultar. Precio fijo cerrado antes de empezar."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Qué pasa si necesito cambios después?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Una ronda de revisiones está incluida sin coste. Para cambios posteriores: soporte a 80€/hora o packs mensuales."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Trabajáis solo en Madrid?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "100% remoto. Trabajamos con clientes de toda España. Reuniones por videollamada, respuesta garantizada en menos de 24 horas."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Qué tecnologías utilizáis?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Nuestro stack principal es Python con Flask en backend, React en frontend, PostgreSQL como base de datos, Stripe para pagos, y APIs de OpenAI y Claude AI para funcionalidades de inteligencia artificial. Desplegamos en Vercel y Railway."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Qué es VOCAP.io?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "VOCAP.io es nuestro producto propio: una plataforma SaaS de transcripción de audio con inteligencia artificial. Ofrece transcripciones de calidad profesional a 1€/hora, frente a los 8-12€ de la competencia. Está desarrollado con Python/Flask, React, PostgreSQL, Stripe y OpenAI Whisper."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Ofrecéis mantenimiento después de la entrega?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sí. Todos los proyectos incluyen 1 mes de soporte gratuito para bugs y ajustes menores. Después, ofrecemos mantenimiento continuo a 80€/hora o packs mensuales adaptados a cada cliente."
+          }
+        }
+      ]
+    }
+    </script>
+  </body>
 </html>

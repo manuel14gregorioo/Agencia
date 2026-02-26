@@ -7,7 +7,7 @@
   <!-- Página principal -->
   <url>
     <loc>https://mgmautomations.es/</loc>
-    <lastmod>2026-02-11</lastmod>
+    <lastmod>2026-02-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -23,12 +23,96 @@
   <!-- Blog index -->
   <url>
     <loc>https://mgmautomations.es/blog</loc>
-    <lastmod>2026-02-11</lastmod>
+    <lastmod>2026-02-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 
-  <!-- Blog posts - 2026 -->
+  <!-- Blog posts - Febrero 2026 -->
+  <url>
+    <loc>https://mgmautomations.es/blog/web-arquitectos-estudios-diseno-captar-proyectos-2026</loc>
+    <lastmod>2026-02-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://mgmautomations.es/blog/redes-sociales-vs-web-propia-negocio-2026</loc>
+    <lastmod>2026-02-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://mgmautomations.es/blog/seo-ecommerce-posicionar-tienda-online-guia-2026</loc>
+    <lastmod>2026-02-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://mgmautomations.es/blog/web-fotografos-portfolio-online-clientes-2026</loc>
+    <lastmod>2026-02-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://mgmautomations.es/blog/pagina-web-farmacias-digitalizacion-ventas-2026</loc>
+    <lastmod>2026-02-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://mgmautomations.es/blog/pagina-web-psicologos-consulta-online-2026</loc>
+    <lastmod>2026-02-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://mgmautomations.es/blog/pagina-web-fisioterapeutas-guia-2026</loc>
+    <lastmod>2026-02-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://mgmautomations.es/blog/analitica-web-google-analytics-pymes-guia-2026</loc>
+    <lastmod>2026-02-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://mgmautomations.es/blog/velocidad-web-core-web-vitals-guia-seo-2026</loc>
+    <lastmod>2026-02-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://mgmautomations.es/blog/estrategia-palabras-clave-pymes-guia-2026</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://mgmautomations.es/blog/email-marketing-pymes-guia-automatizacion-2026</loc>
+    <lastmod>2026-02-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://mgmautomations.es/blog/google-my-business-guia-seo-local-2026</loc>
+    <lastmod>2026-02-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://mgmautomations.es/blog/seo-ctr-mejorar-clics-google-2026</loc>
+    <lastmod>2026-02-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://mgmautomations.es/blog/errores-web-pymes-que-matan-ventas-2026</loc>
+    <lastmod>2026-02-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
   <url>
     <loc>https://mgmautomations.es/blog/hoteles-rurales-web-reservas-directas-2026</loc>
     <lastmod>2026-02-07</lastmod>
@@ -59,6 +143,8 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+
+  <!-- Blog posts - Enero 2026 -->
   <url>
     <loc>https://mgmautomations.es/blog/clinica-dental-web-moderna-2025</loc>
     <lastmod>2026-01-28</lastmod>

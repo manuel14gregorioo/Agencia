@@ -3,23 +3,18 @@
 
 User-agent: *
 Allow: /
-
-# Bloquear rutas de administración y API
 Disallow: /admin
 Disallow: /auth
 Disallow: /api/
 
 # Bloquear archivos internos
-Disallow: /*.json$
-Disallow: /assets/*.map$
+Disallow: /*.json
+Disallow: /*.map
 
 # Sitemap
 Sitemap: https://mgmautomations.es/sitemap.xml
 
-# Crawl-delay (optional, for politeness)
-Crawl-delay: 1
-
-# AI Crawlers - Acceso permitido
+# AI Crawlers - Acceso permitido (GEO - Generative Engine Optimization)
 User-agent: GPTBot
 Allow: /
 
@@ -36,4 +31,10 @@ User-agent: ClaudeBot
 Allow: /
 
 User-agent: PerplexityBot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: cohere-ai
 Allow: /

@@ -10,6 +10,7 @@ import {
   Building2,
   Stethoscope,
   Eye,
+  ShieldCheck,
 } from 'lucide-react';
 import { useScrollAnimation } from '../hooks';
 import { AnimatedCounter } from './HeroSection';
@@ -18,11 +19,11 @@ import { scrollToSection } from '../../utils/scroll';
 const PortfolioSection = () => {
   const [ref, isVisible] = useScrollAnimation();
 
-  const techStack = [
+  const vocapTechStack = [
     'Flask', 'React', 'PostgreSQL', 'Stripe', 'OpenAI Whisper', 'Claude API', 'Tailwind CSS', 'Railway'
   ];
 
-  const features = [
+  const vocapFeatures = [
     'Autenticación completa (registro, login, recuperar contraseña)',
     'Sistema de créditos con 4 planes de suscripción',
     'Transcripción con OpenAI Whisper (50+ idiomas)',
@@ -31,6 +32,21 @@ const PortfolioSection = () => {
     'Landing page bilingüe (ES/EN)',
     'Integración completa con Stripe',
     'Sistema de referidos'
+  ];
+
+  const norvenTechStack = [
+    'Next.js 16', 'React 19', 'TypeScript', 'Prisma', 'PostgreSQL', 'Clerk', 'Stripe', 'Cloudflare R2', 'Tailwind CSS', 'Railway'
+  ];
+
+  const norvenFeatures = [
+    'Multi-tenant con roles (owner, admin, supervisor, inspector)',
+    '7 tipos de campo para inspecciones (texto, número, foto, firma...)',
+    'Subida de fotos y firmas digitales a Cloudflare R2',
+    'Generación de informes PDF profesionales',
+    'Dashboard con métricas y analíticas en tiempo real',
+    'Gestión de plantillas de inspección personalizables',
+    'Sistema de suscripciones con Stripe (3 planes)',
+    'Autenticación segura con Clerk (SSO, MFA)'
   ];
 
   return (
@@ -43,7 +59,7 @@ const PortfolioSection = () => {
         <div className={`text-center mb-16 md:mb-20 transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
           <span className="inline-flex items-center gap-2 px-4 py-2 bg-noir-900 dark:bg-lime-400 text-cream-50 dark:text-noir-900 text-xs font-bold uppercase tracking-wider mb-6">
             <BadgeCheck className="w-4 h-4" />
-            Proyecto verificable
+            Proyectos verificables
           </span>
           <h2 className="heading-xl text-noir-900 dark:text-cream-50 mb-4">
             No hablamos de lo que podemos hacer.
@@ -145,7 +161,7 @@ const PortfolioSection = () => {
                     Stack Tecnológico
                   </h4>
                   <div className="flex flex-wrap gap-2">
-                    {techStack.map((tech) => (
+                    {vocapTechStack.map((tech) => (
                       <span
                         key={tech}
                         className="px-4 py-2 bg-noir-100 dark:bg-noir-800 text-noir-700 dark:text-noir-300 text-sm font-semibold border-2 border-noir-200 dark:border-noir-700 hover:border-lime-400 dark:hover:border-lime-400 transition-colors cursor-default"
@@ -163,7 +179,7 @@ const PortfolioSection = () => {
                     Funcionalidades Incluidas
                   </h4>
                   <ul className="space-y-3">
-                    {features.map((feature, idx) => (
+                    {vocapFeatures.map((feature, idx) => (
                       <li key={idx} className="flex items-start gap-3 text-noir-600 dark:text-noir-400">
                         <Check className="w-5 h-5 text-lime-500 mt-0.5 flex-shrink-0" />
                         <span>{feature}</span>
@@ -176,6 +192,139 @@ const PortfolioSection = () => {
                 <div className="mt-8 p-4 border-l-4 border-lime-400 bg-noir-50 dark:bg-noir-800/50">
                   <p className="text-sm text-noir-600 dark:text-noir-400 italic">
                     "Este es nuestro proyecto propio. Puedes probarlo gratis, ver el código, verificar que funciona."
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Norven project card */}
+        <div className={`mt-8 transition-all duration-700 delay-250 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+          <div className="border-3 border-noir-900 dark:border-noir-700 bg-cream-50 dark:bg-noir-900 overflow-hidden">
+            <div className="grid lg:grid-cols-2">
+              {/* Left - Project showcase */}
+              <div className="relative bg-noir-900 p-8 lg:p-12">
+                {/* Decorative grid */}
+                <div className="absolute inset-0 bg-grid opacity-20" />
+
+                <div className="relative">
+                  {/* Badges */}
+                  <div className="flex flex-wrap gap-2 mb-8">
+                    <span className="inline-flex items-center gap-2 px-3 py-1.5 bg-lime-400 text-noir-900 text-xs font-bold uppercase tracking-wider">
+                      <BadgeCheck className="w-4 h-4" />
+                      Verificable
+                    </span>
+                    <span className="inline-flex items-center gap-2 px-3 py-1.5 bg-coral-500 text-white text-xs font-bold uppercase tracking-wider">
+                      En Producción
+                    </span>
+                    <span className="inline-flex items-center gap-2 px-3 py-1.5 bg-cyan-500 text-white text-xs font-bold uppercase tracking-wider">
+                      B2B SaaS
+                    </span>
+                  </div>
+
+                  {/* Project header */}
+                  <div className="flex items-center gap-4 mb-6">
+                    <div className="w-16 h-16 bg-cyan-500 border-3 border-cyan-500 flex items-center justify-center">
+                      <ShieldCheck className="w-8 h-8 text-white" />
+                    </div>
+                    <div>
+                      <h3 className="text-4xl font-display font-bold text-cream-50">Norven</h3>
+                      <p className="text-noir-400">Plataforma SaaS de Inspecciones Digitales</p>
+                    </div>
+                  </div>
+
+                  {/* Description */}
+                  <p className="text-noir-300 mb-8 leading-relaxed text-lg">
+                    Digitaliza inspecciones de campo: plantillas personalizables, fotos, firmas digitales e informes PDF automáticos.
+                    Plataforma multi-tenant con <strong className="text-cyan-400">4 roles</strong> y gestión completa de equipos.
+                  </p>
+
+                  {/* Stats */}
+                  <div className="grid grid-cols-3 gap-4 mb-10">
+                    <div className="border-3 border-noir-700 p-4 text-center bg-noir-800/50 hover:border-cyan-400 transition-colors">
+                      <p className="text-3xl font-display font-bold text-cyan-400">
+                        <AnimatedCounter value={2} isVisible={isVisible} />
+                      </p>
+                      <p className="text-xs font-bold uppercase tracking-wider text-noir-500 mt-1">Semanas</p>
+                    </div>
+                    <div className="border-3 border-noir-700 p-4 text-center bg-noir-800/50 hover:border-cyan-400 transition-colors">
+                      <p className="text-3xl font-display font-bold text-cream-50">
+                        <AnimatedCounter value={7} isVisible={isVisible} />
+                      </p>
+                      <p className="text-xs font-bold uppercase tracking-wider text-noir-500 mt-1">Tipos Campo</p>
+                    </div>
+                    <div className="border-3 border-noir-700 p-4 text-center bg-noir-800/50 hover:border-cyan-400 transition-colors">
+                      <p className="text-3xl font-display font-bold text-coral-500">
+                        <AnimatedCounter value={4} isVisible={isVisible} />
+                      </p>
+                      <p className="text-xs font-bold uppercase tracking-wider text-noir-500 mt-1">Roles</p>
+                    </div>
+                  </div>
+
+                  {/* CTAs */}
+                  <div className="flex flex-wrap gap-4">
+                    <a
+                      href="https://norven.io"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 bg-cyan-500 text-white px-6 py-4 font-bold uppercase tracking-wide border-3 border-cyan-500 transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:shadow-brutal"
+                    >
+                      Ver Norven.io
+                      <ExternalLink className="w-4 h-4" />
+                    </a>
+                    <a
+                      href="#contacto"
+                      onClick={(e) => scrollToSection(e, '#contacto')}
+                      className="inline-flex items-center gap-2 bg-transparent text-cream-50 px-6 py-4 font-bold uppercase tracking-wide border-3 border-noir-700 hover:border-cream-50 transition-all duration-300"
+                    >
+                      Crear Similar
+                      <ArrowRight className="w-4 h-4" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              {/* Right - Tech & Features */}
+              <div className="p-8 lg:p-12">
+                {/* Tech stack */}
+                <div className="mb-10">
+                  <h4 className="flex items-center gap-2 text-lg font-display font-bold text-noir-900 dark:text-cream-50 mb-4">
+                    <Code className="w-5 h-5 text-cyan-500" />
+                    Stack Tecnológico
+                  </h4>
+                  <div className="flex flex-wrap gap-2">
+                    {norvenTechStack.map((tech) => (
+                      <span
+                        key={tech}
+                        className="px-4 py-2 bg-noir-100 dark:bg-noir-800 text-noir-700 dark:text-noir-300 text-sm font-semibold border-2 border-noir-200 dark:border-noir-700 hover:border-cyan-400 dark:hover:border-cyan-400 transition-colors cursor-default"
+                      >
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+
+                {/* Features */}
+                <div>
+                  <h4 className="flex items-center gap-2 text-lg font-display font-bold text-noir-900 dark:text-cream-50 mb-4">
+                    <Check className="w-5 h-5 text-cyan-500" />
+                    Funcionalidades Incluidas
+                  </h4>
+                  <ul className="space-y-3">
+                    {norvenFeatures.map((feature, idx) => (
+                      <li key={idx} className="flex items-start gap-3 text-noir-600 dark:text-noir-400">
+                        <Check className="w-5 h-5 text-cyan-500 mt-0.5 flex-shrink-0" />
+                        <span>{feature}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
+                {/* Quote */}
+                <div className="mt-8 p-4 border-l-4 border-cyan-500 bg-noir-50 dark:bg-noir-800/50">
+                  <p className="text-sm text-noir-600 dark:text-noir-400 italic">
+                    "Plataforma B2B completa con multi-tenancy, roles, pagos y almacenamiento en la nube. Regístrate y compruébalo."
                   </p>
                 </div>
               </div>

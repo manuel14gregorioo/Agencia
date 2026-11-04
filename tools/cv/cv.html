@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Manuel Gregorio Medina · CV</title>
+<meta name="author" content="Manuel Gregorio Medina">
+<!-- Fuente del CV en PDF. No se publica: lo convierte tools/cv/build.sh con Chrome headless. -->
+<style>
+@font-face{font-family:"JBM";font-weight:400;font-style:normal;src:url("../../site/fonts/jetbrains-mono-latin-400-normal.woff2") format("woff2")}
+@font-face{font-family:"JBM";font-weight:500;font-style:normal;src:url("../../site/fonts/jetbrains-mono-latin-500-normal.woff2") format("woff2")}
+@font-face{font-family:"JBM";font-weight:700;font-style:normal;src:url("../../site/fonts/jetbrains-mono-latin-700-normal.woff2") format("woff2")}
+
+@page{size:A4;margin:12mm 14mm 10mm}
+:root{--ink:#151515;--soft:#3a3a3a;--mute:#6b6b64;--line:#dcdcd5;--line2:#ebebe5;--acc:#0b7a4b}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+body{font-family:"JBM",ui-monospace,monospace;font-size:8.5pt;line-height:1.34;color:var(--ink);background:#fff}
+a{color:inherit;text-decoration:none}
+
+/* Cabecera */
+.head{display:flex;gap:5mm;align-items:flex-end;padding-bottom:3.2mm;border-bottom:1px solid var(--ink)}
+.foto{width:22mm;height:26.4mm;object-fit:cover;border:0.5pt solid var(--line);border-radius:2px;flex:none}
+.name{font-size:19pt;font-weight:700;line-height:1.1;letter-spacing:-.025em}
+.role{margin-top:1.6mm;font-size:9.2pt}
+.contact{margin-top:1.6mm;font-size:7.8pt;color:var(--soft);line-height:1.5}
+.contact a{border-bottom:0.5pt solid var(--line)}
+
+/* Secciones */
+section{margin-top:3.2mm}
+h2{font-size:9.8pt;font-weight:700;letter-spacing:-.02em;padding-bottom:1.2mm;border-bottom:1px solid var(--ink)}
+.item{padding:1.25mm 0;break-inside:avoid}
+.item+.item{border-top:0.5pt solid var(--line2)}
+.item.min{padding:1.1mm 0}
+.hd{display:flex;justify-content:space-between;align-items:baseline;gap:5mm}
+.when{font-size:7.6pt;color:var(--mute);white-space:nowrap}
+h3{font-size:8.9pt;font-weight:700;line-height:1.4}
+h3 a{border-bottom:0.75pt solid var(--acc)}
+h3 .org{font-weight:400;color:var(--mute)}
+.item p{margin-top:.5mm;color:var(--soft)}
+.item p a{border-bottom:0.5pt solid var(--line)}
+.item p.stack{margin-top:.4mm;font-size:7.6pt;color:var(--mute)}
+h2{break-after:avoid}
+
+dl.skills{display:grid;grid-template-columns:24mm 1fr;column-gap:4mm;row-gap:.5mm;padding-top:1.4mm}
+.skills dt{font-size:7.6pt;color:var(--mute);padding-top:.5pt}
+.skills dd{color:var(--soft)}
+
+.foot{margin-top:2.6mm;padding-top:1.4mm;border-top:0.5pt solid var(--line);font-size:7.2pt;color:var(--mute)}
+</style>
+</head>
+<body>
+
+<header class="head">
+  <img class="foto" src="foto.jpg" alt="Manuel Gregorio Medina">
+  <div>
+    <h1 class="name">Manuel Gregorio Medina</h1>
+    <p class="role">Fundador y desarrollador de Norven y VOCAP.</p>
+    <p class="contact"><a href="mailto:manuelgm10@icloud.com">manuelgm10@icloud.com</a> · <a href="https://www.linkedin.com/in/manuel-gregorio-medina-83367a271">linkedin.com/in/manuel-gregorio-medina-83367a271</a> · <a href="https://github.com/manuel14gregorioo">github.com/manuel14gregorioo</a> · <a href="https://mgmautomations.es">mgmautomations.es</a> · Madrid · 21 años</p>
+  </div>
+</header>
+
+<section>
+  <h2>Experiencia</h2>
+
+  <div class="item">
+    <div class="hd"><h3><a href="https://norven.io">Norven</a> <span class="org">· fundador y desarrollador</span></h3><p class="when">mar. 2026 – actualidad</p></div>
+    <div>
+      <p>Cuaderno de campo digital para explotaciones agrícolas: parcelas SIGPAC, tratamientos fitosanitarios, abonados y cosechas. Genera el cuaderno de explotación que exige la PAC (PDF para la inspección y fichero para el SIEX) e importa la Solicitud Única en PDF de 15 de las 17 comunidades autónomas.</p>
+      <p>Web y app iOS <a href="https://apps.apple.com/es/app/norvenagro/id6791729900">NorvenAgro</a>, aprobada en el App Store en septiembre de 2026, con compra integrada.</p>
+      <p class="stack">Next.js, TypeScript, PostgreSQL (Prisma), Capacitor, StoreKit 2, Stripe, Railway</p>
+    </div>
+  </div>
+
+  <div class="item">
+    <div class="hd"><h3><a href="https://vocap.io">VOCAP</a> <span class="org">· fundador y desarrollador</span></h3><p class="when">nov. 2025 – actualidad</p></div>
+    <div>
+      <p>Transcripción de audio con IA: texto completo, resumen, decisiones y tareas. Exporta a Word y .txt.</p>
+      <p>Web en seis idiomas (español, inglés, francés, alemán, italiano y portugués) con blog propio. Clientes de pago con Stripe.</p>
+      <p class="stack">Python, Flask, Whisper (OpenAI), API de Claude, PostgreSQL, Stripe, Railway</p>
+    </div>
+  </div>
+
+  <div class="item min">
+    <div class="hd"><h3>Colegio Mayor Universitario San Pablo <span class="org">· decano</span></h3><p class="when">sept. 2026 – actualidad</p></div>
+    <div>
+    </div>
+  </div>
+
+  <div class="item">
+    <div class="hd"><h3>Desarrollo con IA <span class="org">· Claude Code y API de Claude</span></h3><p class="when">2025 – actualidad</p></div>
+    <div>
+      <p>Claude Code es mi herramienta principal para diseñar, programar, probar y desplegar mis productos. En VOCAP uso la API de Claude en producción para los resúmenes y la extracción de tareas.</p>
+    </div>
+  </div>
+
+  <div class="item">
+    <div class="hd"><h3>Explotación agraria en La Mudarra (Valladolid)</h3><p class="when">2023 – actualidad</p></div>
+    <div>
+      <p>Trabajo de verano: tres meses cada año.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Proyectos</h2>
+
+  <div class="item">
+    <div class="hd"><h3>Pulso</h3><p class="when">2026 · macOS · sin publicar</p></div>
+    <div>
+      <p>Monitor para Mac en la barra de menús y en el notch: memoria, swap y disco libre, con aviso cuando queda poco espacio. Aplicación nativa, firmada y notarizada por Apple. Requiere macOS 14 o posterior y chip Apple.</p>
+      <p class="stack">Swift, AppKit</p>
+    </div>
+  </div>
+
+  <div class="item">
+    <div class="hd"><h3>Holgura</h3><p class="when">2026 · iOS · en TestFlight</p></div>
+    <div>
+      <p>Finanzas personales: gasto del mes, objetivos de ahorro y patrimonio en una sola pantalla. Importa movimientos del banco en CSV, Excel y Norma 43, y tiene widgets.</p>
+      <p class="stack">TypeScript, React, Capacitor; motor de cálculo con tests</p>
+    </div>
+  </div>
+
+  <div class="item">
+    <div class="hd"><h3>Investigación cuantitativa</h3><p class="when">en desarrollo</p></div>
+    <div>
+      <p>Modelos sistemáticos para mercados de criptoactivos.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Formación</h2>
+
+  <div class="item">
+    <div class="hd"><h3>Doble Grado en Economía e Inteligencia de Negocios</h3><p class="when">sept. 2023 – jun. 2028</p></div>
+    <div>
+      <p>Universidad CEU San Pablo, Madrid. 4.º curso (2026-27).</p>
+    </div>
+  </div>
+
+  <div class="item">
+    <div class="hd"><h3>Curso práctico de terminales Bloomberg Professional</h3><p class="when">ene. 2026</p></div>
+    <div>
+      <p>Seis horas: búsqueda de activos, renta fija, renta variable y análisis económico y empresarial. Facultad de Ciencias Económicas y Empresariales, Universidad CEU San Pablo.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Habilidades</h2>
+  <dl class="skills">
+    <dt>Lenguajes</dt><dd>Python, TypeScript, JavaScript, Swift, SQL, R</dd>
+    <dt>Desarrollo</dt><dd>React, Next.js, Flask, PostgreSQL, Capacitor, Stripe, Railway</dd>
+    <dt>IA</dt><dd>Claude Code, API de Claude, Whisper</dd>
+    <dt>Datos</dt><dd>pandas, NumPy, scikit-learn, estadística aplicada</dd>
+    <dt>Finanzas</dt><dd>Análisis financiero, valoración, Bloomberg Professional, Excel</dd>
+    <dt>Idiomas</dt><dd>Español (nativo), inglés (profesional)</dd>
+  </dl>
+</section>
+
+<footer class="foot">Actualizado en noviembre de 2026</footer>
+
+</body>
+</html>

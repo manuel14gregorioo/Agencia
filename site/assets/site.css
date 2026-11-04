@@ -1,0 +1,189 @@
+/* mgmautomations.es · CV de Manuel Gregorio Medina. Todo en JetBrains Mono (autoalojada). */
+@font-face{font-family:"JetBrains Mono";font-style:normal;font-weight:400;font-display:swap;src:url("/fonts/jetbrains-mono-latin-400-normal.woff2") format("woff2")}
+@font-face{font-family:"JetBrains Mono";font-style:italic;font-weight:400;font-display:swap;src:url("/fonts/jetbrains-mono-latin-400-italic.woff2") format("woff2")}
+@font-face{font-family:"JetBrains Mono";font-style:normal;font-weight:500;font-display:swap;src:url("/fonts/jetbrains-mono-latin-500-normal.woff2") format("woff2")}
+@font-face{font-family:"JetBrains Mono";font-style:normal;font-weight:700;font-display:swap;src:url("/fonts/jetbrains-mono-latin-700-normal.woff2") format("woff2")}
+
+:root{--bg:#fafaf7;--ink:#151515;--soft:#3a3a3a;--mute:#6b6b64;--line:#dcdcd5;--line2:#ebebe5;--acc:#0b7a4b;
+  --f:"JetBrains Mono",ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+*{box-sizing:border-box;margin:0;padding:0}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+body{background:var(--bg);color:var(--ink);font-family:var(--f);font-size:14.5px;line-height:1.65;
+  -webkit-font-smoothing:antialiased;font-variant-ligatures:none}
+a{color:inherit;text-decoration:none}
+ul{list-style:none}
+img{display:block;max-width:100%}
+picture{display:block}
+a:focus-visible{outline:2px solid var(--ink);outline-offset:3px;border-radius:2px}
+
+/* Saltar al contenido */
+.skip{position:absolute;left:12px;top:-60px;z-index:10;background:var(--ink);color:var(--bg);padding:8px 12px;
+  border-radius:3px;font-size:13px}
+.skip:focus{top:12px}
+
+.wrap{max-width:1280px;margin:0 auto;padding:0 56px;display:grid;grid-template-columns:330px minmax(0,1fr);
+  column-gap:88px}
+
+/* Columna izquierda fija */
+.side{grid-row:1/3;position:sticky;top:0;height:100vh;overflow-y:auto;padding:72px 0 56px}
+.foto{width:128px;aspect-ratio:5/6;border:1px solid var(--line);border-radius:3px;overflow:hidden;background:#fff}
+.foto img{width:100%;height:100%;object-fit:cover}
+.name{margin-top:24px;font-size:28px;font-weight:700;line-height:1.12;letter-spacing:-.025em}
+.role{margin-top:12px;color:var(--ink)}
+.meta{margin-top:10px;color:var(--mute);font-size:13.5px}
+.nav ul{margin-top:40px;display:grid;gap:6px;font-size:13.5px}
+.nav a{color:var(--mute)}
+.nav a:hover{color:var(--ink)}
+.nav a.on{color:var(--acc)}
+.nav a.on::after{content:" ←"}
+.links{margin-top:48px;display:grid;gap:5px;font-size:13.5px}
+.links li{display:flex;gap:10px;min-width:0}
+.links span{color:var(--mute);width:72px;flex:none}
+.links a{border-bottom:1px solid var(--line);padding-bottom:1px;overflow-wrap:anywhere}
+.links a:hover{border-color:var(--ink)}
+
+/* Contenido */
+.main{padding:72px 0 64px;min-width:0}
+.main section{margin-bottom:96px}
+#sobre p{font-size:15.5px;line-height:1.62;max-width:60ch;color:var(--ink)}
+#sobre p+p{margin-top:14px}
+#sobre .proof{margin-top:20px;font-size:13.5px;color:var(--mute)}
+.proof a{color:var(--acc);border-bottom:1px solid currentColor;padding-bottom:1px;white-space:nowrap}
+.proof a:hover{border-bottom-width:2px}
+
+.sec{font-size:17px;font-weight:700;letter-spacing:-.02em;line-height:1.3;padding-bottom:10px;
+  border-bottom:1px solid var(--ink)}
+
+.item{display:grid;grid-template-columns:168px minmax(0,1fr);gap:24px;padding:26px 0}
+.item+.item{border-top:1px solid var(--line2)}
+.item.min{padding:16px 0}
+.item .when{font-size:12.5px;color:var(--mute);padding-top:2px;white-space:nowrap}
+.item h3{font-size:14.5px;font-weight:700;line-height:1.45}
+.item h3 a{border-bottom:1px solid var(--acc)}
+.item h3 a:hover{border-bottom-width:2px}
+.item h3 .org{font-weight:400;color:var(--mute)}
+.item p{margin-top:6px;color:var(--soft)}
+.item p a{border-bottom:1px solid var(--line)}
+.item p a:hover{border-color:var(--ink)}
+.item p.stack{margin-top:8px;font-size:12.5px;color:var(--mute)}
+
+/* Capturas */
+.fig{margin-top:18px}
+.shot{border:1px solid var(--line);border-radius:4px;overflow:hidden;background:#fff}
+.shot img{width:100%;height:100%;object-fit:cover;object-position:top}
+.duo{display:flex;gap:12px;align-items:flex-start}
+/* Anchos fijos (no flex-grow) para que la pareja tenga la misma altura exacta: 16/10 y 780/1688 con
+   bordes incluidos (border-box) -> 1,6 : 0,4621 -> 77,59 % y 22,41 % del ancho sin el hueco. */
+.duo .web{flex:0 0 calc((100% - 12px)*.7759);aspect-ratio:16/10;min-width:0}
+.duo .mov{flex:0 0 calc((100% - 12px)*.2241);min-width:0}
+.mov{aspect-ratio:780/1688;border-radius:10px}
+.shot.ancha{aspect-ratio:1600/1100}
+.shot.solo{width:180px}
+
+/* Habilidades */
+.skills{display:grid;grid-template-columns:168px minmax(0,1fr);gap:10px 24px;padding-top:22px}
+.skills dt{font-size:12.5px;color:var(--mute);padding-top:2px}
+.skills dd{color:var(--soft)}
+
+/* Pie */
+.foot{grid-column:2;display:flex;justify-content:space-between;gap:12px 24px;flex-wrap:wrap;font-size:12.5px;
+  color:var(--mute);border-top:1px solid var(--line);padding:18px 0 56px}
+.foot a{border-bottom:1px solid var(--line)}
+.foot a:hover{color:var(--ink);border-color:var(--ink)}
+
+/* Pantallas de escritorio bajas */
+@media (max-height:860px) and (min-width:981px){
+  .side{padding:40px 0 32px}
+  .foto{width:96px}
+  .name{margin-top:18px}
+  .nav ul{margin-top:24px}
+  .links{margin-top:32px}
+  .main{padding-top:40px}
+}
+
+/* Escritorio muy bajo (p. ej. 1366×768 con el navegador abierto): que los enlaces quepan sin desplazar */
+@media (max-height:680px) and (min-width:981px){
+  .foto{width:72px}
+  .name{margin-top:12px;font-size:24px}
+  .meta{margin-top:6px}
+  .nav ul{margin-top:16px;gap:2px}
+  .links{margin-top:20px;gap:2px}
+}
+
+/* Portátiles estrechos y tabletas en horizontal */
+@media (max-width:1180px) and (min-width:981px){
+  .wrap{grid-template-columns:270px minmax(0,1fr);column-gap:56px;padding:0 40px}
+}
+
+/* Una columna */
+@media (max-width:980px){
+  .wrap{grid-template-columns:minmax(0,1fr);padding:0 24px;max-width:760px}
+  .side{grid-row:auto;position:static;height:auto;overflow:visible;padding:24px 0 0}
+  .side>div{display:grid;grid-template-columns:84px minmax(0,1fr);column-gap:16px;align-items:start}
+  .foto{width:84px;grid-row:1/3}
+  .name{margin-top:0;font-size:24px;grid-column:2}
+  .role{grid-column:2;margin-top:8px;font-size:13.5px;line-height:1.5}
+  .meta{grid-column:1/-1;margin-top:14px}
+  .nav{display:none}
+  .links{margin-top:16px;gap:3px}
+  .main{padding-top:32px}
+  .main section{margin-bottom:64px}
+  #sobre{margin-bottom:40px}
+  #sobre .proof{margin-top:16px}
+  #sobre .proof{display:flex;flex-wrap:wrap;gap:6px 20px}
+  #sobre .proof .sep{display:none}
+  .foot{grid-column:1;flex-direction:column;padding-bottom:40px}
+}
+
+@media (max-width:700px){
+  .item,.skills{grid-template-columns:minmax(0,1fr);gap:4px}
+  .skills{gap:2px}
+  .skills dd+dt{margin-top:10px}
+  .item{padding:22px 0}
+  .item.min{padding:16px 0}
+}
+
+@media (max-width:600px){
+  body{font-size:14px}
+  #sobre p{font-size:14px;line-height:1.58}
+  #sobre p+p{margin-top:10px}
+  .meta,.links{font-size:13px}
+  .duo{display:block}
+  .duo .web{display:none}
+  .duo .mov{width:58%;max-width:220px}
+  .shot.solo{width:58%;max-width:220px}
+}
+
+@media (max-width:360px){
+  .wrap{padding:0 18px}
+  .links span{width:68px}
+}
+
+/* Página 404 */
+.e404{max-width:640px;margin:0 auto;padding:72px 24px}
+.e404 .home{font-size:13.5px;font-weight:700;border-bottom:1px solid var(--line)}
+.e404 .home:hover{border-color:var(--ink)}
+.e404 h1{margin-top:56px;font-size:28px;font-weight:700;line-height:1.12;letter-spacing:-.025em}
+.e404 p{margin-top:14px;color:var(--soft)}
+.e404 .go{display:inline-block;margin-top:24px;border-bottom:1px solid var(--ink)}
+.e404 .go:hover{border-bottom-width:2px}
+
+/* Impresión */
+@media print{
+  @page{margin:14mm}
+  body{background:#fff;font-size:10.5pt}
+  .skip,.nav,.fig,.proof{display:none}
+  .wrap{display:block;padding:0;max-width:none}
+  .side{position:static;height:auto;overflow:visible;padding:0}
+  .foto{width:22mm}
+  .links{margin-top:12px}
+  .main{padding-top:18px}
+  .main section{margin-bottom:22px}
+  .item{padding:10px 0;break-inside:avoid}
+  .links li:last-child{display:none}
+  .item h3 a[href^="http"]::after,.item p a[href^="http"]::after,.links a[href^="http"]::after{content:" (" attr(href) ")";
+    font-weight:400;color:var(--mute)}
+  a{border-bottom:0!important;text-decoration:underline}
+  .foot{padding-bottom:0}
+}
